@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate/Roost-XEE-Locate-iOS
+/Users/dano/Build/Roost-XEE-Locate-iOS
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
