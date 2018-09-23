@@ -35,15 +35,14 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
         }
 
         // Move panel on position it got grabbed originally
-        transform.position = Input.mousePosition + DragStartOffset;
-
+       
         var ray = Camera.ScreenPointToRay(Input.mousePosition);
 
         IsOverSocket = false;
         CurrentSocket = null;
 
         RaycastHit hit;
-
+        
         var didHitSomething = Physics.Raycast(ray, out hit);
         if (didHitSomething)
         {
@@ -53,6 +52,14 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
                 IsOverSocket = true;
                 CurrentSocket = locationSocket;
             }
+        }
+    }
+
+    public void FixedUpdate()
+    {
+        if (IsDragging)
+        {
+            transform.position = Input.mousePosition + DragStartOffset;
         }
     }
 
