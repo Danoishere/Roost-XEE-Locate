@@ -14,6 +14,9 @@ ModelImporter:
     2100000: Material_001__Canton_of_schaffhausen_Height_Map__ASTER_30m__png
     2100002: Rhein_001
     2100004: Material_001__Screen_Shot_2018-09-16_at_11_32_16_png
+    2100006: Material_001__SH_Map_4_png
+    2100008: M_Canton__SH_Map_4_png
+    2100010: M_Edge__SH_Map_4_png
     2300000: NurbsPath
     2300002: Plane
     2300004: Plane_001
@@ -61,7 +64,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
+    importBlendShapes: 0
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
