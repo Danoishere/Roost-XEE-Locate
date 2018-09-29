@@ -1,5 +1,6 @@
 ﻿using UniRx.Async;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -111,10 +112,25 @@ public class GameManager : MonoBehaviour
         {
             finishGamePanel.GetComponentInChildren<Text>().text = "GRATULATION!";
             finishTextSubtitle.text = "BITTE GEBEN SIE IHRE ANGABEN AM COMPUTER EIN.";
+            SendPointsToRanking(pointsTimeSeconds);
+
             await UniTask.Delay(6500);
         }
         
         finishGamePanel.SetActive(false);
         await SceneManager.LoadSceneAsync(0);
+    }
+
+    public async void SendPointsToRanking(int points)
+    {
+        var ip = "http://192.168.0.5:8080";
+        if (Application.isEditor)
+        {
+            ip = "http://160.85.154.112:8080";
+        }
+
+        var request = new UnityWebRequest(ip + "/?points="+points,"GET");
+        await request.SendWebRequest();
+        Debug.Log("Could send points? " + request.responseCode);
     }
 }
