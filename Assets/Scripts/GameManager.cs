@@ -15,17 +15,27 @@ public class GameManager : MonoBehaviour
     private GameObject finishGamePanel;
     [SerializeField]
     private Text timeCounter;
+    [SerializeField]
+    private Text finishTextSubtitle;
+    [SerializeField]
+    private Sprite[] backgroundSprites;
 
     private LocationManager locationManager;
     private bool isGameRunning = false;
     private float seconds = 0;
+
+    void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
 
     // Use this for initialization
     void Start()
     {
         locationManager = GetComponent<LocationManager>();
         locationManager.OnFinishGame = OnFinishGame;
-
+        var sprite = backgroundSprites.PickRandom();
+        background.GetComponent<Image>().sprite = sprite;
         background.SetActive(true);
         gameControlPanel.SetActive(true);
         gameReadyText.enabled = true;
@@ -86,13 +96,24 @@ public class GameManager : MonoBehaviour
         finishGamePanel.SetActive(false);
 
         var points = await locationManager.ValidateResult();
-        var pointsTimeSeconds = (int)(points * 100)/seconds;
+        var pointsTimeSeconds = Mathf.RoundToInt((float)points*100f/(float)seconds);
 
         finishGamePanel.GetComponentInChildren<Text>().text = pointsTimeSeconds + " PUNKTE";
         finishGamePanel.SetActive(true);
         await UniTask.Delay(3000);
-        finishGamePanel.GetComponentInChildren<Text>().text = "GRATULATION!";
-        await UniTask.Delay(2000);
+
+        if(pointsTimeSeconds == 0)
+        {
+            finishGamePanel.GetComponentInChildren<Text>().text = "VIEL GLÜCK BEIM NÄCHSTEN MAL";
+            await UniTask.Delay(5000);
+        }
+        else
+        {
+            finishGamePanel.GetComponentInChildren<Text>().text = "GRATULATION!";
+            finishTextSubtitle.text = "BITTE GEBEN SIE IHRE ANGABEN AM COMPUTER EIN.";
+            await UniTask.Delay(6500);
+        }
+        
         finishGamePanel.SetActive(false);
         await SceneManager.LoadSceneAsync(0);
     }
