@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UniRx.Async;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,6 +23,8 @@ public class LocationManager : MonoBehaviour
     public GameObject LocationLabelPrefab;
     public int ActivePerRound;
     public Location[] Locations;
+
+    public Action<LocationManager> OnFinishGame;
 
     public bool IsGameOver { get; set; }
 
@@ -63,16 +67,18 @@ public class LocationManager : MonoBehaviour
             if (!IsGameOver)
             {
                 IsGameOver = true;
-                ValidateResult();
+                OnFinishGame(this);
             }
         }
     }
 
-    private async void ValidateResult()
+    public async Task<int> ValidateResult()
     {
         int delayMs = 1000;
 
         await UniTask.Delay(2000);
+
+        var totalPoints = 0;
 
         foreach (var activeLocationLabel in ActiveLocationLabels)
         {
@@ -81,6 +87,7 @@ public class LocationManager : MonoBehaviour
 
             if(expectedLocationId == actualLocationId)
             {
+                totalPoints += 100;
                 activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.green;
             }
             else
@@ -89,6 +96,8 @@ public class LocationManager : MonoBehaviour
             }
             await UniTask.Delay(delayMs);
         }
+
+        return totalPoints;
     }
 
     private void DisableLocationStashLayouting()
