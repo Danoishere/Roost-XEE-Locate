@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UniRx.Async;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,8 +42,8 @@ public class LocationManager : MonoBehaviour
             var locationLabel = Instantiate(LocationLabelPrefab, LocationStash.transform) as GameObject;
             locationLabel.GetComponentInChildren<Text>().text = activeLocation.Name;
             locationLabel.GetComponent<LocationLabel>().IsAssigned = false;
+            locationLabel.GetComponent<LocationLabel>().Location = activeLocation;
             locationLabel.transform.SetParent(LocationStash.transform);
-
             ActiveLocationLabels.Add(locationLabel.GetComponent<LocationLabel>());
         }
 
@@ -62,8 +63,31 @@ public class LocationManager : MonoBehaviour
             if (!IsGameOver)
             {
                 IsGameOver = true;
-                Debug.Log("EOG");
+                ValidateResult();
             }
+        }
+    }
+
+    private async void ValidateResult()
+    {
+        int delayMs = 1000;
+
+        await UniTask.Delay(2000);
+
+        foreach (var activeLocationLabel in ActiveLocationLabels)
+        {
+            var expectedLocationId = activeLocationLabel.Location.Socket.GetInstanceID();
+            var actualLocationId = activeLocationLabel.CurrentSocket.GetInstanceID();
+
+            if(expectedLocationId == actualLocationId)
+            {
+                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.green;
+            }
+            else
+            {
+                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+            await UniTask.Delay(delayMs);
         }
     }
 

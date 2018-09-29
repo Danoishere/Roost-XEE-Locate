@@ -5,7 +5,6 @@ using UnityEngine;
 public class LocationSocket : MonoBehaviour
 {
     public LocationLabel AssignedLocationLabel { get; set; }
-    public string Name;
 
     // Use this for initialization
     public void AssingLocationLabel(LocationLabel locationLabel)

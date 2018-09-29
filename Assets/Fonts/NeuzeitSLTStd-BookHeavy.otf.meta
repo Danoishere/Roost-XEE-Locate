@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: df87e01004697d943b9eb4d1a484ef0c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neuzeit S LT Std
+  fontNames:
+  - Neuzeit S LT Std
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88860e6eea7a82c48bb1000d22ec5f61, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

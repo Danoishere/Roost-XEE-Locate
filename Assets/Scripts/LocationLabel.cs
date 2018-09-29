@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
 {
+    public Location Location { get; set; }
     public bool IsAssigned { get; set; }
     public bool IsDragging { get; set; }
     public int OriginalIndex { get; set; }
