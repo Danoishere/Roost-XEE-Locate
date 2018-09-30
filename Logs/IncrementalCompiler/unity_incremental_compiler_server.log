@@ -167,3 +167,4 @@
  (0,0): [09/30/2018 05:54:07.284 PM] Assembly-CSharp-Editor.dll compilation finished in 362ms  source files re-parsed: 0 metadata reloaded: 1
  (0,0): [09/30/2018 05:54:07.295 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
  (0,0): [09/30/2018 05:57:33.584 PM] Compiler cache size is now 18.41 MB
+ (0,0): watchdog triggered an exit
