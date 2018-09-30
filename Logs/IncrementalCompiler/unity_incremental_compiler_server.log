@@ -1,955 +1,169 @@
  (0,0): Unity incremental compiler server
- (0,0): watchdog active on pid: 730
- (0,0): [09/29/2018 03:13:09.443 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:09.467 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:13:09.472 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:09.484 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:13:09.502 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:09.514 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:13:09.908 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:09.920 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:13:13.566 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:13:13.567 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:13:13.567 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:13:13.568 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:13:13.648 PM] UniRx.Async.dll compilation finished in 4164ms  source files re-parsed: 88 metadata reloaded: 204
- (0,0): [09/29/2018 03:13:13.648 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 3728ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:13.649 PM] Unity.TextMeshPro.dll compilation finished in 4134ms  source files re-parsed: 45 metadata reloaded: 184
- (0,0): [09/29/2018 03:13:13.651 PM] Unity.Postprocessing.Runtime.dll compilation finished in 4183ms  source files re-parsed: 56 metadata reloaded: 128
- (0,0): [09/29/2018 03:13:14.144 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:14.156 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:14.292 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:14.306 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:14.498 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:14.509 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:14.721 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:14.739 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:13:14.740 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:13:14.756 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 600ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:15.035 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:15.046 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:15.343 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:13:15.360 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1053ms  source files re-parsed: 33 metadata reloaded: 1
- (0,0): [09/29/2018 03:13:15.572 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:15.583 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:15.638 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:13:15.668 PM] Unity.Postprocessing.Editor.dll compilation finished in 622ms  source files re-parsed: 35 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:15.860 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:15.871 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:15.990 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:13:16.004 PM] UniRx.Async.Editor.dll compilation finished in 132ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 03:13:16.211 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:16.234 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:13:16.292 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:13:16.311 PM] UnityEditor.StandardEvents.dll compilation finished in 76ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:16.510 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:16.522 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:13:16.591 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:13:16.604 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 81ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:17.181 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:13:17.197 PM] Unity.TextMeshPro.Editor.dll compilation finished in 1614ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 03:13:17.256 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:13:17.285 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 2546ms  source files re-parsed: 97 metadata reloaded: 1
- (0,0): [09/29/2018 03:13:17.461 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:13:17.483 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2973ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 03:13:17.632 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:17.643 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:13:18.174 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:13:18.198 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 554ms  source files re-parsed: 102 metadata reloaded: 4
- (0,0): [09/29/2018 03:13:20.087 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:20.098 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:13:20.398 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:13:20.411 PM] Assembly-CSharp.dll compilation finished in 313ms  source files re-parsed: 59 metadata reloaded: 6
- (0,0): [09/29/2018 03:13:20.757 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:13:20.768 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:13:20.970 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:13:20.985 PM] Assembly-CSharp-Editor.dll compilation finished in 216ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:29.352 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:29.363 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:29.477 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:29.492 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:17:29.608 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:29.625 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:17:29.718 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:29.729 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:29.734 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:17:29.831 PM] Unity.Postprocessing.Runtime.dll compilation finished in 467ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:30.575 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:17:30.594 PM] UniRx.Async.dll compilation finished in 1101ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:30.636 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:30.647 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:30.899 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:17:30.936 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1206ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:30.993 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:31.004 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:31.448 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:17:31.463 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 459ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:31.712 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:31.724 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:31.853 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:31.865 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:31.967 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:17:31.989 PM] Unity.TextMeshPro.dll compilation finished in 2363ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:32.576 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:32.587 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:32.808 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:17:32.823 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 958ms  source files re-parsed: 33 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:32.957 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:17:33.003 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2356ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:33.016 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:33.028 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:33.190 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:33.192 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:17:33.208 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:33.212 PM] Unity.Postprocessing.Editor.dll compilation finished in 624ms  source files re-parsed: 35 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:33.355 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:33.366 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:17:33.381 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:17:33.395 PM] UniRx.Async.Editor.dll compilation finished in 187ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:33.407 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:17:33.420 PM] UnityEditor.StandardEvents.dll compilation finished in 54ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:33.565 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:33.576 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:17:33.632 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:17:33.647 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 70ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:33.827 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:17:33.844 PM] Unity.TextMeshPro.Editor.dll compilation finished in 816ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:33.938 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:17:33.959 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 2234ms  source files re-parsed: 97 metadata reloaded: 2
- (0,0): [09/29/2018 03:17:34.225 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:17:34.237 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:34.805 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:17:34.822 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 585ms  source files re-parsed: 102 metadata reloaded: 4
- (0,0): [09/29/2018 03:17:34.967 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:17:35.200 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:17:35.214 PM] Assembly-CSharp.dll compilation finished in 247ms  source files re-parsed: 0 metadata reloaded: 6
- (0,0): [09/29/2018 03:17:35.226 PM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:35.472 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:17:35.657 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:17:35.671 PM] Assembly-CSharp-Editor.dll compilation finished in 198ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:35.682 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:41.415 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:17:41.471 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:41.617 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:17:41.708 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:42.256 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:17:42.286 PM] UniRx.Async.dll compilation finished in 871ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:42.303 PM] UniRx.Async.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:42.570 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:17:42.588 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1116ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:42.600 PM] Unity.Postprocessing.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:42.786 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:17:42.802 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1094ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:42.807 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:17:42.813 PM] Unity.RenderPipelines.Core.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:42.826 PM] Unity.TextMeshPro.dll compilation finished in 1209ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:42.837 PM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:43.015 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:43.142 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:43.450 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:43.534 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:17:43.549 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 406ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:43.560 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:43.655 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:17:43.760 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:44.430 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:17:44.444 PM] Unity.Postprocessing.Editor.dll compilation finished in 684ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:44.455 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:44.669 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:44.949 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:17:44.965 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1515ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:44.982 PM] Unity.RenderPipelines.Core.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.189 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:45.270 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:17:45.287 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:17:45.296 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2281ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:45.300 PM] UniRx.Async.Editor.dll compilation finished in 111ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:45.307 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:17:45.308 PM] Unity.ShaderGraph.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.308 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:17:45.312 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.324 PM] Unity.TextMeshPro.Editor.dll compilation finished in 655ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:45.333 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 1678ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:45.335 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.344 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.463 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:17:45.488 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:17:45.500 PM] UnityEditor.StandardEvents.dll compilation finished in 36ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:45.510 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.561 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:17:45.586 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:17:45.599 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 38ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:17:45.610 PM] Unity.RenderPipelines.Core.IncludePaths.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:45.669 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:17:46.131 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:17:46.149 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 480ms  source files re-parsed: 0 metadata reloaded: 4
- (0,0): [09/29/2018 03:17:46.160 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:46.373 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:17:46.609 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:17:46.622 PM] Assembly-CSharp.dll compilation finished in 248ms  source files re-parsed: 0 metadata reloaded: 6
- (0,0): [09/29/2018 03:17:46.633 PM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:17:46.878 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:17:47.061 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:17:47.076 PM] Assembly-CSharp-Editor.dll compilation finished in 198ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:17:47.087 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:15.009 PM] Compiler cache size is now 18.37 MB
- (0,0): [09/29/2018 03:18:47.696 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:18:47.727 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:18:47.837 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:18:48.476 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:18:48.492 PM] Unity.Postprocessing.Runtime.dll compilation finished in 764ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:48.503 PM] Unity.Postprocessing.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:48.516 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:18:48.976 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:18:48.993 PM] UniRx.Async.dll compilation finished in 1296ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:49.004 PM] UniRx.Async.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:49.077 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:18:49.095 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1257ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:49.111 PM] Unity.RenderPipelines.Core.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:49.560 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:18:49.578 PM] Unity.TextMeshPro.dll compilation finished in 1062ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:49.589 PM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:51.255 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:51.369 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:51.506 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:18:51.616 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:51.784 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:18:51.824 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 568ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:51.835 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:52.167 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:52.479 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:18:52.493 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1124ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:18:52.507 PM] Unity.RenderPipelines.Core.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:52.804 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:18:52.819 PM] Unity.Postprocessing.Editor.dll compilation finished in 652ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:52.830 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:52.859 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:53.030 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:53.199 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:18:53.227 PM] UniRx.Async.Editor.dll compilation finished in 196ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:18:53.241 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:53.882 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:18:53.910 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 2403ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:18:53.921 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:53.933 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:18:53.998 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:18:54.011 PM] UnityEditor.StandardEvents.dll compilation finished in 77ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:54.025 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:54.223 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:18:54.247 PM] Unity.TextMeshPro.Editor.dll compilation finished in 1387ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:18:54.259 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:54.432 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:18:54.484 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:18:54.497 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 64ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:54.508 PM] Unity.RenderPipelines.Core.IncludePaths.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:54.902 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:18:54.927 PM] Unity.ShaderGraph.Editor.dll compilation finished in 3311ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 03:18:54.937 PM] Unity.ShaderGraph.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:55.124 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:18:55.723 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:18:55.742 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 617ms  source files re-parsed: 0 metadata reloaded: 4
- (0,0): [09/29/2018 03:18:55.753 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:56.108 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:18:56.360 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:18:56.374 PM] Assembly-CSharp.dll compilation finished in 266ms  source files re-parsed: 0 metadata reloaded: 6
- (0,0): [09/29/2018 03:18:56.385 PM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:18:56.709 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:18:56.903 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:18:56.916 PM] Assembly-CSharp-Editor.dll compilation finished in 206ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:18:56.927 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:20:01.502 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:01.513 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:20:01.596 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:01.607 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:20:01.695 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:01.718 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:20:01.783 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:01.802 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:20:02.085 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:20:02.101 PM] Unity.Postprocessing.Runtime.dll compilation finished in 588ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:02.753 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:20:02.776 PM] UniRx.Async.dll compilation finished in 1168ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:03.154 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:03.167 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:03.198 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:03.207 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:20:03.209 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:03.224 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1506ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:03.703 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:20:03.721 PM] Unity.TextMeshPro.dll compilation finished in 1927ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:03.738 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:20:03.784 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 575ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:03.795 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:03.805 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:20:04.284 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:04.298 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:04.413 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:04.433 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:05.445 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:20:05.459 PM] Unity.Postprocessing.Editor.dll compilation finished in 1161ms  source files re-parsed: 35 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:05.508 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:20:05.533 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1100ms  source files re-parsed: 33 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:05.677 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:20:05.705 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2538ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:05.709 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:05.719 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:05.907 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:05.922 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:06.010 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:06.021 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:20:06.053 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:20:06.061 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:20:06.066 PM] UniRx.Async.Editor.dll compilation finished in 144ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 03:20:06.074 PM] UnityEditor.StandardEvents.dll compilation finished in 52ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:06.186 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:20:06.190 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:20:06.207 PM] Unity.TextMeshPro.Editor.dll compilation finished in 487ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 03:20:06.208 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 2402ms  source files re-parsed: 97 metadata reloaded: 2
- (0,0): [09/29/2018 03:20:06.226 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:06.238 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:20:06.268 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:20:06.281 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 42ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:20:06.536 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:06.547 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:20:07.115 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:20:07.135 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 587ms  source files re-parsed: 102 metadata reloaded: 4
- (0,0): [09/29/2018 03:20:07.314 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:07.326 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:20:07.599 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:20:07.615 PM] Assembly-CSharp.dll compilation finished in 288ms  source files re-parsed: 59 metadata reloaded: 6
- (0,0): [09/29/2018 03:20:07.792 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:20:07.804 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:20:08.005 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:20:08.018 PM] Assembly-CSharp-Editor.dll compilation finished in 214ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 03:23:23.289 PM] Compiler cache size is now 18.37 MB
- (0,0): [09/29/2018 03:27:01.827 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:01.838 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:27:01.894 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:01.905 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:27:02.034 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:02.045 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:27:02.195 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:02.231 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:27:02.533 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:27:02.554 PM] Unity.Postprocessing.Runtime.dll compilation finished in 716ms  source files re-parsed: 56 metadata reloaded: 63
- (0,0): [09/29/2018 03:27:03.225 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:27:03.243 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1032ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 03:27:03.333 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:27:03.350 PM] UniRx.Async.dll compilation finished in 1445ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 03:27:03.564 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:27:03.581 PM] Unity.TextMeshPro.dll compilation finished in 1535ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 03:27:03.596 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:03.606 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:27:04.474 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:27:04.497 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 890ms  source files re-parsed: 97 metadata reloaded: 2
- (0,0): [09/29/2018 03:27:04.704 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:27:04.716 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:27:05.014 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:27:05.029 PM] Assembly-CSharp.dll compilation finished in 313ms  source files re-parsed: 59 metadata reloaded: 3
- (0,0): [09/29/2018 03:28:31.465 PM] Compiler cache size is now 21.26 MB
- (0,0): [09/29/2018 03:54:50.663 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:50.675 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 03:54:50.883 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:50.896 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 03:54:51.353 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:51.364 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 03:54:51.748 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:51.785 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 03:54:52.610 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 03:54:52.854 PM] Unity.Postprocessing.Runtime.dll compilation finished in 2178ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:53.924 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 03:54:53.944 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 2158ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:54.243 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 03:54:54.261 PM] UniRx.Async.dll compilation finished in 3364ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:55.040 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 03:54:55.059 PM] Unity.TextMeshPro.dll compilation finished in 3694ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:56.573 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:56.585 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 03:54:56.874 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:56.885 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 03:54:57.038 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:57.049 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 03:54:57.482 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 03:54:57.509 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 623ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:57.571 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:57.587 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 03:54:57.873 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 03:54:57.891 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:57.908 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 03:54:57.964 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 915ms  source files re-parsed: 33 metadata reloaded: 0
- (0,0): [09/29/2018 03:54:58.763 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:54:58.797 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 03:55:00.231 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 03:55:00.244 PM] Unity.Postprocessing.Editor.dll compilation finished in 2335ms  source files re-parsed: 35 metadata reloaded: 0
- (0,0): [09/29/2018 03:55:00.712 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:55:00.741 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 03:55:00.954 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 03:55:00.973 PM] UniRx.Async.Editor.dll compilation finished in 232ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 03:55:01.210 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 03:55:01.245 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:55:01.249 PM] Unity.TextMeshPro.Editor.dll compilation finished in 2454ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 03:55:01.257 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 03:55:01.500 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 03:55:01.512 PM] UnityEditor.StandardEvents.dll compilation finished in 255ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:55:01.519 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 03:55:01.545 PM] Unity.ShaderGraph.Editor.dll compilation finished in 3958ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 03:55:01.551 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 03:55:01.577 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 4992ms  source files re-parsed: 97 metadata reloaded: 2
- (0,0): [09/29/2018 03:55:01.619 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:55:01.630 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 03:55:01.659 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 03:55:01.670 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 40ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 03:55:02.228 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:55:02.239 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 03:55:03.112 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 03:55:03.130 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 891ms  source files re-parsed: 102 metadata reloaded: 4
- (0,0): [09/29/2018 03:55:03.255 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 03:55:03.272 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 03:55:03.656 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 03:55:03.669 PM] Assembly-CSharp.dll compilation finished in 396ms  source files re-parsed: 59 metadata reloaded: 6
- (0,0): [09/29/2018 03:55:04.200 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 03:55:04.439 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 03:55:04.452 PM] Assembly-CSharp-Editor.dll compilation finished in 252ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 03:55:04.463 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 03:57:16.393 PM] Compiler cache size is now 21.30 MB
- (0,0): [09/29/2018 04:05:36.992 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:37.005 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:05:37.074 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:37.085 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:05:37.207 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:37.229 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:05:37.374 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:37.391 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 04:05:37.564 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:05:37.580 PM] Unity.Postprocessing.Runtime.dll compilation finished in 575ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:38.722 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:38.733 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:39.012 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 04:05:39.030 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1639ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:39.032 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:05:39.076 PM] UniRx.Async.dll compilation finished in 1990ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:40.069 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:40.083 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:40.257 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:40.268 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compiling...
- (0,0): [09/29/2018 04:05:40.557 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:05:40.579 PM] Unity.TextMeshPro.dll compilation finished in 3349ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:40.595 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:05:40.608 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 525ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:40.631 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:05:40.656 PM] Unity.ShaderGraph.Editor.dll compilation finished in 1922ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:40.826 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:40.836 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:41.145 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:41.157 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:41.326 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:41.337 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:41.809 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 04:05:42.037 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:05:42.041 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1204ms  source files re-parsed: 33 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:42.061 PM] Unity.Postprocessing.Editor.dll compilation finished in 904ms  source files re-parsed: 35 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:42.240 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:42.251 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:42.259 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:05:42.283 PM] Unity.TextMeshPro.Editor.dll compilation finished in 946ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:42.310 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:05:42.323 PM] UniRx.Async.Editor.dll compilation finished in 72ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:42.340 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:42.351 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:05:42.382 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:05:42.384 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
- (0,0): [09/29/2018 04:05:42.395 PM] UnityEditor.StandardEvents.dll compilation finished in 43ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:42.404 PM] Unity.RenderPipelines.HighDefinition.Runtime.dll compilation finished in 2137ms  source files re-parsed: 97 metadata reloaded: 2
- (0,0): [09/29/2018 04:05:42.423 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:42.435 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 04:05:42.465 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 04:05:42.477 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 42ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:42.732 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:42.743 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:43.427 PM] Unity.RenderPipelines.HighDefinition.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.HighDefinition.Editor.dll
- (0,0): [09/29/2018 04:05:43.449 PM] Unity.RenderPipelines.HighDefinition.Editor.dll compilation finished in 705ms  source files re-parsed: 102 metadata reloaded: 4
- (0,0): [09/29/2018 04:05:43.630 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:05:43.916 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:05:43.930 PM] Assembly-CSharp.dll compilation finished in 299ms  source files re-parsed: 0 metadata reloaded: 6
- (0,0): [09/29/2018 04:05:43.940 PM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:44.148 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:44.159 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:05:44.373 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:05:44.387 PM] Assembly-CSharp-Editor.dll compilation finished in 228ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:54.677 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:05:54.722 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:05:54.946 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 04:05:55.253 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:05:55.592 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:05:55.793 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1071ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:55.805 PM] Unity.Postprocessing.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:55.875 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 04:05:55.902 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 956ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:55.913 PM] Unity.RenderPipelines.Core.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:56.017 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:05:56.050 PM] UniRx.Async.dll compilation finished in 1373ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:56.066 PM] UniRx.Async.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:56.343 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:05:56.360 PM] Unity.TextMeshPro.dll compilation finished in 1106ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:56.371 PM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:56.451 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:56.663 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:56.965 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:57.282 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:57.872 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:05:57.887 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 1223ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:57.898 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:57.927 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 04:05:57.935 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:05:57.940 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 974ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:57.950 PM] Unity.Postprocessing.Editor.dll compilation finished in 667ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:57.951 PM] Unity.RenderPipelines.Core.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:57.961 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.064 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:05:58.092 PM] Unity.ShaderGraph.Editor.dll compilation finished in 1641ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:58.103 PM] Unity.ShaderGraph.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.129 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:58.384 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:05:58.418 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:05:58.466 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:05:58.468 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 04:05:58.478 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:05:58.480 PM] UniRx.Async.Editor.dll compilation finished in 95ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:58.491 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.493 PM] UnityEditor.StandardEvents.dll compilation finished in 74ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:58.504 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.504 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 04:05:58.517 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 48ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:05:58.528 PM] Unity.RenderPipelines.Core.IncludePaths.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.538 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:05:58.552 PM] Unity.TextMeshPro.Editor.dll compilation finished in 423ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:05:58.564 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:05:58.754 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:58.765 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:05:59.090 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:05:59.104 PM] Assembly-CSharp.dll compilation finished in 338ms  source files re-parsed: 59 metadata reloaded: 8
- (0,0): [09/29/2018 04:05:59.272 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:05:59.283 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:05:59.514 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:05:59.528 PM] Assembly-CSharp-Editor.dll compilation finished in 245ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 04:07:07.137 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:07.148 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:07:07.197 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:07.210 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:07:07.332 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:07.347 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 04:07:07.528 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:07.540 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:07:08.164 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:07:08.181 PM] UniRx.Async.dll compilation finished in 1033ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:08.674 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:07:08.732 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1192ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:09.090 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 04:07:09.111 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1764ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:09.150 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:09.162 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:09.343 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:09.354 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:09.358 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:07:09.436 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:07:09.495 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 333ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:09.528 PM] Unity.TextMeshPro.dll compilation finished in 2317ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:09.690 PM] Unity.RenderPipelines.Core.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:09.708 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:09.746 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:09.756 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:10.017 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:10.029 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:10.203 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:07:10.218 PM] Unity.Postprocessing.Editor.dll compilation finished in 461ms  source files re-parsed: 35 metadata reloaded: 1
- (0,0): [09/29/2018 04:07:10.417 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:10.428 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:07:10.630 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:07:10.644 PM] UniRx.Async.Editor.dll compilation finished in 215ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 04:07:10.830 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 04:07:10.848 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 1140ms  source files re-parsed: 33 metadata reloaded: 1
- (0,0): [09/29/2018 04:07:10.952 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:10.964 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:07:11.033 PM] Unity.RenderPipelines.Core.IncludePaths.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:11.047 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 04:07:11.087 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:07:11.105 PM] UnityEditor.StandardEvents.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:11.114 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 04:07:11.135 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 87ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:11.307 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:07:11.323 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:07:11.324 PM] Unity.TextMeshPro.Editor.dll compilation finished in 1295ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 04:07:11.344 PM] Unity.ShaderGraph.Editor.dll compilation finished in 1990ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 04:07:11.502 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:07:11.749 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:07:11.764 PM] Assembly-CSharp.dll compilation finished in 261ms  source files re-parsed: 0 metadata reloaded: 8
- (0,0): [09/29/2018 04:07:11.775 PM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:07:12.022 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:07:12.034 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:07:12.251 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:07:12.264 PM] Assembly-CSharp-Editor.dll compilation finished in 230ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:30.253 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:08:30.264 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:08:30.354 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:08:30.365 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:08:30.431 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:08:30.442 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:08:30.582 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:08:30.593 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 04:08:31.883 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:08:31.913 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1548ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:32.344 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 04:08:32.361 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1767ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:32.618 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:08:32.628 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:08:32.638 PM] Unity.TextMeshPro.dll compilation finished in 2373ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:32.643 PM] UniRx.Async.dll compilation finished in 2201ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:32.731 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:32.865 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:33.270 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:33.358 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:08:33.372 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 506ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:33.384 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:33.397 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:33.737 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:34.061 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:08:34.091 PM] Unity.Postprocessing.Editor.dll compilation finished in 693ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:34.106 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.150 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 04:08:34.171 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 901ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:34.182 PM] Unity.RenderPipelines.Core.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.534 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:08:34.534 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:08:34.560 PM] Unity.ShaderGraph.Editor.dll compilation finished in 1829ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:34.571 PM] Unity.ShaderGraph.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.584 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:08:34.589 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:08:34.599 PM] Unity.TextMeshPro.Editor.dll compilation finished in 862ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:34.602 PM] UniRx.Async.Editor.dll compilation finished in 68ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:34.610 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.615 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.625 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:08:34.650 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:08:34.662 PM] UnityEditor.StandardEvents.dll compilation finished in 36ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:34.673 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:34.783 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 04:08:34.811 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 04:08:34.824 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 41ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:08:34.835 PM] Unity.RenderPipelines.Core.IncludePaths.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:08:35.099 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:08:35.110 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:08:35.494 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:08:35.511 PM] Assembly-CSharp.dll compilation finished in 401ms  source files re-parsed: 59 metadata reloaded: 8
- (0,0): [09/29/2018 04:08:35.672 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:08:35.897 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:08:35.910 PM] Assembly-CSharp-Editor.dll compilation finished in 238ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:08:35.921 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:37.784 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:37.795 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:10:37.865 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:37.877 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:10:37.968 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:37.981 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:10:38.159 PM] Unity.RenderPipelines.Core.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:38.190 PM] Unity.RenderPipelines.Core.Runtime.dll compiling...
- (0,0): [09/29/2018 04:10:38.417 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:10:38.439 PM] Unity.Postprocessing.Runtime.dll compilation finished in 643ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:39.245 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:39.456 PM] Unity.RenderPipelines.Core.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Runtime.dll
- (0,0): [09/29/2018 04:10:39.472 PM] Unity.RenderPipelines.Core.Runtime.dll compilation finished in 1295ms  source files re-parsed: 72 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:39.556 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:10:39.577 PM] UniRx.Async.dll compilation finished in 1597ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:39.905 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:40.066 PM] Unity.RenderPipelines.Core.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:40.366 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:10:40.401 PM] Unity.TextMeshPro.dll compilation finished in 2524ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:40.422 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:10:40.450 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 544ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:40.460 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:40.691 PM] Unity.RenderPipelines.Core.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.Editor.dll
- (0,0): [09/29/2018 04:10:40.710 PM] Unity.RenderPipelines.Core.Editor.dll compilation finished in 643ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:40.721 PM] Unity.RenderPipelines.Core.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:40.809 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:40.909 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:41.182 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:41.285 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:10:41.304 PM] UniRx.Async.Editor.dll compilation finished in 122ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:41.315 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.434 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:10:41.448 PM] Unity.Postprocessing.Editor.dll compilation finished in 639ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:41.467 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.475 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:10:41.556 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:10:41.575 PM] UnityEditor.StandardEvents.dll compilation finished in 99ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:41.585 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.590 PM] Unity.RenderPipelines.Core.IncludePaths.dll compiling...
- (0,0): [09/29/2018 04:10:41.628 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:10:41.629 PM] Unity.RenderPipelines.Core.IncludePaths.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.RenderPipelines.Core.IncludePaths.dll
- (0,0): [09/29/2018 04:10:41.641 PM] Unity.RenderPipelines.Core.IncludePaths.dll compilation finished in 51ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:41.653 PM] Unity.RenderPipelines.Core.IncludePaths.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.655 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2409ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:41.666 PM] Unity.ShaderGraph.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.699 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:10:41.713 PM] Unity.TextMeshPro.Editor.dll compilation finished in 803ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:41.724 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:41.902 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:41.914 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:10:42.249 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:10:42.264 PM] Assembly-CSharp.dll compilation finished in 350ms  source files re-parsed: 59 metadata reloaded: 8
- (0,0): [09/29/2018 04:10:42.410 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:10:42.628 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:10:42.641 PM] Assembly-CSharp-Editor.dll compilation finished in 231ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:42.652 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:10:55.568 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:55.579 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:10:55.635 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:55.647 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:10:55.764 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:55.776 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:10:55.950 PM] Unity.ShaderGraph.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:55.961 PM] Unity.ShaderGraph.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:56.201 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:10:56.226 PM] Unity.Postprocessing.Runtime.dll compilation finished in 647ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:56.792 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:56.803 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:57.191 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:10:57.211 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 407ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:57.417 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:10:57.433 PM] UniRx.Async.dll compilation finished in 1786ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:57.610 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:57.628 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:57.682 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:57.694 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:57.791 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:10:57.808 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:10:57.809 PM] Unity.TextMeshPro.dll compilation finished in 2033ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:57.821 PM] UniRx.Async.Editor.dll compilation finished in 127ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:58.191 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:58.194 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:10:58.202 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:10:58.209 PM] Unity.Postprocessing.Editor.dll compilation finished in 581ms  source files re-parsed: 35 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:58.293 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:58.308 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:10:58.462 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:10:58.476 PM] UnityEditor.StandardEvents.dll compilation finished in 168ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:58.761 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:10:58.775 PM] Unity.TextMeshPro.Editor.dll compilation finished in 572ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [09/29/2018 04:10:58.864 PM] Unity.ShaderGraph.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.ShaderGraph.Editor.dll
- (0,0): [09/29/2018 04:10:58.884 PM] Unity.ShaderGraph.Editor.dll compilation finished in 2923ms  source files re-parsed: 378 metadata reloaded: 0
- (0,0): [09/29/2018 04:10:59.042 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:59.053 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:10:59.305 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:10:59.319 PM] Assembly-CSharp.dll compilation finished in 266ms  source files re-parsed: 59 metadata reloaded: 6
- (0,0): [09/29/2018 04:10:59.544 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:10:59.556 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:10:59.760 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:10:59.774 PM] Assembly-CSharp-Editor.dll compilation finished in 218ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 04:11:12.315 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:11:12.374 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:11:12.488 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:11:12.581 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:11:13.016 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:11:13.038 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 456ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:11:13.049 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.243 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:11:13.258 PM] Unity.Postprocessing.Runtime.dll compilation finished in 770ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:11:13.285 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:11:13.302 PM] Unity.Postprocessing.Runtime.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.327 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:11:13.350 PM] UnityEditor.StandardEvents.dll compilation finished in 64ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:11:13.362 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.363 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:11:13.389 PM] UniRx.Async.dll compilation finished in 1074ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:11:13.400 PM] UniRx.Async.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.620 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:11:13.636 PM] Unity.TextMeshPro.dll compilation finished in 1262ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:11:13.648 PM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.685 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:11:13.835 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:11:13.901 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:11:13.914 PM] UniRx.Async.Editor.dll compilation finished in 79ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:11:13.918 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:11:13.926 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:13.932 PM] Unity.Postprocessing.Editor.dll compilation finished in 246ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:11:13.943 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:14.013 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:11:14.319 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:11:14.334 PM] Unity.TextMeshPro.Editor.dll compilation finished in 321ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:11:14.345 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:11:14.541 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:11:14.552 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:11:14.876 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:11:14.891 PM] Assembly-CSharp.dll compilation finished in 339ms  source files re-parsed: 59 metadata reloaded: 5
- (0,0): [09/29/2018 04:11:15.074 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:11:15.085 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:11:15.291 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:11:15.305 PM] Assembly-CSharp-Editor.dll compilation finished in 219ms  source files re-parsed: 34 metadata reloaded: 1
- (0,0): [09/29/2018 04:13:15.528 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:13:15.540 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:13:15.573 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:13:15.589 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:13:15.712 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:13:15.723 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:13:16.424 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:13:16.440 PM] Unity.Postprocessing.Runtime.dll compilation finished in 716ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:13:16.672 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:13:16.696 PM] UniRx.Async.dll compilation finished in 1156ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:13:16.883 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:13:16.899 PM] Unity.TextMeshPro.dll compilation finished in 1310ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:13:17.180 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:13:17.191 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:13:17.465 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:13:17.479 PM] Assembly-CSharp.dll compilation finished in 287ms  source files re-parsed: 59 metadata reloaded: 3
- (0,0): [09/29/2018 04:14:48.214 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:14:48.226 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:14:48.363 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:14:48.376 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:14:48.448 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:14:48.460 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:14:48.575 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:14:49.107 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:14:49.127 PM] Unity.Postprocessing.Runtime.dll compilation finished in 901ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:14:49.470 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:14:49.486 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 910ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:14:49.497 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:14:50.439 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:14:50.455 PM] UniRx.Async.dll compilation finished in 2078ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:14:50.696 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:14:50.712 PM] Unity.TextMeshPro.dll compilation finished in 2252ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:14:51.118 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:14:51.218 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:14:51.350 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:14:51.419 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:14:51.454 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:14:51.467 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:14:51.469 PM] UniRx.Async.Editor.dll compilation finished in 118ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:14:51.480 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:14:51.482 PM] UnityEditor.StandardEvents.dll compilation finished in 63ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:14:51.499 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:14:51.534 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:14:51.564 PM] Unity.Postprocessing.Editor.dll compilation finished in 446ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:14:51.578 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:14:51.871 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:14:51.886 PM] Unity.TextMeshPro.Editor.dll compilation finished in 667ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:14:51.896 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:14:52.129 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:14:52.140 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:14:52.779 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:14:52.793 PM] Assembly-CSharp.dll compilation finished in 653ms  source files re-parsed: 59 metadata reloaded: 5
- (0,0): [09/29/2018 04:14:53.235 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:14:53.499 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:14:53.519 PM] Assembly-CSharp-Editor.dll compilation finished in 284ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:14:53.529 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:18:58.882 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:18:58.894 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:18:58.950 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:18:58.961 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:18:59.057 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:18:59.079 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:18:59.986 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:19:00.010 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1049ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:19:00.168 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:19:00.210 PM] UniRx.Async.dll compilation finished in 1316ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:19:00.441 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:19:00.456 PM] Unity.TextMeshPro.dll compilation finished in 1385ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:19:00.685 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:19:00.695 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:19:00.981 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:19:00.997 PM] Assembly-CSharp.dll compilation finished in 301ms  source files re-parsed: 59 metadata reloaded: 3
- (0,0): [09/29/2018 04:20:29.531 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:20:29.542 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:20:29.685 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:20:29.700 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:20:29.868 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:20:29.897 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:20:30.110 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:20:30.375 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:20:30.563 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1020ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:20:30.856 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:20:30.873 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 762ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:20:30.884 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:20:31.472 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:20:31.503 PM] UniRx.Async.dll compilation finished in 1802ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:20:31.994 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:20:32.016 PM] Unity.TextMeshPro.dll compilation finished in 2118ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:20:33.299 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:20:33.601 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:20:33.606 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:20:33.619 PM] Unity.Postprocessing.Editor.dll compilation finished in 320ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:20:33.636 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:20:33.689 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:20:33.709 PM] UniRx.Async.Editor.dll compilation finished in 102ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:20:33.715 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:20:33.721 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:20:34.009 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:20:34.096 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:20:34.128 PM] UnityEditor.StandardEvents.dll compilation finished in 119ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:20:34.147 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:20:34.363 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:20:34.380 PM] Unity.TextMeshPro.Editor.dll compilation finished in 665ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:20:34.393 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:20:34.574 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:20:34.586 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:20:35.029 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:20:35.044 PM] Assembly-CSharp.dll compilation finished in 458ms  source files re-parsed: 59 metadata reloaded: 5
- (0,0): [09/29/2018 04:20:35.468 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:20:35.730 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:20:35.746 PM] Assembly-CSharp-Editor.dll compilation finished in 277ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:20:35.756 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:25:59.294 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:25:59.306 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:25:59.373 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:25:59.386 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:25:59.491 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:25:59.506 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:26:00.365 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:26:00.368 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:26:00.392 PM] Unity.Postprocessing.Runtime.dll compilation finished in 1006ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:26:00.409 PM] UniRx.Async.dll compilation finished in 1102ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:26:00.730 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:26:00.745 PM] Unity.TextMeshPro.dll compilation finished in 1238ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:26:01.002 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:26:01.014 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:26:01.311 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:26:01.326 PM] Assembly-CSharp.dll compilation finished in 311ms  source files re-parsed: 59 metadata reloaded: 3
- (0,0): [09/29/2018 04:27:26.666 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:27:26.677 PM] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [09/29/2018 04:27:26.981 PM] UniRx.Async.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:27:26.993 PM] UniRx.Async.dll compiling...
- (0,0): [09/29/2018 04:27:27.062 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:27:27.074 PM] Unity.TextMeshPro.dll compiling...
- (0,0): [09/29/2018 04:27:27.163 PM] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [09/29/2018 04:27:27.446 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Runtime.dll
- (0,0): [09/29/2018 04:27:27.463 PM] Unity.Postprocessing.Runtime.dll compilation finished in 786ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [09/29/2018 04:27:27.988 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
- (0,0): [09/29/2018 04:27:28.008 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 845ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:27:28.030 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:27:28.411 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
- (0,0): [09/29/2018 04:27:28.429 PM] UniRx.Async.dll compilation finished in 1436ms  source files re-parsed: 88 metadata reloaded: 0
- (0,0): [09/29/2018 04:27:28.937 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
- (0,0): [09/29/2018 04:27:28.956 PM] Unity.TextMeshPro.dll compilation finished in 1882ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [09/29/2018 04:27:29.751 PM] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [09/29/2018 04:27:29.852 PM] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [09/29/2018 04:27:29.996 PM] UniRx.Async.Editor.dll compiling...
- (0,0): [09/29/2018 04:27:30.295 PM] UnityEditor.StandardEvents.dll compiling...
- (0,0): [09/29/2018 04:27:30.320 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
- (0,0): [09/29/2018 04:27:30.333 PM] UniRx.Async.Editor.dll compilation finished in 337ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:27:30.352 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:27:30.366 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
- (0,0): [09/29/2018 04:27:30.381 PM] UnityEditor.StandardEvents.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [09/29/2018 04:27:30.391 PM] Unity.Postprocessing.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.Postprocessing.Editor.dll
- (0,0): [09/29/2018 04:27:30.395 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:27:30.406 PM] Unity.Postprocessing.Editor.dll compilation finished in 654ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:27:30.422 PM] Unity.Postprocessing.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:27:30.589 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
- (0,0): [09/29/2018 04:27:30.605 PM] Unity.TextMeshPro.Editor.dll compilation finished in 753ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:27:30.618 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [09/29/2018 04:27:30.970 PM] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/29/2018 04:27:30.980 PM] Assembly-CSharp.dll compiling...
- (0,0): [09/29/2018 04:27:31.391 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
- (0,0): [09/29/2018 04:27:31.404 PM] Assembly-CSharp.dll compilation finished in 423ms  source files re-parsed: 59 metadata reloaded: 5
- (0,0): [09/29/2018 04:27:31.746 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/29/2018 04:27:32.008 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
- (0,0): [09/29/2018 04:27:32.022 PM] Assembly-CSharp-Editor.dll compilation finished in 275ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [09/29/2018 04:27:32.032 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): watchdog triggered an exit
+ (0,0): watchdog active on pid: 10816
+ (0,0): [09/30/2018 04:33:06.248 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:06.279 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 04:33:06.308 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:06.318 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [09/30/2018 04:33:06.450 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:06.463 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 04:33:06.996 PM] UnityEditor.StandardEvents.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:07.007 PM] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [09/30/2018 04:33:11.987 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
+ (0,0): [09/30/2018 04:33:12.297 PM] UnityEditor.StandardEvents.dll compilation finished in 5289ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/30/2018 04:33:12.635 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
+ (0,0): [09/30/2018 04:33:12.672 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 6353ms  source files re-parsed: 44 metadata reloaded: 192
+ (0,0): [09/30/2018 04:33:13.461 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 04:33:13.560 PM] UniRx.Async.dll compilation finished in 7280ms  source files re-parsed: 88 metadata reloaded: 192
+ (0,0): [09/30/2018 04:33:13.982 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 04:33:14.003 PM] Unity.TextMeshPro.dll compilation finished in 7540ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 04:33:14.252 PM] UniRx.Async.Editor.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:14.263 PM] UniRx.Async.Editor.dll compiling...
+ (0,0): [09/30/2018 04:33:14.354 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
+ (0,0): [09/30/2018 04:33:14.368 PM] UniRx.Async.Editor.dll compilation finished in 105ms  source files re-parsed: 3 metadata reloaded: 1
+ (0,0): [09/30/2018 04:33:14.576 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:14.587 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [09/30/2018 04:33:15.573 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
+ (0,0): [09/30/2018 04:33:15.590 PM] Unity.TextMeshPro.Editor.dll compilation finished in 1002ms  source files re-parsed: 39 metadata reloaded: 1
+ (0,0): [09/30/2018 04:33:15.926 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:15.937 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 04:33:16.837 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 04:33:16.871 PM] Assembly-CSharp.dll compilation finished in 934ms  source files re-parsed: 86 metadata reloaded: 4
+ (0,0): [09/30/2018 04:33:17.441 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:33:17.451 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/30/2018 04:33:17.937 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
+ (0,0): [09/30/2018 04:33:17.951 PM] Assembly-CSharp-Editor.dll compilation finished in 499ms  source files re-parsed: 36 metadata reloaded: 4
+ (0,0): [09/30/2018 04:35:24.613 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:35:24.625 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 04:35:24.676 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:35:24.696 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 04:35:26.313 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 04:35:26.338 PM] UniRx.Async.dll compilation finished in 1642ms  source files re-parsed: 88 metadata reloaded: 37
+ (0,0): [09/30/2018 04:35:26.375 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 04:35:26.398 PM] Unity.TextMeshPro.dll compilation finished in 1772ms  source files re-parsed: 45 metadata reloaded: 53
+ (0,0): [09/30/2018 04:35:26.766 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:35:26.777 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 04:35:27.262 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 04:35:27.284 PM] Assembly-CSharp.dll compilation finished in 506ms  source files re-parsed: 86 metadata reloaded: 2
+ (0,0): [09/30/2018 04:37:35.799 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:37:35.811 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 04:37:36.030 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:37:36.132 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 04:37:36.309 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [09/30/2018 04:37:36.385 PM] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [09/30/2018 04:37:36.958 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
+ (0,0): [09/30/2018 04:37:36.982 PM] UnityEditor.StandardEvents.dll compilation finished in 597ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 04:37:37.003 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:37:38.046 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
+ (0,0): [09/30/2018 04:37:38.282 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 1973ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 04:37:38.294 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:37:38.763 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 04:37:38.928 PM] UniRx.Async.dll compilation finished in 3116ms  source files re-parsed: 88 metadata reloaded: 0
+ (0,0): [09/30/2018 04:37:39.214 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 04:37:39.240 PM] Unity.TextMeshPro.dll compilation finished in 3108ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 04:37:40.498 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [09/30/2018 04:37:40.614 PM] UniRx.Async.Editor.dll compiling...
+ (0,0): [09/30/2018 04:37:40.922 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
+ (0,0): [09/30/2018 04:37:40.936 PM] UniRx.Async.Editor.dll compilation finished in 322ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:37:40.948 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:37:41.091 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
+ (0,0): [09/30/2018 04:37:41.112 PM] Unity.TextMeshPro.Editor.dll compilation finished in 614ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:37:41.122 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:37:41.528 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:37:41.539 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 04:37:42.253 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 04:37:42.274 PM] Assembly-CSharp.dll compilation finished in 735ms  source files re-parsed: 86 metadata reloaded: 4
+ (0,0): [09/30/2018 04:37:42.647 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/30/2018 04:37:43.004 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
+ (0,0): [09/30/2018 04:37:43.022 PM] Assembly-CSharp-Editor.dll compilation finished in 374ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:37:43.034 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:38:11.105 PM] Compiler cache size is now 18.41 MB
+ (0,0): [09/30/2018 04:51:09.945 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:51:09.955 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 04:51:09.965 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:51:09.978 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 04:51:11.600 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 04:51:11.634 PM] UniRx.Async.dll compilation finished in 1656ms  source files re-parsed: 88 metadata reloaded: 0
+ (0,0): [09/30/2018 04:51:11.764 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 04:51:11.793 PM] Unity.TextMeshPro.dll compilation finished in 1837ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 04:51:12.116 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:51:12.126 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 04:51:12.549 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 04:51:12.570 PM] Assembly-CSharp.dll compilation finished in 443ms  source files re-parsed: 86 metadata reloaded: 2
+ (0,0): [09/30/2018 04:53:18.053 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:53:18.066 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 04:53:18.280 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:53:18.292 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 04:53:18.567 PM] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [09/30/2018 04:53:18.571 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [09/30/2018 04:53:18.646 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
+ (0,0): [09/30/2018 04:53:18.660 PM] UnityEditor.StandardEvents.dll compilation finished in 93ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 04:53:18.671 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:53:20.111 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
+ (0,0): [09/30/2018 04:53:20.128 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 1556ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 04:53:20.139 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:53:20.933 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 04:53:20.973 PM] UniRx.Async.dll compilation finished in 2908ms  source files re-parsed: 88 metadata reloaded: 0
+ (0,0): [09/30/2018 04:53:22.222 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 04:53:22.333 PM] Unity.TextMeshPro.dll compilation finished in 4041ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 04:53:22.401 PM] UniRx.Async.Editor.dll compiling...
+ (0,0): [09/30/2018 04:53:22.518 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
+ (0,0): [09/30/2018 04:53:22.532 PM] UniRx.Async.Editor.dll compilation finished in 130ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:53:22.544 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:53:23.186 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [09/30/2018 04:53:24.101 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
+ (0,0): [09/30/2018 04:53:24.129 PM] Unity.TextMeshPro.Editor.dll compilation finished in 943ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:53:24.140 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 04:53:24.530 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 04:53:24.541 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 04:53:25.652 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 04:53:25.696 PM] Assembly-CSharp.dll compilation finished in 1155ms  source files re-parsed: 86 metadata reloaded: 4
+ (0,0): [09/30/2018 04:53:26.438 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/30/2018 04:53:27.064 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
+ (0,0): [09/30/2018 04:53:27.086 PM] Assembly-CSharp-Editor.dll compilation finished in 648ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 04:53:27.098 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:52:12.666 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:52:12.678 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 05:52:12.857 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:52:12.867 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 05:52:14.732 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 05:52:14.752 PM] Unity.TextMeshPro.dll compilation finished in 2073ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 05:52:14.870 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 05:52:14.886 PM] UniRx.Async.dll compilation finished in 2019ms  source files re-parsed: 88 metadata reloaded: 0
+ (0,0): [09/30/2018 05:52:15.243 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:52:15.255 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 05:52:15.796 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 05:52:15.812 PM] Assembly-CSharp.dll compilation finished in 557ms  source files re-parsed: 86 metadata reloaded: 2
+ (0,0): [09/30/2018 05:52:20.872 PM] Compiler cache size is now 18.40 MB
+ (0,0): [09/30/2018 05:54:01.696 PM] UniRx.Async.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:54:01.708 PM] UniRx.Async.dll compiling...
+ (0,0): [09/30/2018 05:54:01.862 PM] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:54:01.873 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/30/2018 05:54:01.882 PM] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [09/30/2018 05:54:01.989 PM] UnityEditor.StandardEvents.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UnityEditor.StandardEvents.dll
+ (0,0): [09/30/2018 05:54:02.004 PM] UnityEditor.StandardEvents.dll compilation finished in 122ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 05:54:02.017 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:54:02.046 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [09/30/2018 05:54:02.815 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.PackageManagerUI.Editor.dll
+ (0,0): [09/30/2018 05:54:02.829 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 782ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [09/30/2018 05:54:02.840 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:54:03.813 PM] UniRx.Async.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.dll
+ (0,0): [09/30/2018 05:54:03.833 PM] UniRx.Async.dll compilation finished in 2124ms  source files re-parsed: 88 metadata reloaded: 0
+ (0,0): [09/30/2018 05:54:04.346 PM] Unity.TextMeshPro.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.dll
+ (0,0): [09/30/2018 05:54:04.368 PM] Unity.TextMeshPro.dll compilation finished in 2495ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [09/30/2018 05:54:04.526 PM] UniRx.Async.Editor.dll compiling...
+ (0,0): [09/30/2018 05:54:04.603 PM] UniRx.Async.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/UniRx.Async.Editor.dll
+ (0,0): [09/30/2018 05:54:04.617 PM] UniRx.Async.Editor.dll compilation finished in 91ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 05:54:04.628 PM] UniRx.Async.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:54:04.825 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [09/30/2018 05:54:05.347 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Unity.TextMeshPro.Editor.dll
+ (0,0): [09/30/2018 05:54:05.365 PM] Unity.TextMeshPro.Editor.dll compilation finished in 540ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 05:54:05.376 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:54:05.742 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/30/2018 05:54:05.754 PM] Assembly-CSharp.dll compiling...
+ (0,0): [09/30/2018 05:54:06.377 PM] Assembly-CSharp.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp.dll
+ (0,0): [09/30/2018 05:54:06.397 PM] Assembly-CSharp.dll compilation finished in 643ms  source files re-parsed: 86 metadata reloaded: 4
+ (0,0): [09/30/2018 05:54:06.921 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/30/2018 05:54:07.264 PM] Assembly-CSharp-Editor.dll: emitting IL to : /Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Temp/Assembly-CSharp-Editor.dll
+ (0,0): [09/30/2018 05:54:07.284 PM] Assembly-CSharp-Editor.dll compilation finished in 362ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/30/2018 05:54:07.295 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/30/2018 05:57:33.584 PM] Compiler cache size is now 18.41 MB

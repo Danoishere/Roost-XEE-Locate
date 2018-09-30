@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Text finishTextSubtitle;
     [SerializeField]
-    private Sprite[] backgroundSprites;
+    private string[] backgroundSprites;
 
     private LocationManager locationManager;
     private bool isGameRunning = false;
@@ -27,7 +27,11 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        Application.targetFrameRate = 60;
+        Physics.autoSimulation = false;
+        Physics2D.autoSimulation = false;
+        Application.targetFrameRate = 120;
+        QualitySettings.antiAliasing = 0;
+        QualitySettings.vSyncCount = 0;
     }
 
     // Use this for initialization
@@ -36,7 +40,7 @@ public class GameManager : MonoBehaviour
         locationManager = GetComponent<LocationManager>();
         locationManager.OnFinishGame = OnFinishGame;
         var sprite = backgroundSprites.PickRandom();
-        background.GetComponent<Image>().sprite = sprite;
+        background.GetComponent<Image>().sprite = Resources.Load<Sprite>(sprite);
         background.SetActive(true);
         gameControlPanel.SetActive(true);
         gameReadyText.enabled = true;
@@ -97,13 +101,13 @@ public class GameManager : MonoBehaviour
         finishGamePanel.SetActive(false);
 
         var points = await locationManager.ValidateResult();
-        var pointsTimeSeconds = Mathf.RoundToInt((float)points*100f/(float)seconds);
+        var pointsTimeSeconds = Mathf.RoundToInt((float)points * 100f / (float)seconds);
 
         finishGamePanel.GetComponentInChildren<Text>().text = pointsTimeSeconds + " PUNKTE";
         finishGamePanel.SetActive(true);
         await UniTask.Delay(3000);
 
-        if(pointsTimeSeconds == 0)
+        if (pointsTimeSeconds == 0)
         {
             finishGamePanel.GetComponentInChildren<Text>().text = "VIEL GLÜCK BEIM NÄCHSTEN MAL";
             await UniTask.Delay(5000);
@@ -116,7 +120,7 @@ public class GameManager : MonoBehaviour
 
             await UniTask.Delay(6500);
         }
-        
+
         finishGamePanel.SetActive(false);
         await SceneManager.LoadSceneAsync(0);
     }
@@ -129,7 +133,7 @@ public class GameManager : MonoBehaviour
             ip = "http://160.85.154.112:8080";
         }
 
-        var request = new UnityWebRequest(ip + "/?points="+points,"GET");
+        var request = new UnityWebRequest(ip + "/?points=" + points, "GET");
         await request.SendWebRequest();
         Debug.Log("Could send points? " + request.responseCode);
     }

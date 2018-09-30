@@ -119,13 +119,42 @@
     <Compile Include="Assets\Scripts\LocationManager.cs" />
     <Compile Include="Assets\Scripts\LocationSocket.cs" />
     <Compile Include="Assets\Scripts\LocationStash.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Color Picker\CUIColorPicker.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\CustomizeGraphy.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\ForceSliderToMultipleOf3.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\ForceSliderToPowerOf2.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\UpdateTextWithSliderValue.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Advanced\AdvancedData.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\AudioGraph.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\AudioMonitor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\AudioText.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\FpsGraph.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\FpsManager.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\FpsMonitor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\FpsText.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Graph\Graph.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\GraphyDebugger.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\GraphyManager.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\RamGraph.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\RamManager.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\RamMonitor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\RamText.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Shader\ShaderGraph.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\UI\IModifiableState.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\UI\IMovable.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\ExtensionMethods.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\NumString.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\Singleton.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Font\Roboto\LICENSE.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
@@ -140,6 +169,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
@@ -158,12 +188,14 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Shaders\Color.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Shaders\GraphStandard.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
@@ -178,12 +210,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Shaders\GraphMobile.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -193,29 +220,8 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.IncludePaths">
-      <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
@@ -384,9 +390,6 @@
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XRModule">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Locator">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll</HintPath>

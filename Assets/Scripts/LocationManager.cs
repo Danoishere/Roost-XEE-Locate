@@ -44,7 +44,7 @@ public class LocationManager : MonoBehaviour
         foreach (var activeLocation in activeLocations)
         {
             var locationLabel = Instantiate(LocationLabelPrefab, LocationStash.transform) as GameObject;
-            locationLabel.GetComponentInChildren<Text>().text = activeLocation.Name;
+            locationLabel.GetComponentInChildren<Text>().text = activeLocation.Name.ToUpper();
             locationLabel.GetComponent<LocationLabel>().IsAssigned = false;
             locationLabel.GetComponent<LocationLabel>().Location = activeLocation;
             locationLabel.transform.SetParent(LocationStash.transform);
@@ -85,7 +85,7 @@ public class LocationManager : MonoBehaviour
             var expectedLocationId = activeLocationLabel.Location.Socket.GetInstanceID();
             var actualLocationId = activeLocationLabel.CurrentSocket.GetInstanceID();
 
-            if(expectedLocationId == actualLocationId)
+            if (expectedLocationId == actualLocationId)
             {
                 totalPoints += 100;
                 activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.green;

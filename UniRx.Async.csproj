@@ -148,9 +148,6 @@
     <Compile Include="Assets\Plugins\UniRx\Scripts\Async\UnityAsyncExtensions.Jobs.cs" />
     <Compile Include="Assets\Plugins\UniRx\Scripts\Async\UnityAsyncExtensions.uGUI.cs" />
     <Compile Include="Assets\Plugins\UniRx\Scripts\Async\UnityEqualityComparer.cs" />
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.ARModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>
@@ -319,9 +316,6 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.XRModule">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Locator">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll</HintPath>
     </Reference>
@@ -382,20 +376,11 @@
     <Reference Include="DOTweenEditor">
       <HintPath>/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Libraries/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Analytics">
       <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.core@3.0.0-preview/CoreRP/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>/Users/dano/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>

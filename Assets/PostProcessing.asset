@@ -29,7 +29,7 @@ MonoBehaviour:
     m_Settings:
       excludeSkybox: 1
   antialiasing:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       method: 0
       fxaaSettings:
@@ -100,10 +100,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.42
+        intensity: 0.61
         threshold: 1.51
-        softKnee: 0.686
-        radius: 4
+        softKnee: 0.632
+        radius: 3.81
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}

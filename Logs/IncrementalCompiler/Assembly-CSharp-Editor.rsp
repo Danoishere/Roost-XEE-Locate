@@ -9,10 +9,8 @@
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll"
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
--r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/UniRx.Async.dll"
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/UniRx.Async.Editor.dll"
--r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 -r:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
 -r:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
@@ -363,4 +361,6 @@
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/PostProcessing/Editor/Utils/EditorResources.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/PostProcessing/Editor/Utils/FxStyles.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/PostProcessing/Editor/Utils/ReflectionUtils.cs"
+-i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyDebuggerEditor.cs"
+-i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyManagerEditor.cs"
 -v:0

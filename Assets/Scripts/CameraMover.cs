@@ -5,10 +5,11 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
-public class CameraMover : MonoBehaviour {
+public class CameraMover : MonoBehaviour
+{
 
     public Camera Camera { get; set; }
-    public Vector3  InitialRotation  { get; set; }
+    public Vector3 InitialRotation { get; set; }
     public Vector2 DragStartPosition { get; set; }
     public Vector2 LastDragPosition { get; set; }
     public bool IsDragging { get; set; } = false;
@@ -16,17 +17,19 @@ public class CameraMover : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         Camera = Camera.allCameras.First();
         InitialRotation = Camera.transform.rotation.eulerAngles;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-        if((Input.touchCount > 0 || Input.GetMouseButton(0)) && !IsDragging)
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if ((Input.touchCount > 0 || Input.GetMouseButton(0)) && !IsDragging)
         {
-            if(CurrentTweener != null && CurrentTweener.active)
+            if (CurrentTweener != null && CurrentTweener.active)
             {
                 CurrentTweener.Kill();
             }
@@ -38,7 +41,7 @@ public class CameraMover : MonoBehaviour {
         if ((Input.touchCount == 0 && !Input.GetMouseButton(0)) && IsDragging)
         {
             IsDragging = false;
-            CurrentTweener = Camera.transform.DORotate(InitialRotation,1);
+            CurrentTweener = Camera.transform.DORotate(InitialRotation, 1);
         }
 
 
@@ -49,7 +52,7 @@ public class CameraMover : MonoBehaviour {
             dragDelta = dragDelta / 200.0f;
 
 
-            Camera.transform.Rotate(-dragDelta.y, dragDelta.x,0,Space.Self);
+            Camera.transform.Rotate(-dragDelta.y, dragDelta.x, 0, Space.Self);
 
             LastDragPosition = currentDragPosition;
         }

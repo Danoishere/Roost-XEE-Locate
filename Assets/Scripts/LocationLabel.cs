@@ -11,8 +11,8 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
     public bool IsDragging { get; set; }
     public int OriginalIndex { get; set; }
     public Transform OriginalParent { get; set; }
-    public Vector3 OriginalPosition { get; set; }
-    public Vector3 DragStartOffset { get; set; }
+    public Vector2 OriginalPosition { get; set; }
+    public Vector2 DragStartOffset { get; set; }
     public bool IsOverSocket { get; set; }
     public Camera Camera { get; set; }
     public Canvas Canvas { get; set; }
@@ -36,15 +36,24 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
             IsDragging = true;
         }
 
+        Vector2 posTouch1;
+        if (Input.touchCount > 0)
+        {
+            posTouch1 = Input.touches[0].position;
+        }
+        else
+        {
+            posTouch1 = Input.mousePosition;
+        }
+
         // Move panel on position it got grabbed originally
-       
-        var ray = Camera.ScreenPointToRay(Input.mousePosition);
+        var ray = Camera.ScreenPointToRay(posTouch1);
 
         IsOverSocket = false;
         CurrentSocket = null;
 
         RaycastHit hit;
-        
+
         var didHitSomething = Physics.Raycast(ray, out hit);
         if (didHitSomething)
         {
@@ -61,7 +70,16 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         if (IsDragging)
         {
-            transform.position = Input.mousePosition + DragStartOffset;
+            Vector2 posTouch1;
+            if (Input.touchCount > 0)
+            {
+                posTouch1 = Input.touches[0].position;
+            }
+            else
+            {
+                posTouch1 = Input.mousePosition;
+            }
+            transform.position = posTouch1 + DragStartOffset;
         }
     }
 
