@@ -6,6 +6,18 @@ using UnityEngine.EventSystems;
 
 public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
 {
+    [SerializeField]
+    private RectTransform selector;
+
+    [SerializeField]
+    public Material Assigned;
+
+    [SerializeField]
+    public Material Correct;
+
+    [SerializeField]
+    public Material NotCorrect;
+
     public Location Location { get; set; }
     public bool IsAssigned { get; set; }
     public bool IsDragging { get; set; }
@@ -17,6 +29,9 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
     public Camera Camera { get; set; }
     public Canvas Canvas { get; set; }
     public LocationSocket CurrentSocket { get; set; }
+
+
+    public static bool DoNotPanAndZoom { get; set; } = false;
 
     public void Start()
     {
@@ -34,6 +49,7 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
             DragStartOffset = transform.position - Input.mousePosition;
             transform.SetParent(Canvas.transform);
             IsDragging = true;
+            DoNotPanAndZoom = true;
         }
 
         Vector2 posTouch1;
@@ -47,10 +63,9 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
         }
 
         // Move panel on position it got grabbed originally
-        var ray = Camera.ScreenPointToRay(posTouch1);
+        var ray = Camera.ScreenPointToRay(selector.position);
 
         IsOverSocket = false;
-        CurrentSocket = null;
 
         RaycastHit hit;
 
@@ -61,8 +76,20 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
             if (locationSocket != null)
             {
                 IsOverSocket = true;
+                if (CurrentSocket != null && CurrentSocket.GetInstanceID() != locationSocket.GetInstanceID())
+                {
+                    CurrentSocket.IsSelected = false;
+                }
+
                 CurrentSocket = locationSocket;
+                CurrentSocket.IsSelected = true;
             }
+        }
+        else if (CurrentSocket != null)
+        {
+
+            CurrentSocket.IsSelected = false;
+            CurrentSocket = null;
         }
     }
 
@@ -94,5 +121,6 @@ public class LocationLabel : MonoBehaviour, IDragHandler, IEndDragHandler
         transform.localPosition = OriginalPosition;
         transform.SetSiblingIndex(OriginalIndex);
         IsDragging = false;
+        DoNotPanAndZoom = false;
     }
 }

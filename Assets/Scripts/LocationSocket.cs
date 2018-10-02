@@ -5,11 +5,43 @@ using UnityEngine;
 
 public class LocationSocket : MonoBehaviour
 {
+    public bool IsSelected { get; set; } = false;
+
     public LocationLabel AssignedLocationLabel { get; set; }
+    public Material SelectedMaterial;
+    private Material defaultMaterial;
+    private Material material;
+    private bool isColoredAsSelected = false;
+
+
+    void Start()
+    {
+        defaultMaterial = GetComponent<MeshRenderer>().material;
+        GetComponentInChildren<Canvas>().gameObject.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (IsSelected && !isColoredAsSelected)
+        {
+            Debug.Log("Color to selected");
+            isColoredAsSelected = true;
+            material = GetComponent<MeshRenderer>().material;
+            GetComponent<MeshRenderer>().material = SelectedMaterial;
+        }
+        else if (!IsSelected && isColoredAsSelected)
+        {
+            Debug.Log("Color to " + material.name);
+            isColoredAsSelected = false;
+            GetComponent<MeshRenderer>().material = material;
+        }
+    }
 
     // Use this for initialization
     public void AssingLocationLabel(LocationLabel locationLabel)
     {
+        IsSelected = false;
+
         locationLabel.gameObject.SetActive(false);
         if (AssignedLocationLabel != null)
         {
@@ -20,10 +52,7 @@ public class LocationSocket : MonoBehaviour
         AssignedLocationLabel = locationLabel;
         AssignedLocationLabel.IsAssigned = true;
 
-        GetComponent<MeshRenderer>().material.color = Color.blue;
-        GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.blue);
-
-        var originalScale = transform.localScale.x;
-        transform.DOScale(5, 0.5f).OnComplete(() => transform.DOScale(originalScale, 0.5f));
+        material = locationLabel.Assigned;
+        GetComponent<MeshRenderer>().material = locationLabel.Assigned;
     }
 }

@@ -8,6 +8,7 @@ ModelImporter:
     2100000: unnamed
     2100002: M_Socket
     2100004: M_Socket_Border
+    2100006: M_Hidden
     2300000: //RootNode
     3300000: //RootNode
     4300000: Icosphere

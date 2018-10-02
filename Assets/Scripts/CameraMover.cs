@@ -10,11 +10,13 @@ public class CameraMover : MonoBehaviour
 
     public Camera Camera { get; set; }
     public Vector3 InitialRotation { get; set; }
+
+    /**
     public Vector2 DragStartPosition { get; set; }
     public Vector2 LastDragPosition { get; set; }
     public bool IsDragging { get; set; } = false;
     public Tweener CurrentTweener { get; set; }
-
+    **/
 
     // Use this for initialization
     void Start()
@@ -24,9 +26,22 @@ public class CameraMover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
 
+        Plane plane = new Plane(Vector3.up, 0);
+
+
+        if (Input.touchCount == 1)
+        {
+
+        }
+
+
+        float pinchAmount = 0;
+        Quaternion desiredRotation = transform.rotation;
+
+        /**
         if ((Input.touchCount > 0 || Input.GetMouseButton(0)) && !IsDragging)
         {
             if (CurrentTweener != null && CurrentTweener.active)
@@ -55,6 +70,6 @@ public class CameraMover : MonoBehaviour
             Camera.transform.Rotate(-dragDelta.y, dragDelta.x, 0, Space.Self);
 
             LastDragPosition = currentDragPosition;
-        }
+        }**/
     }
 }

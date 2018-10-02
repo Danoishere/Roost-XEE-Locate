@@ -18,8 +18,6 @@ public class GameManager : MonoBehaviour
     private Text timeCounter;
     [SerializeField]
     private Text finishTextSubtitle;
-    [SerializeField]
-    private string[] backgroundSprites;
 
     private LocationManager locationManager;
     private bool isGameRunning = false;
@@ -39,11 +37,10 @@ public class GameManager : MonoBehaviour
     {
         locationManager = GetComponent<LocationManager>();
         locationManager.OnFinishGame = OnFinishGame;
-        var sprite = backgroundSprites.PickRandom();
-        background.GetComponent<Image>().sprite = Resources.Load<Sprite>(sprite);
+        timeCounter.gameObject.SetActive(true);
         background.SetActive(true);
         gameControlPanel.SetActive(true);
-        gameReadyText.enabled = true;
+        gameReadyText.gameObject.SetActive(true);
         finishGamePanel.SetActive(false);
     }
 

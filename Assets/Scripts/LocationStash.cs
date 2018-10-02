@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 public class LocationStash : MonoBehaviour
 {
-
-    public VerticalLayoutGroup VerticalLayoutGroup { get; set; }
+    private GridLayoutGroup gridLayoutGroup { get; set; }
 
     // Use this for initialization
     public void EnableLayoutGrouping(bool enabled)
     {
-        VerticalLayoutGroup = GetComponent<VerticalLayoutGroup>();
-        VerticalLayoutGroup.enabled = enabled;
+        gridLayoutGroup = GetComponent<GridLayoutGroup>();
+        gridLayoutGroup.enabled = enabled;
     }
 }

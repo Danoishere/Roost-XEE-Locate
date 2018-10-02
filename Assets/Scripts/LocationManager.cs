@@ -12,6 +12,7 @@ public struct Location
 {
     public string Name;
     public LocationSocket Socket;
+    public string[] Excludes;
 }
 
 public class LocationManager : MonoBehaviour
@@ -76,7 +77,7 @@ public class LocationManager : MonoBehaviour
     {
         int delayMs = 1000;
 
-        await UniTask.Delay(2000);
+        await UniTask.Delay(1500);
 
         var totalPoints = 0;
 
@@ -88,15 +89,23 @@ public class LocationManager : MonoBehaviour
             if (expectedLocationId == actualLocationId)
             {
                 totalPoints += 100;
-                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.green;
+                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material = activeLocationLabel.Correct;
             }
             else
             {
-                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material.color = Color.red;
+                activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material = activeLocationLabel.NotCorrect;
             }
+
+
+            var correctLabel = ActiveLocationLabels.FirstOrDefault(l => l.Location.Socket == activeLocationLabel.CurrentSocket);
+
+            activeLocationLabel.CurrentSocket.GetComponentInChildren<Text>(true).text = correctLabel.Location.Name;
+            activeLocationLabel.CurrentSocket.GetComponentInChildren<Canvas>(true).gameObject.SetActive(true);
+
             await UniTask.Delay(delayMs);
         }
 
+        await UniTask.Delay(1000);
         return totalPoints;
     }
 
