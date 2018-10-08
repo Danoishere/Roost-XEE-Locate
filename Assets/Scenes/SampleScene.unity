@@ -2584,13 +2584,21 @@ MonoBehaviour:
   Locations:
   - Name: Lindli
     Socket: {fileID: 1814390816}
-    Excludes: []
+    Excludes:
+    - Munot
+    - Rhybadi
+    - Windegg
+    - Frohnwagplatz
   - Name: "S\xE4ckelamtsh\xFCsli"
     Socket: {fileID: 598749592}
-    Excludes: []
+    Excludes:
+    - KSS
   - Name: Munot
     Socket: {fileID: 1652079385}
-    Excludes: []
+    Excludes:
+    - Lindli
+    - Rhybadi
+    - Windegg
   - Name: Rheinfall
     Socket: {fileID: 1317991531}
     Excludes: []
@@ -2599,28 +2607,41 @@ MonoBehaviour:
     Excludes: []
   - Name: Rhybadi
     Socket: {fileID: 1689910438}
-    Excludes: []
+    Excludes:
+    - Munot
+    - Lindli
+    - Windegg
+    - Flurlinger Badi
   - Name: Schaaren
     Socket: {fileID: 2074008760}
     Excludes: []
   - Name: Windegg
     Socket: {fileID: 1772975960}
-    Excludes: []
+    Excludes:
+    - Lindli
+    - Rhybadi
+    - Munot
   - Name: Frohnwagplatz
     Socket: {fileID: 1552386887}
-    Excludes: []
+    Excludes:
+    - Munot
+    - KSS
+    - Lindli
   - Name: Hasenbuck
     Socket: {fileID: 531502856}
     Excludes: []
   - Name: KSS
     Socket: {fileID: 1251200315}
-    Excludes: []
+    Excludes:
+    - "S\xE4ckelamtsh\xFCsli"
+    - Munot
   - Name: Jakobsfelsen
     Socket: {fileID: 1413853213}
     Excludes: []
   - Name: Flurlinger Badi
     Socket: {fileID: 310979190}
-    Excludes: []
+    Excludes:
+    - Rhybadi
   - Name: Griesbach
     Socket: {fileID: 1604232802}
     Excludes: []

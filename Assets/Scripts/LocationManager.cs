@@ -39,7 +39,33 @@ public class LocationManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        var activeLocations = Locations.Shuffle().Take(ActivePerRound).ToList();
+
+        var activeLocations = new List<Location>();
+        while (activeLocations.Count < ActivePerRound)
+        {
+            var nextLocation = Locations.PickRandom();
+            if (!activeLocations.Contains(nextLocation))
+            {
+                var isExcludedByAddedLocation = false;
+                foreach (var addedLocation in activeLocations)
+                {
+                    foreach (var excludedLocation in addedLocation.Excludes)
+                    {
+                        if (nextLocation.Name == excludedLocation)
+                        {
+                            isExcludedByAddedLocation = true;
+                        }
+                    }
+                }
+
+                if (!isExcludedByAddedLocation)
+                {
+                    activeLocations.Add(nextLocation);
+                }
+            }
+        }
+
+        //var activeLocations = Locations.Shuffle().Take(ActivePerRound).ToList();
         var inactiveLocations = Locations.Except(activeLocations);
 
         foreach (var activeLocation in activeLocations)
