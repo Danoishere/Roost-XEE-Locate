@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{B7178602-1EBB-FC47-48B4-D3BAC7158B0C}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LocationManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScreensaverManager.cs">
     <Files>
       <File FileName="Assets/Scripts/LocationSocket.cs" Line="59" Column="1" />
-      <File FileName="Assets/Scripts/LocationManager.cs" Line="14" Column="34" />
+      <File FileName="Assets/Scripts/LocationManager.cs" Line="61" Column="35" />
       <File FileName="Assets/Scripts/Extensions/EnumerableExtension.cs" Line="5" Column="1" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="40" Column="48" />
       <File FileName="Assets/Plugins/UniRx/Scripts/Async/UniTask.Delay.cs" Line="36" Column="31" />
@@ -12,6 +12,7 @@
       <File FileName="Assets/Shaders/Color.shader" Line="102" Column="2" />
       <File FileName="Assets/Scripts/LocationLabel.cs" Line="117" Column="38" />
       <File FileName="Assets/Scripts/CameraHandler.cs" Line="105" Column="37" />
+      <File FileName="Assets/Scripts/ScreensaverManager.cs" Line="11" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

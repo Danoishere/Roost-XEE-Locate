@@ -31,6 +31,8 @@ public class LocationManager : MonoBehaviour
 
     public List<LocationLabel> ActiveLocationLabels { get; set; } = new List<LocationLabel>();
 
+    private AudioSource audioSource;
+
     public LocationManager()
     {
         Instance = this;
@@ -39,7 +41,7 @@ public class LocationManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
         var activeLocations = new List<Location>();
         while (activeLocations.Count < ActivePerRound)
         {
@@ -114,6 +116,9 @@ public class LocationManager : MonoBehaviour
 
             if (expectedLocationId == actualLocationId)
             {
+                audioSource.pitch = 1f;
+                audioSource.Play();
+
                 totalPoints += 100;
                 activeLocationLabel.CurrentSocket.GetComponent<MeshRenderer>().material = activeLocationLabel.Correct;
             }

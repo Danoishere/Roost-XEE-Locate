@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private Text finishTextSubtitle;
 
     private LocationManager locationManager;
+
     private bool isGameRunning = false;
     private float seconds = 0;
 
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         locationManager = GetComponent<LocationManager>();
         locationManager.OnFinishGame = OnFinishGame;
         timeCounter.gameObject.SetActive(true);
