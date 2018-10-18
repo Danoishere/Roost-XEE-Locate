@@ -597,6 +597,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1685745001}
   - {fileID: 1079044071}
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -657,7 +658,7 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.05
+      value: -0.014
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -682,7 +683,7 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.14258063
+      value: 0.143
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -1095,7 +1096,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.042972576, y: 0.855326, z: -0.5112754, w: 0.07188994}
-  m_LocalPosition: {x: -1.08, y: 6.19, z: 4.2}
+  m_LocalPosition: {x: -1.6, y: 6.8, z: 4.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1154,7 +1155,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000034332, y: -18}
-  m_SizeDelta: {x: 3864.9006, y: 847.6821}
+  m_SizeDelta: {x: 3085.5469, y: 849.6094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &570490550
 MonoBehaviour:
@@ -1201,11 +1202,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WO LIEGEN DIE LIEBLINGSORTE
+  m_Text: 'Wo liegen die Lieblingsorte
 
-    DER SCHAFFHAUSERINNEN
+    der Schaffhauserinnen
 
-    UND SCHAFFHAUSER?'
+    und Schaffhauser?'
 --- !u!222 &570490552
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1320,7 +1321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9673333, b: 0.755, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1945,12 +1946,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 220553913}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100.000015, y: 100.00003}
+  m_SizeDelta: {x: 400, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1079044072
 MonoBehaviour:
@@ -1971,7 +1972,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 137895c5ba4024a7abff83f090bef4f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26d41e0f4d524426e8b88e99c3938cbf, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2262,12 +2263,12 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.005
+      value: 0.014
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.05
+      value: -0.002
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -2292,7 +2293,7 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.14258063
+      value: 0.143
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -2789,7 +2790,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -8.9}
-  m_SizeDelta: {x: 609.27155, y: 249.00662}
+  m_SizeDelta: {x: 610.5469, y: 249.60938}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444511865
 MonoBehaviour:
@@ -2816,7 +2817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.8666667, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2908,6 +2909,7 @@ MonoBehaviour:
     - Lindli
     - Windegg
     - Flurlinger Badi
+    - Frohnwagplatz
   - Name: Schaaren
     Socket: {fileID: 2074008760}
     Excludes: []
@@ -2917,12 +2919,15 @@ MonoBehaviour:
     - Lindli
     - Rhybadi
     - Munot
+    - Frohnwagplatz
   - Name: Frohnwagplatz
     Socket: {fileID: 1552386887}
     Excludes:
     - Munot
     - KSS
     - Lindli
+    - Rhybadi
+    - Windegg
   - Name: Hasenbuck
     Socket: {fileID: 531502856}
     Excludes: []
@@ -2930,6 +2935,7 @@ MonoBehaviour:
     Socket: {fileID: 1251200315}
     Excludes:
     - "S\xE4ckelamtsh\xFCsli"
+    - Frohnwagplatz
     - Munot
   - Name: Jakobsfelsen
     Socket: {fileID: 1413853213}
@@ -3558,6 +3564,75 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1652079383}
   m_Script: {fileID: 11500000, guid: daf42ce81e5eb4d7bad9ed5cabce9e66, type: 3}
+--- !u!1 &1685745000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685745001}
+  - component: {fileID: 1685745003}
+  - component: {fileID: 1685745002}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1685745001
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685745000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 220553913}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1685745002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685745000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8666667, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1685745003
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685745000}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1689910436
 Prefab:
   m_ObjectHideFlags: 0
@@ -4562,8 +4637,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 220553912}
-  ActivateScreensaverAfterSeconds: 30
-  ChangeSpriteEverySeconds: 17
+  image: {fileID: 1079044072}
+  ActivateScreensaverAfterSeconds: 20
+  ChangeSpriteEverySeconds: 10
   SpriteNames:
   - Lindli
   - Munot

@@ -8,6 +8,7 @@ public class ScreensaverManager : MonoBehaviour
 {
 
     public Canvas Canvas;
+    public Image image;
     public float ActivateScreensaverAfterSeconds = 15;
     public float ChangeSpriteEverySeconds = 15;
     public string[] SpriteNames;
@@ -17,13 +18,11 @@ public class ScreensaverManager : MonoBehaviour
     private float secondsSinceLastSpriteChange = 0.0f;
     private int currentSpriteIndex = 0;
 
-    private Image image;
 
     // Use this for initialization
     void Start()
     {
         Canvas.gameObject.SetActive(false);
-        image = Canvas.GetComponentInChildren<Image>();
     }
 
     // Update is called once per frame
