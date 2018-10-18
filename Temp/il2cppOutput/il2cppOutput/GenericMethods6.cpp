@@ -52,6 +52,16 @@ struct VirtActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 template <typename T1>
 struct InterfaceActionInvoker1
 {
@@ -61,16 +71,6 @@ struct InterfaceActionInvoker1
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
-	}
-};
-struct InterfaceActionInvoker0
-{
-	typedef void (*Action)(void*, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		((Action)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
 template <typename R, typename T1>
@@ -707,8 +707,6 @@ struct CommandBuffer_t2206337031;
 struct RenderTargetIdentifierU5BU5D_t2742279485;
 // UnityEngine.ResourceRequest
 struct ResourceRequest_t3109103591;
-// UnityEngine.Sprite
-struct Sprite_t280657092;
 // UnityEngine.Texture2D
 struct Texture2D_t3840446185;
 // UnityEngine.Transform
@@ -806,8 +804,6 @@ extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDateT
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDebugCondition_t2532995192_m2842153856_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDecimal_t2948259380_m1768711179_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDictionaryEntry_t3123975638_m1693155781_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDouble_t594665363_m293013457_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisEntry_t1462643140_m3999146107_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisEntry_t1472554943_m3517137150_RuntimeMethod_var;
@@ -913,7 +909,6 @@ extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSlot_
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSlot_t4046096757_m3350372237_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSpinLock_t508764825_m3572884832_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSpriteData_t3048397587_m115861823_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSslCipherSuite_t3309122048_m3223465059_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSslStatus_t191981556_m3434633658_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisState_t1792539347_m2676812677_RuntimeMethod_var;
@@ -934,12 +929,8 @@ extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTimeS
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTimeSpan_t881159249_m3641977509_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTouchScreenKeyboardType_t1530597702_m1814313867_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTouch_t1921856868_m1575206838_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTypeCode_t2987224087_m4252651165_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisType_t1152881528_m2039773256_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_RuntimeMethod_var;
-extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUInt16_t2177724958_m170984066_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUInt32_t2560061978_m4042992197_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUInt64_t4134040092_m367691764_RuntimeMethod_var;
@@ -1059,12 +1050,15 @@ extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisXmlSc
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisXmlTypeCode_t2623622950_m3393562866_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_Tisbucket_t758131704_m1787544783_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_Tisunitytls_ciphersuite_t1735159395_m1702130907_RuntimeMethod_var;
+extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m599998781_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetEntityAsyncU3Ed__15_t1599719825_m489318611_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetNonFileStreamAsyncU3Ed__5_t2377854191_m2777383802_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__25_t257820306_m914106883_RuntimeMethod_var;
+extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CReadAsyncInternalU3Ed__34_t2482231463_m3472039230_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__23_t3218468820_m1026746075_RuntimeMethod_var;
+extern const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_RuntimeMethod_var;
 extern const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisRuntimeObject_m2320132648_RuntimeMethod_var;
 extern const RuntimeMethod* BaseInvokableCall_ThrowOnInvalidArg_TisBoolean_t97287965_m3019671566_RuntimeMethod_var;
 extern const RuntimeMethod* BaseInvokableCall_ThrowOnInvalidArg_TisColor_t2555686324_m2926971203_RuntimeMethod_var;
@@ -1115,8 +1109,6 @@ extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDateTime_t3
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDebugCondition_t2532995192_m2842153856_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDecimal_t2948259380_m1768711179_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDictionaryEntry_t3123975638_m1693155781_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDouble_t594665363_m293013457_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisEntry_t1462643140_m3999146107_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisEntry_t1472554943_m3517137150_MetadataUsageId;
@@ -1222,7 +1214,6 @@ extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSlot_t26350
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSlot_t4046096757_m3350372237_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSpinLock_t508764825_m3572884832_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSpriteData_t3048397587_m115861823_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSslCipherSuite_t3309122048_m3223465059_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSslStatus_t191981556_m3434633658_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisState_t1792539347_m2676812677_MetadataUsageId;
@@ -1243,12 +1234,8 @@ extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTimeSpanTok
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTimeSpan_t881159249_m3641977509_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTouchScreenKeyboardType_t1530597702_m1814313867_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTouch_t1921856868_m1575206838_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTypeCode_t2987224087_m4252651165_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisType_t1152881528_m2039773256_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_MetadataUsageId;
-extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUInt16_t2177724958_m170984066_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUInt32_t2560061978_m4042992197_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUInt64_t4134040092_m367691764_MetadataUsageId;
@@ -1382,12 +1369,15 @@ extern const uint32_t AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfigu
 extern const uint32_t AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t555647845_TisU3CWriteAsyncInternalU3Ed__37_t1756569490_m1039663495_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisRuntimeObject_TisRuntimeObject_m2409927442_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisRuntimeObject_TisRuntimeObject_m808550706_MetadataUsageId;
+extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m599998781_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CGetEntityAsyncU3Ed__15_t1599719825_m489318611_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CGetNonFileStreamAsyncU3Ed__5_t2377854191_m2777383802_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__25_t257820306_m914106883_MetadataUsageId;
+extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CReadAsyncInternalU3Ed__34_t2482231463_m3472039230_MetadataUsageId;
 extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__23_t3218468820_m1026746075_MetadataUsageId;
+extern const uint32_t AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_MetadataUsageId;
 extern const uint32_t AsyncUniTaskMethodBuilder_1_AwaitOnCompleted_TisRuntimeObject_TisRuntimeObject_m2723286317_MetadataUsageId;
 extern const uint32_t AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t1142731213_TisRuntimeObject_m2183524718_MetadataUsageId;
 extern const uint32_t AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t1215989_TisRuntimeObject_m2218337804_MetadataUsageId;
@@ -4671,10 +4661,12 @@ struct  Location_t1808107784
 public:
 	// System.String Location::Name
 	String_t* ___Name_0;
+	// System.String Location::DisplayName
+	String_t* ___DisplayName_1;
 	// LocationSocket Location::Socket
-	LocationSocket_t662685003 * ___Socket_1;
+	LocationSocket_t662685003 * ___Socket_2;
 	// System.String[] Location::Excludes
-	StringU5BU5D_t1281789340* ___Excludes_2;
+	StringU5BU5D_t1281789340* ___Excludes_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Name_0)); }
@@ -4686,22 +4678,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Name_0), value);
 	}
 
-	inline static int32_t get_offset_of_Socket_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_1)); }
-	inline LocationSocket_t662685003 * get_Socket_1() const { return ___Socket_1; }
-	inline LocationSocket_t662685003 ** get_address_of_Socket_1() { return &___Socket_1; }
-	inline void set_Socket_1(LocationSocket_t662685003 * value)
+	inline static int32_t get_offset_of_DisplayName_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___DisplayName_1)); }
+	inline String_t* get_DisplayName_1() const { return ___DisplayName_1; }
+	inline String_t** get_address_of_DisplayName_1() { return &___DisplayName_1; }
+	inline void set_DisplayName_1(String_t* value)
 	{
-		___Socket_1 = value;
-		Il2CppCodeGenWriteBarrier((&___Socket_1), value);
+		___DisplayName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DisplayName_1), value);
 	}
 
-	inline static int32_t get_offset_of_Excludes_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_2)); }
-	inline StringU5BU5D_t1281789340* get_Excludes_2() const { return ___Excludes_2; }
-	inline StringU5BU5D_t1281789340** get_address_of_Excludes_2() { return &___Excludes_2; }
-	inline void set_Excludes_2(StringU5BU5D_t1281789340* value)
+	inline static int32_t get_offset_of_Socket_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_2)); }
+	inline LocationSocket_t662685003 * get_Socket_2() const { return ___Socket_2; }
+	inline LocationSocket_t662685003 ** get_address_of_Socket_2() { return &___Socket_2; }
+	inline void set_Socket_2(LocationSocket_t662685003 * value)
 	{
-		___Excludes_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Excludes_2), value);
+		___Socket_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Socket_2), value);
+	}
+
+	inline static int32_t get_offset_of_Excludes_3() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_3)); }
+	inline StringU5BU5D_t1281789340* get_Excludes_3() const { return ___Excludes_3; }
+	inline StringU5BU5D_t1281789340** get_address_of_Excludes_3() { return &___Excludes_3; }
+	inline void set_Excludes_3(StringU5BU5D_t1281789340* value)
+	{
+		___Excludes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Excludes_3), value);
 	}
 };
 
@@ -4712,15 +4713,17 @@ public:
 struct Location_t1808107784_marshaled_pinvoke
 {
 	char* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	char** ___Excludes_2;
+	char* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	char** ___Excludes_3;
 };
 // Native definition for COM marshalling of Location
 struct Location_t1808107784_marshaled_com
 {
 	Il2CppChar* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	Il2CppChar** ___Excludes_2;
+	Il2CppChar* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	Il2CppChar** ___Excludes_3;
 };
 #endif // LOCATION_T1808107784_H
 #ifndef XPATHNODE_T2208072876_H
@@ -13169,72 +13172,6 @@ struct GcScoreData_t2125309831_marshaled_com
 	int32_t ___m_Rank_6;
 };
 #endif // GCSCOREDATA_T2125309831_H
-#ifndef SPRITESTATE_T1362986479_H
-#define SPRITESTATE_T1362986479_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.UI.SpriteState
-struct  SpriteState_t1362986479 
-{
-public:
-	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_HighlightedSprite
-	Sprite_t280657092 * ___m_HighlightedSprite_0;
-	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_PressedSprite
-	Sprite_t280657092 * ___m_PressedSprite_1;
-	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_DisabledSprite
-	Sprite_t280657092 * ___m_DisabledSprite_2;
-
-public:
-	inline static int32_t get_offset_of_m_HighlightedSprite_0() { return static_cast<int32_t>(offsetof(SpriteState_t1362986479, ___m_HighlightedSprite_0)); }
-	inline Sprite_t280657092 * get_m_HighlightedSprite_0() const { return ___m_HighlightedSprite_0; }
-	inline Sprite_t280657092 ** get_address_of_m_HighlightedSprite_0() { return &___m_HighlightedSprite_0; }
-	inline void set_m_HighlightedSprite_0(Sprite_t280657092 * value)
-	{
-		___m_HighlightedSprite_0 = value;
-		Il2CppCodeGenWriteBarrier((&___m_HighlightedSprite_0), value);
-	}
-
-	inline static int32_t get_offset_of_m_PressedSprite_1() { return static_cast<int32_t>(offsetof(SpriteState_t1362986479, ___m_PressedSprite_1)); }
-	inline Sprite_t280657092 * get_m_PressedSprite_1() const { return ___m_PressedSprite_1; }
-	inline Sprite_t280657092 ** get_address_of_m_PressedSprite_1() { return &___m_PressedSprite_1; }
-	inline void set_m_PressedSprite_1(Sprite_t280657092 * value)
-	{
-		___m_PressedSprite_1 = value;
-		Il2CppCodeGenWriteBarrier((&___m_PressedSprite_1), value);
-	}
-
-	inline static int32_t get_offset_of_m_DisabledSprite_2() { return static_cast<int32_t>(offsetof(SpriteState_t1362986479, ___m_DisabledSprite_2)); }
-	inline Sprite_t280657092 * get_m_DisabledSprite_2() const { return ___m_DisabledSprite_2; }
-	inline Sprite_t280657092 ** get_address_of_m_DisabledSprite_2() { return &___m_DisabledSprite_2; }
-	inline void set_m_DisabledSprite_2(Sprite_t280657092 * value)
-	{
-		___m_DisabledSprite_2 = value;
-		Il2CppCodeGenWriteBarrier((&___m_DisabledSprite_2), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of UnityEngine.UI.SpriteState
-struct SpriteState_t1362986479_marshaled_pinvoke
-{
-	Sprite_t280657092 * ___m_HighlightedSprite_0;
-	Sprite_t280657092 * ___m_PressedSprite_1;
-	Sprite_t280657092 * ___m_DisabledSprite_2;
-};
-// Native definition for COM marshalling of UnityEngine.UI.SpriteState
-struct SpriteState_t1362986479_marshaled_com
-{
-	Sprite_t280657092 * ___m_HighlightedSprite_0;
-	Sprite_t280657092 * ___m_PressedSprite_1;
-	Sprite_t280657092 * ___m_DisabledSprite_2;
-};
-#endif // SPRITESTATE_T1362986479_H
 #ifndef UILINEINFO_T4195266810_H
 #define UILINEINFO_T4195266810_H
 #ifdef __clang__
@@ -14165,6 +14102,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ASYNCOPERATIONSTATUS_T2187364345_H
+#ifndef OPERATIONTYPE_T993417619_H
+#define OPERATIONTYPE_T993417619_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Net.Security.MobileAuthenticatedStream/OperationType
+struct  OperationType_t993417619 
+{
+public:
+	// System.Int32 Mono.Net.Security.MobileAuthenticatedStream/OperationType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(OperationType_t993417619, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OPERATIONTYPE_T993417619_H
 #ifndef CIPHERSUITECODE_T732562211_H
 #define CIPHERSUITECODE_T732562211_H
 #ifdef __clang__
@@ -22184,93 +22150,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MODE_T1066900953_H
-#ifndef DIRECTION_T3470714353_H
-#define DIRECTION_T3470714353_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.UI.Scrollbar/Direction
-struct  Direction_t3470714353 
-{
-public:
-	// System.Int32 UnityEngine.UI.Scrollbar/Direction::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Direction_t3470714353, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DIRECTION_T3470714353_H
-#ifndef TRANSITION_T1769908631_H
-#define TRANSITION_T1769908631_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.UI.Selectable/Transition
-struct  Transition_t1769908631 
-{
-public:
-	// System.Int32 UnityEngine.UI.Selectable/Transition::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Transition_t1769908631, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TRANSITION_T1769908631_H
-#ifndef DIRECTION_T337909235_H
-#define DIRECTION_T337909235_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.UI.Slider/Direction
-struct  Direction_t337909235 
-{
-public:
-	// System.Int32 UnityEngine.UI.Slider/Direction::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Direction_t337909235, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DIRECTION_T337909235_H
 #ifndef UICHARINFO_T75501106_H
 #define UICHARINFO_T75501106_H
 #ifdef __clang__
@@ -23211,6 +23090,187 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U3CSTARTOPERATIONU3ED__23_T3218468820_H
+#ifndef U3CINNERREADU3ED__66_T2872199449_H
+#define U3CINNERREADU3ED__66_T2872199449_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66
+struct  U3CInnerReadU3Ed__66_t2872199449 
+{
+public:
+	// System.Int32 Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::<>t__builder
+	AsyncTaskMethodBuilder_1_t976952967  ___U3CU3Et__builder_1;
+	// Mono.Net.Security.MobileAuthenticatedStream Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::<>4__this
+	MobileAuthenticatedStream_t3383979266 * ___U3CU3E4__this_2;
+	// System.Threading.CancellationToken Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::cancellationToken
+	CancellationToken_t784455623  ___cancellationToken_3;
+	// System.Int32 Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::requestedSize
+	int32_t ___requestedSize_4;
+	// System.Boolean Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::sync
+	bool ___sync_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Int32> Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::<>u__1
+	ConfiguredTaskAwaiter_t4273446738  ___U3CU3Eu__1_6;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___U3CU3Et__builder_1)); }
+	inline AsyncTaskMethodBuilder_1_t976952967  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
+	inline AsyncTaskMethodBuilder_1_t976952967 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
+	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_1_t976952967  value)
+	{
+		___U3CU3Et__builder_1 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___U3CU3E4__this_2)); }
+	inline MobileAuthenticatedStream_t3383979266 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline MobileAuthenticatedStream_t3383979266 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(MobileAuthenticatedStream_t3383979266 * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3E4__this_2), value);
+	}
+
+	inline static int32_t get_offset_of_cancellationToken_3() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___cancellationToken_3)); }
+	inline CancellationToken_t784455623  get_cancellationToken_3() const { return ___cancellationToken_3; }
+	inline CancellationToken_t784455623 * get_address_of_cancellationToken_3() { return &___cancellationToken_3; }
+	inline void set_cancellationToken_3(CancellationToken_t784455623  value)
+	{
+		___cancellationToken_3 = value;
+	}
+
+	inline static int32_t get_offset_of_requestedSize_4() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___requestedSize_4)); }
+	inline int32_t get_requestedSize_4() const { return ___requestedSize_4; }
+	inline int32_t* get_address_of_requestedSize_4() { return &___requestedSize_4; }
+	inline void set_requestedSize_4(int32_t value)
+	{
+		___requestedSize_4 = value;
+	}
+
+	inline static int32_t get_offset_of_sync_5() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___sync_5)); }
+	inline bool get_sync_5() const { return ___sync_5; }
+	inline bool* get_address_of_sync_5() { return &___sync_5; }
+	inline void set_sync_5(bool value)
+	{
+		___sync_5 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Eu__1_6() { return static_cast<int32_t>(offsetof(U3CInnerReadU3Ed__66_t2872199449, ___U3CU3Eu__1_6)); }
+	inline ConfiguredTaskAwaiter_t4273446738  get_U3CU3Eu__1_6() const { return ___U3CU3Eu__1_6; }
+	inline ConfiguredTaskAwaiter_t4273446738 * get_address_of_U3CU3Eu__1_6() { return &___U3CU3Eu__1_6; }
+	inline void set_U3CU3Eu__1_6(ConfiguredTaskAwaiter_t4273446738  value)
+	{
+		___U3CU3Eu__1_6 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CINNERREADU3ED__66_T2872199449_H
+#ifndef U3CSTARTOPERATIONU3ED__58_T1428438294_H
+#define U3CSTARTOPERATIONU3ED__58_T1428438294_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58
+struct  U3CStartOperationU3Ed__58_t1428438294 
+{
+public:
+	// System.Int32 Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::<>t__builder
+	AsyncTaskMethodBuilder_1_t976952967  ___U3CU3Et__builder_1;
+	// Mono.Net.Security.MobileAuthenticatedStream Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::<>4__this
+	MobileAuthenticatedStream_t3383979266 * ___U3CU3E4__this_2;
+	// Mono.Net.Security.MobileAuthenticatedStream/OperationType Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::type
+	int32_t ___type_3;
+	// Mono.Net.Security.AsyncProtocolRequest Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::asyncRequest
+	AsyncProtocolRequest_t4184368197 * ___asyncRequest_4;
+	// System.Threading.CancellationToken Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::cancellationToken
+	CancellationToken_t784455623  ___cancellationToken_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Mono.Net.Security.AsyncProtocolResult> Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::<>u__1
+	ConfiguredTaskAwaiter_t410331069  ___U3CU3Eu__1_6;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___U3CU3Et__builder_1)); }
+	inline AsyncTaskMethodBuilder_1_t976952967  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
+	inline AsyncTaskMethodBuilder_1_t976952967 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
+	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_1_t976952967  value)
+	{
+		___U3CU3Et__builder_1 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___U3CU3E4__this_2)); }
+	inline MobileAuthenticatedStream_t3383979266 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline MobileAuthenticatedStream_t3383979266 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(MobileAuthenticatedStream_t3383979266 * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3E4__this_2), value);
+	}
+
+	inline static int32_t get_offset_of_type_3() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___type_3)); }
+	inline int32_t get_type_3() const { return ___type_3; }
+	inline int32_t* get_address_of_type_3() { return &___type_3; }
+	inline void set_type_3(int32_t value)
+	{
+		___type_3 = value;
+	}
+
+	inline static int32_t get_offset_of_asyncRequest_4() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___asyncRequest_4)); }
+	inline AsyncProtocolRequest_t4184368197 * get_asyncRequest_4() const { return ___asyncRequest_4; }
+	inline AsyncProtocolRequest_t4184368197 ** get_address_of_asyncRequest_4() { return &___asyncRequest_4; }
+	inline void set_asyncRequest_4(AsyncProtocolRequest_t4184368197 * value)
+	{
+		___asyncRequest_4 = value;
+		Il2CppCodeGenWriteBarrier((&___asyncRequest_4), value);
+	}
+
+	inline static int32_t get_offset_of_cancellationToken_5() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___cancellationToken_5)); }
+	inline CancellationToken_t784455623  get_cancellationToken_5() const { return ___cancellationToken_5; }
+	inline CancellationToken_t784455623 * get_address_of_cancellationToken_5() { return &___cancellationToken_5; }
+	inline void set_cancellationToken_5(CancellationToken_t784455623  value)
+	{
+		___cancellationToken_5 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Eu__1_6() { return static_cast<int32_t>(offsetof(U3CStartOperationU3Ed__58_t1428438294, ___U3CU3Eu__1_6)); }
+	inline ConfiguredTaskAwaiter_t410331069  get_U3CU3Eu__1_6() const { return ___U3CU3Eu__1_6; }
+	inline ConfiguredTaskAwaiter_t410331069 * get_address_of_U3CU3Eu__1_6() { return &___U3CU3Eu__1_6; }
+	inline void set_U3CU3Eu__1_6(ConfiguredTaskAwaiter_t410331069  value)
+	{
+		___U3CU3Eu__1_6 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CSTARTOPERATIONU3ED__58_T1428438294_H
 #ifndef ARGUMENTNULLEXCEPTION_T1615371798_H
 #define ARGUMENTNULLEXCEPTION_T1615371798_H
 #ifdef __clang__
@@ -37287,6 +37347,12 @@ public:
 };
 
 
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CInnerReadU3Ed__66_t2872199449 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CStartOperationU3Ed__58_t1428438294 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Object>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Security.Cryptography.CryptoStream/<ReadAsyncInternal>d__34>(TStateMachine&)
 extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CReadAsyncInternalU3Ed__34_t2482231463_m3472039230_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CReadAsyncInternalU3Ed__34_t2482231463 * ___stateMachine0, const RuntimeMethod* method);
 // System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Nullable`1<System.Int32>>::get_Task()
@@ -37520,10 +37586,29 @@ extern "C" IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m1170824041 (Argu
 extern "C" IL2CPP_METHOD_ATTR void RuntimeHelpers_PrepareConstrainedRegions_m3201503863 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Void System.Threading.ExecutionContext::EstablishCopyOnWriteScope(System.Threading.ExecutionContextSwitcher&)
 extern "C" IL2CPP_METHOD_ATTR void ExecutionContext_EstablishCopyOnWriteScope_m3443267365 (RuntimeObject * __this /* static, unused */, ExecutionContextSwitcher_t2326006776 * ___ecsw0, const RuntimeMethod* method);
-// System.Void System.Security.Cryptography.CryptoStream/<ReadAsyncInternal>d__34::MoveNext()
-extern "C" IL2CPP_METHOD_ATTR void U3CReadAsyncInternalU3Ed__34_MoveNext_m2031173151 (U3CReadAsyncInternalU3Ed__34_t2482231463 * __this, const RuntimeMethod* method);
+// System.Void Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66::MoveNext()
+extern "C" IL2CPP_METHOD_ATTR void U3CInnerReadU3Ed__66_MoveNext_m3831140736 (U3CInnerReadU3Ed__66_t2872199449 * __this, const RuntimeMethod* method);
 // System.Void System.Threading.ExecutionContextSwitcher::Undo()
 extern "C" IL2CPP_METHOD_ATTR void ExecutionContextSwitcher_Undo_m183954518 (ExecutionContextSwitcher_t2326006776 * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402 (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CInnerReadU3Ed__66_t2872199449 * ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t976952967 *, U3CInnerReadU3Ed__66_t2872199449 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58::MoveNext()
+extern "C" IL2CPP_METHOD_ATTR void U3CStartOperationU3Ed__58_MoveNext_m2753508916 (U3CStartOperationU3Ed__58_t1428438294 * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379 (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CStartOperationU3Ed__58_t1428438294 * ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t976952967 *, U3CStartOperationU3Ed__58_t1428438294 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Object>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596 (AsyncTaskMethodBuilder_1_t976952967 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t976952967 *, RuntimeObject **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void System.Security.Cryptography.CryptoStream/<ReadAsyncInternal>d__34::MoveNext()
+extern "C" IL2CPP_METHOD_ATTR void U3CReadAsyncInternalU3Ed__34_MoveNext_m2031173151 (U3CReadAsyncInternalU3Ed__34_t2482231463 * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Security.Cryptography.CryptoStream/<ReadAsyncInternal>d__34>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CReadAsyncInternalU3Ed__34_t2482231463_m3472039230 (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CReadAsyncInternalU3Ed__34_t2482231463 * ___stateMachine0, const RuntimeMethod* method)
 {
@@ -38243,6 +38328,215 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * RuntimeType_CreateInstanceDefaultC
 extern "C" IL2CPP_METHOD_ATTR int32_t Array_get_Length_m21610649 (RuntimeArray * __this, const RuntimeMethod* method);
 // System.Void System.ArgumentOutOfRangeException::.ctor(System.String)
 extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m3628145864 (ArgumentOutOfRangeException_t777629997 * __this, String_t* ___paramName0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<InnerRead>d__66>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CInnerReadU3Ed__66_t2872199449 * ___stateMachine0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ExecutionContextSwitcher_t2326006776  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		goto IL_0018;
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral4028015502, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_RuntimeMethod_var);
+	}
+
+IL_0018:
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(ExecutionContextSwitcher_t2326006776 ));
+		RuntimeHelpers_PrepareConstrainedRegions_m3201503863(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	try
+	{ // begin try (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(ExecutionContext_t1748372627_il2cpp_TypeInfo_var);
+		ExecutionContext_EstablishCopyOnWriteScope_m3443267365(NULL /*static, unused*/, (ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		U3CInnerReadU3Ed__66_t2872199449 * L_2 = ___stateMachine0;
+		U3CInnerReadU3Ed__66_MoveNext_m3831140736((U3CInnerReadU3Ed__66_t2872199449 *)(U3CInnerReadU3Ed__66_t2872199449 *)L_2, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x42, FINALLY_003a);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_003a;
+	}
+
+FINALLY_003a:
+	{ // begin finally (depth: 1)
+		ExecutionContextSwitcher_Undo_m183954518((ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(58)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(58)
+	{
+		IL2CPP_JUMP_TBL(0x42, IL_0042)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0042:
+	{
+		return;
+	}
+}
+extern "C"  void AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402_AdjustorThunk (RuntimeObject * __this, U3CInnerReadU3Ed__66_t2872199449 * ___stateMachine0, const RuntimeMethod* method)
+{
+	AsyncTaskMethodBuilder_1_t976952967 * _thisAdjusted = reinterpret_cast<AsyncTaskMethodBuilder_1_t976952967 *>(__this + 1);
+	AsyncTaskMethodBuilder_1_Start_TisU3CInnerReadU3Ed__66_t2872199449_m2455768402(_thisAdjusted, ___stateMachine0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<Mono.Net.Security.MobileAuthenticatedStream/<StartOperation>d__58>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CStartOperationU3Ed__58_t1428438294 * ___stateMachine0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ExecutionContextSwitcher_t2326006776  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		goto IL_0018;
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral4028015502, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_RuntimeMethod_var);
+	}
+
+IL_0018:
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(ExecutionContextSwitcher_t2326006776 ));
+		RuntimeHelpers_PrepareConstrainedRegions_m3201503863(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	try
+	{ // begin try (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(ExecutionContext_t1748372627_il2cpp_TypeInfo_var);
+		ExecutionContext_EstablishCopyOnWriteScope_m3443267365(NULL /*static, unused*/, (ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		U3CStartOperationU3Ed__58_t1428438294 * L_2 = ___stateMachine0;
+		U3CStartOperationU3Ed__58_MoveNext_m2753508916((U3CStartOperationU3Ed__58_t1428438294 *)(U3CStartOperationU3Ed__58_t1428438294 *)L_2, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x42, FINALLY_003a);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_003a;
+	}
+
+FINALLY_003a:
+	{ // begin finally (depth: 1)
+		ExecutionContextSwitcher_Undo_m183954518((ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(58)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(58)
+	{
+		IL2CPP_JUMP_TBL(0x42, IL_0042)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0042:
+	{
+		return;
+	}
+}
+extern "C"  void AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379_AdjustorThunk (RuntimeObject * __this, U3CStartOperationU3Ed__58_t1428438294 * ___stateMachine0, const RuntimeMethod* method)
+{
+	AsyncTaskMethodBuilder_1_t976952967 * _thisAdjusted = reinterpret_cast<AsyncTaskMethodBuilder_1_t976952967 *>(__this + 1);
+	AsyncTaskMethodBuilder_1_Start_TisU3CStartOperationU3Ed__58_t1428438294_m2135626379(_thisAdjusted, ___stateMachine0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Object>(TStateMachine&)
+extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ExecutionContextSwitcher_t2326006776  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject ** L_0 = ___stateMachine0;
+		if ((*(RuntimeObject **)L_0))
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral4028015502, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_RuntimeMethod_var);
+	}
+
+IL_0018:
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(ExecutionContextSwitcher_t2326006776 ));
+		RuntimeHelpers_PrepareConstrainedRegions_m3201503863(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	try
+	{ // begin try (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(ExecutionContext_t1748372627_il2cpp_TypeInfo_var);
+		ExecutionContext_EstablishCopyOnWriteScope_m3443267365(NULL /*static, unused*/, (ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		RuntimeObject ** L_2 = ___stateMachine0;
+		NullCheck((RuntimeObject*)(*L_2));
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.Runtime.CompilerServices.IAsyncStateMachine::MoveNext() */, IAsyncStateMachine_t923100567_il2cpp_TypeInfo_var, (RuntimeObject*)(*L_2));
+		IL2CPP_LEAVE(0x42, FINALLY_003a);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_003a;
+	}
+
+FINALLY_003a:
+	{ // begin finally (depth: 1)
+		ExecutionContextSwitcher_Undo_m183954518((ExecutionContextSwitcher_t2326006776 *)(ExecutionContextSwitcher_t2326006776 *)(&V_0), /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(58)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(58)
+	{
+		IL2CPP_JUMP_TBL(0x42, IL_0042)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0042:
+	{
+		return;
+	}
+}
+extern "C"  void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596_AdjustorThunk (RuntimeObject * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method)
+{
+	AsyncTaskMethodBuilder_1_t976952967 * _thisAdjusted = reinterpret_cast<AsyncTaskMethodBuilder_1_t976952967 *>(__this + 1);
+	AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_m17416596(_thisAdjusted, ___stateMachine0, method);
+}
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32>::Start<System.Security.Cryptography.CryptoStream/<ReadAsyncInternal>d__34>(TStateMachine&)
 extern "C" IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CReadAsyncInternalU3Ed__34_t2482231463_m3472039230_gshared (AsyncTaskMethodBuilder_1_t976952967 * __this, U3CReadAsyncInternalU3Ed__34_t2482231463 * ___stateMachine0, const RuntimeMethod* method)
 {
@@ -41899,6 +42193,31 @@ extern "C" IL2CPP_METHOD_ATTR void ThrowHelper_IfNullAndNullsAreIllegalThenThrow
 	}
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(PlayerLoopSystemInternal_t2185485283 ));
+	}
+	{
+		int32_t L_2 = ___argName1;
+		ThrowHelper_ThrowArgumentNullException_m2415499580(NULL /*static, unused*/, (int32_t)L_2, /*hidden argument*/NULL);
+	}
+
+IL_0019:
+	{
+		return;
+	}
+}
+// System.Void System.ThrowHelper::IfNullAndNullsAreIllegalThenThrow<UnityEngine.Touch>(System.Object,System.ExceptionArgument)
+extern "C" IL2CPP_METHOD_ATTR void ThrowHelper_IfNullAndNullsAreIllegalThenThrow_TisTouch_t1921856868_m1387400456_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, int32_t ___argName1, const RuntimeMethod* method)
+{
+	Touch_t1921856868  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Touch_t1921856868 ));
 	}
 	{
 		int32_t L_2 = ___argName1;
@@ -60898,248 +61217,6 @@ IL_0014:
 		NullCheck((RuntimeArray *)__this);
 		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (Navigation_t3049316579 *)(Navigation_t3049316579 *)(&V_0));
 		Navigation_t3049316579  L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Scrollbar/Direction>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
-		int32_t L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Selectable/Transition>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
-		int32_t L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Slider/Direction>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
-		int32_t L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.SpriteState>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR SpriteState_t1362986479  Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	SpriteState_t1362986479  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (SpriteState_t1362986479 *)(SpriteState_t1362986479 *)(&V_0));
-		SpriteState_t1362986479  L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UICharInfo>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR UICharInfo_t75501106  Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	UICharInfo_t75501106  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UICharInfo_t75501106 *)(UICharInfo_t75501106 *)(&V_0));
-		UICharInfo_t75501106  L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UILineInfo>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR UILineInfo_t4195266810  Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	UILineInfo_t4195266810  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UILineInfo_t4195266810 *)(UILineInfo_t4195266810 *)(&V_0));
-		UILineInfo_t4195266810  L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UIVertex>(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR UIVertex_t4057497605  Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	UIVertex_t4057497605  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		int32_t L_3 = ___index0;
-		NullCheck((RuntimeArray *)__this);
-		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UIVertex_t4057497605 *)(UIVertex_t4057497605 *)(&V_0));
-		UIVertex_t4057497605  L_4 = V_0;
 		return L_4;
 	}
 }

@@ -34,6 +34,10 @@ struct Mesh_t3648964284;
 struct AmbientOcclusionModel_t389471066;
 // UnityEngine.PostProcessing.AntialiasingModel
 struct AntialiasingModel_t1521139388;
+// UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings[]
+struct FxaaConsoleSettingsU5BU5D_t1126991587;
+// UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings[]
+struct FxaaQualitySettingsU5BU5D_t3129287688;
 // UnityEngine.PostProcessing.BloomModel
 struct BloomModel_t2099727860;
 // UnityEngine.PostProcessing.BuiltinDebugViewsComponent/ArrowArray
@@ -334,82 +338,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // UNIFORMS_T3745258951_H
-#ifndef UNIFORMS_T459708260_H
-#define UNIFORMS_T459708260_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.PostProcessing.FogComponent/Uniforms
-struct  Uniforms_t459708260  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Uniforms_t459708260_StaticFields
-{
-public:
-	// System.Int32 UnityEngine.PostProcessing.FogComponent/Uniforms::_FogColor
-	int32_t ____FogColor_0;
-	// System.Int32 UnityEngine.PostProcessing.FogComponent/Uniforms::_Density
-	int32_t ____Density_1;
-	// System.Int32 UnityEngine.PostProcessing.FogComponent/Uniforms::_Start
-	int32_t ____Start_2;
-	// System.Int32 UnityEngine.PostProcessing.FogComponent/Uniforms::_End
-	int32_t ____End_3;
-	// System.Int32 UnityEngine.PostProcessing.FogComponent/Uniforms::_TempRT
-	int32_t ____TempRT_4;
-
-public:
-	inline static int32_t get_offset_of__FogColor_0() { return static_cast<int32_t>(offsetof(Uniforms_t459708260_StaticFields, ____FogColor_0)); }
-	inline int32_t get__FogColor_0() const { return ____FogColor_0; }
-	inline int32_t* get_address_of__FogColor_0() { return &____FogColor_0; }
-	inline void set__FogColor_0(int32_t value)
-	{
-		____FogColor_0 = value;
-	}
-
-	inline static int32_t get_offset_of__Density_1() { return static_cast<int32_t>(offsetof(Uniforms_t459708260_StaticFields, ____Density_1)); }
-	inline int32_t get__Density_1() const { return ____Density_1; }
-	inline int32_t* get_address_of__Density_1() { return &____Density_1; }
-	inline void set__Density_1(int32_t value)
-	{
-		____Density_1 = value;
-	}
-
-	inline static int32_t get_offset_of__Start_2() { return static_cast<int32_t>(offsetof(Uniforms_t459708260_StaticFields, ____Start_2)); }
-	inline int32_t get__Start_2() const { return ____Start_2; }
-	inline int32_t* get_address_of__Start_2() { return &____Start_2; }
-	inline void set__Start_2(int32_t value)
-	{
-		____Start_2 = value;
-	}
-
-	inline static int32_t get_offset_of__End_3() { return static_cast<int32_t>(offsetof(Uniforms_t459708260_StaticFields, ____End_3)); }
-	inline int32_t get__End_3() const { return ____End_3; }
-	inline int32_t* get_address_of__End_3() { return &____End_3; }
-	inline void set__End_3(int32_t value)
-	{
-		____End_3 = value;
-	}
-
-	inline static int32_t get_offset_of__TempRT_4() { return static_cast<int32_t>(offsetof(Uniforms_t459708260_StaticFields, ____TempRT_4)); }
-	inline int32_t get__TempRT_4() const { return ____TempRT_4; }
-	inline int32_t* get_address_of__TempRT_4() { return &____TempRT_4; }
-	inline void set__TempRT_4(int32_t value)
-	{
-		____TempRT_4 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // UNIFORMS_T459708260_H
 #ifndef UNIFORMS_T1850622510_H
 #define UNIFORMS_T1850622510_H
 #ifdef __clang__
@@ -827,6 +755,148 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COLOR_T2555686324_H
+#ifndef FXAACONSOLESETTINGS_T950185286_H
+#define FXAACONSOLESETTINGS_T950185286_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings
+struct  FxaaConsoleSettings_t950185286 
+{
+public:
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings::subpixelSpreadAmount
+	float ___subpixelSpreadAmount_0;
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings::edgeSharpnessAmount
+	float ___edgeSharpnessAmount_1;
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings::edgeDetectionThreshold
+	float ___edgeDetectionThreshold_2;
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings::minimumRequiredLuminance
+	float ___minimumRequiredLuminance_3;
+
+public:
+	inline static int32_t get_offset_of_subpixelSpreadAmount_0() { return static_cast<int32_t>(offsetof(FxaaConsoleSettings_t950185286, ___subpixelSpreadAmount_0)); }
+	inline float get_subpixelSpreadAmount_0() const { return ___subpixelSpreadAmount_0; }
+	inline float* get_address_of_subpixelSpreadAmount_0() { return &___subpixelSpreadAmount_0; }
+	inline void set_subpixelSpreadAmount_0(float value)
+	{
+		___subpixelSpreadAmount_0 = value;
+	}
+
+	inline static int32_t get_offset_of_edgeSharpnessAmount_1() { return static_cast<int32_t>(offsetof(FxaaConsoleSettings_t950185286, ___edgeSharpnessAmount_1)); }
+	inline float get_edgeSharpnessAmount_1() const { return ___edgeSharpnessAmount_1; }
+	inline float* get_address_of_edgeSharpnessAmount_1() { return &___edgeSharpnessAmount_1; }
+	inline void set_edgeSharpnessAmount_1(float value)
+	{
+		___edgeSharpnessAmount_1 = value;
+	}
+
+	inline static int32_t get_offset_of_edgeDetectionThreshold_2() { return static_cast<int32_t>(offsetof(FxaaConsoleSettings_t950185286, ___edgeDetectionThreshold_2)); }
+	inline float get_edgeDetectionThreshold_2() const { return ___edgeDetectionThreshold_2; }
+	inline float* get_address_of_edgeDetectionThreshold_2() { return &___edgeDetectionThreshold_2; }
+	inline void set_edgeDetectionThreshold_2(float value)
+	{
+		___edgeDetectionThreshold_2 = value;
+	}
+
+	inline static int32_t get_offset_of_minimumRequiredLuminance_3() { return static_cast<int32_t>(offsetof(FxaaConsoleSettings_t950185286, ___minimumRequiredLuminance_3)); }
+	inline float get_minimumRequiredLuminance_3() const { return ___minimumRequiredLuminance_3; }
+	inline float* get_address_of_minimumRequiredLuminance_3() { return &___minimumRequiredLuminance_3; }
+	inline void set_minimumRequiredLuminance_3(float value)
+	{
+		___minimumRequiredLuminance_3 = value;
+	}
+};
+
+struct FxaaConsoleSettings_t950185286_StaticFields
+{
+public:
+	// UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings[] UnityEngine.PostProcessing.AntialiasingModel/FxaaConsoleSettings::presets
+	FxaaConsoleSettingsU5BU5D_t1126991587* ___presets_4;
+
+public:
+	inline static int32_t get_offset_of_presets_4() { return static_cast<int32_t>(offsetof(FxaaConsoleSettings_t950185286_StaticFields, ___presets_4)); }
+	inline FxaaConsoleSettingsU5BU5D_t1126991587* get_presets_4() const { return ___presets_4; }
+	inline FxaaConsoleSettingsU5BU5D_t1126991587** get_address_of_presets_4() { return &___presets_4; }
+	inline void set_presets_4(FxaaConsoleSettingsU5BU5D_t1126991587* value)
+	{
+		___presets_4 = value;
+		Il2CppCodeGenWriteBarrier((&___presets_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FXAACONSOLESETTINGS_T950185286_H
+#ifndef FXAAQUALITYSETTINGS_T1558211909_H
+#define FXAAQUALITYSETTINGS_T1558211909_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings
+struct  FxaaQualitySettings_t1558211909 
+{
+public:
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings::subpixelAliasingRemovalAmount
+	float ___subpixelAliasingRemovalAmount_0;
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings::edgeDetectionThreshold
+	float ___edgeDetectionThreshold_1;
+	// System.Single UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings::minimumRequiredLuminance
+	float ___minimumRequiredLuminance_2;
+
+public:
+	inline static int32_t get_offset_of_subpixelAliasingRemovalAmount_0() { return static_cast<int32_t>(offsetof(FxaaQualitySettings_t1558211909, ___subpixelAliasingRemovalAmount_0)); }
+	inline float get_subpixelAliasingRemovalAmount_0() const { return ___subpixelAliasingRemovalAmount_0; }
+	inline float* get_address_of_subpixelAliasingRemovalAmount_0() { return &___subpixelAliasingRemovalAmount_0; }
+	inline void set_subpixelAliasingRemovalAmount_0(float value)
+	{
+		___subpixelAliasingRemovalAmount_0 = value;
+	}
+
+	inline static int32_t get_offset_of_edgeDetectionThreshold_1() { return static_cast<int32_t>(offsetof(FxaaQualitySettings_t1558211909, ___edgeDetectionThreshold_1)); }
+	inline float get_edgeDetectionThreshold_1() const { return ___edgeDetectionThreshold_1; }
+	inline float* get_address_of_edgeDetectionThreshold_1() { return &___edgeDetectionThreshold_1; }
+	inline void set_edgeDetectionThreshold_1(float value)
+	{
+		___edgeDetectionThreshold_1 = value;
+	}
+
+	inline static int32_t get_offset_of_minimumRequiredLuminance_2() { return static_cast<int32_t>(offsetof(FxaaQualitySettings_t1558211909, ___minimumRequiredLuminance_2)); }
+	inline float get_minimumRequiredLuminance_2() const { return ___minimumRequiredLuminance_2; }
+	inline float* get_address_of_minimumRequiredLuminance_2() { return &___minimumRequiredLuminance_2; }
+	inline void set_minimumRequiredLuminance_2(float value)
+	{
+		___minimumRequiredLuminance_2 = value;
+	}
+};
+
+struct FxaaQualitySettings_t1558211909_StaticFields
+{
+public:
+	// UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings[] UnityEngine.PostProcessing.AntialiasingModel/FxaaQualitySettings::presets
+	FxaaQualitySettingsU5BU5D_t3129287688* ___presets_3;
+
+public:
+	inline static int32_t get_offset_of_presets_3() { return static_cast<int32_t>(offsetof(FxaaQualitySettings_t1558211909_StaticFields, ___presets_3)); }
+	inline FxaaQualitySettingsU5BU5D_t3129287688* get_presets_3() const { return ___presets_3; }
+	inline FxaaQualitySettingsU5BU5D_t3129287688** get_address_of_presets_3() { return &___presets_3; }
+	inline void set_presets_3(FxaaQualitySettingsU5BU5D_t3129287688* value)
+	{
+		___presets_3 = value;
+		Il2CppCodeGenWriteBarrier((&___presets_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FXAAQUALITYSETTINGS_T1558211909_H
 #ifndef TAASETTINGS_T2709374970_H
 #define TAASETTINGS_T2709374970_H
 #ifdef __clang__
@@ -1100,36 +1170,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // POSTPROCESSINGCOMPONENT_1_T1722181598_H
-#ifndef POSTPROCESSINGCOMPONENT_1_T2913864951_H
-#define POSTPROCESSINGCOMPONENT_1_T2913864951_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.PostProcessing.PostProcessingComponent`1<UnityEngine.PostProcessing.FogModel>
-struct  PostProcessingComponent_1_t2913864951  : public PostProcessingComponentBase_t2731103827
-{
-public:
-	// T UnityEngine.PostProcessing.PostProcessingComponent`1::<model>k__BackingField
-	FogModel_t3620688749 * ___U3CmodelU3Ek__BackingField_1;
-
-public:
-	inline static int32_t get_offset_of_U3CmodelU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(PostProcessingComponent_1_t2913864951, ___U3CmodelU3Ek__BackingField_1)); }
-	inline FogModel_t3620688749 * get_U3CmodelU3Ek__BackingField_1() const { return ___U3CmodelU3Ek__BackingField_1; }
-	inline FogModel_t3620688749 ** get_address_of_U3CmodelU3Ek__BackingField_1() { return &___U3CmodelU3Ek__BackingField_1; }
-	inline void set_U3CmodelU3Ek__BackingField_1(FogModel_t3620688749 * value)
-	{
-		___U3CmodelU3Ek__BackingField_1 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CmodelU3Ek__BackingField_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POSTPROCESSINGCOMPONENT_1_T2913864951_H
 #ifndef SETTINGS_T3006579223_H
 #define SETTINGS_T3006579223_H
 #ifdef __clang__
@@ -1730,26 +1770,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // POSTPROCESSINGCOMPONENTCOMMANDBUFFER_1_T2737920729_H
-#ifndef POSTPROCESSINGCOMPONENTCOMMANDBUFFER_1_T601023342_H
-#define POSTPROCESSINGCOMPONENTCOMMANDBUFFER_1_T601023342_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.PostProcessing.PostProcessingComponentCommandBuffer`1<UnityEngine.PostProcessing.FogModel>
-struct  PostProcessingComponentCommandBuffer_1_t601023342  : public PostProcessingComponent_1_t2913864951
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POSTPROCESSINGCOMPONENTCOMMANDBUFFER_1_T601023342_H
 #ifndef POSTPROCESSINGCOMPONENTRENDERTEXTURE_1_T3089424429_H
 #define POSTPROCESSINGCOMPONENTRENDERTEXTURE_1_T3089424429_H
 #ifdef __clang__
@@ -2217,26 +2237,6 @@ struct Settings_t2874244444_marshaled_com
 	int32_t ___logMax_10;
 };
 #endif // SETTINGS_T2874244444_H
-#ifndef FOGCOMPONENT_T3400726830_H
-#define FOGCOMPONENT_T3400726830_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.PostProcessing.FogComponent
-struct  FogComponent_t3400726830  : public PostProcessingComponentCommandBuffer_1_t601023342
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // FOGCOMPONENT_T3400726830_H
 #ifndef FXAACOMPONENT_T1312385771_H
 #define FXAACOMPONENT_T1312385771_H
 #ifdef __clang__
@@ -2751,92 +2751,110 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4800 = { sizeof (TaaSettings_t2709374970)+ sizeof (RuntimeObject), sizeof(TaaSettings_t2709374970 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable4800[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4800 = { sizeof (FxaaPreset_t2149486832)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable4800[6] = 
+{
+	FxaaPreset_t2149486832::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4801 = { sizeof (FxaaQualitySettings_t1558211909)+ sizeof (RuntimeObject), sizeof(FxaaQualitySettings_t1558211909 ), sizeof(FxaaQualitySettings_t1558211909_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4801[4] = 
+{
+	FxaaQualitySettings_t1558211909::get_offset_of_subpixelAliasingRemovalAmount_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaQualitySettings_t1558211909::get_offset_of_edgeDetectionThreshold_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaQualitySettings_t1558211909::get_offset_of_minimumRequiredLuminance_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaQualitySettings_t1558211909_StaticFields::get_offset_of_presets_3(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4802 = { sizeof (FxaaConsoleSettings_t950185286)+ sizeof (RuntimeObject), sizeof(FxaaConsoleSettings_t950185286 ), sizeof(FxaaConsoleSettings_t950185286_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4802[5] = 
+{
+	FxaaConsoleSettings_t950185286::get_offset_of_subpixelSpreadAmount_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaConsoleSettings_t950185286::get_offset_of_edgeSharpnessAmount_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaConsoleSettings_t950185286::get_offset_of_edgeDetectionThreshold_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaConsoleSettings_t950185286::get_offset_of_minimumRequiredLuminance_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	FxaaConsoleSettings_t950185286_StaticFields::get_offset_of_presets_4(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4803 = { sizeof (FxaaSettings_t1280675075)+ sizeof (RuntimeObject), sizeof(FxaaSettings_t1280675075 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable4803[1] = 
+{
+	FxaaSettings_t1280675075::get_offset_of_preset_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4804 = { sizeof (TaaSettings_t2709374970)+ sizeof (RuntimeObject), sizeof(TaaSettings_t2709374970 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable4804[4] = 
 {
 	TaaSettings_t2709374970::get_offset_of_jitterSpread_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	TaaSettings_t2709374970::get_offset_of_sharpen_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	TaaSettings_t2709374970::get_offset_of_stationaryBlending_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	TaaSettings_t2709374970::get_offset_of_motionBlending_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4801 = { sizeof (Settings_t4292431647)+ sizeof (RuntimeObject), sizeof(Settings_t4292431647 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable4801[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4805 = { sizeof (Settings_t4292431647)+ sizeof (RuntimeObject), sizeof(Settings_t4292431647 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable4805[3] = 
 {
 	Settings_t4292431647::get_offset_of_method_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4292431647::get_offset_of_fxaaSettings_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4292431647::get_offset_of_taaSettings_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4802 = { sizeof (FogComponent_t3400726830), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4802[1] = 
-{
-	0,
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4803 = { sizeof (Uniforms_t459708260), -1, sizeof(Uniforms_t459708260_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4803[5] = 
-{
-	Uniforms_t459708260_StaticFields::get_offset_of__FogColor_0(),
-	Uniforms_t459708260_StaticFields::get_offset_of__Density_1(),
-	Uniforms_t459708260_StaticFields::get_offset_of__Start_2(),
-	Uniforms_t459708260_StaticFields::get_offset_of__End_3(),
-	Uniforms_t459708260_StaticFields::get_offset_of__TempRT_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4804 = { sizeof (UserLutModel_t1670108080), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4804[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4806 = { sizeof (UserLutModel_t1670108080), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4806[1] = 
 {
 	UserLutModel_t1670108080::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4805 = { sizeof (Settings_t3006579223)+ sizeof (RuntimeObject), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4805[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4807 = { sizeof (Settings_t3006579223)+ sizeof (RuntimeObject), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4807[2] = 
 {
 	Settings_t3006579223::get_offset_of_lut_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t3006579223::get_offset_of_contribution_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4806 = { sizeof (DitheringComponent_t277621267), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4806[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4808 = { sizeof (DitheringComponent_t277621267), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4808[3] = 
 {
 	DitheringComponent_t277621267::get_offset_of_noiseTextures_2(),
 	DitheringComponent_t277621267::get_offset_of_textureIndex_3(),
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4807 = { sizeof (Uniforms_t3745258951), -1, sizeof(Uniforms_t3745258951_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4807[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4809 = { sizeof (Uniforms_t3745258951), -1, sizeof(Uniforms_t3745258951_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4809[2] = 
 {
 	Uniforms_t3745258951_StaticFields::get_offset_of__DitheringTex_0(),
 	Uniforms_t3745258951_StaticFields::get_offset_of__DitheringCoords_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4808 = { sizeof (MotionBlurModel_t3080286123), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4808[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4810 = { sizeof (MotionBlurModel_t3080286123), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4810[1] = 
 {
 	MotionBlurModel_t3080286123::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4809 = { sizeof (Settings_t4282162361)+ sizeof (RuntimeObject), sizeof(Settings_t4282162361 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable4809[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4811 = { sizeof (Settings_t4282162361)+ sizeof (RuntimeObject), sizeof(Settings_t4282162361 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable4811[3] = 
 {
 	Settings_t4282162361::get_offset_of_shutterAngle_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4282162361::get_offset_of_sampleCount_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4282162361::get_offset_of_frameBlending_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4810 = { sizeof (FxaaComponent_t1312385771), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4811 = { sizeof (Uniforms_t1850622510), -1, sizeof(Uniforms_t1850622510_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4811[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4812 = { sizeof (FxaaComponent_t1312385771), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4813 = { sizeof (Uniforms_t1850622510), -1, sizeof(Uniforms_t1850622510_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4813[2] = 
 {
 	Uniforms_t1850622510_StaticFields::get_offset_of__QualitySettings_0(),
 	Uniforms_t1850622510_StaticFields::get_offset_of__ConsoleSettings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4812 = { sizeof (EyeAdaptationModel_t242823912), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4812[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4814 = { sizeof (EyeAdaptationModel_t242823912), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4814[1] = 
 {
 	EyeAdaptationModel_t242823912::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4813 = { sizeof (EyeAdaptationType_t3053468307)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable4813[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4815 = { sizeof (EyeAdaptationType_t3053468307)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable4815[3] = 
 {
 	EyeAdaptationType_t3053468307::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4814 = { sizeof (Settings_t2874244444)+ sizeof (RuntimeObject), sizeof(Settings_t2874244444_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable4814[11] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4816 = { sizeof (Settings_t2874244444)+ sizeof (RuntimeObject), sizeof(Settings_t2874244444_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable4816[11] = 
 {
 	Settings_t2874244444::get_offset_of_lowPercent_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t2874244444::get_offset_of_highPercent_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
@@ -2850,26 +2868,26 @@ extern const int32_t g_FieldOffsetTable4814[11] =
 	Settings_t2874244444::get_offset_of_logMin_9() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t2874244444::get_offset_of_logMax_10() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4815 = { sizeof (GetSetAttribute_t1349027187), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4815[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4817 = { sizeof (GetSetAttribute_t1349027187), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4817[2] = 
 {
 	GetSetAttribute_t1349027187::get_offset_of_name_0(),
 	GetSetAttribute_t1349027187::get_offset_of_dirty_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4816 = { sizeof (PostProcessingComponentBase_t2731103827), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4816[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4818 = { sizeof (PostProcessingComponentBase_t2731103827), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4818[1] = 
 {
 	PostProcessingComponentBase_t2731103827::get_offset_of_context_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4817 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable4817[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4819 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable4819[1] = 
 {
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4818 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4819 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4820 = { sizeof (PostProcessingProfile_t724195375), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4820[15] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4820 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4821 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4822 = { sizeof (PostProcessingProfile_t724195375), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4822[15] = 
 {
 	PostProcessingProfile_t724195375::get_offset_of_debugViews_4(),
 	PostProcessingProfile_t724195375::get_offset_of_fog_5(),
@@ -2887,13 +2905,13 @@ extern const int32_t g_FieldOffsetTable4820[15] =
 	PostProcessingProfile_t724195375::get_offset_of_vignette_17(),
 	PostProcessingProfile_t724195375::get_offset_of_dithering_18(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4821 = { sizeof (AmbientOcclusionModel_t389471066), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4821[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4823 = { sizeof (AmbientOcclusionModel_t389471066), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4823[1] = 
 {
 	AmbientOcclusionModel_t389471066::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4822 = { sizeof (SampleCount_t1158000259)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable4822[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4824 = { sizeof (SampleCount_t1158000259)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable4824[5] = 
 {
 	SampleCount_t1158000259::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -2901,8 +2919,8 @@ extern const int32_t g_FieldOffsetTable4822[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4823 = { sizeof (Settings_t3016786575)+ sizeof (RuntimeObject), sizeof(Settings_t3016786575_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable4823[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4825 = { sizeof (Settings_t3016786575)+ sizeof (RuntimeObject), sizeof(Settings_t3016786575_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable4825[7] = 
 {
 	Settings_t3016786575::get_offset_of_intensity_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t3016786575::get_offset_of_radius_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
@@ -2912,20 +2930,20 @@ extern const int32_t g_FieldOffsetTable4823[7] =
 	Settings_t3016786575::get_offset_of_ambientOnly_5() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t3016786575::get_offset_of_highPrecision_6() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4824 = { sizeof (VignetteModel_t2845517177), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4824[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4826 = { sizeof (VignetteModel_t2845517177), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4826[1] = 
 {
 	VignetteModel_t2845517177::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4825 = { sizeof (Mode_t3936508933)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable4825[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4827 = { sizeof (Mode_t3936508933)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable4827[3] = 
 {
 	Mode_t3936508933::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4826 = { sizeof (Settings_t1354494600)+ sizeof (RuntimeObject), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4826[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4828 = { sizeof (Settings_t1354494600)+ sizeof (RuntimeObject), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4828[9] = 
 {
 	Settings_t1354494600::get_offset_of_mode_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t1354494600::get_offset_of_color_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
@@ -2937,13 +2955,13 @@ extern const int32_t g_FieldOffsetTable4826[9] =
 	Settings_t1354494600::get_offset_of_opacity_7() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t1354494600::get_offset_of_rounded_8() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4827 = { sizeof (MinAttribute_t4172004135), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4827[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4829 = { sizeof (MinAttribute_t4172004135), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4829[1] = 
 {
 	MinAttribute_t4172004135::get_offset_of_min_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4828 = { sizeof (PostProcessingContext_t2014408948), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4828[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4830 = { sizeof (PostProcessingContext_t2014408948), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4830[5] = 
 {
 	PostProcessingContext_t2014408948::get_offset_of_profile_0(),
 	PostProcessingContext_t2014408948::get_offset_of_camera_1(),
@@ -2951,27 +2969,27 @@ extern const int32_t g_FieldOffsetTable4828[5] =
 	PostProcessingContext_t2014408948::get_offset_of_renderTextureFactory_3(),
 	PostProcessingContext_t2014408948::get_offset_of_U3CinterruptedU3Ek__BackingField_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4829 = { sizeof (GrainModel_t1152882488), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4829[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4831 = { sizeof (GrainModel_t1152882488), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4831[1] = 
 {
 	GrainModel_t1152882488::get_offset_of_m_Settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4830 = { sizeof (Settings_t4123292438)+ sizeof (RuntimeObject), sizeof(Settings_t4123292438_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable4830[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4832 = { sizeof (Settings_t4123292438)+ sizeof (RuntimeObject), sizeof(Settings_t4123292438_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable4832[4] = 
 {
 	Settings_t4123292438::get_offset_of_colored_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4123292438::get_offset_of_intensity_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4123292438::get_offset_of_size_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Settings_t4123292438::get_offset_of_luminanceContribution_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4831 = { sizeof (BuiltinDebugViewsComponent_t2123147871), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4831[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4833 = { sizeof (BuiltinDebugViewsComponent_t2123147871), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4833[2] = 
 {
 	0,
 	BuiltinDebugViewsComponent_t2123147871::get_offset_of_m_Arrows_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4832 = { sizeof (Uniforms_t2158582951), -1, sizeof(Uniforms_t2158582951_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4832[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4834 = { sizeof (Uniforms_t2158582951), -1, sizeof(Uniforms_t2158582951_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4834[7] = 
 {
 	Uniforms_t2158582951_StaticFields::get_offset_of__DepthScale_0(),
 	Uniforms_t2158582951_StaticFields::get_offset_of__TempRT_1(),
@@ -2981,8 +2999,8 @@ extern const int32_t g_FieldOffsetTable4832[7] =
 	Uniforms_t2158582951_StaticFields::get_offset_of__Amplitude_5(),
 	Uniforms_t2158582951_StaticFields::get_offset_of__Scale_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4833 = { sizeof (Pass_t2117482)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable4833[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4835 = { sizeof (Pass_t2117482)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable4835[6] = 
 {
 	Pass_t2117482::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -2991,23 +3009,23 @@ extern const int32_t g_FieldOffsetTable4833[6] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4834 = { sizeof (ArrowArray_t303178545), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4834[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4836 = { sizeof (ArrowArray_t303178545), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4836[3] = 
 {
 	ArrowArray_t303178545::get_offset_of_U3CmeshU3Ek__BackingField_0(),
 	ArrowArray_t303178545::get_offset_of_U3CcolumnCountU3Ek__BackingField_1(),
 	ArrowArray_t303178545::get_offset_of_U3CrowCountU3Ek__BackingField_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4835 = { sizeof (U3CPrivateImplementationDetailsU3E_t3057255370), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3057255370_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4835[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4837 = { sizeof (U3CPrivateImplementationDetailsU3E_t3057255370), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3057255370_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4837[3] = 
 {
 	U3CPrivateImplementationDetailsU3E_t3057255370_StaticFields::get_offset_of_U351A7A390CD6DE245186881400B18C9D822EFE240_0(),
 	U3CPrivateImplementationDetailsU3E_t3057255370_StaticFields::get_offset_of_C90F38A020811481753795774EB5AF353F414C59_1(),
 	U3CPrivateImplementationDetailsU3E_t3057255370_StaticFields::get_offset_of_D2FD55BEC43713E0126C440295414130C96CB848_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4836 = { sizeof (__StaticArrayInitTypeSizeU3D12_t2710994321)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D12_t2710994321 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4837 = { sizeof (__StaticArrayInitTypeSizeU3D24_t3517759981)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D24_t3517759981 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4838 = { sizeof (__StaticArrayInitTypeSizeU3D28_t1904621872)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D28_t1904621872 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4838 = { sizeof (__StaticArrayInitTypeSizeU3D12_t2710994321)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D12_t2710994321 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4839 = { sizeof (__StaticArrayInitTypeSizeU3D24_t3517759981)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D24_t3517759981 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4840 = { sizeof (__StaticArrayInitTypeSizeU3D28_t1904621872)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D28_t1904621872 ), 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

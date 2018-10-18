@@ -121,6 +121,7 @@
     <Compile Include="Assets\Scripts\LocationManager.cs" />
     <Compile Include="Assets\Scripts\LocationSocket.cs" />
     <Compile Include="Assets\Scripts\LocationStash.cs" />
+    <Compile Include="Assets\Scripts\Resetter.cs" />
     <Compile Include="Assets\Scripts\ScreensaverManager.cs" />
     <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Color Picker\CUIColorPicker.cs" />
     <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\CustomizeGraphy.cs" />

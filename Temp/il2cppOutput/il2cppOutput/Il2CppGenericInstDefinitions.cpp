@@ -2125,10 +2125,11 @@ extern const Il2CppType MeshFilter_t3523625662_0_0_0;
 extern const Il2CppType BoxCollider_t1640800422_0_0_0;
 extern const Il2CppType Rigidbody_t3916780224_0_0_0;
 extern const Il2CppType TMP_SpriteAnimator_t2836635477_0_0_0;
-extern const Il2CppType U3CStartGameU3Ed__12_t3552439119_0_0_0;
-extern const Il2CppType U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0;
-extern const Il2CppType U3COnFinishGameU3Ed__14_t472569197_0_0_0;
-extern const Il2CppType U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0;
+extern const Il2CppType GameManager_t1536523654_0_0_0;
+extern const Il2CppType U3CStartGameU3Ed__13_t1596123983_0_0_0;
+extern const Il2CppType U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0;
+extern const Il2CppType U3COnFinishGameU3Ed__15_t2038653138_0_0_0;
+extern const Il2CppType U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0;
 extern const Il2CppType TaskAwaiter_1_t1450460888_0_0_0;
 extern const Il2CppType AsyncOperationAwaiter_t1917379287_0_0_0;
 extern const Il2CppType UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0;
@@ -2137,7 +2138,8 @@ extern const Il2CppType AudioSource_t3935305588_0_0_0;
 extern const Il2CppType U3CValidateResultU3Ed__18_t1693661827_0_0_0;
 extern const Il2CppType MeshRenderer_t587009260_0_0_0;
 extern const Il2CppType GridLayoutGroup_t3046220461_0_0_0;
-extern const Il2CppType U3CUpdateU3Ed__10_t2528598757_0_0_0;
+extern const Il2CppType U3CUpdateU3Ed__4_t3556509160_0_0_0;
+extern const Il2CppType U3CUpdateU3Ed__11_t572283621_0_0_0;
 extern const Il2CppType ResourceRequestAwaiter_t1171911063_0_0_0;
 extern const Il2CppType AudioMonitor_t618666481_0_0_0;
 extern const Il2CppType AudioGraph_t545361603_0_0_0;
@@ -9045,26 +9047,28 @@ static const RuntimeType* GenInst_TMP_SpriteAnimator_t2836635477_0_0_0_Types[] =
 extern const Il2CppGenericInst GenInst_TMP_SpriteAnimator_t2836635477_0_0_0 = { 1, GenInst_TMP_SpriteAnimator_t2836635477_0_0_0_Types };
 static const RuntimeType* GenInst_TextMeshPro_t2393593166_0_0_0_Types[] = { (&TextMeshPro_t2393593166_0_0_0) };
 extern const Il2CppGenericInst GenInst_TextMeshPro_t2393593166_0_0_0 = { 1, GenInst_TextMeshPro_t2393593166_0_0_0_Types };
-static const RuntimeType* GenInst_U3CStartGameU3Ed__12_t3552439119_0_0_0_Types[] = { (&U3CStartGameU3Ed__12_t3552439119_0_0_0) };
-extern const Il2CppGenericInst GenInst_U3CStartGameU3Ed__12_t3552439119_0_0_0 = { 1, GenInst_U3CStartGameU3Ed__12_t3552439119_0_0_0_Types };
-static const RuntimeType* GenInst_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0_Types[] = { (&U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0) };
-extern const Il2CppGenericInst GenInst_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0 = { 1, GenInst_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0_Types };
-static const RuntimeType* GenInst_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types[] = { (&U3COnFinishGameU3Ed__14_t472569197_0_0_0) };
-extern const Il2CppGenericInst GenInst_U3COnFinishGameU3Ed__14_t472569197_0_0_0 = { 1, GenInst_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types };
-static const RuntimeType* GenInst_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0_Types[] = { (&U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0) };
-extern const Il2CppGenericInst GenInst_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0 = { 1, GenInst_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0_Types };
-static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3COnFinishGameU3Ed__14_t472569197_0_0_0) };
-extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types };
-static const RuntimeType* GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types[] = { (&TaskAwaiter_1_t1450460888_0_0_0), (&U3COnFinishGameU3Ed__14_t472569197_0_0_0) };
-extern const Il2CppGenericInst GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0 = { 2, GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types };
-static const RuntimeType* GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types[] = { (&AsyncOperationAwaiter_t1917379287_0_0_0), (&U3COnFinishGameU3Ed__14_t472569197_0_0_0) };
-extern const Il2CppGenericInst GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0 = { 2, GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0_Types };
-static const RuntimeType* GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0_Types[] = { (&UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0), (&U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0) };
-extern const Il2CppGenericInst GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0 = { 2, GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0_Types };
-static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__12_t3552439119_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3CStartGameU3Ed__12_t3552439119_0_0_0) };
-extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__12_t3552439119_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__12_t3552439119_0_0_0_Types };
-static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0) };
-extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0_Types };
+static const RuntimeType* GenInst_GameManager_t1536523654_0_0_0_Types[] = { (&GameManager_t1536523654_0_0_0) };
+extern const Il2CppGenericInst GenInst_GameManager_t1536523654_0_0_0 = { 1, GenInst_GameManager_t1536523654_0_0_0_Types };
+static const RuntimeType* GenInst_U3CStartGameU3Ed__13_t1596123983_0_0_0_Types[] = { (&U3CStartGameU3Ed__13_t1596123983_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3CStartGameU3Ed__13_t1596123983_0_0_0 = { 1, GenInst_U3CStartGameU3Ed__13_t1596123983_0_0_0_Types };
+static const RuntimeType* GenInst_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0_Types[] = { (&U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0 = { 1, GenInst_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0_Types };
+static const RuntimeType* GenInst_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types[] = { (&U3COnFinishGameU3Ed__15_t2038653138_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3COnFinishGameU3Ed__15_t2038653138_0_0_0 = { 1, GenInst_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types };
+static const RuntimeType* GenInst_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0_Types[] = { (&U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0 = { 1, GenInst_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0_Types };
+static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3COnFinishGameU3Ed__15_t2038653138_0_0_0) };
+extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types };
+static const RuntimeType* GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types[] = { (&TaskAwaiter_1_t1450460888_0_0_0), (&U3COnFinishGameU3Ed__15_t2038653138_0_0_0) };
+extern const Il2CppGenericInst GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0 = { 2, GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types };
+static const RuntimeType* GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types[] = { (&AsyncOperationAwaiter_t1917379287_0_0_0), (&U3COnFinishGameU3Ed__15_t2038653138_0_0_0) };
+extern const Il2CppGenericInst GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0 = { 2, GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0_Types };
+static const RuntimeType* GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0_Types[] = { (&UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0), (&U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0) };
+extern const Il2CppGenericInst GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0 = { 2, GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0_Types };
+static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__13_t1596123983_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3CStartGameU3Ed__13_t1596123983_0_0_0) };
+extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__13_t1596123983_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__13_t1596123983_0_0_0_Types };
+static const RuntimeType* GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0_Types[] = { (&Awaiter_t3115729477_0_0_0), (&U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0) };
+extern const Il2CppGenericInst GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0 = { 2, GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0_Types };
 static const RuntimeType* GenInst_LocationSocket_t662685003_0_0_0_Types[] = { (&LocationSocket_t662685003_0_0_0) };
 extern const Il2CppGenericInst GenInst_LocationSocket_t662685003_0_0_0 = { 1, GenInst_LocationSocket_t662685003_0_0_0_Types };
 static const RuntimeType* GenInst_AudioSource_t3935305588_0_0_0_Types[] = { (&AudioSource_t3935305588_0_0_0) };
@@ -9077,10 +9081,14 @@ static const RuntimeType* GenInst_MeshRenderer_t587009260_0_0_0_Types[] = { (&Me
 extern const Il2CppGenericInst GenInst_MeshRenderer_t587009260_0_0_0 = { 1, GenInst_MeshRenderer_t587009260_0_0_0_Types };
 static const RuntimeType* GenInst_GridLayoutGroup_t3046220461_0_0_0_Types[] = { (&GridLayoutGroup_t3046220461_0_0_0) };
 extern const Il2CppGenericInst GenInst_GridLayoutGroup_t3046220461_0_0_0 = { 1, GenInst_GridLayoutGroup_t3046220461_0_0_0_Types };
-static const RuntimeType* GenInst_U3CUpdateU3Ed__10_t2528598757_0_0_0_Types[] = { (&U3CUpdateU3Ed__10_t2528598757_0_0_0) };
-extern const Il2CppGenericInst GenInst_U3CUpdateU3Ed__10_t2528598757_0_0_0 = { 1, GenInst_U3CUpdateU3Ed__10_t2528598757_0_0_0_Types };
-static const RuntimeType* GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__10_t2528598757_0_0_0_Types[] = { (&ResourceRequestAwaiter_t1171911063_0_0_0), (&U3CUpdateU3Ed__10_t2528598757_0_0_0) };
-extern const Il2CppGenericInst GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__10_t2528598757_0_0_0 = { 2, GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__10_t2528598757_0_0_0_Types };
+static const RuntimeType* GenInst_U3CUpdateU3Ed__4_t3556509160_0_0_0_Types[] = { (&U3CUpdateU3Ed__4_t3556509160_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3CUpdateU3Ed__4_t3556509160_0_0_0 = { 1, GenInst_U3CUpdateU3Ed__4_t3556509160_0_0_0_Types };
+static const RuntimeType* GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3CUpdateU3Ed__4_t3556509160_0_0_0_Types[] = { (&AsyncOperationAwaiter_t1917379287_0_0_0), (&U3CUpdateU3Ed__4_t3556509160_0_0_0) };
+extern const Il2CppGenericInst GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3CUpdateU3Ed__4_t3556509160_0_0_0 = { 2, GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3CUpdateU3Ed__4_t3556509160_0_0_0_Types };
+static const RuntimeType* GenInst_U3CUpdateU3Ed__11_t572283621_0_0_0_Types[] = { (&U3CUpdateU3Ed__11_t572283621_0_0_0) };
+extern const Il2CppGenericInst GenInst_U3CUpdateU3Ed__11_t572283621_0_0_0 = { 1, GenInst_U3CUpdateU3Ed__11_t572283621_0_0_0_Types };
+static const RuntimeType* GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__11_t572283621_0_0_0_Types[] = { (&ResourceRequestAwaiter_t1171911063_0_0_0), (&U3CUpdateU3Ed__11_t572283621_0_0_0) };
+extern const Il2CppGenericInst GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__11_t572283621_0_0_0 = { 2, GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__11_t572283621_0_0_0_Types };
 static const RuntimeType* GenInst_AudioMonitor_t618666481_0_0_0_Types[] = { (&AudioMonitor_t618666481_0_0_0) };
 extern const Il2CppGenericInst GenInst_AudioMonitor_t618666481_0_0_0 = { 1, GenInst_AudioMonitor_t618666481_0_0_0_Types };
 static const RuntimeType* GenInst_AudioGraph_t545361603_0_0_0_Types[] = { (&AudioGraph_t545361603_0_0_0) };
@@ -12251,7 +12259,7 @@ static const RuntimeType* GenInst_PostProcessingComponentRenderTexture_1_t351854
 extern const Il2CppGenericInst GenInst_PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0 = { 1, GenInst_PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_KeyValuePair_2_t2326479492_0_0_0_Types[] = { (&KeyValuePair_2_t2326479492_0_0_0) };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2326479492_0_0_0 = { 1, GenInst_KeyValuePair_2_t2326479492_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[4157] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[4160] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Byte_t1134296376_0_0_0,
@@ -14807,24 +14815,27 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[4157] =
 	&GenInst_Rigidbody_t3916780224_0_0_0,
 	&GenInst_TMP_SpriteAnimator_t2836635477_0_0_0,
 	&GenInst_TextMeshPro_t2393593166_0_0_0,
-	&GenInst_U3CStartGameU3Ed__12_t3552439119_0_0_0,
-	&GenInst_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0,
-	&GenInst_U3COnFinishGameU3Ed__14_t472569197_0_0_0,
-	&GenInst_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0,
-	&GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0,
-	&GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0,
-	&GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__14_t472569197_0_0_0,
-	&GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__15_t2954936345_0_0_0,
-	&GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__12_t3552439119_0_0_0,
-	&GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__13_t2538930216_0_0_0,
+	&GenInst_GameManager_t1536523654_0_0_0,
+	&GenInst_U3CStartGameU3Ed__13_t1596123983_0_0_0,
+	&GenInst_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0,
+	&GenInst_U3COnFinishGameU3Ed__15_t2038653138_0_0_0,
+	&GenInst_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0,
+	&GenInst_Awaiter_t3115729477_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0,
+	&GenInst_TaskAwaiter_1_t1450460888_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0,
+	&GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3COnFinishGameU3Ed__15_t2038653138_0_0_0,
+	&GenInst_UnityWebRequestAsyncOperationAwaiter_t2774060996_0_0_0_U3CSendPointsToRankingU3Ed__16_t2954739737_0_0_0,
+	&GenInst_Awaiter_t3115729477_0_0_0_U3CStartGameU3Ed__13_t1596123983_0_0_0,
+	&GenInst_Awaiter_t3115729477_0_0_0_U3CUpdateTimeCounterU3Ed__14_t3730571304_0_0_0,
 	&GenInst_LocationSocket_t662685003_0_0_0,
 	&GenInst_AudioSource_t3935305588_0_0_0,
 	&GenInst_U3CValidateResultU3Ed__18_t1693661827_0_0_0,
 	&GenInst_Awaiter_t3115729477_0_0_0_U3CValidateResultU3Ed__18_t1693661827_0_0_0,
 	&GenInst_MeshRenderer_t587009260_0_0_0,
 	&GenInst_GridLayoutGroup_t3046220461_0_0_0,
-	&GenInst_U3CUpdateU3Ed__10_t2528598757_0_0_0,
-	&GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__10_t2528598757_0_0_0,
+	&GenInst_U3CUpdateU3Ed__4_t3556509160_0_0_0,
+	&GenInst_AsyncOperationAwaiter_t1917379287_0_0_0_U3CUpdateU3Ed__4_t3556509160_0_0_0,
+	&GenInst_U3CUpdateU3Ed__11_t572283621_0_0_0,
+	&GenInst_ResourceRequestAwaiter_t1171911063_0_0_0_U3CUpdateU3Ed__11_t572283621_0_0_0,
 	&GenInst_AudioMonitor_t618666481_0_0_0,
 	&GenInst_AudioGraph_t545361603_0_0_0,
 	&GenInst_AudioText_t204455010_0_0_0,

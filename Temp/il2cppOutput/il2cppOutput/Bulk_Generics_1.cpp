@@ -9582,10 +9582,12 @@ struct  Location_t1808107784
 public:
 	// System.String Location::Name
 	String_t* ___Name_0;
+	// System.String Location::DisplayName
+	String_t* ___DisplayName_1;
 	// LocationSocket Location::Socket
-	LocationSocket_t662685003 * ___Socket_1;
+	LocationSocket_t662685003 * ___Socket_2;
 	// System.String[] Location::Excludes
-	StringU5BU5D_t1281789340* ___Excludes_2;
+	StringU5BU5D_t1281789340* ___Excludes_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Name_0)); }
@@ -9597,22 +9599,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Name_0), value);
 	}
 
-	inline static int32_t get_offset_of_Socket_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_1)); }
-	inline LocationSocket_t662685003 * get_Socket_1() const { return ___Socket_1; }
-	inline LocationSocket_t662685003 ** get_address_of_Socket_1() { return &___Socket_1; }
-	inline void set_Socket_1(LocationSocket_t662685003 * value)
+	inline static int32_t get_offset_of_DisplayName_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___DisplayName_1)); }
+	inline String_t* get_DisplayName_1() const { return ___DisplayName_1; }
+	inline String_t** get_address_of_DisplayName_1() { return &___DisplayName_1; }
+	inline void set_DisplayName_1(String_t* value)
 	{
-		___Socket_1 = value;
-		Il2CppCodeGenWriteBarrier((&___Socket_1), value);
+		___DisplayName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DisplayName_1), value);
 	}
 
-	inline static int32_t get_offset_of_Excludes_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_2)); }
-	inline StringU5BU5D_t1281789340* get_Excludes_2() const { return ___Excludes_2; }
-	inline StringU5BU5D_t1281789340** get_address_of_Excludes_2() { return &___Excludes_2; }
-	inline void set_Excludes_2(StringU5BU5D_t1281789340* value)
+	inline static int32_t get_offset_of_Socket_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_2)); }
+	inline LocationSocket_t662685003 * get_Socket_2() const { return ___Socket_2; }
+	inline LocationSocket_t662685003 ** get_address_of_Socket_2() { return &___Socket_2; }
+	inline void set_Socket_2(LocationSocket_t662685003 * value)
 	{
-		___Excludes_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Excludes_2), value);
+		___Socket_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Socket_2), value);
+	}
+
+	inline static int32_t get_offset_of_Excludes_3() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_3)); }
+	inline StringU5BU5D_t1281789340* get_Excludes_3() const { return ___Excludes_3; }
+	inline StringU5BU5D_t1281789340** get_address_of_Excludes_3() { return &___Excludes_3; }
+	inline void set_Excludes_3(StringU5BU5D_t1281789340* value)
+	{
+		___Excludes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Excludes_3), value);
 	}
 };
 
@@ -9623,15 +9634,17 @@ public:
 struct Location_t1808107784_marshaled_pinvoke
 {
 	char* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	char** ___Excludes_2;
+	char* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	char** ___Excludes_3;
 };
 // Native definition for COM marshalling of Location
 struct Location_t1808107784_marshaled_com
 {
 	Il2CppChar* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	Il2CppChar** ___Excludes_2;
+	Il2CppChar* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	Il2CppChar** ___Excludes_3;
 };
 #endif // LOCATION_T1808107784_H
 #ifndef BOOLEAN_T97287965_H

@@ -180,6 +180,8 @@ struct IEnumerable_1_t1979070626;
 struct IEnumerable_1_t3056059305;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.Experimental.LowLevel.PlayerLoopSystem>
 struct IEnumerable_1_t3380592290;
+// System.Collections.Generic.IEnumerable`1<UnityEngine.Touch>
+struct IEnumerable_1_t901709757;
 // System.Collections.Generic.IEqualityComparer`1<System.Object>
 struct IEqualityComparer_1_t892470886;
 // System.Collections.Generic.IEqualityComparer`1<System.Threading.CancellationToken>
@@ -842,6 +844,8 @@ struct ResourceRequest_t3109103591;
 struct ScriptableObject_t2528358522;
 // UnityEngine.Sprite
 struct Sprite_t280657092;
+// UnityEngine.Touch[]
+struct TouchU5BU5D_t1849554061;
 // UnityEngine.Transform
 struct Transform_t3600365921;
 // UnityEngine.Transform[]
@@ -923,6 +927,13 @@ extern const RuntimeMethod* ArrayPoolUtil_EnsureCapacity_TisCancellationTokenReg
 extern const RuntimeMethod* ArrayPool_1_Rent_m956029058_RuntimeMethod_var;
 extern const RuntimeMethod* Array_ConvertAll_TisRuntimeObject_TisRuntimeObject_m2417852296_RuntimeMethod_var;
 extern const RuntimeMethod* Array_FindAll_TisRuntimeObject_m3566631088_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_RuntimeMethod_var;
+extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisVector2_t2156229523_m182881471_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisVector3_t3722313464_m321227951_RuntimeMethod_var;
 extern const RuntimeMethod* Array_InternalArray__IReadOnlyList_get_Item_TisVector4_t3319028937_m2130480280_RuntimeMethod_var;
@@ -1217,6 +1228,7 @@ extern const RuntimeMethod* Dictionary_2_Add_m2470974461_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_TryGetValue_m3557291920_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_First_TisRuntimeObject_m2175991606_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_First_TisRuntimeObject_m2399704171_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_First_TisTouch_t1921856868_m4253410368_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_Last_TisRuntimeObject_m1263248760_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_SingleOrDefault_TisRuntimeObject_m555175825_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_Single_TisLocation_t1808107784_m299329062_RuntimeMethod_var;
@@ -1225,6 +1237,7 @@ extern const RuntimeMethod* Enumerable_ToArray_TisPlayerLoopSystem_t105772105_m6
 extern const RuntimeMethod* Enumerable_ToArray_TisRuntimeObject_m2312436077_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_TryGetFirst_TisRuntimeObject_m4503334_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_TryGetFirst_TisRuntimeObject_m938458824_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_TryGetFirst_TisTouch_t1921856868_m3498663068_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_TryGetLast_TisRuntimeObject_m2096250941_RuntimeMethod_var;
 extern const RuntimeMethod* Error_ThrowNotYetCompleted_TisRuntimeObject_m1649526238_RuntimeMethod_var;
 extern const RuntimeMethod* ExecuteEvents_ValidateEventData_TisRuntimeObject_m1594546529_RuntimeMethod_var;
@@ -1242,6 +1255,13 @@ extern const uint32_t ArrayPoolUtil_Materialize_TisUniTask_1_t4076206416_m370245
 extern const uint32_t ArrayPoolUtil_Materialize_TisUniTask_t2999217737_m2977324376_MetadataUsageId;
 extern const uint32_t Array_ConvertAll_TisRuntimeObject_TisRuntimeObject_m2417852296_MetadataUsageId;
 extern const uint32_t Array_FindAll_TisRuntimeObject_m3566631088_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_MetadataUsageId;
+extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisVector2_t2156229523_m182881471_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisVector3_t3722313464_m321227951_MetadataUsageId;
 extern const uint32_t Array_InternalArray__IReadOnlyList_get_Item_TisVector4_t3319028937_m2130480280_MetadataUsageId;
@@ -1548,6 +1568,7 @@ extern const uint32_t EnumerableHelpers_ToArray_TisLocation_t1808107784_m2088348
 extern const uint32_t EnumerableHelpers_ToArray_TisRuntimeObject_m567817705_MetadataUsageId;
 extern const uint32_t Enumerable_First_TisRuntimeObject_m2175991606_MetadataUsageId;
 extern const uint32_t Enumerable_First_TisRuntimeObject_m2399704171_MetadataUsageId;
+extern const uint32_t Enumerable_First_TisTouch_t1921856868_m4253410368_MetadataUsageId;
 extern const uint32_t Enumerable_Last_TisRuntimeObject_m1263248760_MetadataUsageId;
 extern const uint32_t Enumerable_SingleOrDefault_TisRuntimeObject_m555175825_MetadataUsageId;
 extern const uint32_t Enumerable_Single_TisLocation_t1808107784_m299329062_MetadataUsageId;
@@ -1556,6 +1577,7 @@ extern const uint32_t Enumerable_ToArray_TisPlayerLoopSystem_t105772105_m6053944
 extern const uint32_t Enumerable_ToArray_TisRuntimeObject_m2312436077_MetadataUsageId;
 extern const uint32_t Enumerable_TryGetFirst_TisRuntimeObject_m4503334_MetadataUsageId;
 extern const uint32_t Enumerable_TryGetFirst_TisRuntimeObject_m938458824_MetadataUsageId;
+extern const uint32_t Enumerable_TryGetFirst_TisTouch_t1921856868_m3498663068_MetadataUsageId;
 extern const uint32_t Enumerable_TryGetLast_TisRuntimeObject_m2096250941_MetadataUsageId;
 extern const uint32_t Error_ThrowNotYetCompleted_TisRuntimeObject_m1649526238_MetadataUsageId;
 extern const uint32_t ExecuteEvents_ExecuteHierarchy_TisRuntimeObject_m3266560969_MetadataUsageId;
@@ -1570,6 +1592,7 @@ extern const uint32_t LazyInitializer_EnsureInitializedCore_TisRuntimeObject_m32
 extern const uint32_t Marshal_PtrToStructure_TisRuntimeObject_m1794837406_MetadataUsageId;
 extern const uint32_t Marshal_PtrToStructure_TisWin32_FIXED_INFO_t1299345856_m4277728215_MetadataUsageId;
 extern const uint32_t Marshal_PtrToStructure_TisWin32_IP_ADAPTER_ADDRESSES_t3463526328_m266777785_MetadataUsageId;
+extern const uint32_t Object_FindObjectOfType_TisRuntimeObject_m2612646359_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisRuntimeObject_m1061214600_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisRuntimeObject_m1149750522_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisRuntimeObject_m2446893047_MetadataUsageId;
@@ -1664,6 +1687,7 @@ struct Color32U5BU5D_t3850468773;
 struct RaycastResultU5BU5D_t1128832444;
 struct PlayerLoopSystemInternalU5BU5D_t4041261362;
 struct PlayerLoopSystemU5BU5D_t1150299252;
+struct TouchU5BU5D_t1849554061;
 struct UICharInfoU5BU5D_t928762055;
 struct UILineInfoU5BU5D_t1655937503;
 struct UIVertexU5BU5D_t1981460040;
@@ -5984,10 +6008,12 @@ struct  Location_t1808107784
 public:
 	// System.String Location::Name
 	String_t* ___Name_0;
+	// System.String Location::DisplayName
+	String_t* ___DisplayName_1;
 	// LocationSocket Location::Socket
-	LocationSocket_t662685003 * ___Socket_1;
+	LocationSocket_t662685003 * ___Socket_2;
 	// System.String[] Location::Excludes
-	StringU5BU5D_t1281789340* ___Excludes_2;
+	StringU5BU5D_t1281789340* ___Excludes_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Name_0)); }
@@ -5999,22 +6025,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Name_0), value);
 	}
 
-	inline static int32_t get_offset_of_Socket_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_1)); }
-	inline LocationSocket_t662685003 * get_Socket_1() const { return ___Socket_1; }
-	inline LocationSocket_t662685003 ** get_address_of_Socket_1() { return &___Socket_1; }
-	inline void set_Socket_1(LocationSocket_t662685003 * value)
+	inline static int32_t get_offset_of_DisplayName_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___DisplayName_1)); }
+	inline String_t* get_DisplayName_1() const { return ___DisplayName_1; }
+	inline String_t** get_address_of_DisplayName_1() { return &___DisplayName_1; }
+	inline void set_DisplayName_1(String_t* value)
 	{
-		___Socket_1 = value;
-		Il2CppCodeGenWriteBarrier((&___Socket_1), value);
+		___DisplayName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DisplayName_1), value);
 	}
 
-	inline static int32_t get_offset_of_Excludes_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_2)); }
-	inline StringU5BU5D_t1281789340* get_Excludes_2() const { return ___Excludes_2; }
-	inline StringU5BU5D_t1281789340** get_address_of_Excludes_2() { return &___Excludes_2; }
-	inline void set_Excludes_2(StringU5BU5D_t1281789340* value)
+	inline static int32_t get_offset_of_Socket_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_2)); }
+	inline LocationSocket_t662685003 * get_Socket_2() const { return ___Socket_2; }
+	inline LocationSocket_t662685003 ** get_address_of_Socket_2() { return &___Socket_2; }
+	inline void set_Socket_2(LocationSocket_t662685003 * value)
 	{
-		___Excludes_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Excludes_2), value);
+		___Socket_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Socket_2), value);
+	}
+
+	inline static int32_t get_offset_of_Excludes_3() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_3)); }
+	inline StringU5BU5D_t1281789340* get_Excludes_3() const { return ___Excludes_3; }
+	inline StringU5BU5D_t1281789340** get_address_of_Excludes_3() { return &___Excludes_3; }
+	inline void set_Excludes_3(StringU5BU5D_t1281789340* value)
+	{
+		___Excludes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Excludes_3), value);
 	}
 };
 
@@ -6025,15 +6060,17 @@ public:
 struct Location_t1808107784_marshaled_pinvoke
 {
 	char* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	char** ___Excludes_2;
+	char* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	char** ___Excludes_3;
 };
 // Native definition for COM marshalling of Location
 struct Location_t1808107784_marshaled_com
 {
 	Il2CppChar* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	Il2CppChar** ___Excludes_2;
+	Il2CppChar* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	Il2CppChar** ___Excludes_3;
 };
 #endif // LOCATION_T1808107784_H
 #ifndef XPATHNODE_T2208072876_H
@@ -36615,6 +36652,41 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Touch[]
+struct TouchU5BU5D_t1849554061  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Touch_t1921856868  m_Items[1];
+
+public:
+	inline Touch_t1921856868  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Touch_t1921856868 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Touch_t1921856868  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Touch_t1921856868  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Touch_t1921856868 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Touch_t1921856868  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // UnityEngine.UICharInfo[]
 struct UICharInfoU5BU5D_t928762055  : public RuntimeArray
 {
@@ -37218,6 +37290,8 @@ extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * GameObject_AddComponent_m1
 extern "C" IL2CPP_METHOD_ATTR void GameObject_GetComponentFastPath_m2620139331 (GameObject_t1113636619 * __this, Type_t * ___type0, intptr_t ___oneFurtherThanResultValue1, const RuntimeMethod* method);
 // UnityEngine.Component UnityEngine.GameObject::GetComponentInChildren(System.Type,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * GameObject_GetComponentInChildren_m2567799249 (GameObject_t1113636619 * __this, Type_t * ___type0, bool ___includeInactive1, const RuntimeMethod* method);
+// UnityEngine.Object UnityEngine.Object::FindObjectOfType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR Object_t631007953 * Object_FindObjectOfType_m67275058 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method);
 // System.Void UnityEngine.Object::CheckNullArgument(System.Object,System.String)
 extern "C" IL2CPP_METHOD_ATTR void Object_CheckNullArgument_m4237608654 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___arg0, String_t* ___message1, const RuntimeMethod* method);
 // UnityEngine.Object UnityEngine.Object::Internal_CloneSingle(UnityEngine.Object)
@@ -37735,6 +37809,248 @@ inline int32_t KeyValuePair_2_get_Key_m648688154 (KeyValuePair_2_t3423445140 * _
 }
 // UnityEngine.ResourceRequest UnityEngine.Resources::LoadAsync(System.String,System.Type)
 extern "C" IL2CPP_METHOD_ATTR ResourceRequest_t3109103591 * Resources_LoadAsync_m1988772635 (RuntimeObject * __this /* static, unused */, String_t* ___path0, Type_t * ___type1, const RuntimeMethod* method);
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Scrollbar/Direction>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t3470714353_m1060680375_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Selectable/Transition>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisTransition_t1769908631_m1057654687_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.Slider/Direction>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisDirection_t337909235_m518466143_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (int32_t*)(int32_t*)(&V_0));
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UI.SpriteState>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR SpriteState_t1362986479  Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	SpriteState_t1362986479  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisSpriteState_t1362986479_m2971757129_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (SpriteState_t1362986479 *)(SpriteState_t1362986479 *)(&V_0));
+		SpriteState_t1362986479  L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UICharInfo>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR UICharInfo_t75501106  Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UICharInfo_t75501106  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUICharInfo_t75501106_m2335664289_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UICharInfo_t75501106 *)(UICharInfo_t75501106 *)(&V_0));
+		UICharInfo_t75501106  L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UILineInfo>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR UILineInfo_t4195266810  Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UILineInfo_t4195266810  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUILineInfo_t4195266810_m1189106026_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UILineInfo_t4195266810 *)(UILineInfo_t4195266810 *)(&V_0));
+		UILineInfo_t4195266810  L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UIVertex>(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR UIVertex_t4057497605  Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UIVertex_t4057497605  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		int32_t L_1 = Array_get_Length_m21610649((RuntimeArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_2 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_2, (String_t*)_stringLiteral797640427, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Array_InternalArray__IReadOnlyList_get_Item_TisUIVertex_t4057497605_m1280704486_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((RuntimeArray *)__this);
+		ArrayGetGenericValueImpl((RuntimeArray *)__this, (int32_t)L_3, (UIVertex_t4057497605 *)(UIVertex_t4057497605 *)(&V_0));
+		UIVertex_t4057497605  L_4 = V_0;
+		return L_4;
+	}
+}
 // T System.Array::InternalArray__IReadOnlyList_get_Item<UnityEngine.UnitySynchronizationContext/WorkRequest>(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR WorkRequest_t1354518612  Array_InternalArray__IReadOnlyList_get_Item_TisWorkRequest_t1354518612_m3429665912_gshared (RuntimeArray * __this, int32_t ___index0, const RuntimeMethod* method)
 {
@@ -48210,6 +48526,18 @@ extern "C" IL2CPP_METHOD_ATTR PlayerLoopSystemInternal_t2185485283  Array_Unsafe
 		return L_3;
 	}
 }
+// T System.Array::UnsafeLoad<UnityEngine.Touch>(T[],System.Int32)
+extern "C" IL2CPP_METHOD_ATTR Touch_t1921856868  Array_UnsafeLoad_TisTouch_t1921856868_m2703459859_gshared (RuntimeObject * __this /* static, unused */, TouchU5BU5D_t1849554061* ___array0, int32_t ___index1, const RuntimeMethod* method)
+{
+	{
+		TouchU5BU5D_t1849554061* L_0 = ___array0;
+		int32_t L_1 = ___index1;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		Touch_t1921856868  L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		return L_3;
+	}
+}
 // T System.Array::UnsafeLoad<UnityEngine.UICharInfo>(T[],System.Int32)
 extern "C" IL2CPP_METHOD_ATTR UICharInfo_t75501106  Array_UnsafeLoad_TisUICharInfo_t75501106_m2614895110_gshared (RuntimeObject * __this /* static, unused */, UICharInfoU5BU5D_t928762055* ___array0, int32_t ___index1, const RuntimeMethod* method)
 {
@@ -48864,6 +49192,32 @@ IL_001d:
 		return L_4;
 	}
 }
+// T UnityEngine.Object::FindObjectOfType<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Object_FindObjectOfType_TisRuntimeObject_m2612646359_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Object_FindObjectOfType_TisRuntimeObject_m2612646359_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		Object_t631007953 * L_2 = Object_FindObjectOfType_m67275058(NULL /*static, unused*/, (Type_t *)L_1, /*hidden argument*/NULL);
+		V_0 = (RuntimeObject *)((RuntimeObject *)Castclass((RuntimeObject*)L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		RuntimeObject * L_3 = V_0;
+		return L_3;
+	}
+}
 // T UnityEngine.Object::Instantiate<System.Object>(T)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Object_Instantiate_TisRuntimeObject_m2446893047_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject * ___original0, const RuntimeMethod* method)
 {
@@ -49366,6 +49720,41 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerable_First_TisRuntimeObject_
 	}
 
 IL_0012:
+	{
+		return G_B2_0;
+	}
+}
+// TSource System.Linq.Enumerable::First<UnityEngine.Touch>(System.Collections.Generic.IEnumerable`1<TSource>)
+extern "C" IL2CPP_METHOD_ATTR Touch_t1921856868  Enumerable_First_TisTouch_t1921856868_m4253410368_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* ___source0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Enumerable_First_TisTouch_t1921856868_m4253410368_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Touch_t1921856868  G_B2_0;
+	memset(&G_B2_0, 0, sizeof(G_B2_0));
+	Touch_t1921856868  G_B1_0;
+	memset(&G_B1_0, 0, sizeof(G_B1_0));
+	{
+		RuntimeObject* L_0 = ___source0;
+		Touch_t1921856868  L_1 = ((  Touch_t1921856868  (*) (RuntimeObject * /* static, unused */, RuntimeObject*, bool*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (RuntimeObject*)L_0, (bool*)(bool*)(&V_0), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		bool L_2 = V_0;
+		G_B1_0 = L_1;
+		if (L_2)
+		{
+			G_B2_0 = L_1;
+			goto IL_0011;
+		}
+	}
+	{
+		Exception_t * L_3 = Error_NoElements_m207875825(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, Enumerable_First_TisTouch_t1921856868_m4253410368_RuntimeMethod_var);
+	}
+
+IL_0011:
 	{
 		return G_B2_0;
 	}
@@ -50298,6 +50687,173 @@ IL_0063:
 IL_0071:
 	{
 		RuntimeObject * L_25 = V_3;
+		return L_25;
+	}
+}
+// TSource System.Linq.Enumerable::TryGetFirst<UnityEngine.Touch>(System.Collections.Generic.IEnumerable`1<TSource>,System.Boolean&)
+extern "C" IL2CPP_METHOD_ATTR Touch_t1921856868  Enumerable_TryGetFirst_TisTouch_t1921856868_m3498663068_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* ___source0, bool* ___found1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Enumerable_TryGetFirst_TisTouch_t1921856868_m3498663068_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	Touch_t1921856868  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Touch_t1921856868  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject* L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		Exception_t * L_1 = Error_ArgumentNull_m219206370(NULL /*static, unused*/, (String_t*)_stringLiteral4294193667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Enumerable_TryGetFirst_TisTouch_t1921856868_m3498663068_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		RuntimeObject* L_2 = ___source0;
+		RuntimeObject* L_3 = (RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 0)));
+		V_0 = (RuntimeObject*)L_3;
+		if (!L_3)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		RuntimeObject* L_4 = V_0;
+		bool* L_5 = ___found1;
+		NullCheck((RuntimeObject*)L_4);
+		Touch_t1921856868  L_6 = InterfaceFuncInvoker1< Touch_t1921856868 , bool* >::Invoke(1 /* TElement System.Linq.IPartition`1<UnityEngine.Touch>::TryGetFirst(System.Boolean&) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (RuntimeObject*)L_4, (bool*)(bool*)L_5);
+		return L_6;
+	}
+
+IL_0020:
+	{
+		RuntimeObject* L_7 = ___source0;
+		RuntimeObject* L_8 = (RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_7, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
+		V_1 = (RuntimeObject*)L_8;
+		if (!L_8)
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		RuntimeObject* L_9 = V_1;
+		NullCheck((RuntimeObject*)L_9);
+		int32_t L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<UnityEngine.Touch>::get_Count() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 2), (RuntimeObject*)L_9);
+		if ((((int32_t)L_10) <= ((int32_t)0)))
+		{
+			goto IL_0065;
+		}
+	}
+	{
+		bool* L_11 = ___found1;
+		*((int8_t*)(L_11)) = (int8_t)1;
+		RuntimeObject* L_12 = V_1;
+		NullCheck((RuntimeObject*)L_12);
+		Touch_t1921856868  L_13 = InterfaceFuncInvoker1< Touch_t1921856868 , int32_t >::Invoke(0 /* !0 System.Collections.Generic.IList`1<UnityEngine.Touch>::get_Item(System.Int32) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 1), (RuntimeObject*)L_12, (int32_t)0);
+		return L_13;
+	}
+
+IL_003e:
+	{
+		RuntimeObject* L_14 = ___source0;
+		NullCheck((RuntimeObject*)L_14);
+		RuntimeObject* L_15 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<UnityEngine.Touch>::GetEnumerator() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 3), (RuntimeObject*)L_14);
+		V_2 = (RuntimeObject*)L_15;
+	}
+
+IL_0045:
+	try
+	{ // begin try (depth: 1)
+		{
+			RuntimeObject* L_16 = V_2;
+			NullCheck((RuntimeObject*)L_16);
+			bool L_17 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, (RuntimeObject*)L_16);
+			if (!L_17)
+			{
+				goto IL_0059;
+			}
+		}
+
+IL_004d:
+		{
+			bool* L_18 = ___found1;
+			*((int8_t*)(L_18)) = (int8_t)1;
+			RuntimeObject* L_19 = V_2;
+			NullCheck((RuntimeObject*)L_19);
+			Touch_t1921856868  L_20 = InterfaceFuncInvoker0< Touch_t1921856868  >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<UnityEngine.Touch>::get_Current() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 4), (RuntimeObject*)L_19);
+			V_3 = (Touch_t1921856868 )L_20;
+			IL2CPP_LEAVE(0x73, FINALLY_005b);
+		}
+
+IL_0059:
+		{
+			IL2CPP_LEAVE(0x65, FINALLY_005b);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_005b;
+	}
+
+FINALLY_005b:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_21 = V_2;
+			if (!L_21)
+			{
+				goto IL_0064;
+			}
+		}
+
+IL_005e:
+		{
+			RuntimeObject* L_22 = V_2;
+			NullCheck((RuntimeObject*)L_22);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, (RuntimeObject*)L_22);
+		}
+
+IL_0064:
+		{
+			IL2CPP_END_FINALLY(91)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(91)
+	{
+		IL2CPP_JUMP_TBL(0x73, IL_0073)
+		IL2CPP_JUMP_TBL(0x65, IL_0065)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0065:
+	{
+		bool* L_23 = ___found1;
+		*((int8_t*)(L_23)) = (int8_t)0;
+		il2cpp_codegen_initobj((&V_4), sizeof(Touch_t1921856868 ));
+		Touch_t1921856868  L_24 = V_4;
+		return L_24;
+	}
+
+IL_0073:
+	{
+		Touch_t1921856868  L_25 = V_3;
 		return L_25;
 	}
 }

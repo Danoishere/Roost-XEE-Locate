@@ -17,17 +17,23 @@ public class ScreensaverManager : MonoBehaviour
     private bool isScreensaverVisible = false;
     private float secondsSinceLastSpriteChange = 0.0f;
     private int currentSpriteIndex = 0;
-
+    private GameManager gameManager;
 
     // Use this for initialization
     void Start()
     {
         Canvas.gameObject.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     async void Update()
     {
+        if (gameManager.isOnGameScreen)
+        {
+            return;
+        }
+
         if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
         {
             secondsSinceLastTouch = 0.0f;

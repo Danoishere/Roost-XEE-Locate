@@ -1156,6 +1156,8 @@ struct RenderTexture_t2108887433;
 struct RenderTargetIdentifierU5BU5D_t2742279485;
 // UnityEngine.Sprite
 struct Sprite_t280657092;
+// UnityEngine.Touch[]
+struct TouchU5BU5D_t1849554061;
 // UnityEngine.UI.ObjectPool`1<System.Collections.Generic.List`1<UnityEngine.EventSystems.IEventSystemHandler>>
 struct ObjectPool_1_t231414508;
 // UnityEngine.UI.ObjectPool`1<System.Object>
@@ -1253,6 +1255,7 @@ extern const RuntimeMethod* Array_IndexOf_TisSingle_t1397266774_m358168365_Runti
 extern const RuntimeMethod* Array_IndexOf_TisSpriteData_t3048397587_m2703578641_RuntimeMethod_var;
 extern const RuntimeMethod* Array_IndexOf_TisSslStatus_t191981556_m1985229987_RuntimeMethod_var;
 extern const RuntimeMethod* Array_IndexOf_TisTimeSpan_t881159249_m3283569307_RuntimeMethod_var;
+extern const RuntimeMethod* Array_IndexOf_TisTouch_t1921856868_m1687410680_RuntimeMethod_var;
 extern const RuntimeMethod* Array_IndexOf_TisUICharInfo_t75501106_m3198896198_RuntimeMethod_var;
 extern const RuntimeMethod* Array_IndexOf_TisUILineInfo_t4195266810_m2311665267_RuntimeMethod_var;
 extern const RuntimeMethod* Array_IndexOf_TisUIVertex_t4057497605_m3336763564_RuntimeMethod_var;
@@ -1597,6 +1600,7 @@ extern const uint32_t Array_IndexOf_TisSingle_t1397266774_m358168365_MetadataUsa
 extern const uint32_t Array_IndexOf_TisSpriteData_t3048397587_m2703578641_MetadataUsageId;
 extern const uint32_t Array_IndexOf_TisSslStatus_t191981556_m1985229987_MetadataUsageId;
 extern const uint32_t Array_IndexOf_TisTimeSpan_t881159249_m3283569307_MetadataUsageId;
+extern const uint32_t Array_IndexOf_TisTouch_t1921856868_m1687410680_MetadataUsageId;
 extern const uint32_t Array_IndexOf_TisUICharInfo_t75501106_m3198896198_MetadataUsageId;
 extern const uint32_t Array_IndexOf_TisUILineInfo_t4195266810_m2311665267_MetadataUsageId;
 extern const uint32_t Array_IndexOf_TisUIVertex_t4057497605_m3336763564_MetadataUsageId;
@@ -1957,6 +1961,7 @@ struct Color32U5BU5D_t3850468773;
 struct RaycastResultU5BU5D_t1128832444;
 struct PlayerLoopSystemInternalU5BU5D_t4041261362;
 struct PlayerLoopSystemU5BU5D_t1150299252;
+struct TouchU5BU5D_t1849554061;
 struct UICharInfoU5BU5D_t928762055;
 struct UILineInfoU5BU5D_t1655937503;
 struct UIVertexU5BU5D_t1981460040;
@@ -12840,80 +12845,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // EQUALITYCOMPARER_1_T1804232806_H
-#ifndef EQUALITYCOMPARER_1_T3335669918_H
-#define EQUALITYCOMPARER_1_T3335669918_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.EqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.DateTime,System.Object>>
-struct  EqualityComparer_1_t3335669918  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct EqualityComparer_1_t3335669918_StaticFields
-{
-public:
-	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
-	EqualityComparer_1_t3335669918 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t3335669918_StaticFields, ___defaultComparer_0)); }
-	inline EqualityComparer_1_t3335669918 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline EqualityComparer_1_t3335669918 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(EqualityComparer_1_t3335669918 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // EQUALITYCOMPARER_1_T3335669918_H
-#ifndef EQUALITYCOMPARER_1_T699989655_H
-#define EQUALITYCOMPARER_1_T699989655_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.EqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
-struct  EqualityComparer_1_t699989655  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct EqualityComparer_1_t699989655_StaticFields
-{
-public:
-	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
-	EqualityComparer_1_t699989655 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t699989655_StaticFields, ___defaultComparer_0)); }
-	inline EqualityComparer_1_t699989655 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline EqualityComparer_1_t699989655 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(EqualityComparer_1_t699989655 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // EQUALITYCOMPARER_1_T699989655_H
 #ifndef EQUALITYCOMPARER_1_T1120718089_H
 #define EQUALITYCOMPARER_1_T1120718089_H
 #ifdef __clang__
@@ -16025,10 +15956,12 @@ struct  Location_t1808107784
 public:
 	// System.String Location::Name
 	String_t* ___Name_0;
+	// System.String Location::DisplayName
+	String_t* ___DisplayName_1;
 	// LocationSocket Location::Socket
-	LocationSocket_t662685003 * ___Socket_1;
+	LocationSocket_t662685003 * ___Socket_2;
 	// System.String[] Location::Excludes
-	StringU5BU5D_t1281789340* ___Excludes_2;
+	StringU5BU5D_t1281789340* ___Excludes_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Name_0)); }
@@ -16040,22 +15973,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Name_0), value);
 	}
 
-	inline static int32_t get_offset_of_Socket_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_1)); }
-	inline LocationSocket_t662685003 * get_Socket_1() const { return ___Socket_1; }
-	inline LocationSocket_t662685003 ** get_address_of_Socket_1() { return &___Socket_1; }
-	inline void set_Socket_1(LocationSocket_t662685003 * value)
+	inline static int32_t get_offset_of_DisplayName_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___DisplayName_1)); }
+	inline String_t* get_DisplayName_1() const { return ___DisplayName_1; }
+	inline String_t** get_address_of_DisplayName_1() { return &___DisplayName_1; }
+	inline void set_DisplayName_1(String_t* value)
 	{
-		___Socket_1 = value;
-		Il2CppCodeGenWriteBarrier((&___Socket_1), value);
+		___DisplayName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DisplayName_1), value);
 	}
 
-	inline static int32_t get_offset_of_Excludes_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_2)); }
-	inline StringU5BU5D_t1281789340* get_Excludes_2() const { return ___Excludes_2; }
-	inline StringU5BU5D_t1281789340** get_address_of_Excludes_2() { return &___Excludes_2; }
-	inline void set_Excludes_2(StringU5BU5D_t1281789340* value)
+	inline static int32_t get_offset_of_Socket_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_2)); }
+	inline LocationSocket_t662685003 * get_Socket_2() const { return ___Socket_2; }
+	inline LocationSocket_t662685003 ** get_address_of_Socket_2() { return &___Socket_2; }
+	inline void set_Socket_2(LocationSocket_t662685003 * value)
 	{
-		___Excludes_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Excludes_2), value);
+		___Socket_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Socket_2), value);
+	}
+
+	inline static int32_t get_offset_of_Excludes_3() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_3)); }
+	inline StringU5BU5D_t1281789340* get_Excludes_3() const { return ___Excludes_3; }
+	inline StringU5BU5D_t1281789340** get_address_of_Excludes_3() { return &___Excludes_3; }
+	inline void set_Excludes_3(StringU5BU5D_t1281789340* value)
+	{
+		___Excludes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Excludes_3), value);
 	}
 };
 
@@ -16066,15 +16008,17 @@ public:
 struct Location_t1808107784_marshaled_pinvoke
 {
 	char* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	char** ___Excludes_2;
+	char* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	char** ___Excludes_3;
 };
 // Native definition for COM marshalling of Location
 struct Location_t1808107784_marshaled_com
 {
 	Il2CppChar* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	Il2CppChar** ___Excludes_2;
+	Il2CppChar* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	Il2CppChar** ___Excludes_3;
 };
 #endif // LOCATION_T1808107784_H
 #ifndef XPATHNODEREF_T3498189018_H
@@ -49509,6 +49453,41 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Touch[]
+struct TouchU5BU5D_t1849554061  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Touch_t1921856868  m_Items[1];
+
+public:
+	inline Touch_t1921856868  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Touch_t1921856868 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Touch_t1921856868  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Touch_t1921856868  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Touch_t1921856868 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Touch_t1921856868  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // UnityEngine.UICharInfo[]
 struct UICharInfoU5BU5D_t928762055  : public RuntimeArray
 {
@@ -72060,6 +72039,89 @@ IL_0044:
 		return L_15;
 	}
 }
+// System.Int32 System.Array::IndexOf<UnityEngine.Touch>(T[],T,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Array_IndexOf_TisTouch_t1921856868_m1687410680_gshared (RuntimeObject * __this /* static, unused */, TouchU5BU5D_t1849554061* ___array0, Touch_t1921856868  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_IndexOf_TisTouch_t1921856868_m1687410680_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TouchU5BU5D_t1849554061* L_0 = ___array0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral4007973390, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Array_IndexOf_TisTouch_t1921856868_m1687410680_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		int32_t L_2 = ___startIndex2;
+		if ((((int32_t)L_2) < ((int32_t)0)))
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		int32_t L_3 = ___startIndex2;
+		TouchU5BU5D_t1849554061* L_4 = ___array0;
+		NullCheck(L_4);
+		if ((((int32_t)L_3) <= ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length)))))))
+		{
+			goto IL_0028;
+		}
+	}
+
+IL_0018:
+	{
+		ArgumentOutOfRangeException_t777629997 * L_5 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m282481429(L_5, (String_t*)_stringLiteral2410720131, (String_t*)_stringLiteral1358229803, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, NULL, Array_IndexOf_TisTouch_t1921856868_m1687410680_RuntimeMethod_var);
+	}
+
+IL_0028:
+	{
+		int32_t L_6 = ___count3;
+		if ((((int32_t)L_6) < ((int32_t)0)))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_7 = ___count3;
+		TouchU5BU5D_t1849554061* L_8 = ___array0;
+		NullCheck(L_8);
+		int32_t L_9 = ___startIndex2;
+		if ((((int32_t)L_7) <= ((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_8)->max_length)))), (int32_t)L_9)))))
+		{
+			goto IL_0044;
+		}
+	}
+
+IL_0034:
+	{
+		ArgumentOutOfRangeException_t777629997 * L_10 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m282481429(L_10, (String_t*)_stringLiteral2002595880, (String_t*)_stringLiteral1515944217, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, NULL, Array_IndexOf_TisTouch_t1921856868_m1687410680_RuntimeMethod_var);
+	}
+
+IL_0044:
+	{
+		TouchU5BU5D_t1849554061* L_11 = ___array0;
+		Touch_t1921856868  L_12 = ___value1;
+		int32_t L_13 = ___startIndex2;
+		int32_t L_14 = ___count3;
+		int32_t L_15 = ((  int32_t (*) (RuntimeObject * /* static, unused */, TouchU5BU5D_t1849554061*, Touch_t1921856868 , int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (TouchU5BU5D_t1849554061*)L_11, (Touch_t1921856868 )L_12, (int32_t)L_13, (int32_t)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		return L_15;
+	}
+}
 // System.Int32 System.Array::IndexOf<UnityEngine.UICharInfo>(T[],T,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR int32_t Array_IndexOf_TisUICharInfo_t75501106_m3198896198_gshared (RuntimeObject * __this /* static, unused */, UICharInfoU5BU5D_t928762055* ___array0, UICharInfo_t75501106  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
 {
@@ -72625,34 +72687,6 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Array_IndexOfImpl_TisChar_t3634460470_m797
 		int32_t L_4 = ___count3;
 		NullCheck((EqualityComparer_1_t1804232806 *)L_0);
 		int32_t L_5 = VirtFuncInvoker4< int32_t, CharU5BU5D_t3528271667*, Il2CppChar, int32_t, int32_t >::Invoke(10 /* System.Int32 System.Collections.Generic.EqualityComparer`1<System.Char>::IndexOf(T[],T,System.Int32,System.Int32) */, (EqualityComparer_1_t1804232806 *)L_0, (CharU5BU5D_t3528271667*)L_1, (Il2CppChar)L_2, (int32_t)L_3, (int32_t)L_4);
-		return L_5;
-	}
-}
-// System.Int32 System.Array::IndexOfImpl<System.Collections.Generic.KeyValuePair`2<System.DateTime,System.Object>>(T[],T,System.Int32,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Array_IndexOfImpl_TisKeyValuePair_2_t870930286_m1980822055_gshared (RuntimeObject * __this /* static, unused */, KeyValuePair_2U5BU5D_t2069718811* ___array0, KeyValuePair_2_t870930286  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
-{
-	{
-		EqualityComparer_1_t3335669918 * L_0 = ((  EqualityComparer_1_t3335669918 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
-		KeyValuePair_2U5BU5D_t2069718811* L_1 = ___array0;
-		KeyValuePair_2_t870930286  L_2 = ___value1;
-		int32_t L_3 = ___startIndex2;
-		int32_t L_4 = ___count3;
-		NullCheck((EqualityComparer_1_t3335669918 *)L_0);
-		int32_t L_5 = VirtFuncInvoker4< int32_t, KeyValuePair_2U5BU5D_t2069718811*, KeyValuePair_2_t870930286 , int32_t, int32_t >::Invoke(10 /* System.Int32 System.Collections.Generic.EqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.DateTime,System.Object>>::IndexOf(T[],T,System.Int32,System.Int32) */, (EqualityComparer_1_t3335669918 *)L_0, (KeyValuePair_2U5BU5D_t2069718811*)L_1, (KeyValuePair_2_t870930286 )L_2, (int32_t)L_3, (int32_t)L_4);
-		return L_5;
-	}
-}
-// System.Int32 System.Array::IndexOfImpl<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(T[],T,System.Int32,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR int32_t Array_IndexOfImpl_TisKeyValuePair_2_t2530217319_m719598529_gshared (RuntimeObject * __this /* static, unused */, KeyValuePair_2U5BU5D_t118269214* ___array0, KeyValuePair_2_t2530217319  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
-{
-	{
-		EqualityComparer_1_t699989655 * L_0 = ((  EqualityComparer_1_t699989655 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
-		KeyValuePair_2U5BU5D_t118269214* L_1 = ___array0;
-		KeyValuePair_2_t2530217319  L_2 = ___value1;
-		int32_t L_3 = ___startIndex2;
-		int32_t L_4 = ___count3;
-		NullCheck((EqualityComparer_1_t699989655 *)L_0);
-		int32_t L_5 = VirtFuncInvoker4< int32_t, KeyValuePair_2U5BU5D_t118269214*, KeyValuePair_2_t2530217319 , int32_t, int32_t >::Invoke(10 /* System.Int32 System.Collections.Generic.EqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::IndexOf(T[],T,System.Int32,System.Int32) */, (EqualityComparer_1_t699989655 *)L_0, (KeyValuePair_2U5BU5D_t118269214*)L_1, (KeyValuePair_2_t2530217319 )L_2, (int32_t)L_3, (int32_t)L_4);
 		return L_5;
 	}
 }

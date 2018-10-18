@@ -11,6 +11,8 @@ using UnityEngine.UI;
 public struct Location
 {
     public string Name;
+    [TextArea(0, 10)]
+    public string DisplayName;
     public LocationSocket Socket;
     public string[] Excludes;
 }
@@ -73,7 +75,7 @@ public class LocationManager : MonoBehaviour
         foreach (var activeLocation in activeLocations)
         {
             var locationLabel = Instantiate(LocationLabelPrefab, LocationStash.transform) as GameObject;
-            locationLabel.GetComponentInChildren<Text>().text = activeLocation.Name.ToUpper();
+            locationLabel.GetComponentInChildren<Text>().text = activeLocation.DisplayName.ToUpper();
             locationLabel.GetComponent<LocationLabel>().IsAssigned = false;
             locationLabel.GetComponent<LocationLabel>().Location = activeLocation;
             locationLabel.transform.SetParent(LocationStash.transform);

@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
 
     private LocationManager locationManager;
 
-    private bool isGameRunning = false;
+    public bool isGameRunning = false;
+    public bool isOnGameScreen = false;
     private float seconds = 0;
 
     void Awake()
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
         background.SetActive(false);
 
         isGameRunning = true;
+        isOnGameScreen = true;
         UpdateTimeCounter();
     }
 
@@ -94,9 +96,9 @@ public class GameManager : MonoBehaviour
 
         finishGamePanel.SetActive(true);
         finishGamePanel.GetComponentInChildren<Text>().text = "ENDE";
-        await UniTask.Delay(3000);
+        await UniTask.Delay(2000);
         finishGamePanel.GetComponentInChildren<Text>().text = "AUSWERTUNG";
-        await UniTask.Delay(2500);
+        await UniTask.Delay(2000);
         finishGamePanel.SetActive(false);
 
         var points = await locationManager.ValidateResult();
@@ -108,13 +110,13 @@ public class GameManager : MonoBehaviour
 
         if (pointsTimeSeconds == 0)
         {
-            finishGamePanel.GetComponentInChildren<Text>().text = "VIEL GLÜCK BEIM NÄCHSTEN MAL";
+            finishGamePanel.GetComponentInChildren<Text>().text = "Viel Glück beim nächsten Mal.";
             await UniTask.Delay(5000);
         }
         else
         {
-            finishGamePanel.GetComponentInChildren<Text>().text = "GRATULATION!";
-            finishTextSubtitle.text = "BITTE GEBEN SIE IHRE ANGABEN AM COMPUTER EIN.";
+            finishGamePanel.GetComponentInChildren<Text>().text = "Gratulation!";
+            finishTextSubtitle.text = "Bitte geben Sie ihre Angaben am Computer ein.";
             SendPointsToRanking(pointsTimeSeconds);
 
             await UniTask.Delay(6500);

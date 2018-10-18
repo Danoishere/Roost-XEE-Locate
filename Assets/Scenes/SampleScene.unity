@@ -768,12 +768,12 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.005
+      value: -0.09259856
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.05
+      value: 0.07415515
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -798,7 +798,7 @@ Prefab:
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.14258063
+      value: 0.14258066
       objectReference: {fileID: 0}
     - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
         type: 2}
@@ -822,6 +822,31 @@ Prefab:
     - target: {fileID: 4988285815783670, guid: bcefec045034041d082e7062272f6ec8, type: 2}
       propertyPath: m_LocalScale.z
       value: 2.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114368749334399362, guid: bcefec045034041d082e7062272f6ec8,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224425464631110044, guid: bcefec045034041d082e7062272f6ec8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224425464631110044, guid: bcefec045034041d082e7062272f6ec8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535328517839054, guid: bcefec045034041d082e7062272f6ec8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcefec045034041d082e7062272f6ec8, type: 2}
@@ -1096,7 +1121,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.042972576, y: 0.855326, z: -0.5112754, w: 0.07188994}
-  m_LocalPosition: {x: -1.6, y: 6.8, z: 4.4}
+  m_LocalPosition: {x: -2.26, y: 7.1, z: 4.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1718,6 +1743,7 @@ RectTransform:
   - {fileID: 1433694729}
   - {fileID: 1552004637}
   - {fileID: 819692534}
+  - {fileID: 976286316}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1742,7 +1768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &819692534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1918,6 +1944,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4988285815783670, guid: bcefec045034041d082e7062272f6ec8,
     type: 2}
   m_PrefabInternal: {fileID: 771201263}
+--- !u!1 &976286315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976286316}
+  - component: {fileID: 976286319}
+  - component: {fileID: 976286318}
+  - component: {fileID: 976286317}
+  m_Layer: 5
+  m_Name: Resetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &976286316
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976286315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 812335170}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &976286317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976286315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c99ae9d39fe4e95a276a35db1d3218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &976286318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976286315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &976286319
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976286315}
+  m_CullTransparentMesh: 0
 --- !u!1 &1079044070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,7 +2463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -14}
+  m_AnchoredPosition: {x: 0, y: -8.5}
   m_SizeDelta: {x: 4000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354266861
@@ -2391,7 +2498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRATULATION!
+  m_Text: Gratulation!
 --- !u!222 &1354266862
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2880,47 +2987,61 @@ MonoBehaviour:
   ActivePerRound: 6
   Locations:
   - Name: Lindli
+    DisplayName: Lindli
     Socket: {fileID: 1814390816}
     Excludes:
     - Munot
     - Rhybadi
     - Windegg
-    - Frohnwagplatz
+    - Fronwagplatz
   - Name: "S\xE4ckelamtsh\xFCsli"
+    DisplayName: "S\xE4ckelamts-\nh\xFCsli"
     Socket: {fileID: 598749592}
     Excludes:
     - KSS
   - Name: Munot
+    DisplayName: Munot
     Socket: {fileID: 1652079385}
     Excludes:
     - Lindli
     - Rhybadi
     - Windegg
+    - Fronwagplatz
   - Name: Rheinfall
+    DisplayName: Rheinfall
     Socket: {fileID: 1317991531}
     Excludes: []
   - Name: Beringer Randenturm
+    DisplayName: 'Beringer
+
+      Randenturm'
     Socket: {fileID: 1738721046}
     Excludes: []
   - Name: Rhybadi
+    DisplayName: Rhybadi
     Socket: {fileID: 1689910438}
     Excludes:
     - Munot
     - Lindli
     - Windegg
     - Flurlinger Badi
-    - Frohnwagplatz
+    - Fronwagplatz
   - Name: Schaaren
+    DisplayName: Schaaren
     Socket: {fileID: 2074008760}
     Excludes: []
   - Name: Windegg
+    DisplayName: Windegg
     Socket: {fileID: 1772975960}
     Excludes:
     - Lindli
     - Rhybadi
     - Munot
-    - Frohnwagplatz
-  - Name: Frohnwagplatz
+    - Fronwagplatz
+  - Name: Fronwagplatz
+    DisplayName: 'Fronwag-
+
+      platz'
     Socket: {fileID: 1552386887}
     Excludes:
     - Munot
@@ -2929,40 +3050,53 @@ MonoBehaviour:
     - Rhybadi
     - Windegg
   - Name: Hasenbuck
+    DisplayName: Hasenbuck
     Socket: {fileID: 531502856}
     Excludes: []
   - Name: KSS
+    DisplayName: KSS
     Socket: {fileID: 1251200315}
     Excludes:
     - "S\xE4ckelamtsh\xFCsli"
-    - Frohnwagplatz
+    - Fronwagplatz
     - Munot
   - Name: Jakobsfelsen
+    DisplayName: Jakobsfelsen
     Socket: {fileID: 1413853213}
     Excludes: []
   - Name: Flurlinger Badi
+    DisplayName: 'Flurlinger
+
+      Badi'
     Socket: {fileID: 310979190}
     Excludes:
     - Rhybadi
   - Name: Griesbach
+    DisplayName: Griesbach
     Socket: {fileID: 1604232802}
     Excludes: []
   - Name: Solenberg
+    DisplayName: Solenberg
     Socket: {fileID: 2010775100}
     Excludes: []
   - Name: Zelgli
+    DisplayName: Zelgli
     Socket: {fileID: 866962584}
     Excludes: []
   - Name: "G\xE4\xE4lefritz"
+    DisplayName: "G\xE4\xE4lefritz"
     Socket: {fileID: 345384267}
     Excludes: []
   - Name: Hurbig
+    DisplayName: Hurbig
     Socket: {fileID: 774486078}
     Excludes: []
   - Name: Scheerestieg
+    DisplayName: Scheerestieg
     Socket: {fileID: 1846019356}
     Excludes: []
   - Name: Hohenklingen
+    DisplayName: Hohenklingen
     Socket: {fileID: 1239601775}
     Excludes: []
 --- !u!4 &1524077759
@@ -2995,6 +3129,8 @@ MonoBehaviour:
   finishGamePanel: {fileID: 201920818}
   timeCounter: {fileID: 743902224}
   finishTextSubtitle: {fileID: 2066330849}
+  isGameRunning: 0
+  isOnGameScreen: 0
 --- !u!82 &1524077761
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3106,7 +3242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1552004637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3122,7 +3258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -13}
   m_SizeDelta: {x: 1500, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552004638

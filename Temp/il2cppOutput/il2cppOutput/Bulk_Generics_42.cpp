@@ -19,15 +19,37 @@
 #include "codegen/il2cpp-codegen.h"
 #include "il2cpp-object-internals.h"
 
-template <typename R, typename T1>
-struct VirtFuncInvoker1
+template <typename R, typename T1, typename T2>
+struct VirtFuncInvoker2
 {
-	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
 
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
 template <typename T1>
@@ -41,6 +63,17 @@ struct VirtActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename R, typename T1>
+struct VirtFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
 struct VirtActionInvoker0
 {
 	typedef void (*Action)(void*, const RuntimeMethod*);
@@ -49,17 +82,6 @@ struct VirtActionInvoker0
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename T1, typename T2>
-struct VirtActionInvoker2
-{
-	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
 template <typename T1, typename T2, typename T3>
@@ -84,6 +106,18 @@ struct VirtActionInvoker4
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename T1, typename T2>
+struct GenericVirtActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
 template <typename T1>
 struct GenericVirtActionInvoker1
 {
@@ -105,18 +139,6 @@ struct GenericVirtActionInvoker0
 		VirtualInvokeData invokeData;
 		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename T1, typename T2>
-struct GenericVirtActionInvoker2
-{
-	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
-
-	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
-		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
 template <typename T1, typename T2, typename T3>
@@ -143,6 +165,28 @@ struct GenericVirtActionInvoker4
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
 template <typename T1>
 struct InterfaceActionInvoker1
 {
@@ -162,17 +206,6 @@ struct InterfaceActionInvoker0
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename T1, typename T2>
-struct InterfaceActionInvoker2
-{
-	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
 template <typename T1, typename T2, typename T3>
@@ -197,6 +230,18 @@ struct InterfaceActionInvoker4
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename T1, typename T2>
+struct GenericInterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
 template <typename T1>
 struct GenericInterfaceActionInvoker1
 {
@@ -218,18 +263,6 @@ struct GenericInterfaceActionInvoker0
 		VirtualInvokeData invokeData;
 		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename T1, typename T2>
-struct GenericInterfaceActionInvoker2
-{
-	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
-
-	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
-		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
 template <typename T1, typename T2, typename T3>
@@ -321,6 +354,20 @@ struct DelegateData_t1677132599;
 struct DelegateU5BU5D_t1703627840;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t1169129676;
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>
+struct Func_1_t94982103;
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct Func_1_t2403470575;
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct Func_1_t2796013382;
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>>
+struct Func_1_t515204495;
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.UniTask>>
+struct Func_1_t3425064636;
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>>
+struct Func_1_t207086019;
+// System.Func`1<UniRx.Async.UniTask`1<UnityEngine.Vector2>>
+struct Func_1_t2582076422;
 // System.IAsyncResult
 struct IAsyncResult_t767004451;
 // System.Int32[]
@@ -351,6 +398,38 @@ struct Type_t;
 struct TypeU5BU5D_t3940880105;
 // System.Void
 struct Void_t1185182177;
+// UniRx.Async.IAwaiter
+struct IAwaiter_t775381681;
+// UniRx.Async.IAwaiter`1<System.Object>
+struct IAwaiter_1_t1352568705;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>
+struct IAwaiter_1_t2946984565;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct IAwaiter_1_t960505741;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct IAwaiter_1_t1353048548;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>
+struct IAwaiter_1_t3367206957;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>
+struct IAwaiter_1_t1982099802;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>
+struct IAwaiter_1_t3059088481;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>
+struct IAwaiter_1_t1139111588;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct IAwaiter_1_t2236565041;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct IAwaiter_1_t250086217;
+// UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct IAwaiter_1_t642629024;
+// UniRx.Async.IAwaiter`1<UniRx.Async.AsyncUnit>
+struct IAwaiter_1_t2656787433;
+// UniRx.Async.IAwaiter`1<UniRx.Async.UniTask>
+struct IAwaiter_1_t1271680278;
+// UniRx.Async.IAwaiter`1<UniRx.Async.UniTask`1<System.Object>>
+struct IAwaiter_1_t2348668957;
+// UniRx.Async.IAwaiter`1<UnityEngine.Vector2>
+struct IAwaiter_1_t428692064;
 // UnityEngine.Camera
 struct Camera_t4157153871;
 // UnityEngine.Color32[]
@@ -359,6 +438,12 @@ struct Color32U5BU5D_t3850468773;
 struct Component_t1923634451;
 // UnityEngine.Coroutine
 struct Coroutine_t3829159415;
+// UnityEngine.EventSystems.BaseEventData
+struct BaseEventData_t3903027533;
+// UnityEngine.EventSystems.EventSystem
+struct EventSystem_t1003666588;
+// UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>
+struct EventFunction_1_t1764640198;
 // UnityEngine.Events.BaseInvokableCall
 struct BaseInvokableCall_t2703961024;
 // UnityEngine.Events.BaseInvokableCall[]
@@ -527,9 +612,11 @@ struct Vector3U5BU5D_t1718750761;
 struct Vector4U5BU5D_t934056436;
 
 extern RuntimeClass* ArgumentException_t132251570_il2cpp_TypeInfo_var;
+extern RuntimeClass* AwaiterStatus_t2968141202_il2cpp_TypeInfo_var;
 extern RuntimeClass* Boolean_t97287965_il2cpp_TypeInfo_var;
 extern RuntimeClass* Color_t2555686324_il2cpp_TypeInfo_var;
 extern RuntimeClass* Debug_t3317548046_il2cpp_TypeInfo_var;
+extern RuntimeClass* IAwaiter_t775381681_il2cpp_TypeInfo_var;
 extern RuntimeClass* Int32_t2950945753_il2cpp_TypeInfo_var;
 extern RuntimeClass* InvokableCall_t832123510_il2cpp_TypeInfo_var;
 extern RuntimeClass* LoadSceneMode_t3251202195_il2cpp_TypeInfo_var;
@@ -542,9 +629,12 @@ extern RuntimeClass* Scene_t2348375561_il2cpp_TypeInfo_var;
 extern RuntimeClass* Single_t1397266774_il2cpp_TypeInfo_var;
 extern RuntimeClass* TypeU5BU5D_t3940880105_il2cpp_TypeInfo_var;
 extern RuntimeClass* Type_t_il2cpp_TypeInfo_var;
+extern RuntimeClass* UnityEqualityComparer_t3411193022_il2cpp_TypeInfo_var;
 extern RuntimeClass* Vector2_t2156229523_il2cpp_TypeInfo_var;
 extern String_t* _stringLiteral1132744560;
 extern String_t* _stringLiteral1864861238;
+extern String_t* _stringLiteral3452614535;
+extern String_t* _stringLiteral3452614536;
 extern String_t* _stringLiteral3926843441;
 extern String_t* _stringLiteral46997234;
 extern const RuntimeMethod* IndexedSet_1_GetEnumerator_m3750514392_RuntimeMethod_var;
@@ -563,6 +653,7 @@ extern const RuntimeMethod* List_1_get_Count_m1245201994_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m4156046467_RuntimeMethod_var;
 extern const RuntimeMethod* U3CStartU3Ec__Iterator0_Reset_m3175110837_RuntimeMethod_var;
 extern const RuntimeMethod* U3CStartU3Ec__Iterator0_Reset_m656428886_RuntimeMethod_var;
+extern const uint32_t Cache_1__cctor_m3593190755_MetadataUsageId;
 extern const uint32_t IndexedSet_1_GetEnumerator_m3750514392_MetadataUsageId;
 extern const uint32_t IndexedSet_1_Insert_m1432638049_MetadataUsageId;
 extern const uint32_t InvokableCall_1_Invoke_m1160628299_MetadataUsageId;
@@ -592,6 +683,27 @@ extern const uint32_t U3CStartU3Ec__Iterator0_MoveNext_m4270440387_MetadataUsage
 extern const uint32_t U3CStartU3Ec__Iterator0_MoveNext_m524356752_MetadataUsageId;
 extern const uint32_t U3CStartU3Ec__Iterator0_Reset_m3175110837_MetadataUsageId;
 extern const uint32_t U3CStartU3Ec__Iterator0_Reset_m656428886_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1080152130_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1193915039_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1383779237_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1608132935_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1707808716_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m1761542257_MetadataUsageId;
+extern const uint32_t UniTask_1_ToString_m821765368_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m1658898423_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m3195448050_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m3273524636_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m3317581817_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m3438412180_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m934710798_MetadataUsageId;
+extern const uint32_t UniTask_1_get_IsCompleted_m958254505_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m1545577403_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m2118926633_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m3284974829_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m3511282327_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m3547577298_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m539808805_MetadataUsageId;
+extern const uint32_t UniTask_1_get_Status_m760421684_MetadataUsageId;
 extern const uint32_t UnityAction_1_BeginInvoke_m1166386047_MetadataUsageId;
 extern const uint32_t UnityAction_1_BeginInvoke_m2530432941_MetadataUsageId;
 extern const uint32_t UnityAction_1_BeginInvoke_m2713840246_MetadataUsageId;
@@ -781,6 +893,302 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DICTIONARY_2_T3384741_H
+#ifndef EQUALITYCOMPARER_1_T1249878500_H
+#define EQUALITYCOMPARER_1_T1249878500_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<System.Object>
+struct  EqualityComparer_1_t1249878500  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t1249878500_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t1249878500 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t1249878500_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t1249878500 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t1249878500 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t1249878500 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T1249878500_H
+#ifndef EQUALITYCOMPARER_1_T2133874836_H
+#define EQUALITYCOMPARER_1_T2133874836_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  EqualityComparer_1_t2133874836  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t2133874836_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t2133874836 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t2133874836_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t2133874836 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t2133874836 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t2133874836 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T2133874836_H
+#ifndef EQUALITYCOMPARER_1_T147396012_H
+#define EQUALITYCOMPARER_1_T147396012_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  EqualityComparer_1_t147396012  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t147396012_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t147396012 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t147396012_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t147396012 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t147396012 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t147396012 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T147396012_H
+#ifndef EQUALITYCOMPARER_1_T539938819_H
+#define EQUALITYCOMPARER_1_T539938819_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  EqualityComparer_1_t539938819  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t539938819_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t539938819 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t539938819_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t539938819 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t539938819 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t539938819 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T539938819_H
+#ifndef EQUALITYCOMPARER_1_T2554097228_H
+#define EQUALITYCOMPARER_1_T2554097228_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<UniRx.Async.AsyncUnit>
+struct  EqualityComparer_1_t2554097228  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t2554097228_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t2554097228 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t2554097228_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t2554097228 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t2554097228 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t2554097228 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T2554097228_H
+#ifndef EQUALITYCOMPARER_1_T1168990073_H
+#define EQUALITYCOMPARER_1_T1168990073_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<UniRx.Async.UniTask>
+struct  EqualityComparer_1_t1168990073  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t1168990073_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t1168990073 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t1168990073_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t1168990073 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t1168990073 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t1168990073 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T1168990073_H
+#ifndef EQUALITYCOMPARER_1_T2245978752_H
+#define EQUALITYCOMPARER_1_T2245978752_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<UniRx.Async.UniTask`1<System.Object>>
+struct  EqualityComparer_1_t2245978752  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t2245978752_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t2245978752 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t2245978752_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t2245978752 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t2245978752 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t2245978752 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T2245978752_H
+#ifndef EQUALITYCOMPARER_1_T326001859_H
+#define EQUALITYCOMPARER_1_T326001859_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.EqualityComparer`1<UnityEngine.Vector2>
+struct  EqualityComparer_1_t326001859  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EqualityComparer_1_t326001859_StaticFields
+{
+public:
+	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
+	EqualityComparer_1_t326001859 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t326001859_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t326001859 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t326001859 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t326001859 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EQUALITYCOMPARER_1_T326001859_H
 #ifndef LIST_1_T128053199_H
 #define LIST_1_T128053199_H
 #ifdef __clang__
@@ -1807,6 +2215,282 @@ struct ValueType_t3640485471_marshaled_com
 {
 };
 #endif // VALUETYPE_T3640485471_H
+#ifndef ISCANCELEDAWAITER_T864115437_H
+#define ISCANCELEDAWAITER_T864115437_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  IsCanceledAwaiter_t864115437  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t864115437, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T864115437_H
+#ifndef ISCANCELEDAWAITER_T3172603909_H
+#define ISCANCELEDAWAITER_T3172603909_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  IsCanceledAwaiter_t3172603909  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t3172603909, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T3172603909_H
+#ifndef ISCANCELEDAWAITER_T3565146716_H
+#define ISCANCELEDAWAITER_T3565146716_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  IsCanceledAwaiter_t3565146716  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t3565146716, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T3565146716_H
+#ifndef ISCANCELEDAWAITER_T1284337829_H
+#define ISCANCELEDAWAITER_T1284337829_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<UniRx.Async.AsyncUnit>
+struct  IsCanceledAwaiter_t1284337829  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t1284337829, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T1284337829_H
+#ifndef ISCANCELEDAWAITER_T4194197970_H
+#define ISCANCELEDAWAITER_T4194197970_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<UniRx.Async.UniTask>
+struct  IsCanceledAwaiter_t4194197970  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t4194197970, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T4194197970_H
+#ifndef ISCANCELEDAWAITER_T976219353_H
+#define ISCANCELEDAWAITER_T976219353_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<UniRx.Async.UniTask`1<System.Object>>
+struct  IsCanceledAwaiter_t976219353  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t976219353, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T976219353_H
+#ifndef ISCANCELEDAWAITER_T3351209756_H
+#define ISCANCELEDAWAITER_T3351209756_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/IsCanceledAwaiter<UnityEngine.Vector2>
+struct  IsCanceledAwaiter_t3351209756  : public RuntimeObject
+{
+public:
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1/IsCanceledAwaiter::awaiter
+	RuntimeObject* ___awaiter_0;
+
+public:
+	inline static int32_t get_offset_of_awaiter_0() { return static_cast<int32_t>(offsetof(IsCanceledAwaiter_t3351209756, ___awaiter_0)); }
+	inline RuntimeObject* get_awaiter_0() const { return ___awaiter_0; }
+	inline RuntimeObject** get_address_of_awaiter_0() { return &___awaiter_0; }
+	inline void set_awaiter_0(RuntimeObject* value)
+	{
+		___awaiter_0 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ISCANCELEDAWAITER_T3351209756_H
+#ifndef CACHE_1_T190281258_H
+#define CACHE_1_T190281258_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.UnityEqualityComparer/Cache`1<System.Object>
+struct  Cache_1_t190281258  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct Cache_1_t190281258_StaticFields
+{
+public:
+	// System.Collections.Generic.IEqualityComparer`1<T> UniRx.UnityEqualityComparer/Cache`1::Comparer
+	RuntimeObject* ___Comparer_0;
+
+public:
+	inline static int32_t get_offset_of_Comparer_0() { return static_cast<int32_t>(offsetof(Cache_1_t190281258_StaticFields, ___Comparer_0)); }
+	inline RuntimeObject* get_Comparer_0() const { return ___Comparer_0; }
+	inline RuntimeObject** get_address_of_Comparer_0() { return &___Comparer_0; }
+	inline void set_Comparer_0(RuntimeObject* value)
+	{
+		___Comparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___Comparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CACHE_1_T190281258_H
+#ifndef ABSTRACTEVENTDATA_T4171500731_H
+#define ABSTRACTEVENTDATA_T4171500731_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.EventSystems.AbstractEventData
+struct  AbstractEventData_t4171500731  : public RuntimeObject
+{
+public:
+	// System.Boolean UnityEngine.EventSystems.AbstractEventData::m_Used
+	bool ___m_Used_0;
+
+public:
+	inline static int32_t get_offset_of_m_Used_0() { return static_cast<int32_t>(offsetof(AbstractEventData_t4171500731, ___m_Used_0)); }
+	inline bool get_m_Used_0() const { return ___m_Used_0; }
+	inline bool* get_address_of_m_Used_0() { return &___m_Used_0; }
+	inline void set_m_Used_0(bool value)
+	{
+		___m_Used_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ABSTRACTEVENTDATA_T4171500731_H
 #ifndef BASEINVOKABLECALL_T2703961024_H
 #define BASEINVOKABLECALL_T2703961024_H
 #ifdef __clang__
@@ -3278,6 +3962,142 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // UINT32_T2560061978_H
+#ifndef VALUETUPLE_2_T3790525688_H
+#define VALUETUPLE_2_T3790525688_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,System.Object>
+struct  ValueTuple_2_t3790525688 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	RuntimeObject * ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3790525688, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3790525688, ___Item2_1)); }
+	inline RuntimeObject * get_Item2_1() const { return ___Item2_1; }
+	inline RuntimeObject ** get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(RuntimeObject * value)
+	{
+		___Item2_1 = value;
+		Il2CppCodeGenWriteBarrier((&___Item2_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T3790525688_H
+#ifndef VALUETUPLE_7_T3964102500_H
+#define VALUETUPLE_7_T3964102500_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>
+struct  ValueTuple_7_t3964102500 
+{
+public:
+	// T1 System.ValueTuple`7::Item1
+	RuntimeObject * ___Item1_0;
+	// T2 System.ValueTuple`7::Item2
+	RuntimeObject * ___Item2_1;
+	// T3 System.ValueTuple`7::Item3
+	RuntimeObject * ___Item3_2;
+	// T4 System.ValueTuple`7::Item4
+	RuntimeObject * ___Item4_3;
+	// T5 System.ValueTuple`7::Item5
+	RuntimeObject * ___Item5_4;
+	// T6 System.ValueTuple`7::Item6
+	RuntimeObject * ___Item6_5;
+	// T7 System.ValueTuple`7::Item7
+	RuntimeObject * ___Item7_6;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item1_0)); }
+	inline RuntimeObject * get_Item1_0() const { return ___Item1_0; }
+	inline RuntimeObject ** get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(RuntimeObject * value)
+	{
+		___Item1_0 = value;
+		Il2CppCodeGenWriteBarrier((&___Item1_0), value);
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item2_1)); }
+	inline RuntimeObject * get_Item2_1() const { return ___Item2_1; }
+	inline RuntimeObject ** get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(RuntimeObject * value)
+	{
+		___Item2_1 = value;
+		Il2CppCodeGenWriteBarrier((&___Item2_1), value);
+	}
+
+	inline static int32_t get_offset_of_Item3_2() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item3_2)); }
+	inline RuntimeObject * get_Item3_2() const { return ___Item3_2; }
+	inline RuntimeObject ** get_address_of_Item3_2() { return &___Item3_2; }
+	inline void set_Item3_2(RuntimeObject * value)
+	{
+		___Item3_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Item3_2), value);
+	}
+
+	inline static int32_t get_offset_of_Item4_3() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item4_3)); }
+	inline RuntimeObject * get_Item4_3() const { return ___Item4_3; }
+	inline RuntimeObject ** get_address_of_Item4_3() { return &___Item4_3; }
+	inline void set_Item4_3(RuntimeObject * value)
+	{
+		___Item4_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Item4_3), value);
+	}
+
+	inline static int32_t get_offset_of_Item5_4() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item5_4)); }
+	inline RuntimeObject * get_Item5_4() const { return ___Item5_4; }
+	inline RuntimeObject ** get_address_of_Item5_4() { return &___Item5_4; }
+	inline void set_Item5_4(RuntimeObject * value)
+	{
+		___Item5_4 = value;
+		Il2CppCodeGenWriteBarrier((&___Item5_4), value);
+	}
+
+	inline static int32_t get_offset_of_Item6_5() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item6_5)); }
+	inline RuntimeObject * get_Item6_5() const { return ___Item6_5; }
+	inline RuntimeObject ** get_address_of_Item6_5() { return &___Item6_5; }
+	inline void set_Item6_5(RuntimeObject * value)
+	{
+		___Item6_5 = value;
+		Il2CppCodeGenWriteBarrier((&___Item6_5), value);
+	}
+
+	inline static int32_t get_offset_of_Item7_6() { return static_cast<int32_t>(offsetof(ValueTuple_7_t3964102500, ___Item7_6)); }
+	inline RuntimeObject * get_Item7_6() const { return ___Item7_6; }
+	inline RuntimeObject ** get_address_of_Item7_6() { return &___Item7_6; }
+	inline void set_Item7_6(RuntimeObject * value)
+	{
+		___Item7_6 = value;
+		Il2CppCodeGenWriteBarrier((&___Item7_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_7_T3964102500_H
 #ifndef VOID_T1185182177_H
 #define VOID_T1185182177_H
 #ifdef __clang__
@@ -3305,6 +4125,90 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VOID_T1185182177_H
+#ifndef ASYNCUNIT_T89357596_H
+#define ASYNCUNIT_T89357596_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.AsyncUnit
+struct  AsyncUnit_t89357596 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t AsyncUnit_t89357596__padding[1];
+	};
+
+public:
+};
+
+struct AsyncUnit_t89357596_StaticFields
+{
+public:
+	// UniRx.Async.AsyncUnit UniRx.Async.AsyncUnit::Default
+	AsyncUnit_t89357596  ___Default_0;
+
+public:
+	inline static int32_t get_offset_of_Default_0() { return static_cast<int32_t>(offsetof(AsyncUnit_t89357596_StaticFields, ___Default_0)); }
+	inline AsyncUnit_t89357596  get_Default_0() const { return ___Default_0; }
+	inline AsyncUnit_t89357596 * get_address_of_Default_0() { return &___Default_0; }
+	inline void set_Default_0(AsyncUnit_t89357596  value)
+	{
+		___Default_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ASYNCUNIT_T89357596_H
+#ifndef UNITASK_1_T4076206416_H
+#define UNITASK_1_T4076206416_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.Object>
+struct  UniTask_1_t4076206416 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	RuntimeObject * ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t4076206416, ___result_0)); }
+	inline RuntimeObject * get_result_0() const { return ___result_0; }
+	inline RuntimeObject ** get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(RuntimeObject * value)
+	{
+		___result_0 = value;
+		Il2CppCodeGenWriteBarrier((&___result_0), value);
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t4076206416, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T4076206416_H
 #ifndef COLOR_T2555686324_H
 #define COLOR_T2555686324_H
 #ifdef __clang__
@@ -3364,6 +4268,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COLOR_T2555686324_H
+#ifndef BASEEVENTDATA_T3903027533_H
+#define BASEEVENTDATA_T3903027533_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.EventSystems.BaseEventData
+struct  BaseEventData_t3903027533  : public AbstractEventData_t4171500731
+{
+public:
+	// UnityEngine.EventSystems.EventSystem UnityEngine.EventSystems.BaseEventData::m_EventSystem
+	EventSystem_t1003666588 * ___m_EventSystem_1;
+
+public:
+	inline static int32_t get_offset_of_m_EventSystem_1() { return static_cast<int32_t>(offsetof(BaseEventData_t3903027533, ___m_EventSystem_1)); }
+	inline EventSystem_t1003666588 * get_m_EventSystem_1() const { return ___m_EventSystem_1; }
+	inline EventSystem_t1003666588 ** get_address_of_m_EventSystem_1() { return &___m_EventSystem_1; }
+	inline void set_m_EventSystem_1(EventSystem_t1003666588 * value)
+	{
+		___m_EventSystem_1 = value;
+		Il2CppCodeGenWriteBarrier((&___m_EventSystem_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BASEEVENTDATA_T3903027533_H
 #ifndef INVOKABLECALL_T832123510_H
 #define INVOKABLECALL_T832123510_H
 #ifdef __clang__
@@ -4577,6 +5511,459 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMETYPEHANDLE_T3027515415_H
+#ifndef VALUETUPLE_1_T3430106942_H
+#define VALUETUPLE_1_T3430106942_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>
+struct  ValueTuple_1_t3430106942 
+{
+public:
+	// T1 System.ValueTuple`1::Item1
+	ValueTuple_2_t3790525688  ___Item1_0;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_1_t3430106942, ___Item1_0)); }
+	inline ValueTuple_2_t3790525688  get_Item1_0() const { return ___Item1_0; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(ValueTuple_2_t3790525688  value)
+	{
+		___Item1_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_1_T3430106942_H
+#ifndef VALUETUPLE_2_T379554728_H
+#define VALUETUPLE_2_T379554728_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  ValueTuple_2_t379554728 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	ValueTuple_7_t3964102500  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t379554728, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t379554728, ___Item2_1)); }
+	inline ValueTuple_7_t3964102500  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_7_t3964102500 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_7_t3964102500  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T379554728_H
+#ifndef VALUETUPLE_2_T799777120_H
+#define VALUETUPLE_2_T799777120_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>
+struct  ValueTuple_2_t799777120 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	AsyncUnit_t89357596  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t799777120, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t799777120, ___Item2_1)); }
+	inline AsyncUnit_t89357596  get_Item2_1() const { return ___Item2_1; }
+	inline AsyncUnit_t89357596 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(AsyncUnit_t89357596  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T799777120_H
+#ifndef VALUETUPLE_2_T491658644_H
+#define VALUETUPLE_2_T491658644_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>
+struct  ValueTuple_2_t491658644 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	UniTask_1_t4076206416  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t491658644, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t491658644, ___Item2_1)); }
+	inline UniTask_1_t4076206416  get_Item2_1() const { return ___Item2_1; }
+	inline UniTask_1_t4076206416 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(UniTask_1_t4076206416  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T491658644_H
+#ifndef VALUETUPLE_2_T2866649047_H
+#define VALUETUPLE_2_T2866649047_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>
+struct  ValueTuple_2_t2866649047 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	Vector2_t2156229523  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2866649047, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2866649047, ___Item2_1)); }
+	inline Vector2_t2156229523  get_Item2_1() const { return ___Item2_1; }
+	inline Vector2_t2156229523 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(Vector2_t2156229523  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T2866649047_H
+#ifndef VALUETUPLE_2_T3822649749_H
+#define VALUETUPLE_2_T3822649749_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>
+struct  ValueTuple_2_t3822649749 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	ValueTuple_2_t3790525688  ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	ValueTuple_2_t3790525688  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3822649749, ___Item1_0)); }
+	inline ValueTuple_2_t3790525688  get_Item1_0() const { return ___Item1_0; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(ValueTuple_2_t3790525688  value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3822649749, ___Item2_1)); }
+	inline ValueTuple_2_t3790525688  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_2_t3790525688  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T3822649749_H
+#ifndef AWAITERSTATUS_T2968141202_H
+#define AWAITERSTATUS_T2968141202_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.AwaiterStatus
+struct  AwaiterStatus_t2968141202 
+{
+public:
+	// System.Int32 UniRx.Async.AwaiterStatus::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AwaiterStatus_t2968141202, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITERSTATUS_T2968141202_H
+#ifndef UNITASK_1_T665235456_H
+#define UNITASK_1_T665235456_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  UniTask_1_t665235456 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_7_t3964102500  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t665235456, ___result_0)); }
+	inline ValueTuple_7_t3964102500  get_result_0() const { return ___result_0; }
+	inline ValueTuple_7_t3964102500 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_7_t3964102500  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t665235456, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T665235456_H
+#ifndef UNITASK_1_T1085457848_H
+#define UNITASK_1_T1085457848_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>
+struct  UniTask_1_t1085457848 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	AsyncUnit_t89357596  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t1085457848, ___result_0)); }
+	inline AsyncUnit_t89357596  get_result_0() const { return ___result_0; }
+	inline AsyncUnit_t89357596 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(AsyncUnit_t89357596  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t1085457848, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T1085457848_H
+#ifndef UNITASK_1_T777339372_H
+#define UNITASK_1_T777339372_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>
+struct  UniTask_1_t777339372 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	UniTask_1_t4076206416  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t777339372, ___result_0)); }
+	inline UniTask_1_t4076206416  get_result_0() const { return ___result_0; }
+	inline UniTask_1_t4076206416 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(UniTask_1_t4076206416  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t777339372, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T777339372_H
+#ifndef UNITASK_1_T3152329775_H
+#define UNITASK_1_T3152329775_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<UnityEngine.Vector2>
+struct  UniTask_1_t3152329775 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	Vector2_t2156229523  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t3152329775, ___result_0)); }
+	inline Vector2_t2156229523  get_result_0() const { return ___result_0; }
+	inline Vector2_t2156229523 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(Vector2_t2156229523  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t3152329775, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T3152329775_H
+#ifndef CASTHELPER_1_T2613165452_H
+#define CASTHELPER_1_T2613165452_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.CastHelper`1<System.Object>
+struct  CastHelper_1_t2613165452 
+{
+public:
+	// T UnityEngine.CastHelper`1::t
+	RuntimeObject * ___t_0;
+	// System.IntPtr UnityEngine.CastHelper`1::onePointerFurtherThanT
+	intptr_t ___onePointerFurtherThanT_1;
+
+public:
+	inline static int32_t get_offset_of_t_0() { return static_cast<int32_t>(offsetof(CastHelper_1_t2613165452, ___t_0)); }
+	inline RuntimeObject * get_t_0() const { return ___t_0; }
+	inline RuntimeObject ** get_address_of_t_0() { return &___t_0; }
+	inline void set_t_0(RuntimeObject * value)
+	{
+		___t_0 = value;
+		Il2CppCodeGenWriteBarrier((&___t_0), value);
+	}
+
+	inline static int32_t get_offset_of_onePointerFurtherThanT_1() { return static_cast<int32_t>(offsetof(CastHelper_1_t2613165452, ___onePointerFurtherThanT_1)); }
+	inline intptr_t get_onePointerFurtherThanT_1() const { return ___onePointerFurtherThanT_1; }
+	inline intptr_t* get_address_of_onePointerFurtherThanT_1() { return &___onePointerFurtherThanT_1; }
+	inline void set_onePointerFurtherThanT_1(intptr_t value)
+	{
+		___onePointerFurtherThanT_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CASTHELPER_1_T2613165452_H
 #ifndef COROUTINE_T3829159415_H
 #define COROUTINE_T3829159415_H
 #ifdef __clang__
@@ -5117,6 +6504,706 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TYPE_T_H
+#ifndef VALUETUPLE_8_T1977623676_H
+#define VALUETUPLE_8_T1977623676_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>
+struct  ValueTuple_8_t1977623676 
+{
+public:
+	// T1 System.ValueTuple`8::Item1
+	int32_t ___Item1_0;
+	// T2 System.ValueTuple`8::Item2
+	ValueTuple_2_t3790525688  ___Item2_1;
+	// T3 System.ValueTuple`8::Item3
+	ValueTuple_2_t3790525688  ___Item3_2;
+	// T4 System.ValueTuple`8::Item4
+	ValueTuple_2_t3790525688  ___Item4_3;
+	// T5 System.ValueTuple`8::Item5
+	ValueTuple_2_t3790525688  ___Item5_4;
+	// T6 System.ValueTuple`8::Item6
+	ValueTuple_2_t3790525688  ___Item6_5;
+	// T7 System.ValueTuple`8::Item7
+	ValueTuple_2_t3790525688  ___Item7_6;
+	// TRest System.ValueTuple`8::Rest
+	ValueTuple_1_t3430106942  ___Rest_7;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item1_0)); }
+	inline int32_t get_Item1_0() const { return ___Item1_0; }
+	inline int32_t* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(int32_t value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item2_1)); }
+	inline ValueTuple_2_t3790525688  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_2_t3790525688  value)
+	{
+		___Item2_1 = value;
+	}
+
+	inline static int32_t get_offset_of_Item3_2() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item3_2)); }
+	inline ValueTuple_2_t3790525688  get_Item3_2() const { return ___Item3_2; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item3_2() { return &___Item3_2; }
+	inline void set_Item3_2(ValueTuple_2_t3790525688  value)
+	{
+		___Item3_2 = value;
+	}
+
+	inline static int32_t get_offset_of_Item4_3() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item4_3)); }
+	inline ValueTuple_2_t3790525688  get_Item4_3() const { return ___Item4_3; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item4_3() { return &___Item4_3; }
+	inline void set_Item4_3(ValueTuple_2_t3790525688  value)
+	{
+		___Item4_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Item5_4() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item5_4)); }
+	inline ValueTuple_2_t3790525688  get_Item5_4() const { return ___Item5_4; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item5_4() { return &___Item5_4; }
+	inline void set_Item5_4(ValueTuple_2_t3790525688  value)
+	{
+		___Item5_4 = value;
+	}
+
+	inline static int32_t get_offset_of_Item6_5() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item6_5)); }
+	inline ValueTuple_2_t3790525688  get_Item6_5() const { return ___Item6_5; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item6_5() { return &___Item6_5; }
+	inline void set_Item6_5(ValueTuple_2_t3790525688  value)
+	{
+		___Item6_5 = value;
+	}
+
+	inline static int32_t get_offset_of_Item7_6() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Item7_6)); }
+	inline ValueTuple_2_t3790525688  get_Item7_6() const { return ___Item7_6; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item7_6() { return &___Item7_6; }
+	inline void set_Item7_6(ValueTuple_2_t3790525688  value)
+	{
+		___Item7_6 = value;
+	}
+
+	inline static int32_t get_offset_of_Rest_7() { return static_cast<int32_t>(offsetof(ValueTuple_8_t1977623676, ___Rest_7)); }
+	inline ValueTuple_1_t3430106942  get_Rest_7() const { return ___Rest_7; }
+	inline ValueTuple_1_t3430106942 * get_address_of_Rest_7() { return &___Rest_7; }
+	inline void set_Rest_7(ValueTuple_1_t3430106942  value)
+	{
+		___Rest_7 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_8_T1977623676_H
+#ifndef VALUETUPLE_8_T2370166483_H
+#define VALUETUPLE_8_T2370166483_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>
+struct  ValueTuple_8_t2370166483 
+{
+public:
+	// T1 System.ValueTuple`8::Item1
+	int32_t ___Item1_0;
+	// T2 System.ValueTuple`8::Item2
+	ValueTuple_2_t3790525688  ___Item2_1;
+	// T3 System.ValueTuple`8::Item3
+	ValueTuple_2_t3790525688  ___Item3_2;
+	// T4 System.ValueTuple`8::Item4
+	ValueTuple_2_t3790525688  ___Item4_3;
+	// T5 System.ValueTuple`8::Item5
+	ValueTuple_2_t3790525688  ___Item5_4;
+	// T6 System.ValueTuple`8::Item6
+	ValueTuple_2_t3790525688  ___Item6_5;
+	// T7 System.ValueTuple`8::Item7
+	ValueTuple_2_t3790525688  ___Item7_6;
+	// TRest System.ValueTuple`8::Rest
+	ValueTuple_2_t3822649749  ___Rest_7;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item1_0)); }
+	inline int32_t get_Item1_0() const { return ___Item1_0; }
+	inline int32_t* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(int32_t value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item2_1)); }
+	inline ValueTuple_2_t3790525688  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_2_t3790525688  value)
+	{
+		___Item2_1 = value;
+	}
+
+	inline static int32_t get_offset_of_Item3_2() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item3_2)); }
+	inline ValueTuple_2_t3790525688  get_Item3_2() const { return ___Item3_2; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item3_2() { return &___Item3_2; }
+	inline void set_Item3_2(ValueTuple_2_t3790525688  value)
+	{
+		___Item3_2 = value;
+	}
+
+	inline static int32_t get_offset_of_Item4_3() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item4_3)); }
+	inline ValueTuple_2_t3790525688  get_Item4_3() const { return ___Item4_3; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item4_3() { return &___Item4_3; }
+	inline void set_Item4_3(ValueTuple_2_t3790525688  value)
+	{
+		___Item4_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Item5_4() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item5_4)); }
+	inline ValueTuple_2_t3790525688  get_Item5_4() const { return ___Item5_4; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item5_4() { return &___Item5_4; }
+	inline void set_Item5_4(ValueTuple_2_t3790525688  value)
+	{
+		___Item5_4 = value;
+	}
+
+	inline static int32_t get_offset_of_Item6_5() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item6_5)); }
+	inline ValueTuple_2_t3790525688  get_Item6_5() const { return ___Item6_5; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item6_5() { return &___Item6_5; }
+	inline void set_Item6_5(ValueTuple_2_t3790525688  value)
+	{
+		___Item6_5 = value;
+	}
+
+	inline static int32_t get_offset_of_Item7_6() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Item7_6)); }
+	inline ValueTuple_2_t3790525688  get_Item7_6() const { return ___Item7_6; }
+	inline ValueTuple_2_t3790525688 * get_address_of_Item7_6() { return &___Item7_6; }
+	inline void set_Item7_6(ValueTuple_2_t3790525688  value)
+	{
+		___Item7_6 = value;
+	}
+
+	inline static int32_t get_offset_of_Rest_7() { return static_cast<int32_t>(offsetof(ValueTuple_8_t2370166483, ___Rest_7)); }
+	inline ValueTuple_2_t3822649749  get_Rest_7() const { return ___Rest_7; }
+	inline ValueTuple_2_t3822649749 * get_address_of_Rest_7() { return &___Rest_7; }
+	inline void set_Rest_7(ValueTuple_2_t3822649749  value)
+	{
+		___Rest_7 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_8_T2370166483_H
+#ifndef LAZYPROMISE_1_T2181560759_H
+#define LAZYPROMISE_1_T2181560759_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  LazyPromise_1_t2181560759  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t94982103 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t665235456  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2181560759, ___factory_0)); }
+	inline Func_1_t94982103 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t94982103 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t94982103 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2181560759, ___value_1)); }
+	inline UniTask_1_t665235456  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t665235456 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t665235456  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T2181560759_H
+#ifndef LAZYPROMISE_1_T2601783151_H
+#define LAZYPROMISE_1_T2601783151_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<UniRx.Async.AsyncUnit>
+struct  LazyPromise_1_t2601783151  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t515204495 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t1085457848  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2601783151, ___factory_0)); }
+	inline Func_1_t515204495 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t515204495 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t515204495 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2601783151, ___value_1)); }
+	inline UniTask_1_t1085457848  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t1085457848 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t1085457848  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T2601783151_H
+#ifndef LAZYPROMISE_1_T2293664675_H
+#define LAZYPROMISE_1_T2293664675_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<UniRx.Async.UniTask`1<System.Object>>
+struct  LazyPromise_1_t2293664675  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t207086019 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t777339372  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2293664675, ___factory_0)); }
+	inline Func_1_t207086019 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t207086019 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t207086019 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t2293664675, ___value_1)); }
+	inline UniTask_1_t777339372  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t777339372 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t777339372  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T2293664675_H
+#ifndef LAZYPROMISE_1_T373687782_H
+#define LAZYPROMISE_1_T373687782_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<UnityEngine.Vector2>
+struct  LazyPromise_1_t373687782  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t2582076422 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t3152329775  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t373687782, ___factory_0)); }
+	inline Func_1_t2582076422 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t2582076422 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t2582076422 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t373687782, ___value_1)); }
+	inline UniTask_1_t3152329775  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t3152329775 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t3152329775  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T373687782_H
+#ifndef UNITASK_T2999217737_H
+#define UNITASK_T2999217737_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask
+struct  UniTask_t2999217737 
+{
+public:
+	// UniRx.Async.IAwaiter UniRx.Async.UniTask::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_t2999217737, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+struct UniTask_t2999217737_StaticFields
+{
+public:
+	// UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit> UniRx.Async.UniTask::DefaultAsyncUnitTask
+	UniTask_1_t1085457848  ___DefaultAsyncUnitTask_0;
+	// UniRx.Async.UniTask UniRx.Async.UniTask::CanceledUniTask
+	UniTask_t2999217737  ___CanceledUniTask_2;
+
+public:
+	inline static int32_t get_offset_of_DefaultAsyncUnitTask_0() { return static_cast<int32_t>(offsetof(UniTask_t2999217737_StaticFields, ___DefaultAsyncUnitTask_0)); }
+	inline UniTask_1_t1085457848  get_DefaultAsyncUnitTask_0() const { return ___DefaultAsyncUnitTask_0; }
+	inline UniTask_1_t1085457848 * get_address_of_DefaultAsyncUnitTask_0() { return &___DefaultAsyncUnitTask_0; }
+	inline void set_DefaultAsyncUnitTask_0(UniTask_1_t1085457848  value)
+	{
+		___DefaultAsyncUnitTask_0 = value;
+	}
+
+	inline static int32_t get_offset_of_CanceledUniTask_2() { return static_cast<int32_t>(offsetof(UniTask_t2999217737_StaticFields, ___CanceledUniTask_2)); }
+	inline UniTask_t2999217737  get_CanceledUniTask_2() const { return ___CanceledUniTask_2; }
+	inline UniTask_t2999217737 * get_address_of_CanceledUniTask_2() { return &___CanceledUniTask_2; }
+	inline void set_CanceledUniTask_2(UniTask_t2999217737  value)
+	{
+		___CanceledUniTask_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of UniRx.Async.UniTask
+struct UniTask_t2999217737_marshaled_pinvoke
+{
+	RuntimeObject* ___awaiter_1;
+};
+// Native definition for COM marshalling of UniRx.Async.UniTask
+struct UniTask_t2999217737_marshaled_com
+{
+	RuntimeObject* ___awaiter_1;
+};
+#endif // UNITASK_T2999217737_H
+#ifndef AWAITER_T263082240_H
+#define AWAITER_T263082240_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>
+struct  Awaiter_t263082240 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t665235456  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t263082240, ___task_0)); }
+	inline UniTask_1_t665235456  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t665235456 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t665235456  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T263082240_H
+#ifndef AWAITER_T683304632_H
+#define AWAITER_T683304632_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<UniRx.Async.AsyncUnit>
+struct  Awaiter_t683304632 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t1085457848  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t683304632, ___task_0)); }
+	inline UniTask_1_t1085457848  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t1085457848 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t1085457848  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T683304632_H
+#ifndef AWAITER_T375186156_H
+#define AWAITER_T375186156_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask`1<System.Object>>
+struct  Awaiter_t375186156 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t777339372  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t375186156, ___task_0)); }
+	inline UniTask_1_t777339372  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t777339372 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t777339372  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T375186156_H
+#ifndef AWAITER_T2750176559_H
+#define AWAITER_T2750176559_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<UnityEngine.Vector2>
+struct  Awaiter_t2750176559 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t3152329775  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t2750176559, ___task_0)); }
+	inline UniTask_1_t3152329775  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t3152329775 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t3152329775  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T2750176559_H
+#ifndef UNITASK_1_T1375654980_H
+#define UNITASK_1_T1375654980_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>
+struct  UniTask_1_t1375654980 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t379554728  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t1375654980, ___result_0)); }
+	inline ValueTuple_2_t379554728  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t379554728 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t379554728  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t1375654980, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T1375654980_H
+#ifndef UNITASK_1_T1795877372_H
+#define UNITASK_1_T1795877372_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>
+struct  UniTask_1_t1795877372 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t799777120  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t1795877372, ___result_0)); }
+	inline ValueTuple_2_t799777120  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t799777120 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t799777120  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t1795877372, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T1795877372_H
+#ifndef UNITASK_1_T1487758896_H
+#define UNITASK_1_T1487758896_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>
+struct  UniTask_1_t1487758896 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t491658644  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t1487758896, ___result_0)); }
+	inline ValueTuple_2_t491658644  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t491658644 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t491658644  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t1487758896, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T1487758896_H
+#ifndef UNITASK_1_T3862749299_H
+#define UNITASK_1_T3862749299_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>
+struct  UniTask_1_t3862749299 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t2866649047  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t3862749299, ___result_0)); }
+	inline ValueTuple_2_t2866649047  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t2866649047 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t2866649047  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t3862749299, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T3862749299_H
 #ifndef COMPONENT_T1923634451_H
 #define COMPONENT_T1923634451_H
 #ifdef __clang__
@@ -5317,6 +7404,86 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISON_1_T2855037343_H
+#ifndef FUNC_1_T94982103_H
+#define FUNC_1_T94982103_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>
+struct  Func_1_t94982103  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T94982103_H
+#ifndef FUNC_1_T515204495_H
+#define FUNC_1_T515204495_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>>
+struct  Func_1_t515204495  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T515204495_H
+#ifndef FUNC_1_T207086019_H
+#define FUNC_1_T207086019_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>>
+struct  Func_1_t207086019  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T207086019_H
+#ifndef FUNC_1_T2582076422_H
+#define FUNC_1_T2582076422_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<UnityEngine.Vector2>>
+struct  Func_1_t2582076422  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T2582076422_H
 #ifndef PREDICATE_1_T3905400288_H
 #define PREDICATE_1_T3905400288_H
 #ifdef __clang__
@@ -5337,6 +7504,243 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PREDICATE_1_T3905400288_H
+#ifndef VALUETUPLE_2_T2688043200_H
+#define VALUETUPLE_2_T2688043200_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  ValueTuple_2_t2688043200 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	ValueTuple_8_t1977623676  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2688043200, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2688043200, ___Item2_1)); }
+	inline ValueTuple_8_t1977623676  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_8_t1977623676 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_8_t1977623676  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T2688043200_H
+#ifndef VALUETUPLE_2_T3080586007_H
+#define VALUETUPLE_2_T3080586007_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  ValueTuple_2_t3080586007 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	ValueTuple_8_t2370166483  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3080586007, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3080586007, ___Item2_1)); }
+	inline ValueTuple_8_t2370166483  get_Item2_1() const { return ___Item2_1; }
+	inline ValueTuple_8_t2370166483 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(ValueTuple_8_t2370166483  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T3080586007_H
+#ifndef VALUETUPLE_2_T3709637261_H
+#define VALUETUPLE_2_T3709637261_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>
+struct  ValueTuple_2_t3709637261 
+{
+public:
+	// T1 System.ValueTuple`2::Item1
+	bool ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	UniTask_t2999217737  ___Item2_1;
+
+public:
+	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3709637261, ___Item1_0)); }
+	inline bool get_Item1_0() const { return ___Item1_0; }
+	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
+	inline void set_Item1_0(bool value)
+	{
+		___Item1_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3709637261, ___Item2_1)); }
+	inline UniTask_t2999217737  get_Item2_1() const { return ___Item2_1; }
+	inline UniTask_t2999217737 * get_address_of_Item2_1() { return &___Item2_1; }
+	inline void set_Item2_1(UniTask_t2999217737  value)
+	{
+		___Item2_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUETUPLE_2_T3709637261_H
+#ifndef UNITASK_1_T2973723928_H
+#define UNITASK_1_T2973723928_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  UniTask_1_t2973723928 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_8_t1977623676  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t2973723928, ___result_0)); }
+	inline ValueTuple_8_t1977623676  get_result_0() const { return ___result_0; }
+	inline ValueTuple_8_t1977623676 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_8_t1977623676  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t2973723928, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T2973723928_H
+#ifndef UNITASK_1_T3366266735_H
+#define UNITASK_1_T3366266735_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  UniTask_1_t3366266735 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_8_t2370166483  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t3366266735, ___result_0)); }
+	inline ValueTuple_8_t2370166483  get_result_0() const { return ___result_0; }
+	inline ValueTuple_8_t2370166483 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_8_t2370166483  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t3366266735, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T3366266735_H
+#ifndef UNITASK_1_T3995317989_H
+#define UNITASK_1_T3995317989_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<UniRx.Async.UniTask>
+struct  UniTask_1_t3995317989 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	UniTask_t2999217737  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t3995317989, ___result_0)); }
+	inline UniTask_t2999217737  get_result_0() const { return ___result_0; }
+	inline UniTask_t2999217737 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(UniTask_t2999217737  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t3995317989, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T3995317989_H
 #ifndef BEHAVIOUR_T1437897464_H
 #define BEHAVIOUR_T1437897464_H
 #ifdef __clang__
@@ -5357,6 +7761,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // BEHAVIOUR_T1437897464_H
+#ifndef EVENTFUNCTION_1_T1764640198_H
+#define EVENTFUNCTION_1_T1764640198_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>
+struct  EventFunction_1_t1764640198  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EVENTFUNCTION_1_T1764640198_H
 #ifndef UNITYACTION_1_T682124106_H
 #define UNITYACTION_1_T682124106_H
 #ifdef __clang__
@@ -5837,6 +8261,393 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U3CSTARTU3EC__ITERATOR0_T3860393442_H
+#ifndef FUNC_1_T2403470575_H
+#define FUNC_1_T2403470575_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct  Func_1_t2403470575  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T2403470575_H
+#ifndef FUNC_1_T2796013382_H
+#define FUNC_1_T2796013382_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct  Func_1_t2796013382  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T2796013382_H
+#ifndef FUNC_1_T3425064636_H
+#define FUNC_1_T3425064636_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`1<UniRx.Async.UniTask`1<UniRx.Async.UniTask>>
+struct  Func_1_t3425064636  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_1_T3425064636_H
+#ifndef LAZYPROMISE_1_T195081935_H
+#define LAZYPROMISE_1_T195081935_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  LazyPromise_1_t195081935  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t2403470575 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t2973723928  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t195081935, ___factory_0)); }
+	inline Func_1_t2403470575 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t2403470575 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t2403470575 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t195081935, ___value_1)); }
+	inline UniTask_1_t2973723928  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t2973723928 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t2973723928  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T195081935_H
+#ifndef LAZYPROMISE_1_T587624742_H
+#define LAZYPROMISE_1_T587624742_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  LazyPromise_1_t587624742  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t2796013382 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t3366266735  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t587624742, ___factory_0)); }
+	inline Func_1_t2796013382 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t2796013382 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t2796013382 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t587624742, ___value_1)); }
+	inline UniTask_1_t3366266735  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t3366266735 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t3366266735  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T587624742_H
+#ifndef LAZYPROMISE_1_T1216675996_H
+#define LAZYPROMISE_1_T1216675996_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.Internal.LazyPromise`1<UniRx.Async.UniTask>
+struct  LazyPromise_1_t1216675996  : public RuntimeObject
+{
+public:
+	// System.Func`1<UniRx.Async.UniTask`1<T>> UniRx.Async.Internal.LazyPromise`1::factory
+	Func_1_t3425064636 * ___factory_0;
+	// UniRx.Async.UniTask`1<T> UniRx.Async.Internal.LazyPromise`1::value
+	UniTask_1_t3995317989  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_factory_0() { return static_cast<int32_t>(offsetof(LazyPromise_1_t1216675996, ___factory_0)); }
+	inline Func_1_t3425064636 * get_factory_0() const { return ___factory_0; }
+	inline Func_1_t3425064636 ** get_address_of_factory_0() { return &___factory_0; }
+	inline void set_factory_0(Func_1_t3425064636 * value)
+	{
+		___factory_0 = value;
+		Il2CppCodeGenWriteBarrier((&___factory_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(LazyPromise_1_t1216675996, ___value_1)); }
+	inline UniTask_1_t3995317989  get_value_1() const { return ___value_1; }
+	inline UniTask_1_t3995317989 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(UniTask_1_t3995317989  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LAZYPROMISE_1_T1216675996_H
+#ifndef AWAITER_T2571570712_H
+#define AWAITER_T2571570712_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  Awaiter_t2571570712 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t2973723928  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t2571570712, ___task_0)); }
+	inline UniTask_1_t2973723928  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t2973723928 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t2973723928  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T2571570712_H
+#ifndef AWAITER_T2964113519_H
+#define AWAITER_T2964113519_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>
+struct  Awaiter_t2964113519 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t3366266735  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t2964113519, ___task_0)); }
+	inline UniTask_1_t3366266735  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t3366266735 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t3366266735  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T2964113519_H
+#ifndef AWAITER_T3593164773_H
+#define AWAITER_T3593164773_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask>
+struct  Awaiter_t3593164773 
+{
+public:
+	// UniRx.Async.UniTask`1<T> UniRx.Async.UniTask`1/Awaiter::task
+	UniTask_1_t3995317989  ___task_0;
+
+public:
+	inline static int32_t get_offset_of_task_0() { return static_cast<int32_t>(offsetof(Awaiter_t3593164773, ___task_0)); }
+	inline UniTask_1_t3995317989  get_task_0() const { return ___task_0; }
+	inline UniTask_1_t3995317989 * get_address_of_task_0() { return &___task_0; }
+	inline void set_task_0(UniTask_1_t3995317989  value)
+	{
+		___task_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AWAITER_T3593164773_H
+#ifndef UNITASK_1_T3684143452_H
+#define UNITASK_1_T3684143452_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct  UniTask_1_t3684143452 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t2688043200  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t3684143452, ___result_0)); }
+	inline ValueTuple_2_t2688043200  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t2688043200 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t2688043200  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t3684143452, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T3684143452_H
+#ifndef UNITASK_1_T4076686259_H
+#define UNITASK_1_T4076686259_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
+struct  UniTask_1_t4076686259 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t3080586007  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t4076686259, ___result_0)); }
+	inline ValueTuple_2_t3080586007  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t3080586007 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t3080586007  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t4076686259, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T4076686259_H
+#ifndef UNITASK_1_T410770217_H
+#define UNITASK_1_T410770217_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>
+struct  UniTask_1_t410770217 
+{
+public:
+	// T UniRx.Async.UniTask`1::result
+	ValueTuple_2_t3709637261  ___result_0;
+	// UniRx.Async.IAwaiter`1<T> UniRx.Async.UniTask`1::awaiter
+	RuntimeObject* ___awaiter_1;
+
+public:
+	inline static int32_t get_offset_of_result_0() { return static_cast<int32_t>(offsetof(UniTask_1_t410770217, ___result_0)); }
+	inline ValueTuple_2_t3709637261  get_result_0() const { return ___result_0; }
+	inline ValueTuple_2_t3709637261 * get_address_of_result_0() { return &___result_0; }
+	inline void set_result_0(ValueTuple_2_t3709637261  value)
+	{
+		___result_0 = value;
+	}
+
+	inline static int32_t get_offset_of_awaiter_1() { return static_cast<int32_t>(offsetof(UniTask_1_t410770217, ___awaiter_1)); }
+	inline RuntimeObject* get_awaiter_1() const { return ___awaiter_1; }
+	inline RuntimeObject** get_address_of_awaiter_1() { return &___awaiter_1; }
+	inline void set_awaiter_1(RuntimeObject* value)
+	{
+		___awaiter_1 = value;
+		Il2CppCodeGenWriteBarrier((&___awaiter_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITASK_1_T410770217_H
 #ifndef MONOBEHAVIOUR_T3962482529_H
 #define MONOBEHAVIOUR_T3962482529_H
 #ifdef __clang__
@@ -5857,43 +8668,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOBEHAVIOUR_T3962482529_H
-// System.Object[]
-struct ObjectU5BU5D_t2843939325  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) RuntimeObject * m_Items[1];
-
-public:
-	inline RuntimeObject * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline RuntimeObject ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, RuntimeObject * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline RuntimeObject * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline RuntimeObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
 // System.Delegate[]
 struct DelegateU5BU5D_t1703627840  : public RuntimeArray
 {
@@ -5926,6 +8700,43 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t1188392813 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t2843939325  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) RuntimeObject * m_Items[1];
+
+public:
+	inline RuntimeObject * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline RuntimeObject * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -5970,15 +8781,768 @@ public:
 };
 
 
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m530921403_gshared (UniTask_1_t665235456 * __this, ValueTuple_7_t3964102500  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2284326312_gshared (UniTask_1_t665235456 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3837280789_gshared (UniTask_1_t665235456 * __this, Func_1_t94982103 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3511282327_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m958254505_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_7_t3964102500  UniTask_1_get_Result_m4047037743_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m3466125788_gshared (Awaiter_t263082240 * __this, UniTask_1_t665235456  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t263082240  UniTask_1_GetAwaiter_m3440828612_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m3252944615_gshared (ValueTuple_2_t379554728 * __this, bool p0, ValueTuple_7_t3964102500  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m676235556_gshared (UniTask_1_t1375654980 * __this, ValueTuple_2_t379554728  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2466809166_gshared (UniTask_1_t1375654980 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1375654980  UniTask_1_SuppressCancellationThrow_m2459256995_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m1760954478_gshared (UniTask_1_t665235456 * __this, UniTask_1_t665235456  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m697593960_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1707808716_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3864171757_gshared (UniTask_1_t2973723928 * __this, ValueTuple_8_t1977623676  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2042768905_gshared (UniTask_1_t2973723928 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2387089994_gshared (UniTask_1_t2973723928 * __this, Func_1_t2403470575 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3547577298_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3317581817_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_8_t1977623676  UniTask_1_get_Result_m1607240183_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m3451068708_gshared (Awaiter_t2571570712 * __this, UniTask_1_t2973723928  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2571570712  UniTask_1_GetAwaiter_m3366806189_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m4064290209_gshared (ValueTuple_2_t2688043200 * __this, bool p0, ValueTuple_8_t1977623676  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3655026978_gshared (UniTask_1_t3684143452 * __this, ValueTuple_2_t2688043200  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3270998309_gshared (UniTask_1_t3684143452 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t3684143452  UniTask_1_SuppressCancellationThrow_m1680459937_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m701803032_gshared (UniTask_1_t2973723928 * __this, UniTask_1_t2973723928  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m3803199276_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1761542257_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m749390312_gshared (UniTask_1_t3366266735 * __this, ValueTuple_8_t2370166483  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1761003515_gshared (UniTask_1_t3366266735 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1509202457_gshared (UniTask_1_t3366266735 * __this, Func_1_t2796013382 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3284974829_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3273524636_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_8_t2370166483  UniTask_1_get_Result_m1409296137_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m1940290818_gshared (Awaiter_t2964113519 * __this, UniTask_1_t3366266735  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2964113519  UniTask_1_GetAwaiter_m1297370915_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m1460131730_gshared (ValueTuple_2_t3080586007 * __this, bool p0, ValueTuple_8_t2370166483  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1551200529_gshared (UniTask_1_t4076686259 * __this, ValueTuple_2_t3080586007  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m4009492268_gshared (UniTask_1_t4076686259 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t4076686259  UniTask_1_SuppressCancellationThrow_m3602064967_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m172543660_gshared (UniTask_1_t3366266735 * __this, UniTask_1_t3366266735  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m594174003_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1608132935_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2411458523_gshared (UniTask_1_t1085457848 * __this, AsyncUnit_t89357596  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3801350967_gshared (UniTask_1_t1085457848 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m215077407_gshared (UniTask_1_t1085457848 * __this, Func_1_t515204495 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m1545577403_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m1658898423_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR AsyncUnit_t89357596  UniTask_1_get_Result_m1335022237_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.AsyncUnit>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m3439565478_gshared (Awaiter_t683304632 * __this, UniTask_1_t1085457848  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t683304632  UniTask_1_GetAwaiter_m4249847887_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m3138811289_gshared (ValueTuple_2_t799777120 * __this, bool p0, AsyncUnit_t89357596  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1004453468_gshared (UniTask_1_t1795877372 * __this, ValueTuple_2_t799777120  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m45082258_gshared (UniTask_1_t1795877372 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1795877372  UniTask_1_SuppressCancellationThrow_m748872001_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m2848514131_gshared (UniTask_1_t1085457848 * __this, UniTask_1_t1085457848  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1792980413_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1383779237_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1305250590_gshared (UniTask_1_t3995317989 * __this, UniTask_t2999217737  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1664595593_gshared (UniTask_1_t3995317989 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2022786587_gshared (UniTask_1_t3995317989 * __this, Func_1_t3425064636 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m760421684_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3195448050_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_get_Result_m359187462_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m3816241149_gshared (Awaiter_t3593164773 * __this, UniTask_1_t3995317989  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t3593164773  UniTask_1_GetAwaiter_m3537704050_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m1694134898_gshared (ValueTuple_2_t3709637261 * __this, bool p0, UniTask_t2999217737  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m575676190_gshared (UniTask_1_t410770217 * __this, ValueTuple_2_t3709637261  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3218757056_gshared (UniTask_1_t410770217 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t410770217  UniTask_1_SuppressCancellationThrow_m2265063408_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3837010187_gshared (UniTask_1_t3995317989 * __this, UniTask_1_t3995317989  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1218336987_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m821765368_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1116388076_gshared (UniTask_1_t777339372 * __this, UniTask_1_t4076206416  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3785805619_gshared (UniTask_1_t777339372 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2199357829_gshared (UniTask_1_t777339372 * __this, Func_1_t207086019 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m539808805_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3438412180_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t4076206416  UniTask_1_get_Result_m1884018136_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask`1<System.Object>>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m4241152561_gshared (Awaiter_t375186156 * __this, UniTask_1_t777339372  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t375186156  UniTask_1_GetAwaiter_m216915318_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m3333678771_gshared (ValueTuple_2_t491658644 * __this, bool p0, UniTask_1_t4076206416  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3056059257_gshared (UniTask_1_t1487758896 * __this, ValueTuple_2_t491658644  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m631414555_gshared (UniTask_1_t1487758896 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1487758896  UniTask_1_SuppressCancellationThrow_m885352990_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3773152145_gshared (UniTask_1_t777339372 * __this, UniTask_1_t777339372  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1225508205_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1193915039_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3278597555_gshared (UniTask_1_t3152329775 * __this, Vector2_t2156229523  ___result0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m294927412_gshared (UniTask_1_t3152329775 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m201497790_gshared (UniTask_1_t3152329775 * __this, Func_1_t2582076422 * ___factory0, const RuntimeMethod* method);
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m2118926633_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m934710798_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// T UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  UniTask_1_get_Result_m1368514511_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1/Awaiter<UnityEngine.Vector2>::.ctor(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void Awaiter__ctor_m3485001434_gshared (Awaiter_t2750176559 * __this, UniTask_1_t3152329775  p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2750176559  UniTask_1_GetAwaiter_m3763705206_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// System.Void System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>::.ctor(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m2620433149_gshared (ValueTuple_2_t2866649047 * __this, bool p0, Vector2_t2156229523  p1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m86234036_gshared (UniTask_1_t3862749299 * __this, ValueTuple_2_t2866649047  p0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1643570159_gshared (UniTask_1_t3862749299 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UnityEngine.Vector2>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t3862749299  UniTask_1_SuppressCancellationThrow_m3825138212_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3934949454_gshared (UniTask_1_t3152329775 * __this, UniTask_1_t3152329775  ___other0, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m3457700871_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UnityEngine.Vector2>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1080152130_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_m1328026504_gshared (List_1_t257213610 * __this, int32_t p0, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
 extern "C" IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m2934127733_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 
-// System.Void UnityEngine.Events.BaseInvokableCall::.ctor(System.Object,System.Reflection.MethodInfo)
-extern "C" IL2CPP_METHOD_ATTR void BaseInvokableCall__ctor_m2110966014 (BaseInvokableCall_t2703961024 * __this, RuntimeObject * ___target0, MethodInfo_t * ___function1, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(T)
+inline void UniTask_1__ctor_m530921403 (UniTask_1_t665235456 * __this, ValueTuple_7_t3964102500  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t665235456 *, ValueTuple_7_t3964102500 , const RuntimeMethod*))UniTask_1__ctor_m530921403_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m2284326312 (UniTask_1_t665235456 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t665235456 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m2284326312_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m3837280789 (UniTask_1_t665235456 * __this, Func_1_t94982103 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t665235456 *, Func_1_t94982103 *, const RuntimeMethod*))UniTask_1__ctor_m3837280789_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Status()
+inline int32_t UniTask_1_get_Status_m3511282327 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_get_Status_m3511282327_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m958254505 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m958254505_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Result()
+inline ValueTuple_7_t3964102500  UniTask_1_get_Result_m4047037743 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  ValueTuple_7_t3964102500  (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_get_Result_m4047037743_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m3466125788 (Awaiter_t263082240 * __this, UniTask_1_t665235456  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t263082240 *, UniTask_1_t665235456 , const RuntimeMethod*))Awaiter__ctor_m3466125788_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetAwaiter()
+inline Awaiter_t263082240  UniTask_1_GetAwaiter_m3440828612 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t263082240  (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m3440828612_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m3252944615 (ValueTuple_2_t379554728 * __this, bool p0, ValueTuple_7_t3964102500  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t379554728 *, bool, ValueTuple_7_t3964102500 , const RuntimeMethod*))ValueTuple_2__ctor_m3252944615_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>::.ctor(T)
+inline void UniTask_1__ctor_m676235556 (UniTask_1_t1375654980 * __this, ValueTuple_2_t379554728  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1375654980 *, ValueTuple_2_t379554728 , const RuntimeMethod*))UniTask_1__ctor_m676235556_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m2466809166 (UniTask_1_t1375654980 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1375654980 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m2466809166_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::SuppressCancellationThrow()
+inline UniTask_1_t1375654980  UniTask_1_SuppressCancellationThrow_m2459256995 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t1375654980  (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m2459256995_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m1760954478 (UniTask_1_t665235456 * __this, UniTask_1_t665235456  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t665235456 *, UniTask_1_t665235456 , const RuntimeMethod*))UniTask_1_Equals_m1760954478_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m697593960 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_GetHashCode_m697593960_gshared)(__this, method);
+}
+// System.String System.String::Concat(System.Object,System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Concat_m1715369213 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, RuntimeObject * p1, RuntimeObject * p2, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::ToString()
+inline String_t* UniTask_1_ToString_m1707808716 (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t665235456 *, const RuntimeMethod*))UniTask_1_ToString_m1707808716_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask::.ctor(UniRx.Async.IAwaiter)
+extern "C" IL2CPP_METHOD_ATTR void UniTask__ctor_m2092679897 (UniTask_t2999217737 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method);
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+inline void UniTask_1__ctor_m3864171757 (UniTask_1_t2973723928 * __this, ValueTuple_8_t1977623676  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t2973723928 *, ValueTuple_8_t1977623676 , const RuntimeMethod*))UniTask_1__ctor_m3864171757_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m2042768905 (UniTask_1_t2973723928 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t2973723928 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m2042768905_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m2387089994 (UniTask_1_t2973723928 * __this, Func_1_t2403470575 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t2973723928 *, Func_1_t2403470575 *, const RuntimeMethod*))UniTask_1__ctor_m2387089994_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+inline int32_t UniTask_1_get_Status_m3547577298 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_get_Status_m3547577298_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m3317581817 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m3317581817_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+inline ValueTuple_8_t1977623676  UniTask_1_get_Result_m1607240183 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  ValueTuple_8_t1977623676  (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_get_Result_m1607240183_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m3451068708 (Awaiter_t2571570712 * __this, UniTask_1_t2973723928  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t2571570712 *, UniTask_1_t2973723928 , const RuntimeMethod*))Awaiter__ctor_m3451068708_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+inline Awaiter_t2571570712  UniTask_1_GetAwaiter_m3366806189 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t2571570712  (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m3366806189_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m4064290209 (ValueTuple_2_t2688043200 * __this, bool p0, ValueTuple_8_t1977623676  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t2688043200 *, bool, ValueTuple_8_t1977623676 , const RuntimeMethod*))ValueTuple_2__ctor_m4064290209_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(T)
+inline void UniTask_1__ctor_m3655026978 (UniTask_1_t3684143452 * __this, ValueTuple_2_t2688043200  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3684143452 *, ValueTuple_2_t2688043200 , const RuntimeMethod*))UniTask_1__ctor_m3655026978_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m3270998309 (UniTask_1_t3684143452 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3684143452 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m3270998309_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+inline UniTask_1_t3684143452  UniTask_1_SuppressCancellationThrow_m1680459937 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t3684143452  (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m1680459937_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m701803032 (UniTask_1_t2973723928 * __this, UniTask_1_t2973723928  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t2973723928 *, UniTask_1_t2973723928 , const RuntimeMethod*))UniTask_1_Equals_m701803032_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m3803199276 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_GetHashCode_m3803199276_gshared)(__this, method);
+}
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+inline String_t* UniTask_1_ToString_m1761542257 (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t2973723928 *, const RuntimeMethod*))UniTask_1_ToString_m1761542257_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+inline void UniTask_1__ctor_m749390312 (UniTask_1_t3366266735 * __this, ValueTuple_8_t2370166483  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3366266735 *, ValueTuple_8_t2370166483 , const RuntimeMethod*))UniTask_1__ctor_m749390312_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m1761003515 (UniTask_1_t3366266735 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3366266735 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m1761003515_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m1509202457 (UniTask_1_t3366266735 * __this, Func_1_t2796013382 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3366266735 *, Func_1_t2796013382 *, const RuntimeMethod*))UniTask_1__ctor_m1509202457_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+inline int32_t UniTask_1_get_Status_m3284974829 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_get_Status_m3284974829_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m3273524636 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m3273524636_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+inline ValueTuple_8_t2370166483  UniTask_1_get_Result_m1409296137 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  ValueTuple_8_t2370166483  (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_get_Result_m1409296137_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m1940290818 (Awaiter_t2964113519 * __this, UniTask_1_t3366266735  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t2964113519 *, UniTask_1_t3366266735 , const RuntimeMethod*))Awaiter__ctor_m1940290818_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+inline Awaiter_t2964113519  UniTask_1_GetAwaiter_m1297370915 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t2964113519  (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m1297370915_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m1460131730 (ValueTuple_2_t3080586007 * __this, bool p0, ValueTuple_8_t2370166483  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t3080586007 *, bool, ValueTuple_8_t2370166483 , const RuntimeMethod*))ValueTuple_2__ctor_m1460131730_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(T)
+inline void UniTask_1__ctor_m1551200529 (UniTask_1_t4076686259 * __this, ValueTuple_2_t3080586007  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t4076686259 *, ValueTuple_2_t3080586007 , const RuntimeMethod*))UniTask_1__ctor_m1551200529_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m4009492268 (UniTask_1_t4076686259 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t4076686259 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m4009492268_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+inline UniTask_1_t4076686259  UniTask_1_SuppressCancellationThrow_m3602064967 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t4076686259  (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m3602064967_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m172543660 (UniTask_1_t3366266735 * __this, UniTask_1_t3366266735  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3366266735 *, UniTask_1_t3366266735 , const RuntimeMethod*))UniTask_1_Equals_m172543660_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m594174003 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_GetHashCode_m594174003_gshared)(__this, method);
+}
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+inline String_t* UniTask_1_ToString_m1608132935 (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t3366266735 *, const RuntimeMethod*))UniTask_1_ToString_m1608132935_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(T)
+inline void UniTask_1__ctor_m2411458523 (UniTask_1_t1085457848 * __this, AsyncUnit_t89357596  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1085457848 *, AsyncUnit_t89357596 , const RuntimeMethod*))UniTask_1__ctor_m2411458523_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m3801350967 (UniTask_1_t1085457848 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1085457848 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m3801350967_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m215077407 (UniTask_1_t1085457848 * __this, Func_1_t515204495 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1085457848 *, Func_1_t515204495 *, const RuntimeMethod*))UniTask_1__ctor_m215077407_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Status()
+inline int32_t UniTask_1_get_Status_m1545577403 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_get_Status_m1545577403_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m1658898423 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m1658898423_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Result()
+inline AsyncUnit_t89357596  UniTask_1_get_Result_m1335022237 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  AsyncUnit_t89357596  (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_get_Result_m1335022237_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.AsyncUnit>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m3439565478 (Awaiter_t683304632 * __this, UniTask_1_t1085457848  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t683304632 *, UniTask_1_t1085457848 , const RuntimeMethod*))Awaiter__ctor_m3439565478_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetAwaiter()
+inline Awaiter_t683304632  UniTask_1_GetAwaiter_m4249847887 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t683304632  (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m4249847887_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m3138811289 (ValueTuple_2_t799777120 * __this, bool p0, AsyncUnit_t89357596  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t799777120 *, bool, AsyncUnit_t89357596 , const RuntimeMethod*))ValueTuple_2__ctor_m3138811289_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>::.ctor(T)
+inline void UniTask_1__ctor_m1004453468 (UniTask_1_t1795877372 * __this, ValueTuple_2_t799777120  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1795877372 *, ValueTuple_2_t799777120 , const RuntimeMethod*))UniTask_1__ctor_m1004453468_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m45082258 (UniTask_1_t1795877372 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1795877372 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m45082258_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::SuppressCancellationThrow()
+inline UniTask_1_t1795877372  UniTask_1_SuppressCancellationThrow_m748872001 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t1795877372  (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m748872001_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m2848514131 (UniTask_1_t1085457848 * __this, UniTask_1_t1085457848  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t1085457848 *, UniTask_1_t1085457848 , const RuntimeMethod*))UniTask_1_Equals_m2848514131_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.AsyncUnit::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t AsyncUnit_GetHashCode_m3077434225 (AsyncUnit_t89357596 * __this, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m1792980413 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_GetHashCode_m1792980413_gshared)(__this, method);
+}
+// System.String UniRx.Async.AsyncUnit::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* AsyncUnit_ToString_m2738889067 (AsyncUnit_t89357596 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::ToString()
+inline String_t* UniTask_1_ToString_m1383779237 (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t1085457848 *, const RuntimeMethod*))UniTask_1_ToString_m1383779237_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(T)
+inline void UniTask_1__ctor_m1305250590 (UniTask_1_t3995317989 * __this, UniTask_t2999217737  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3995317989 *, UniTask_t2999217737 , const RuntimeMethod*))UniTask_1__ctor_m1305250590_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m1664595593 (UniTask_1_t3995317989 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3995317989 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m1664595593_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m2022786587 (UniTask_1_t3995317989 * __this, Func_1_t3425064636 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3995317989 *, Func_1_t3425064636 *, const RuntimeMethod*))UniTask_1__ctor_m2022786587_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Status()
+inline int32_t UniTask_1_get_Status_m760421684 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_get_Status_m760421684_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m3195448050 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m3195448050_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Result()
+inline UniTask_t2999217737  UniTask_1_get_Result_m359187462 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_t2999217737  (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_get_Result_m359187462_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m3816241149 (Awaiter_t3593164773 * __this, UniTask_1_t3995317989  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t3593164773 *, UniTask_1_t3995317989 , const RuntimeMethod*))Awaiter__ctor_m3816241149_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetAwaiter()
+inline Awaiter_t3593164773  UniTask_1_GetAwaiter_m3537704050 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t3593164773  (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m3537704050_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m1694134898 (ValueTuple_2_t3709637261 * __this, bool p0, UniTask_t2999217737  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t3709637261 *, bool, UniTask_t2999217737 , const RuntimeMethod*))ValueTuple_2__ctor_m1694134898_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>::.ctor(T)
+inline void UniTask_1__ctor_m575676190 (UniTask_1_t410770217 * __this, ValueTuple_2_t3709637261  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t410770217 *, ValueTuple_2_t3709637261 , const RuntimeMethod*))UniTask_1__ctor_m575676190_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m3218757056 (UniTask_1_t410770217 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t410770217 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m3218757056_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::SuppressCancellationThrow()
+inline UniTask_1_t410770217  UniTask_1_SuppressCancellationThrow_m2265063408 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t410770217  (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m2265063408_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m3837010187 (UniTask_1_t3995317989 * __this, UniTask_1_t3995317989  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3995317989 *, UniTask_1_t3995317989 , const RuntimeMethod*))UniTask_1_Equals_m3837010187_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_GetHashCode_m378331906 (UniTask_t2999217737 * __this, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m1218336987 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_GetHashCode_m1218336987_gshared)(__this, method);
+}
+// System.String UniRx.Async.UniTask::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_ToString_m145681847 (UniTask_t2999217737 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask>::ToString()
+inline String_t* UniTask_1_ToString_m821765368 (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t3995317989 *, const RuntimeMethod*))UniTask_1_ToString_m821765368_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(T)
+inline void UniTask_1__ctor_m1116388076 (UniTask_1_t777339372 * __this, UniTask_1_t4076206416  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t777339372 *, UniTask_1_t4076206416 , const RuntimeMethod*))UniTask_1__ctor_m1116388076_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m3785805619 (UniTask_1_t777339372 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t777339372 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m3785805619_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m2199357829 (UniTask_1_t777339372 * __this, Func_1_t207086019 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t777339372 *, Func_1_t207086019 *, const RuntimeMethod*))UniTask_1__ctor_m2199357829_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Status()
+inline int32_t UniTask_1_get_Status_m539808805 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_get_Status_m539808805_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m3438412180 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m3438412180_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Result()
+inline UniTask_1_t4076206416  UniTask_1_get_Result_m1884018136 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t4076206416  (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_get_Result_m1884018136_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<UniRx.Async.UniTask`1<System.Object>>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m4241152561 (Awaiter_t375186156 * __this, UniTask_1_t777339372  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t375186156 *, UniTask_1_t777339372 , const RuntimeMethod*))Awaiter__ctor_m4241152561_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetAwaiter()
+inline Awaiter_t375186156  UniTask_1_GetAwaiter_m216915318 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t375186156  (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m216915318_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m3333678771 (ValueTuple_2_t491658644 * __this, bool p0, UniTask_1_t4076206416  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t491658644 *, bool, UniTask_1_t4076206416 , const RuntimeMethod*))ValueTuple_2__ctor_m3333678771_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>::.ctor(T)
+inline void UniTask_1__ctor_m3056059257 (UniTask_1_t1487758896 * __this, ValueTuple_2_t491658644  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1487758896 *, ValueTuple_2_t491658644 , const RuntimeMethod*))UniTask_1__ctor_m3056059257_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m631414555 (UniTask_1_t1487758896 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t1487758896 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m631414555_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::SuppressCancellationThrow()
+inline UniTask_1_t1487758896  UniTask_1_SuppressCancellationThrow_m885352990 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t1487758896  (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m885352990_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m3773152145 (UniTask_1_t777339372 * __this, UniTask_1_t777339372  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t777339372 *, UniTask_1_t777339372 , const RuntimeMethod*))UniTask_1_Equals_m3773152145_gshared)(__this, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m1225508205 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_GetHashCode_m1225508205_gshared)(__this, method);
+}
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::ToString()
+inline String_t* UniTask_1_ToString_m1193915039 (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t777339372 *, const RuntimeMethod*))UniTask_1_ToString_m1193915039_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(T)
+inline void UniTask_1__ctor_m3278597555 (UniTask_1_t3152329775 * __this, Vector2_t2156229523  ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3152329775 *, Vector2_t2156229523 , const RuntimeMethod*))UniTask_1__ctor_m3278597555_gshared)(__this, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m294927412 (UniTask_1_t3152329775 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3152329775 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m294927412_gshared)(__this, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+inline void UniTask_1__ctor_m201497790 (UniTask_1_t3152329775 * __this, Func_1_t2582076422 * ___factory0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3152329775 *, Func_1_t2582076422 *, const RuntimeMethod*))UniTask_1__ctor_m201497790_gshared)(__this, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Status()
+inline int32_t UniTask_1_get_Status_m2118926633 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_get_Status_m2118926633_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_IsCompleted()
+inline bool UniTask_1_get_IsCompleted_m934710798 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_get_IsCompleted_m934710798_gshared)(__this, method);
+}
+// T UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Result()
+inline Vector2_t2156229523  UniTask_1_get_Result_m1368514511 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  Vector2_t2156229523  (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_get_Result_m1368514511_gshared)(__this, method);
+}
+// System.Void UniRx.Async.UniTask`1/Awaiter<UnityEngine.Vector2>::.ctor(UniRx.Async.UniTask`1<T>)
+inline void Awaiter__ctor_m3485001434 (Awaiter_t2750176559 * __this, UniTask_1_t3152329775  p0, const RuntimeMethod* method)
+{
+	((  void (*) (Awaiter_t2750176559 *, UniTask_1_t3152329775 , const RuntimeMethod*))Awaiter__ctor_m3485001434_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetAwaiter()
+inline Awaiter_t2750176559  UniTask_1_GetAwaiter_m3763705206 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  Awaiter_t2750176559  (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_GetAwaiter_m3763705206_gshared)(__this, method);
+}
+// System.Void System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>::.ctor(!0,!1)
+inline void ValueTuple_2__ctor_m2620433149 (ValueTuple_2_t2866649047 * __this, bool p0, Vector2_t2156229523  p1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t2866649047 *, bool, Vector2_t2156229523 , const RuntimeMethod*))ValueTuple_2__ctor_m2620433149_gshared)(__this, p0, p1, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>::.ctor(T)
+inline void UniTask_1__ctor_m86234036 (UniTask_1_t3862749299 * __this, ValueTuple_2_t2866649047  p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3862749299 *, ValueTuple_2_t2866649047 , const RuntimeMethod*))UniTask_1__ctor_m86234036_gshared)(__this, p0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+inline void UniTask_1__ctor_m1643570159 (UniTask_1_t3862749299 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (UniTask_1_t3862749299 *, RuntimeObject*, const RuntimeMethod*))UniTask_1__ctor_m1643570159_gshared)(__this, p0, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UnityEngine.Vector2>::SuppressCancellationThrow()
+inline UniTask_1_t3862749299  UniTask_1_SuppressCancellationThrow_m3825138212 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  UniTask_1_t3862749299  (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_SuppressCancellationThrow_m3825138212_gshared)(__this, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::Equals(UniRx.Async.UniTask`1<T>)
+inline bool UniTask_1_Equals_m3934949454 (UniTask_1_t3152329775 * __this, UniTask_1_t3152329775  ___other0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (UniTask_1_t3152329775 *, UniTask_1_t3152329775 , const RuntimeMethod*))UniTask_1_Equals_m3934949454_gshared)(__this, ___other0, method);
+}
+// System.Int32 UnityEngine.Vector2::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t Vector2_GetHashCode_m3916089713 (Vector2_t2156229523 * __this, const RuntimeMethod* method);
+// System.Int32 UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetHashCode()
+inline int32_t UniTask_1_GetHashCode_m3457700871 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_GetHashCode_m3457700871_gshared)(__this, method);
+}
+// System.String UnityEngine.Vector2::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* Vector2_ToString_m1205609053 (Vector2_t2156229523 * __this, const RuntimeMethod* method);
+// System.String UniRx.Async.UniTask`1<UnityEngine.Vector2>::ToString()
+inline String_t* UniTask_1_ToString_m1080152130 (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (UniTask_1_t3152329775 *, const RuntimeMethod*))UniTask_1_ToString_m1080152130_gshared)(__this, method);
+}
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 extern "C" IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m1620074514 (RuntimeObject * __this /* static, unused */, RuntimeTypeHandle_t3027515415  p0, const RuntimeMethod* method);
+// System.Object UniRx.UnityEqualityComparer::GetDefaultHelper(System.Type)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * UnityEqualityComparer_GetDefaultHelper_m226176195 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method);
+// System.Void UnityEngine.Events.BaseInvokableCall::.ctor(System.Object,System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR void BaseInvokableCall__ctor_m2110966014 (BaseInvokableCall_t2703961024 * __this, RuntimeObject * ___target0, MethodInfo_t * ___function1, const RuntimeMethod* method);
 // System.Delegate UnityEngineInternal.NetFxCoreExtensions::CreateDelegate(System.Reflection.MethodInfo,System.Type,System.Object)
 extern "C" IL2CPP_METHOD_ATTR Delegate_t1188392813 * NetFxCoreExtensions_CreateDelegate_m751211712 (RuntimeObject * __this /* static, unused */, MethodInfo_t * ___self0, Type_t * ___delegateType1, RuntimeObject * ___target2, const RuntimeMethod* method);
 // System.Void UnityEngine.Events.BaseInvokableCall::.ctor()
@@ -6063,6 +9627,4392 @@ extern "C" IL2CPP_METHOD_ATTR Coroutine_t3829159415 * MonoBehaviour_StartCorouti
 extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_m615723318 (MonoBehaviour_t3962482529 * __this, RuntimeObject* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::LogError(System.Object)
 extern "C" IL2CPP_METHOD_ATTR void Debug_LogError_m2850623458 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m530921403_gshared (UniTask_1_t665235456 * __this, ValueTuple_7_t3964102500  ___result0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_7_t3964102500  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m530921403_AdjustorThunk (RuntimeObject * __this, ValueTuple_7_t3964102500  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	UniTask_1__ctor_m530921403(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2284326312_gshared (UniTask_1_t665235456 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_7_t3964102500 * L_0 = (ValueTuple_7_t3964102500 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_7_t3964102500 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2284326312_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	UniTask_1__ctor_m2284326312(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3837280789_gshared (UniTask_1_t665235456 * __this, Func_1_t94982103 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_7_t3964102500 * L_0 = (ValueTuple_7_t3964102500 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_7_t3964102500 ));
+		Func_1_t94982103 * L_1 = ___factory0;
+		LazyPromise_1_t2181560759 * L_2 = (LazyPromise_1_t2181560759 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t2181560759 *, Func_1_t94982103 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t94982103 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m3837280789_AdjustorThunk (RuntimeObject * __this, Func_1_t94982103 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	UniTask_1__ctor_m3837280789(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3511282327_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m3511282327_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m3511282327_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_get_Status_m3511282327(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m958254505_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m958254505_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m958254505_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m958254505(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_7_t3964102500  UniTask_1_get_Result_m4047037743_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	ValueTuple_7_t3964102500  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		ValueTuple_7_t3964102500  L_2 = (ValueTuple_7_t3964102500 )__this->get_result_0();
+		V_1 = (ValueTuple_7_t3964102500 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		ValueTuple_7_t3964102500  L_4 = InterfaceFuncInvoker0< ValueTuple_7_t3964102500  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (ValueTuple_7_t3964102500 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		ValueTuple_7_t3964102500  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  ValueTuple_7_t3964102500  UniTask_1_get_Result_m4047037743_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_get_Result_m4047037743(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t263082240  UniTask_1_GetAwaiter_m3440828612_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t263082240  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t263082240  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m3466125788((&L_0), (UniTask_1_t665235456 )(*(UniTask_1_t665235456 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t263082240 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t263082240  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t263082240  UniTask_1_GetAwaiter_m3440828612_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m3440828612(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1375654980  UniTask_1_SuppressCancellationThrow_m2459256995_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t1375654980  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	ValueTuple_7_t3964102500  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m3511282327((UniTask_1_t665235456 *)(UniTask_1_t665235456 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		ValueTuple_7_t3964102500  L_3 = UniTask_1_get_Result_m4047037743((UniTask_1_t665235456 *)(UniTask_1_t665235456 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t379554728  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m3252944615((&L_4), (bool)0, (ValueTuple_7_t3964102500 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1375654980  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m676235556((&L_5), (ValueTuple_2_t379554728 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1375654980 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(ValueTuple_7_t3964102500 ));
+		ValueTuple_7_t3964102500  L_8 = V_4;
+		ValueTuple_2_t379554728  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m3252944615((&L_9), (bool)1, (ValueTuple_7_t3964102500 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1375654980  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m676235556((&L_10), (ValueTuple_2_t379554728 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1375654980 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t864115437 * L_12 = (IsCanceledAwaiter_t864115437 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t864115437 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t1375654980  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m2466809166((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t1375654980 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t1375654980  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t1375654980  UniTask_1_SuppressCancellationThrow_m2459256995_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m2459256995(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m1760954478_gshared (UniTask_1_t665235456 * __this, UniTask_1_t665235456  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t665235456  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t2133874836 * L_4 = ((  EqualityComparer_1_t2133874836 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		ValueTuple_7_t3964102500  L_5 = (ValueTuple_7_t3964102500 )__this->get_result_0();
+		UniTask_1_t665235456  L_6 = ___other0;
+		ValueTuple_7_t3964102500  L_7 = (ValueTuple_7_t3964102500 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t2133874836 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, ValueTuple_7_t3964102500 , ValueTuple_7_t3964102500  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::Equals(!0,!0) */, (EqualityComparer_1_t2133874836 *)L_4, (ValueTuple_7_t3964102500 )L_5, (ValueTuple_7_t3964102500 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t665235456  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t665235456  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m1760954478_AdjustorThunk (RuntimeObject * __this, UniTask_1_t665235456  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_Equals_m1760954478(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m697593960_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	ValueTuple_7_t3964102500  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ValueTuple_7_t3964102500  L_2 = (ValueTuple_7_t3964102500 )__this->get_result_0();
+		ValueTuple_7_t3964102500  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		ValueTuple_7_t3964102500  L_6 = (ValueTuple_7_t3964102500 )__this->get_result_0();
+		V_3 = (ValueTuple_7_t3964102500 )L_6;
+		Il2CppFakeBox<ValueTuple_7_t3964102500 > L_7(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_3));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__52 = il2cpp_codegen_get_virtual_invoke_data(2, &L_7);
+		int32_t L_8 = ((  int32_t (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__52.methodPtr)((RuntimeObject *)(&L_7), /*hidden argument*/il2cpp_virtual_invoke_data__52.method);
+		V_3 = L_7.m_Value;
+		V_2 = (int32_t)L_8;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_9);
+		V_2 = (int32_t)L_10;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_11 = V_2;
+		return L_11;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m697593960_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_GetHashCode_m697593960(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1707808716_gshared (UniTask_1_t665235456 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1707808716_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ValueTuple_7_t3964102500  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		ValueTuple_7_t3964102500  L_9 = InterfaceFuncInvoker0< ValueTuple_7_t3964102500  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (ValueTuple_7_t3964102500 )L_9;
+		Il2CppFakeBox<ValueTuple_7_t3964102500 > L_10(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__76 = il2cpp_codegen_get_virtual_invoke_data(3, &L_10);
+		String_t* L_11 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__76.methodPtr)((RuntimeObject *)(&L_10), /*hidden argument*/il2cpp_virtual_invoke_data__76.method);
+		V_0 = L_10.m_Value;
+		G_B4_0 = L_11;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		ValueTuple_7_t3964102500  L_12 = (ValueTuple_7_t3964102500 )__this->get_result_0();
+		V_0 = (ValueTuple_7_t3964102500 )L_12;
+		Il2CppFakeBox<ValueTuple_7_t3964102500 > L_13(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__98 = il2cpp_codegen_get_virtual_invoke_data(3, &L_13);
+		String_t* L_14 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__98.methodPtr)((RuntimeObject *)(&L_13), /*hidden argument*/il2cpp_virtual_invoke_data__98.method);
+		V_0 = L_13.m_Value;
+		G_B6_0 = L_14;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_15 = V_1;
+		return L_15;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1707808716_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t665235456 * _thisAdjusted = reinterpret_cast<UniTask_1_t665235456 *>(__this + 1);
+	return UniTask_1_ToString_m1707808716(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m2196288945_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t665235456  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t665235456  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t665235456  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3864171757_gshared (UniTask_1_t2973723928 * __this, ValueTuple_8_t1977623676  ___result0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t1977623676  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m3864171757_AdjustorThunk (RuntimeObject * __this, ValueTuple_8_t1977623676  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	UniTask_1__ctor_m3864171757(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2042768905_gshared (UniTask_1_t2973723928 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t1977623676 * L_0 = (ValueTuple_8_t1977623676 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_8_t1977623676 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2042768905_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	UniTask_1__ctor_m2042768905(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2387089994_gshared (UniTask_1_t2973723928 * __this, Func_1_t2403470575 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t1977623676 * L_0 = (ValueTuple_8_t1977623676 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_8_t1977623676 ));
+		Func_1_t2403470575 * L_1 = ___factory0;
+		LazyPromise_1_t195081935 * L_2 = (LazyPromise_1_t195081935 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t195081935 *, Func_1_t2403470575 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t2403470575 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2387089994_AdjustorThunk (RuntimeObject * __this, Func_1_t2403470575 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	UniTask_1__ctor_m2387089994(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3547577298_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m3547577298_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m3547577298_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_get_Status_m3547577298(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3317581817_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m3317581817_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m3317581817_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m3317581817(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_8_t1977623676  UniTask_1_get_Result_m1607240183_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	ValueTuple_8_t1977623676  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		ValueTuple_8_t1977623676  L_2 = (ValueTuple_8_t1977623676 )__this->get_result_0();
+		V_1 = (ValueTuple_8_t1977623676 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		ValueTuple_8_t1977623676  L_4 = InterfaceFuncInvoker0< ValueTuple_8_t1977623676  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (ValueTuple_8_t1977623676 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		ValueTuple_8_t1977623676  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  ValueTuple_8_t1977623676  UniTask_1_get_Result_m1607240183_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_get_Result_m1607240183(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2571570712  UniTask_1_GetAwaiter_m3366806189_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t2571570712  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t2571570712  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m3451068708((&L_0), (UniTask_1_t2973723928 )(*(UniTask_1_t2973723928 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t2571570712 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t2571570712  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t2571570712  UniTask_1_GetAwaiter_m3366806189_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m3366806189(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t3684143452  UniTask_1_SuppressCancellationThrow_m1680459937_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t3684143452  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	ValueTuple_8_t1977623676  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m3547577298((UniTask_1_t2973723928 *)(UniTask_1_t2973723928 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		ValueTuple_8_t1977623676  L_3 = UniTask_1_get_Result_m1607240183((UniTask_1_t2973723928 *)(UniTask_1_t2973723928 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t2688043200  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m4064290209((&L_4), (bool)0, (ValueTuple_8_t1977623676 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t3684143452  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m3655026978((&L_5), (ValueTuple_2_t2688043200 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t3684143452 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(ValueTuple_8_t1977623676 ));
+		ValueTuple_8_t1977623676  L_8 = V_4;
+		ValueTuple_2_t2688043200  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m4064290209((&L_9), (bool)1, (ValueTuple_8_t1977623676 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t3684143452  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m3655026978((&L_10), (ValueTuple_2_t2688043200 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t3684143452 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t3172603909 * L_12 = (IsCanceledAwaiter_t3172603909 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t3172603909 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t3684143452  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m3270998309((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t3684143452 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t3684143452  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t3684143452  UniTask_1_SuppressCancellationThrow_m1680459937_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m1680459937(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m701803032_gshared (UniTask_1_t2973723928 * __this, UniTask_1_t2973723928  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t2973723928  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t147396012 * L_4 = ((  EqualityComparer_1_t147396012 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		ValueTuple_8_t1977623676  L_5 = (ValueTuple_8_t1977623676 )__this->get_result_0();
+		UniTask_1_t2973723928  L_6 = ___other0;
+		ValueTuple_8_t1977623676  L_7 = (ValueTuple_8_t1977623676 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t147396012 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, ValueTuple_8_t1977623676 , ValueTuple_8_t1977623676  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(!0,!0) */, (EqualityComparer_1_t147396012 *)L_4, (ValueTuple_8_t1977623676 )L_5, (ValueTuple_8_t1977623676 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t2973723928  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t2973723928  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m701803032_AdjustorThunk (RuntimeObject * __this, UniTask_1_t2973723928  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_Equals_m701803032(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m3803199276_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	ValueTuple_8_t1977623676  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ValueTuple_8_t1977623676  L_2 = (ValueTuple_8_t1977623676 )__this->get_result_0();
+		ValueTuple_8_t1977623676  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		ValueTuple_8_t1977623676  L_6 = (ValueTuple_8_t1977623676 )__this->get_result_0();
+		V_3 = (ValueTuple_8_t1977623676 )L_6;
+		Il2CppFakeBox<ValueTuple_8_t1977623676 > L_7(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_3));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__52 = il2cpp_codegen_get_virtual_invoke_data(2, &L_7);
+		int32_t L_8 = ((  int32_t (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__52.methodPtr)((RuntimeObject *)(&L_7), /*hidden argument*/il2cpp_virtual_invoke_data__52.method);
+		V_3 = L_7.m_Value;
+		V_2 = (int32_t)L_8;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_9);
+		V_2 = (int32_t)L_10;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_11 = V_2;
+		return L_11;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m3803199276_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_GetHashCode_m3803199276(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1761542257_gshared (UniTask_1_t2973723928 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1761542257_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ValueTuple_8_t1977623676  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		ValueTuple_8_t1977623676  L_9 = InterfaceFuncInvoker0< ValueTuple_8_t1977623676  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (ValueTuple_8_t1977623676 )L_9;
+		Il2CppFakeBox<ValueTuple_8_t1977623676 > L_10(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__76 = il2cpp_codegen_get_virtual_invoke_data(3, &L_10);
+		String_t* L_11 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__76.methodPtr)((RuntimeObject *)(&L_10), /*hidden argument*/il2cpp_virtual_invoke_data__76.method);
+		V_0 = L_10.m_Value;
+		G_B4_0 = L_11;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		ValueTuple_8_t1977623676  L_12 = (ValueTuple_8_t1977623676 )__this->get_result_0();
+		V_0 = (ValueTuple_8_t1977623676 )L_12;
+		Il2CppFakeBox<ValueTuple_8_t1977623676 > L_13(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__98 = il2cpp_codegen_get_virtual_invoke_data(3, &L_13);
+		String_t* L_14 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__98.methodPtr)((RuntimeObject *)(&L_13), /*hidden argument*/il2cpp_virtual_invoke_data__98.method);
+		V_0 = L_13.m_Value;
+		G_B6_0 = L_14;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_15 = V_1;
+		return L_15;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1761542257_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t2973723928 * _thisAdjusted = reinterpret_cast<UniTask_1_t2973723928 *>(__this + 1);
+	return UniTask_1_ToString_m1761542257(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`1<System.ValueTuple`2<System.Boolean,System.Object>>>>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m428275372_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t2973723928  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t2973723928  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t2973723928  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m749390312_gshared (UniTask_1_t3366266735 * __this, ValueTuple_8_t2370166483  ___result0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t2370166483  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m749390312_AdjustorThunk (RuntimeObject * __this, ValueTuple_8_t2370166483  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	UniTask_1__ctor_m749390312(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1761003515_gshared (UniTask_1_t3366266735 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t2370166483 * L_0 = (ValueTuple_8_t2370166483 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_8_t2370166483 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m1761003515_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	UniTask_1__ctor_m1761003515(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1509202457_gshared (UniTask_1_t3366266735 * __this, Func_1_t2796013382 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		ValueTuple_8_t2370166483 * L_0 = (ValueTuple_8_t2370166483 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(ValueTuple_8_t2370166483 ));
+		Func_1_t2796013382 * L_1 = ___factory0;
+		LazyPromise_1_t587624742 * L_2 = (LazyPromise_1_t587624742 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t587624742 *, Func_1_t2796013382 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t2796013382 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m1509202457_AdjustorThunk (RuntimeObject * __this, Func_1_t2796013382 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	UniTask_1__ctor_m1509202457(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m3284974829_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m3284974829_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m3284974829_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_get_Status_m3284974829(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3273524636_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m3273524636_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m3273524636_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m3273524636(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR ValueTuple_8_t2370166483  UniTask_1_get_Result_m1409296137_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	ValueTuple_8_t2370166483  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		ValueTuple_8_t2370166483  L_2 = (ValueTuple_8_t2370166483 )__this->get_result_0();
+		V_1 = (ValueTuple_8_t2370166483 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		ValueTuple_8_t2370166483  L_4 = InterfaceFuncInvoker0< ValueTuple_8_t2370166483  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (ValueTuple_8_t2370166483 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		ValueTuple_8_t2370166483  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  ValueTuple_8_t2370166483  UniTask_1_get_Result_m1409296137_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_get_Result_m1409296137(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2964113519  UniTask_1_GetAwaiter_m1297370915_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t2964113519  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t2964113519  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m1940290818((&L_0), (UniTask_1_t3366266735 )(*(UniTask_1_t3366266735 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t2964113519 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t2964113519  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t2964113519  UniTask_1_GetAwaiter_m1297370915_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m1297370915(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t4076686259  UniTask_1_SuppressCancellationThrow_m3602064967_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t4076686259  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	ValueTuple_8_t2370166483  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m3284974829((UniTask_1_t3366266735 *)(UniTask_1_t3366266735 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		ValueTuple_8_t2370166483  L_3 = UniTask_1_get_Result_m1409296137((UniTask_1_t3366266735 *)(UniTask_1_t3366266735 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t3080586007  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m1460131730((&L_4), (bool)0, (ValueTuple_8_t2370166483 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t4076686259  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m1551200529((&L_5), (ValueTuple_2_t3080586007 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t4076686259 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(ValueTuple_8_t2370166483 ));
+		ValueTuple_8_t2370166483  L_8 = V_4;
+		ValueTuple_2_t3080586007  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m1460131730((&L_9), (bool)1, (ValueTuple_8_t2370166483 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t4076686259  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m1551200529((&L_10), (ValueTuple_2_t3080586007 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t4076686259 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t3565146716 * L_12 = (IsCanceledAwaiter_t3565146716 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t3565146716 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t4076686259  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m4009492268((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t4076686259 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t4076686259  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t4076686259  UniTask_1_SuppressCancellationThrow_m3602064967_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m3602064967(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m172543660_gshared (UniTask_1_t3366266735 * __this, UniTask_1_t3366266735  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t3366266735  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t539938819 * L_4 = ((  EqualityComparer_1_t539938819 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		ValueTuple_8_t2370166483  L_5 = (ValueTuple_8_t2370166483 )__this->get_result_0();
+		UniTask_1_t3366266735  L_6 = ___other0;
+		ValueTuple_8_t2370166483  L_7 = (ValueTuple_8_t2370166483 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t539938819 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, ValueTuple_8_t2370166483 , ValueTuple_8_t2370166483  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::Equals(!0,!0) */, (EqualityComparer_1_t539938819 *)L_4, (ValueTuple_8_t2370166483 )L_5, (ValueTuple_8_t2370166483 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t3366266735  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t3366266735  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m172543660_AdjustorThunk (RuntimeObject * __this, UniTask_1_t3366266735  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_Equals_m172543660(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m594174003_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	ValueTuple_8_t2370166483  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ValueTuple_8_t2370166483  L_2 = (ValueTuple_8_t2370166483 )__this->get_result_0();
+		ValueTuple_8_t2370166483  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		ValueTuple_8_t2370166483  L_6 = (ValueTuple_8_t2370166483 )__this->get_result_0();
+		V_3 = (ValueTuple_8_t2370166483 )L_6;
+		Il2CppFakeBox<ValueTuple_8_t2370166483 > L_7(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_3));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__52 = il2cpp_codegen_get_virtual_invoke_data(2, &L_7);
+		int32_t L_8 = ((  int32_t (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__52.methodPtr)((RuntimeObject *)(&L_7), /*hidden argument*/il2cpp_virtual_invoke_data__52.method);
+		V_3 = L_7.m_Value;
+		V_2 = (int32_t)L_8;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_9);
+		V_2 = (int32_t)L_10;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_11 = V_2;
+		return L_11;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m594174003_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_GetHashCode_m594174003(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1608132935_gshared (UniTask_1_t3366266735 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1608132935_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ValueTuple_8_t2370166483  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		ValueTuple_8_t2370166483  L_9 = InterfaceFuncInvoker0< ValueTuple_8_t2370166483  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (ValueTuple_8_t2370166483 )L_9;
+		Il2CppFakeBox<ValueTuple_8_t2370166483 > L_10(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__76 = il2cpp_codegen_get_virtual_invoke_data(3, &L_10);
+		String_t* L_11 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__76.methodPtr)((RuntimeObject *)(&L_10), /*hidden argument*/il2cpp_virtual_invoke_data__76.method);
+		V_0 = L_10.m_Value;
+		G_B4_0 = L_11;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		ValueTuple_8_t2370166483  L_12 = (ValueTuple_8_t2370166483 )__this->get_result_0();
+		V_0 = (ValueTuple_8_t2370166483 )L_12;
+		Il2CppFakeBox<ValueTuple_8_t2370166483 > L_13(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__98 = il2cpp_codegen_get_virtual_invoke_data(3, &L_13);
+		String_t* L_14 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__98.methodPtr)((RuntimeObject *)(&L_13), /*hidden argument*/il2cpp_virtual_invoke_data__98.method);
+		V_0 = L_13.m_Value;
+		G_B6_0 = L_14;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_15 = V_1;
+		return L_15;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1608132935_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3366266735 * _thisAdjusted = reinterpret_cast<UniTask_1_t3366266735 *>(__this + 1);
+	return UniTask_1_ToString_m1608132935(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<System.ValueTuple`8<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m471034945_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t3366266735  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t3366266735  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t3366266735  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2411458523_gshared (UniTask_1_t1085457848 * __this, AsyncUnit_t89357596  ___result0, const RuntimeMethod* method)
+{
+	{
+		AsyncUnit_t89357596  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2411458523_AdjustorThunk (RuntimeObject * __this, AsyncUnit_t89357596  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	UniTask_1__ctor_m2411458523(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3801350967_gshared (UniTask_1_t1085457848 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		AsyncUnit_t89357596 * L_0 = (AsyncUnit_t89357596 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(AsyncUnit_t89357596 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m3801350967_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	UniTask_1__ctor_m3801350967(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m215077407_gshared (UniTask_1_t1085457848 * __this, Func_1_t515204495 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		AsyncUnit_t89357596 * L_0 = (AsyncUnit_t89357596 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(AsyncUnit_t89357596 ));
+		Func_1_t515204495 * L_1 = ___factory0;
+		LazyPromise_1_t2601783151 * L_2 = (LazyPromise_1_t2601783151 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t2601783151 *, Func_1_t515204495 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t515204495 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m215077407_AdjustorThunk (RuntimeObject * __this, Func_1_t515204495 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	UniTask_1__ctor_m215077407(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m1545577403_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m1545577403_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m1545577403_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_get_Status_m1545577403(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m1658898423_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m1658898423_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m1658898423_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m1658898423(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR AsyncUnit_t89357596  UniTask_1_get_Result_m1335022237_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	AsyncUnit_t89357596  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		AsyncUnit_t89357596  L_2 = (AsyncUnit_t89357596 )__this->get_result_0();
+		V_1 = (AsyncUnit_t89357596 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		AsyncUnit_t89357596  L_4 = InterfaceFuncInvoker0< AsyncUnit_t89357596  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.AsyncUnit>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (AsyncUnit_t89357596 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		AsyncUnit_t89357596  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  AsyncUnit_t89357596  UniTask_1_get_Result_m1335022237_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_get_Result_m1335022237(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t683304632  UniTask_1_GetAwaiter_m4249847887_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t683304632  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t683304632  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m3439565478((&L_0), (UniTask_1_t1085457848 )(*(UniTask_1_t1085457848 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t683304632 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t683304632  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t683304632  UniTask_1_GetAwaiter_m4249847887_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m4249847887(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1795877372  UniTask_1_SuppressCancellationThrow_m748872001_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t1795877372  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	AsyncUnit_t89357596  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m1545577403((UniTask_1_t1085457848 *)(UniTask_1_t1085457848 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		AsyncUnit_t89357596  L_3 = UniTask_1_get_Result_m1335022237((UniTask_1_t1085457848 *)(UniTask_1_t1085457848 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t799777120  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m3138811289((&L_4), (bool)0, (AsyncUnit_t89357596 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1795877372  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m1004453468((&L_5), (ValueTuple_2_t799777120 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1795877372 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(AsyncUnit_t89357596 ));
+		AsyncUnit_t89357596  L_8 = V_4;
+		ValueTuple_2_t799777120  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m3138811289((&L_9), (bool)1, (AsyncUnit_t89357596 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1795877372  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m1004453468((&L_10), (ValueTuple_2_t799777120 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1795877372 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t1284337829 * L_12 = (IsCanceledAwaiter_t1284337829 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t1284337829 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t1795877372  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m45082258((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t1795877372 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t1795877372  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t1795877372  UniTask_1_SuppressCancellationThrow_m748872001_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m748872001(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m2848514131_gshared (UniTask_1_t1085457848 * __this, UniTask_1_t1085457848  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t1085457848  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t2554097228 * L_4 = ((  EqualityComparer_1_t2554097228 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		AsyncUnit_t89357596  L_5 = (AsyncUnit_t89357596 )__this->get_result_0();
+		UniTask_1_t1085457848  L_6 = ___other0;
+		AsyncUnit_t89357596  L_7 = (AsyncUnit_t89357596 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t2554097228 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, AsyncUnit_t89357596 , AsyncUnit_t89357596  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<UniRx.Async.AsyncUnit>::Equals(!0,!0) */, (EqualityComparer_1_t2554097228 *)L_4, (AsyncUnit_t89357596 )L_5, (AsyncUnit_t89357596 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t1085457848  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t1085457848  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m2848514131_AdjustorThunk (RuntimeObject * __this, UniTask_1_t1085457848  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_Equals_m2848514131(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1792980413_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	AsyncUnit_t89357596  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		AsyncUnit_t89357596  L_2 = (AsyncUnit_t89357596 )__this->get_result_0();
+		AsyncUnit_t89357596  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		AsyncUnit_t89357596  L_6 = (AsyncUnit_t89357596 )__this->get_result_0();
+		V_3 = (AsyncUnit_t89357596 )L_6;
+		int32_t L_7 = AsyncUnit_GetHashCode_m3077434225((AsyncUnit_t89357596 *)(AsyncUnit_t89357596 *)(&V_3), /*hidden argument*/NULL);
+		V_2 = (int32_t)L_7;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_8);
+		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_8);
+		V_2 = (int32_t)L_9;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_10 = V_2;
+		return L_10;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m1792980413_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_GetHashCode_m1792980413(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1383779237_gshared (UniTask_1_t1085457848 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1383779237_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	AsyncUnit_t89357596  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		AsyncUnit_t89357596  L_9 = InterfaceFuncInvoker0< AsyncUnit_t89357596  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.AsyncUnit>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (AsyncUnit_t89357596 )L_9;
+		String_t* L_10 = AsyncUnit_ToString_m2738889067((AsyncUnit_t89357596 *)(AsyncUnit_t89357596 *)(&V_0), /*hidden argument*/NULL);
+		G_B4_0 = L_10;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		AsyncUnit_t89357596  L_11 = (AsyncUnit_t89357596 )__this->get_result_0();
+		V_0 = (AsyncUnit_t89357596 )L_11;
+		String_t* L_12 = AsyncUnit_ToString_m2738889067((AsyncUnit_t89357596 *)(AsyncUnit_t89357596 *)(&V_0), /*hidden argument*/NULL);
+		G_B6_0 = L_12;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_13 = V_1;
+		return L_13;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1383779237_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t1085457848 * _thisAdjusted = reinterpret_cast<UniTask_1_t1085457848 *>(__this + 1);
+	return UniTask_1_ToString_m1383779237(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<UniRx.Async.AsyncUnit>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m333410180_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t1085457848  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t1085457848  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t1085457848  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1305250590_gshared (UniTask_1_t3995317989 * __this, UniTask_t2999217737  ___result0, const RuntimeMethod* method)
+{
+	{
+		UniTask_t2999217737  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m1305250590_AdjustorThunk (RuntimeObject * __this, UniTask_t2999217737  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	UniTask_1__ctor_m1305250590(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1664595593_gshared (UniTask_1_t3995317989 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		UniTask_t2999217737 * L_0 = (UniTask_t2999217737 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(UniTask_t2999217737 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m1664595593_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	UniTask_1__ctor_m1664595593(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2022786587_gshared (UniTask_1_t3995317989 * __this, Func_1_t3425064636 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		UniTask_t2999217737 * L_0 = (UniTask_t2999217737 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(UniTask_t2999217737 ));
+		Func_1_t3425064636 * L_1 = ___factory0;
+		LazyPromise_1_t1216675996 * L_2 = (LazyPromise_1_t1216675996 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t1216675996 *, Func_1_t3425064636 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t3425064636 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2022786587_AdjustorThunk (RuntimeObject * __this, Func_1_t3425064636 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	UniTask_1__ctor_m2022786587(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m760421684_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m760421684_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m760421684_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_get_Status_m760421684(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3195448050_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m3195448050_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m3195448050_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m3195448050(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_get_Result_m359187462_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		UniTask_t2999217737  L_2 = (UniTask_t2999217737 )__this->get_result_0();
+		V_1 = (UniTask_t2999217737 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		UniTask_t2999217737  L_4 = InterfaceFuncInvoker0< UniTask_t2999217737  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.UniTask>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (UniTask_t2999217737 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		UniTask_t2999217737  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  UniTask_t2999217737  UniTask_1_get_Result_m359187462_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_get_Result_m359187462(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t3593164773  UniTask_1_GetAwaiter_m3537704050_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t3593164773  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t3593164773  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m3816241149((&L_0), (UniTask_1_t3995317989 )(*(UniTask_1_t3995317989 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t3593164773 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t3593164773  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t3593164773  UniTask_1_GetAwaiter_m3537704050_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m3537704050(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t410770217  UniTask_1_SuppressCancellationThrow_m2265063408_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t410770217  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	UniTask_t2999217737  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m760421684((UniTask_1_t3995317989 *)(UniTask_1_t3995317989 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		UniTask_t2999217737  L_3 = UniTask_1_get_Result_m359187462((UniTask_1_t3995317989 *)(UniTask_1_t3995317989 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t3709637261  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m1694134898((&L_4), (bool)0, (UniTask_t2999217737 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t410770217  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m575676190((&L_5), (ValueTuple_2_t3709637261 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t410770217 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_8 = V_4;
+		ValueTuple_2_t3709637261  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m1694134898((&L_9), (bool)1, (UniTask_t2999217737 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t410770217  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m575676190((&L_10), (ValueTuple_2_t3709637261 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t410770217 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t4194197970 * L_12 = (IsCanceledAwaiter_t4194197970 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t4194197970 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t410770217  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m3218757056((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t410770217 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t410770217  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t410770217  UniTask_1_SuppressCancellationThrow_m2265063408_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m2265063408(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3837010187_gshared (UniTask_1_t3995317989 * __this, UniTask_1_t3995317989  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t3995317989  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t1168990073 * L_4 = ((  EqualityComparer_1_t1168990073 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		UniTask_t2999217737  L_5 = (UniTask_t2999217737 )__this->get_result_0();
+		UniTask_1_t3995317989  L_6 = ___other0;
+		UniTask_t2999217737  L_7 = (UniTask_t2999217737 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t1168990073 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, UniTask_t2999217737 , UniTask_t2999217737  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<UniRx.Async.UniTask>::Equals(!0,!0) */, (EqualityComparer_1_t1168990073 *)L_4, (UniTask_t2999217737 )L_5, (UniTask_t2999217737 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t3995317989  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t3995317989  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m3837010187_AdjustorThunk (RuntimeObject * __this, UniTask_1_t3995317989  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_Equals_m3837010187(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1218336987_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	UniTask_t2999217737  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		UniTask_t2999217737  L_2 = (UniTask_t2999217737 )__this->get_result_0();
+		UniTask_t2999217737  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		UniTask_t2999217737  L_6 = (UniTask_t2999217737 )__this->get_result_0();
+		V_3 = (UniTask_t2999217737 )L_6;
+		int32_t L_7 = UniTask_GetHashCode_m378331906((UniTask_t2999217737 *)(UniTask_t2999217737 *)(&V_3), /*hidden argument*/NULL);
+		V_2 = (int32_t)L_7;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_8);
+		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_8);
+		V_2 = (int32_t)L_9;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_10 = V_2;
+		return L_10;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m1218336987_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_GetHashCode_m1218336987(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m821765368_gshared (UniTask_1_t3995317989 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m821765368_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UniTask_t2999217737  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		UniTask_t2999217737  L_9 = InterfaceFuncInvoker0< UniTask_t2999217737  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.UniTask>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (UniTask_t2999217737 )L_9;
+		String_t* L_10 = UniTask_ToString_m145681847((UniTask_t2999217737 *)(UniTask_t2999217737 *)(&V_0), /*hidden argument*/NULL);
+		G_B4_0 = L_10;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		UniTask_t2999217737  L_11 = (UniTask_t2999217737 )__this->get_result_0();
+		V_0 = (UniTask_t2999217737 )L_11;
+		String_t* L_12 = UniTask_ToString_m145681847((UniTask_t2999217737 *)(UniTask_t2999217737 *)(&V_0), /*hidden argument*/NULL);
+		G_B6_0 = L_12;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_13 = V_1;
+		return L_13;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m821765368_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3995317989 * _thisAdjusted = reinterpret_cast<UniTask_1_t3995317989 *>(__this + 1);
+	return UniTask_1_ToString_m821765368(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<UniRx.Async.UniTask>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m490284180_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t3995317989  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t3995317989  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t3995317989  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m1116388076_gshared (UniTask_1_t777339372 * __this, UniTask_1_t4076206416  ___result0, const RuntimeMethod* method)
+{
+	{
+		UniTask_1_t4076206416  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m1116388076_AdjustorThunk (RuntimeObject * __this, UniTask_1_t4076206416  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	UniTask_1__ctor_m1116388076(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3785805619_gshared (UniTask_1_t777339372 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		UniTask_1_t4076206416 * L_0 = (UniTask_1_t4076206416 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(UniTask_1_t4076206416 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m3785805619_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	UniTask_1__ctor_m3785805619(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m2199357829_gshared (UniTask_1_t777339372 * __this, Func_1_t207086019 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		UniTask_1_t4076206416 * L_0 = (UniTask_1_t4076206416 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(UniTask_1_t4076206416 ));
+		Func_1_t207086019 * L_1 = ___factory0;
+		LazyPromise_1_t2293664675 * L_2 = (LazyPromise_1_t2293664675 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t2293664675 *, Func_1_t207086019 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t207086019 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m2199357829_AdjustorThunk (RuntimeObject * __this, Func_1_t207086019 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	UniTask_1__ctor_m2199357829(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m539808805_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m539808805_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m539808805_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_get_Status_m539808805(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m3438412180_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m3438412180_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m3438412180_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m3438412180(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t4076206416  UniTask_1_get_Result_m1884018136_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_1_t4076206416  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		UniTask_1_t4076206416  L_2 = (UniTask_1_t4076206416 )__this->get_result_0();
+		V_1 = (UniTask_1_t4076206416 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		UniTask_1_t4076206416  L_4 = InterfaceFuncInvoker0< UniTask_1_t4076206416  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.UniTask`1<System.Object>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (UniTask_1_t4076206416 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		UniTask_1_t4076206416  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  UniTask_1_t4076206416  UniTask_1_get_Result_m1884018136_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_get_Result_m1884018136(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t375186156  UniTask_1_GetAwaiter_m216915318_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t375186156  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t375186156  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m4241152561((&L_0), (UniTask_1_t777339372 )(*(UniTask_1_t777339372 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t375186156 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t375186156  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t375186156  UniTask_1_GetAwaiter_m216915318_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m216915318(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t1487758896  UniTask_1_SuppressCancellationThrow_m885352990_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t1487758896  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	UniTask_1_t4076206416  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m539808805((UniTask_1_t777339372 *)(UniTask_1_t777339372 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		UniTask_1_t4076206416  L_3 = UniTask_1_get_Result_m1884018136((UniTask_1_t777339372 *)(UniTask_1_t777339372 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t491658644  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m3333678771((&L_4), (bool)0, (UniTask_1_t4076206416 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1487758896  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m3056059257((&L_5), (ValueTuple_2_t491658644 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1487758896 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(UniTask_1_t4076206416 ));
+		UniTask_1_t4076206416  L_8 = V_4;
+		ValueTuple_2_t491658644  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m3333678771((&L_9), (bool)1, (UniTask_1_t4076206416 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t1487758896  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m3056059257((&L_10), (ValueTuple_2_t491658644 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t1487758896 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t976219353 * L_12 = (IsCanceledAwaiter_t976219353 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t976219353 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t1487758896  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m631414555((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t1487758896 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t1487758896  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t1487758896  UniTask_1_SuppressCancellationThrow_m885352990_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m885352990(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3773152145_gshared (UniTask_1_t777339372 * __this, UniTask_1_t777339372  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t777339372  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t2245978752 * L_4 = ((  EqualityComparer_1_t2245978752 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		UniTask_1_t4076206416  L_5 = (UniTask_1_t4076206416 )__this->get_result_0();
+		UniTask_1_t777339372  L_6 = ___other0;
+		UniTask_1_t4076206416  L_7 = (UniTask_1_t4076206416 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t2245978752 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, UniTask_1_t4076206416 , UniTask_1_t4076206416  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<UniRx.Async.UniTask`1<System.Object>>::Equals(!0,!0) */, (EqualityComparer_1_t2245978752 *)L_4, (UniTask_1_t4076206416 )L_5, (UniTask_1_t4076206416 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t777339372  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t777339372  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m3773152145_AdjustorThunk (RuntimeObject * __this, UniTask_1_t777339372  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_Equals_m3773152145(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m1225508205_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	UniTask_1_t4076206416  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		UniTask_1_t4076206416  L_2 = (UniTask_1_t4076206416 )__this->get_result_0();
+		UniTask_1_t4076206416  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		UniTask_1_t4076206416  L_6 = (UniTask_1_t4076206416 )__this->get_result_0();
+		V_3 = (UniTask_1_t4076206416 )L_6;
+		Il2CppFakeBox<UniTask_1_t4076206416 > L_7(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_3));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__52 = il2cpp_codegen_get_virtual_invoke_data(2, &L_7);
+		int32_t L_8 = ((  int32_t (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__52.methodPtr)((RuntimeObject *)(&L_7), /*hidden argument*/il2cpp_virtual_invoke_data__52.method);
+		V_3 = L_7.m_Value;
+		V_2 = (int32_t)L_8;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_9);
+		V_2 = (int32_t)L_10;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_11 = V_2;
+		return L_11;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m1225508205_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_GetHashCode_m1225508205(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1193915039_gshared (UniTask_1_t777339372 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1193915039_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UniTask_1_t4076206416  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		UniTask_1_t4076206416  L_9 = InterfaceFuncInvoker0< UniTask_1_t4076206416  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UniRx.Async.UniTask`1<System.Object>>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (UniTask_1_t4076206416 )L_9;
+		Il2CppFakeBox<UniTask_1_t4076206416 > L_10(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__76 = il2cpp_codegen_get_virtual_invoke_data(3, &L_10);
+		String_t* L_11 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__76.methodPtr)((RuntimeObject *)(&L_10), /*hidden argument*/il2cpp_virtual_invoke_data__76.method);
+		V_0 = L_10.m_Value;
+		G_B4_0 = L_11;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		UniTask_1_t4076206416  L_12 = (UniTask_1_t4076206416 )__this->get_result_0();
+		V_0 = (UniTask_1_t4076206416 )L_12;
+		Il2CppFakeBox<UniTask_1_t4076206416 > L_13(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), (&V_0));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__98 = il2cpp_codegen_get_virtual_invoke_data(3, &L_13);
+		String_t* L_14 = ((  String_t* (*) (RuntimeObject *, const RuntimeMethod*))il2cpp_virtual_invoke_data__98.methodPtr)((RuntimeObject *)(&L_13), /*hidden argument*/il2cpp_virtual_invoke_data__98.method);
+		V_0 = L_13.m_Value;
+		G_B6_0 = L_14;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_15 = V_1;
+		return L_15;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1193915039_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t777339372 * _thisAdjusted = reinterpret_cast<UniTask_1_t777339372 *>(__this + 1);
+	return UniTask_1_ToString_m1193915039(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<UniRx.Async.UniTask`1<System.Object>>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m3065608493_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t777339372  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t777339372  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t777339372  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(T)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m3278597555_gshared (UniTask_1_t3152329775 * __this, Vector2_t2156229523  ___result0, const RuntimeMethod* method)
+{
+	{
+		Vector2_t2156229523  L_0 = ___result0;
+		__this->set_result_0(L_0);
+		__this->set_awaiter_1((RuntimeObject*)NULL);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m3278597555_AdjustorThunk (RuntimeObject * __this, Vector2_t2156229523  ___result0, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	UniTask_1__ctor_m3278597555(_thisAdjusted, ___result0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(UniRx.Async.IAwaiter`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m294927412_gshared (UniTask_1_t3152329775 * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	{
+		Vector2_t2156229523 * L_0 = (Vector2_t2156229523 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(Vector2_t2156229523 ));
+		RuntimeObject* L_1 = ___awaiter0;
+		__this->set_awaiter_1(L_1);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m294927412_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___awaiter0, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	UniTask_1__ctor_m294927412(_thisAdjusted, ___awaiter0, method);
+}
+// System.Void UniRx.Async.UniTask`1<UnityEngine.Vector2>::.ctor(System.Func`1<UniRx.Async.UniTask`1<T>>)
+extern "C" IL2CPP_METHOD_ATTR void UniTask_1__ctor_m201497790_gshared (UniTask_1_t3152329775 * __this, Func_1_t2582076422 * ___factory0, const RuntimeMethod* method)
+{
+	{
+		Vector2_t2156229523 * L_0 = (Vector2_t2156229523 *)__this->get_address_of_result_0();
+		il2cpp_codegen_initobj(L_0, sizeof(Vector2_t2156229523 ));
+		Func_1_t2582076422 * L_1 = ___factory0;
+		LazyPromise_1_t373687782 * L_2 = (LazyPromise_1_t373687782 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((  void (*) (LazyPromise_1_t373687782 *, Func_1_t2582076422 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(L_2, (Func_1_t2582076422 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		__this->set_awaiter_1(L_2);
+		return;
+	}
+}
+extern "C"  void UniTask_1__ctor_m201497790_AdjustorThunk (RuntimeObject * __this, Func_1_t2582076422 * ___factory0, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	UniTask_1__ctor_m201497790(_thisAdjusted, ___factory0, method);
+}
+// UniRx.Async.AwaiterStatus UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Status()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_m2118926633_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_Status_m2118926633_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  int32_t UniTask_1_get_Status_m2118926633_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_get_Status_m2118926633(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_IsCompleted()
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_get_IsCompleted_m934710798_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_get_IsCompleted_m934710798_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		bool L_2 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean UniRx.Async.IAwaiter::get_IsCompleted() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0017;
+	}
+
+IL_0016:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0017:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool UniTask_1_get_IsCompleted_m934710798_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_get_IsCompleted_m934710798(_thisAdjusted, method);
+}
+// T UniRx.Async.UniTask`1<UnityEngine.Vector2>::get_Result()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  UniTask_1_get_Result_m1368514511_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	Vector2_t2156229523  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Vector2_t2156229523  L_2 = (Vector2_t2156229523 )__this->get_result_0();
+		V_1 = (Vector2_t2156229523 )L_2;
+		goto IL_0027;
+	}
+
+IL_0018:
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		Vector2_t2156229523  L_4 = InterfaceFuncInvoker0< Vector2_t2156229523  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UnityEngine.Vector2>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_3);
+		V_1 = (Vector2_t2156229523 )L_4;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		Vector2_t2156229523  L_5 = V_1;
+		return L_5;
+	}
+}
+extern "C"  Vector2_t2156229523  UniTask_1_get_Result_m1368514511_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_get_Result_m1368514511(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1/Awaiter<T> UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetAwaiter()
+extern "C" IL2CPP_METHOD_ATTR Awaiter_t2750176559  UniTask_1_GetAwaiter_m3763705206_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	Awaiter_t2750176559  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Awaiter_t2750176559  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Awaiter__ctor_m3485001434((&L_0), (UniTask_1_t3152329775 )(*(UniTask_1_t3152329775 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 4));
+		V_0 = (Awaiter_t2750176559 )L_0;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Awaiter_t2750176559  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Awaiter_t2750176559  UniTask_1_GetAwaiter_m3763705206_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_GetAwaiter_m3763705206(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask`1<System.ValueTuple`2<System.Boolean,T>> UniRx.Async.UniTask`1<UnityEngine.Vector2>::SuppressCancellationThrow()
+extern "C" IL2CPP_METHOD_ATTR UniTask_1_t3862749299  UniTask_1_SuppressCancellationThrow_m3825138212_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	UniTask_1_t3862749299  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	bool V_3 = false;
+	Vector2_t2156229523  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = UniTask_1_get_Status_m2118926633((UniTask_1_t3152329775 *)(UniTask_1_t3152329775 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 5));
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		Vector2_t2156229523  L_3 = UniTask_1_get_Result_m1368514511((UniTask_1_t3152329775 *)(UniTask_1_t3152329775 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 6));
+		ValueTuple_2_t2866649047  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		ValueTuple_2__ctor_m2620433149((&L_4), (bool)0, (Vector2_t2156229523 )L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t3862749299  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask_1__ctor_m86234036((&L_5), (ValueTuple_2_t2866649047 )L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t3862749299 )L_5;
+		goto IL_0059;
+	}
+
+IL_0025:
+	{
+		int32_t L_6 = V_0;
+		V_3 = (bool)((((int32_t)L_6) == ((int32_t)3))? 1 : 0);
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(Vector2_t2156229523 ));
+		Vector2_t2156229523  L_8 = V_4;
+		ValueTuple_2_t2866649047  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		ValueTuple_2__ctor_m2620433149((&L_9), (bool)1, (Vector2_t2156229523 )L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		UniTask_1_t3862749299  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		UniTask_1__ctor_m86234036((&L_10), (ValueTuple_2_t2866649047 )L_9, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 10));
+		V_2 = (UniTask_1_t3862749299 )L_10;
+		goto IL_0059;
+	}
+
+IL_0046:
+	{
+		RuntimeObject* L_11 = (RuntimeObject*)__this->get_awaiter_1();
+		IsCanceledAwaiter_t3351209756 * L_12 = (IsCanceledAwaiter_t3351209756 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 11));
+		((  void (*) (IsCanceledAwaiter_t3351209756 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12)->methodPointer)(L_12, (RuntimeObject*)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 12));
+		UniTask_1_t3862749299  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		UniTask_1__ctor_m1643570159((&L_13), (RuntimeObject*)L_12, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
+		V_2 = (UniTask_1_t3862749299 )L_13;
+		goto IL_0059;
+	}
+
+IL_0059:
+	{
+		UniTask_1_t3862749299  L_14 = V_2;
+		return L_14;
+	}
+}
+extern "C"  UniTask_1_t3862749299  UniTask_1_SuppressCancellationThrow_m3825138212_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_SuppressCancellationThrow_m3825138212(_thisAdjusted, method);
+}
+// System.Boolean UniRx.Async.UniTask`1<UnityEngine.Vector2>::Equals(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR bool UniTask_1_Equals_m3934949454_gshared (UniTask_1_t3152329775 * __this, UniTask_1_t3152329775  ___other0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UniTask_1_t3152329775  L_1 = ___other0;
+		RuntimeObject* L_2 = (RuntimeObject*)L_1.get_awaiter_1();
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0015:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		EqualityComparer_1_t326001859 * L_4 = ((  EqualityComparer_1_t326001859 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 14));
+		Vector2_t2156229523  L_5 = (Vector2_t2156229523 )__this->get_result_0();
+		UniTask_1_t3152329775  L_6 = ___other0;
+		Vector2_t2156229523  L_7 = (Vector2_t2156229523 )L_6.get_result_0();
+		NullCheck((EqualityComparer_1_t326001859 *)L_4);
+		bool L_8 = VirtFuncInvoker2< bool, Vector2_t2156229523 , Vector2_t2156229523  >::Invoke(8 /* System.Boolean System.Collections.Generic.EqualityComparer`1<UnityEngine.Vector2>::Equals(!0,!0) */, (EqualityComparer_1_t326001859 *)L_4, (Vector2_t2156229523 )L_5, (Vector2_t2156229523 )L_7);
+		V_1 = (bool)L_8;
+		goto IL_0062;
+	}
+
+IL_0033:
+	{
+		RuntimeObject* L_9 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_9)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UniTask_1_t3152329775  L_10 = ___other0;
+		RuntimeObject* L_11 = (RuntimeObject*)L_10.get_awaiter_1();
+		G_B8_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_11) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		goto IL_0047;
+	}
+
+IL_0046:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0047:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_12 = V_2;
+		if (!L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		RuntimeObject* L_13 = (RuntimeObject*)__this->get_awaiter_1();
+		UniTask_1_t3152329775  L_14 = ___other0;
+		RuntimeObject* L_15 = (RuntimeObject*)L_14.get_awaiter_1();
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_13) == ((RuntimeObject*)(RuntimeObject*)L_15))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_005d:
+	{
+		V_1 = (bool)0;
+		goto IL_0062;
+	}
+
+IL_0062:
+	{
+		bool L_16 = V_1;
+		return L_16;
+	}
+}
+extern "C"  bool UniTask_1_Equals_m3934949454_AdjustorThunk (RuntimeObject * __this, UniTask_1_t3152329775  ___other0, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_Equals_m3934949454(_thisAdjusted, ___other0, method);
+}
+// System.Int32 UniRx.Async.UniTask`1<UnityEngine.Vector2>::GetHashCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t UniTask_1_GetHashCode_m3457700871_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	Vector2_t2156229523  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		Vector2_t2156229523  L_2 = (Vector2_t2156229523 )__this->get_result_0();
+		Vector2_t2156229523  L_3 = L_2;
+		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 17), &L_3);
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_2 = (int32_t)0;
+		goto IL_004b;
+	}
+
+IL_0025:
+	{
+		Vector2_t2156229523  L_6 = (Vector2_t2156229523 )__this->get_result_0();
+		V_3 = (Vector2_t2156229523 )L_6;
+		int32_t L_7 = Vector2_GetHashCode_m3916089713((Vector2_t2156229523 *)(Vector2_t2156229523 *)(&V_3), /*hidden argument*/NULL);
+		V_2 = (int32_t)L_7;
+		goto IL_004b;
+	}
+
+IL_003c:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject *)L_8);
+		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_8);
+		V_2 = (int32_t)L_9;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		int32_t L_10 = V_2;
+		return L_10;
+	}
+}
+extern "C"  int32_t UniTask_1_GetHashCode_m3457700871_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_GetHashCode_m3457700871(_thisAdjusted, method);
+}
+// System.String UniRx.Async.UniTask`1<UnityEngine.Vector2>::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* UniTask_1_ToString_m1080152130_gshared (UniTask_1_t3152329775 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UniTask_1_ToString_m1080152130_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t2156229523  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get_awaiter_1();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		RuntimeObject* L_1 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_1);
+		int32_t L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_1);
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_3);
+		int32_t L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* UniRx.Async.AwaiterStatus UniRx.Async.IAwaiter::get_Status() */, IAwaiter_t775381681_il2cpp_TypeInfo_var, (RuntimeObject*)L_3);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(AwaiterStatus_t2968141202_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7 = String_Concat_m1715369213(NULL /*static, unused*/, (RuntimeObject *)_stringLiteral3452614536, (RuntimeObject *)L_6, (RuntimeObject *)_stringLiteral3452614535, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		goto IL_0051;
+	}
+
+IL_0038:
+	{
+		RuntimeObject* L_8 = (RuntimeObject*)__this->get_awaiter_1();
+		NullCheck((RuntimeObject*)L_8);
+		Vector2_t2156229523  L_9 = InterfaceFuncInvoker0< Vector2_t2156229523  >::Invoke(0 /* T UniRx.Async.IAwaiter`1<UnityEngine.Vector2>::GetResult() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), (RuntimeObject*)L_8);
+		V_0 = (Vector2_t2156229523 )L_9;
+		String_t* L_10 = Vector2_ToString_m1205609053((Vector2_t2156229523 *)(Vector2_t2156229523 *)(&V_0), /*hidden argument*/NULL);
+		G_B4_0 = L_10;
+	}
+
+IL_0051:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0067;
+	}
+
+IL_0053:
+	{
+		Vector2_t2156229523  L_11 = (Vector2_t2156229523 )__this->get_result_0();
+		V_0 = (Vector2_t2156229523 )L_11;
+		String_t* L_12 = Vector2_ToString_m1205609053((Vector2_t2156229523 *)(Vector2_t2156229523 *)(&V_0), /*hidden argument*/NULL);
+		G_B6_0 = L_12;
+	}
+
+IL_0067:
+	{
+		V_1 = (String_t*)G_B6_0;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		String_t* L_13 = V_1;
+		return L_13;
+	}
+}
+extern "C"  String_t* UniTask_1_ToString_m1080152130_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	UniTask_1_t3152329775 * _thisAdjusted = reinterpret_cast<UniTask_1_t3152329775 *>(__this + 1);
+	return UniTask_1_ToString_m1080152130(_thisAdjusted, method);
+}
+// UniRx.Async.UniTask UniRx.Async.UniTask`1<UnityEngine.Vector2>::op_Implicit(UniRx.Async.UniTask`1<T>)
+extern "C" IL2CPP_METHOD_ATTR UniTask_t2999217737  UniTask_1_op_Implicit_m3645729961_gshared (RuntimeObject * __this /* static, unused */, UniTask_1_t3152329775  ___task0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	UniTask_t2999217737  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	UniTask_t2999217737  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		UniTask_1_t3152329775  L_0 = ___task0;
+		RuntimeObject* L_1 = (RuntimeObject*)L_0.get_awaiter_1();
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_1) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UniTask_1_t3152329775  L_3 = ___task0;
+		RuntimeObject* L_4 = (RuntimeObject*)L_3.get_awaiter_1();
+		UniTask_t2999217737  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		UniTask__ctor_m2092679897((&L_5), (RuntimeObject*)L_4, /*hidden argument*/NULL);
+		V_1 = (UniTask_t2999217737 )L_5;
+		goto IL_002a;
+	}
+
+IL_001d:
+	{
+		il2cpp_codegen_initobj((&V_2), sizeof(UniTask_t2999217737 ));
+		UniTask_t2999217737  L_6 = V_2;
+		V_1 = (UniTask_t2999217737 )L_6;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		UniTask_t2999217737  L_7 = V_1;
+		return L_7;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UniRx.UnityEqualityComparer/Cache`1<System.Object>::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void Cache_1__cctor_m3593190755_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Cache_1__cctor_m3593190755_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	bool V_1 = false;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 0)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityEqualityComparer_t3411193022_il2cpp_TypeInfo_var);
+		RuntimeObject * L_2 = UnityEqualityComparer_GetDefaultHelper_m226176195(NULL /*static, unused*/, (Type_t *)L_1, /*hidden argument*/NULL);
+		V_0 = (RuntimeObject *)L_2;
+		RuntimeObject * L_3 = V_0;
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject *)L_3) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		EqualityComparer_1_t1249878500 * L_5 = ((  EqualityComparer_1_t1249878500 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		((Cache_1_t190281258_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 3)))->set_Comparer_0(L_5);
+		goto IL_0034;
+	}
+
+IL_0027:
+	{
+		RuntimeObject * L_6 = V_0;
+		((Cache_1_t190281258_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 3)))->set_Comparer_0(((RuntimeObject*)Castclass((RuntimeObject*)L_6, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 4))));
+	}
+
+IL_0034:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void EventFunction_1__ctor_m4292798223_gshared (EventFunction_1_t1764640198 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>::Invoke(T1,UnityEngine.EventSystems.BaseEventData)
+extern "C" IL2CPP_METHOD_ATTR void EventFunction_1_Invoke_m2429482587_gshared (EventFunction_1_t1764640198 * __this, RuntimeObject * ___handler0, BaseEventData_t3903027533 * ___eventData1, const RuntimeMethod* method)
+{
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((RuntimeMethod*)(__this->get_method_3()));
+	DelegateU5BU5D_t1703627840* delegatesToInvoke = __this->get_delegates_11();
+	if (delegatesToInvoke != NULL)
+	{
+		il2cpp_array_size_t length = delegatesToInvoke->max_length;
+		for (il2cpp_array_size_t i = 0; i < length; i++)
+		{
+			Delegate_t1188392813* currentDelegate = (delegatesToInvoke)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
+			Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
+			RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
+			RuntimeObject* targetThis = currentDelegate->get_m_target_2();
+			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+			bool ___methodIsStatic = MethodIsStatic(targetMethod);
+			if (___methodIsStatic)
+			{
+				if (il2cpp_codegen_method_parameter_count(targetMethod) == 2)
+				{
+					// open
+					{
+						typedef void (*FunctionPointerType) (RuntimeObject *, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+						((FunctionPointerType)targetMethodPointer)(NULL, ___handler0, ___eventData1, targetMethod);
+					}
+				}
+				else
+				{
+					// closed
+					{
+						typedef void (*FunctionPointerType) (RuntimeObject *, void*, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+						((FunctionPointerType)targetMethodPointer)(NULL, targetThis, ___handler0, ___eventData1, targetMethod);
+					}
+				}
+			}
+			else
+			{
+				if (il2cpp_codegen_method_parameter_count(targetMethod) == 2)
+				{
+					// closed
+					if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+					{
+						if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+						{
+							if (il2cpp_codegen_method_is_interface_method(targetMethod))
+								GenericInterfaceActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(targetMethod, targetThis, ___handler0, ___eventData1);
+							else
+								GenericVirtActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(targetMethod, targetThis, ___handler0, ___eventData1);
+						}
+						else
+						{
+							if (il2cpp_codegen_method_is_interface_method(targetMethod))
+								InterfaceActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___handler0, ___eventData1);
+							else
+								VirtActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___handler0, ___eventData1);
+						}
+					}
+					else
+					{
+						typedef void (*FunctionPointerType) (void*, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+						((FunctionPointerType)targetMethodPointer)(targetThis, ___handler0, ___eventData1, targetMethod);
+					}
+				}
+				else
+				{
+					// open
+					if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+					{
+						if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+						{
+							if (il2cpp_codegen_method_is_interface_method(targetMethod))
+								GenericInterfaceActionInvoker1< BaseEventData_t3903027533 * >::Invoke(targetMethod, ___handler0, ___eventData1);
+							else
+								GenericVirtActionInvoker1< BaseEventData_t3903027533 * >::Invoke(targetMethod, ___handler0, ___eventData1);
+						}
+						else
+						{
+							if (il2cpp_codegen_method_is_interface_method(targetMethod))
+								InterfaceActionInvoker1< BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), ___handler0, ___eventData1);
+							else
+								VirtActionInvoker1< BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), ___handler0, ___eventData1);
+						}
+					}
+					else
+					{
+						typedef void (*FunctionPointerType) (RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+						((FunctionPointerType)targetMethodPointer)(___handler0, ___eventData1, targetMethod);
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		Il2CppMethodPointer targetMethodPointer = __this->get_method_ptr_0();
+		RuntimeMethod* targetMethod = (RuntimeMethod*)(__this->get_method_3());
+		RuntimeObject* targetThis = __this->get_m_target_2();
+		il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+		bool ___methodIsStatic = MethodIsStatic(targetMethod);
+		if (___methodIsStatic)
+		{
+			if (il2cpp_codegen_method_parameter_count(targetMethod) == 2)
+			{
+				// open
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(NULL, ___handler0, ___eventData1, targetMethod);
+				}
+			}
+			else
+			{
+				// closed
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, void*, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(NULL, targetThis, ___handler0, ___eventData1, targetMethod);
+				}
+			}
+		}
+		else
+		{
+			if (il2cpp_codegen_method_parameter_count(targetMethod) == 2)
+			{
+				// closed
+				if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+				{
+					if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+					{
+						if (il2cpp_codegen_method_is_interface_method(targetMethod))
+							GenericInterfaceActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(targetMethod, targetThis, ___handler0, ___eventData1);
+						else
+							GenericVirtActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(targetMethod, targetThis, ___handler0, ___eventData1);
+					}
+					else
+					{
+						if (il2cpp_codegen_method_is_interface_method(targetMethod))
+							InterfaceActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___handler0, ___eventData1);
+						else
+							VirtActionInvoker2< RuntimeObject *, BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___handler0, ___eventData1);
+					}
+				}
+				else
+				{
+					typedef void (*FunctionPointerType) (void*, RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(targetThis, ___handler0, ___eventData1, targetMethod);
+				}
+			}
+			else
+			{
+				// open
+				if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+				{
+					if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+					{
+						if (il2cpp_codegen_method_is_interface_method(targetMethod))
+							GenericInterfaceActionInvoker1< BaseEventData_t3903027533 * >::Invoke(targetMethod, ___handler0, ___eventData1);
+						else
+							GenericVirtActionInvoker1< BaseEventData_t3903027533 * >::Invoke(targetMethod, ___handler0, ___eventData1);
+					}
+					else
+					{
+						if (il2cpp_codegen_method_is_interface_method(targetMethod))
+							InterfaceActionInvoker1< BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), ___handler0, ___eventData1);
+						else
+							VirtActionInvoker1< BaseEventData_t3903027533 * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), ___handler0, ___eventData1);
+					}
+				}
+				else
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, BaseEventData_t3903027533 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___handler0, ___eventData1, targetMethod);
+				}
+			}
+		}
+	}
+}
+// System.IAsyncResult UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>::BeginInvoke(T1,UnityEngine.EventSystems.BaseEventData,System.AsyncCallback,System.Object)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* EventFunction_1_BeginInvoke_m117707366_gshared (EventFunction_1_t1764640198 * __this, RuntimeObject * ___handler0, BaseEventData_t3903027533 * ___eventData1, AsyncCallback_t3962456242 * ___callback2, RuntimeObject * ___object3, const RuntimeMethod* method)
+{
+	void *__d_args[3] = {0};
+	__d_args[0] = ___handler0;
+	__d_args[1] = ___eventData1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);
+}
+// System.Void UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<System.Object>::EndInvoke(System.IAsyncResult)
+extern "C" IL2CPP_METHOD_ATTR void EventFunction_1_EndInvoke_m1395098989_gshared (EventFunction_1_t1764640198 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

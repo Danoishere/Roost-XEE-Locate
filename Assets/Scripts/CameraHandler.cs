@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class CameraHandler : MonoBehaviour
 {
@@ -21,14 +22,35 @@ public class CameraHandler : MonoBehaviour
 
     private bool wasZoomingLastFrame; // Touch mode only
     private Vector2[] lastZoomPositions; // Touch mode only
+    private GameManager gameManager;
+    private bool isReset = false;
+
+    private Vector3 initialPosition;
+    private float fieldOfView;
 
     void Awake()
     {
         cam = GetComponent<Camera>();
+        gameManager = FindObjectOfType<GameManager>();
+        initialPosition = transform.position;
+        fieldOfView = cam.fieldOfView;
     }
 
     void LateUpdate()
     {
+        if (!gameManager.isGameRunning && gameManager.isOnGameScreen)
+        {
+            if (!isReset)
+            {
+                Debug.Log("Move to initial position");
+                isReset = true;
+                transform.DOMove(initialPosition, 1.5f);
+                cam.DOFieldOfView(fieldOfView, 1.5f);
+            }
+
+            return;
+        }
+
         if (LocationLabel.DoNotPanAndZoom)
         {
             return;

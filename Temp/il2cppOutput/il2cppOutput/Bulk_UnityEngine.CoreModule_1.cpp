@@ -11748,6 +11748,8 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_fingerId_m859576425 (Touch_t1921
 extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Touch_get_position_m3109777936 (Touch_t1921856868 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Touch::get_deltaPosition()
 extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Touch_get_deltaPosition_m2389653382 (Touch_t1921856868 * __this, const RuntimeMethod* method);
+// System.Int32 UnityEngine.Touch::get_tapCount()
+extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_tapCount_m2125417096 (Touch_t1921856868 * __this, const RuntimeMethod* method);
 // UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
 extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_phase_m214549210 (Touch_t1921856868 * __this, const RuntimeMethod* method);
 // UnityEngine.TouchType UnityEngine.Touch::get_type()
@@ -21699,6 +21701,27 @@ extern "C"  Vector2_t2156229523  Touch_get_deltaPosition_m2389653382_AdjustorThu
 {
 	Touch_t1921856868 * _thisAdjusted = reinterpret_cast<Touch_t1921856868 *>(__this + 1);
 	return Touch_get_deltaPosition_m2389653382(_thisAdjusted, method);
+}
+// System.Int32 UnityEngine.Touch::get_tapCount()
+extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_tapCount_m2125417096 (Touch_t1921856868 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_m_TapCount_5();
+		V_0 = L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  int32_t Touch_get_tapCount_m2125417096_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	Touch_t1921856868 * _thisAdjusted = reinterpret_cast<Touch_t1921856868 *>(__this + 1);
+	return Touch_get_tapCount_m2125417096(_thisAdjusted, method);
 }
 // UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
 extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_phase_m214549210 (Touch_t1921856868 * __this, const RuntimeMethod* method)

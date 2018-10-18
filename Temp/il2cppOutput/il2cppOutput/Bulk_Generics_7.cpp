@@ -63,6 +63,12 @@ struct AsyncCallback_t3962456242;
 struct ByteU5BU5D_t4116647657;
 // System.Char[]
 struct CharU5BU5D_t3528271667;
+// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
+struct Comparer_1_t2542938767;
+// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
+struct Comparer_1_t3300148658;
+// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>
+struct Comparer_1_t3720371050;
 // System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>
 struct Comparer_1_t2335263895;
 // System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>
@@ -197,6 +203,8 @@ struct Comparer_1_t1605526987;
 struct Comparer_1_t3685240165;
 // System.Collections.Generic.Comparer`1<UnityEngine.RaycastHit>
 struct Comparer_1_t2555756848;
+// System.Collections.Generic.Comparer`1<UnityEngine.Touch>
+struct Comparer_1_t3421611750;
 // System.Collections.Generic.Comparer`1<UnityEngine.UICharInfo>
 struct Comparer_1_t1575255988;
 // System.Collections.Generic.Comparer`1<UnityEngine.UILineInfo>
@@ -313,50 +321,6 @@ struct ComparisonComparer_1_t2036746799;
 struct ComparisonComparer_1_t200472456;
 // System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>>
 struct ComparisonComparer_1_t1072553427;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>
-struct ComparisonComparer_1_t3924231610;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct ComparisonComparer_1_t2453582033;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct ComparisonComparer_1_t2385364884;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct ComparisonComparer_1_t427528135;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>
-struct ComparisonComparer_1_t847750527;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>
-struct ComparisonComparer_1_t3757610668;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>
-struct ComparisonComparer_1_t539632051;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>
-struct ComparisonComparer_1_t2914622454;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct ComparisonComparer_1_t1326327275;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t3785020228;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct ComparisonComparer_1_t2981842652;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t362133903;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct ComparisonComparer_1_t2142927001;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t3213812086;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct ComparisonComparer_1_t4183499202;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t1743162509;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct ComparisonComparer_1_t1159132651;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t1674945360;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct ComparisonComparer_1_t3254866016;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct ComparisonComparer_1_t4012075907;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>
-struct ComparisonComparer_1_t137331003;
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>
-struct ComparisonComparer_1_t3047191144;
 // System.Collections.Generic.Dictionary`2<System.Guid,System.Type>
 struct Dictionary_2_t1532962293;
 // System.Collections.IDictionary
@@ -465,42 +429,6 @@ struct Comparison_1_t3894963143;
 struct Comparison_1_t2058688800;
 // System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>>
 struct Comparison_1_t2930769771;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>
-struct Comparison_1_t1487480658;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct Comparison_1_t16831081;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct Comparison_1_t4243581228;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct Comparison_1_t2285744479;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>
-struct Comparison_1_t2705966871;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>
-struct Comparison_1_t1320859716;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>
-struct Comparison_1_t2397848395;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>
-struct Comparison_1_t477871502;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct Comparison_1_t3184543619;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
-struct Comparison_1_t1348269276;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct Comparison_1_t545091700;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>
-struct Comparison_1_t2220350247;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct Comparison_1_t4001143345;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct Comparison_1_t777061134;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct Comparison_1_t1746748250;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct Comparison_1_t3601378853;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct Comparison_1_t3017348995;
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct Comparison_1_t3533161704;
 // System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
 struct Comparison_1_t818115064;
 // System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
@@ -641,6 +569,8 @@ struct Comparison_1_t4175670580;
 struct Comparison_1_t1960416462;
 // System.Comparison`1<UnityEngine.RaycastHit>
 struct Comparison_1_t830933145;
+// System.Comparison`1<UnityEngine.Touch>
+struct Comparison_1_t1696788047;
 // System.Comparison`1<UnityEngine.UICharInfo>
 struct Comparison_1_t4145399581;
 // System.Comparison`1<UnityEngine.UILineInfo>
@@ -749,6 +679,7 @@ extern const RuntimeMethod* Comparer_1_Create_m1312701174_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1353135716_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1360011563_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1371871030_RuntimeMethod_var;
+extern const RuntimeMethod* Comparer_1_Create_m1407255047_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1432862515_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1475651493_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m1536097593_RuntimeMethod_var;
@@ -761,6 +692,7 @@ extern const RuntimeMethod* Comparer_1_Create_m2042970764_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2127879317_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2139452571_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2167240834_RuntimeMethod_var;
+extern const RuntimeMethod* Comparer_1_Create_m2299217382_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2319282131_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2384675635_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2426299643_RuntimeMethod_var;
@@ -772,9 +704,11 @@ extern const RuntimeMethod* Comparer_1_Create_m2864863365_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m2961109465_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3002334428_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3005696869_RuntimeMethod_var;
+extern const RuntimeMethod* Comparer_1_Create_m3164230171_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3191185945_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3232502669_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3270275270_RuntimeMethod_var;
+extern const RuntimeMethod* Comparer_1_Create_m3295193772_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3317350926_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3362873513_RuntimeMethod_var;
 extern const RuntimeMethod* Comparer_1_Create_m3410507795_RuntimeMethod_var;
@@ -810,6 +744,7 @@ extern const uint32_t Comparer_1_CreateComparer_m1179548959_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1300124933_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1349081777_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1415623369_MetadataUsageId;
+extern const uint32_t Comparer_1_CreateComparer_m1419264519_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1527646585_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1581974673_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1613227435_MetadataUsageId;
@@ -819,7 +754,9 @@ extern const uint32_t Comparer_1_CreateComparer_m1700645399_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1887828828_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1902346333_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1907884868_MetadataUsageId;
+extern const uint32_t Comparer_1_CreateComparer_m1933297763_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m1939538172_MetadataUsageId;
+extern const uint32_t Comparer_1_CreateComparer_m2085999052_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m2096505587_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m2103777106_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m2131391760_MetadataUsageId;
@@ -861,6 +798,7 @@ extern const uint32_t Comparer_1_CreateComparer_m4156307534_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m4185030324_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m4190047986_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m4221311047_MetadataUsageId;
+extern const uint32_t Comparer_1_CreateComparer_m4246253399_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m485080196_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m501475895_MetadataUsageId;
 extern const uint32_t Comparer_1_CreateComparer_m509745847_MetadataUsageId;
@@ -899,6 +837,7 @@ extern const uint32_t Comparer_1_Create_m1312701174_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1353135716_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1360011563_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1371871030_MetadataUsageId;
+extern const uint32_t Comparer_1_Create_m1407255047_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1432862515_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1475651493_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m1536097593_MetadataUsageId;
@@ -911,6 +850,7 @@ extern const uint32_t Comparer_1_Create_m2042970764_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2127879317_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2139452571_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2167240834_MetadataUsageId;
+extern const uint32_t Comparer_1_Create_m2299217382_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2319282131_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2384675635_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2426299643_MetadataUsageId;
@@ -922,9 +862,11 @@ extern const uint32_t Comparer_1_Create_m2864863365_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m2961109465_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3002334428_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3005696869_MetadataUsageId;
+extern const uint32_t Comparer_1_Create_m3164230171_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3191185945_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3232502669_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3270275270_MetadataUsageId;
+extern const uint32_t Comparer_1_Create_m3295193772_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3317350926_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3362873513_MetadataUsageId;
 extern const uint32_t Comparer_1_Create_m3410507795_MetadataUsageId;
@@ -2914,672 +2856,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARER_1_T360626178_H
-#ifndef COMPARER_1_T3212304361_H
-#define COMPARER_1_T3212304361_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparer_1_t3212304361  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t3212304361_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t3212304361 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3212304361_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t3212304361 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t3212304361 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t3212304361 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T3212304361_H
-#ifndef COMPARER_1_T1741654784_H
-#define COMPARER_1_T1741654784_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparer_1_t1741654784  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t1741654784_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t1741654784 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t1741654784_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t1741654784 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t1741654784 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t1741654784 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T1741654784_H
-#ifndef COMPARER_1_T1673437635_H
-#define COMPARER_1_T1673437635_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparer_1_t1673437635  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t1673437635_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t1673437635 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t1673437635_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t1673437635 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t1673437635 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t1673437635 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T1673437635_H
-#ifndef COMPARER_1_T4010568182_H
-#define COMPARER_1_T4010568182_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparer_1_t4010568182  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t4010568182_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t4010568182 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t4010568182_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t4010568182 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t4010568182 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t4010568182 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T4010568182_H
-#ifndef COMPARER_1_T135823278_H
-#define COMPARER_1_T135823278_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>
-struct  Comparer_1_t135823278  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t135823278_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t135823278 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t135823278_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t135823278 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t135823278 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t135823278 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T135823278_H
-#ifndef COMPARER_1_T3045683419_H
-#define COMPARER_1_T3045683419_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>
-struct  Comparer_1_t3045683419  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t3045683419_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t3045683419 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3045683419_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t3045683419 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t3045683419 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t3045683419 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T3045683419_H
-#ifndef COMPARER_1_T4122672098_H
-#define COMPARER_1_T4122672098_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>
-struct  Comparer_1_t4122672098  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t4122672098_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t4122672098 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t4122672098_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t4122672098 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t4122672098 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t4122672098 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T4122672098_H
-#ifndef COMPARER_1_T2202695205_H
-#define COMPARER_1_T2202695205_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>
-struct  Comparer_1_t2202695205  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t2202695205_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t2202695205 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t2202695205_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t2202695205 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t2202695205 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t2202695205 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T2202695205_H
-#ifndef COMPARER_1_T614400026_H
-#define COMPARER_1_T614400026_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct  Comparer_1_t614400026  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t614400026_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t614400026 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t614400026_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t614400026 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t614400026 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t614400026 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T614400026_H
-#ifndef COMPARER_1_T3073092979_H
-#define COMPARER_1_T3073092979_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
-struct  Comparer_1_t3073092979  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t3073092979_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t3073092979 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3073092979_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t3073092979 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t3073092979 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t3073092979 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T3073092979_H
-#ifndef COMPARER_1_T2269915403_H
-#define COMPARER_1_T2269915403_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparer_1_t2269915403  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t2269915403_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t2269915403 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t2269915403_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t2269915403 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t2269915403 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t2269915403 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T2269915403_H
-#ifndef COMPARER_1_T3945173950_H
-#define COMPARER_1_T3945173950_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>
-struct  Comparer_1_t3945173950  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t3945173950_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t3945173950 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3945173950_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t3945173950 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t3945173950 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t3945173950 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T3945173950_H
-#ifndef COMPARER_1_T1430999752_H
-#define COMPARER_1_T1430999752_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparer_1_t1430999752  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t1430999752_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t1430999752 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t1430999752_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t1430999752 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t1430999752 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t1430999752 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T1430999752_H
-#ifndef COMPARER_1_T2501884837_H
-#define COMPARER_1_T2501884837_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparer_1_t2501884837  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t2501884837_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t2501884837 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t2501884837_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t2501884837 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t2501884837 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t2501884837 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T2501884837_H
-#ifndef COMPARER_1_T3471571953_H
-#define COMPARER_1_T3471571953_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparer_1_t3471571953  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t3471571953_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t3471571953 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3471571953_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t3471571953 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t3471571953 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t3471571953 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T3471571953_H
-#ifndef COMPARER_1_T1031235260_H
-#define COMPARER_1_T1031235260_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparer_1_t1031235260  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t1031235260_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t1031235260 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t1031235260_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t1031235260 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t1031235260 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t1031235260 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T1031235260_H
-#ifndef COMPARER_1_T447205402_H
-#define COMPARER_1_T447205402_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparer_1_t447205402  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t447205402_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t447205402 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t447205402_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t447205402 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t447205402 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t447205402 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T447205402_H
-#ifndef COMPARER_1_T963018111_H
-#define COMPARER_1_T963018111_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparer_1_t963018111  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Comparer_1_t963018111_StaticFields
-{
-public:
-	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
-	Comparer_1_t963018111 * ___defaultComparer_0;
-
-public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t963018111_StaticFields, ___defaultComparer_0)); }
-	inline Comparer_1_t963018111 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline Comparer_1_t963018111 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(Comparer_1_t963018111 * value)
-	{
-		___defaultComparer_0 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARER_1_T963018111_H
 #ifndef COMPARER_1_T2542938767_H
 #define COMPARER_1_T2542938767_H
 #ifdef __clang__
@@ -6170,6 +5446,43 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARER_1_T2555756848_H
+#ifndef COMPARER_1_T3421611750_H
+#define COMPARER_1_T3421611750_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Comparer`1<UnityEngine.Touch>
+struct  Comparer_1_t3421611750  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct Comparer_1_t3421611750_StaticFields
+{
+public:
+	// System.Collections.Generic.Comparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.Comparer`1::defaultComparer
+	Comparer_1_t3421611750 * ___defaultComparer_0;
+
+public:
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(Comparer_1_t3421611750_StaticFields, ___defaultComparer_0)); }
+	inline Comparer_1_t3421611750 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline Comparer_1_t3421611750 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(Comparer_1_t3421611750 * value)
+	{
+		___defaultComparer_0 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultComparer_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COMPARER_1_T3421611750_H
 #ifndef COMPARER_1_T1575255988_H
 #define COMPARER_1_T1575255988_H
 #ifdef __clang__
@@ -6747,10 +6060,12 @@ struct  Location_t1808107784
 public:
 	// System.String Location::Name
 	String_t* ___Name_0;
+	// System.String Location::DisplayName
+	String_t* ___DisplayName_1;
 	// LocationSocket Location::Socket
-	LocationSocket_t662685003 * ___Socket_1;
+	LocationSocket_t662685003 * ___Socket_2;
 	// System.String[] Location::Excludes
-	StringU5BU5D_t1281789340* ___Excludes_2;
+	StringU5BU5D_t1281789340* ___Excludes_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Name_0)); }
@@ -6762,22 +6077,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Name_0), value);
 	}
 
-	inline static int32_t get_offset_of_Socket_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_1)); }
-	inline LocationSocket_t662685003 * get_Socket_1() const { return ___Socket_1; }
-	inline LocationSocket_t662685003 ** get_address_of_Socket_1() { return &___Socket_1; }
-	inline void set_Socket_1(LocationSocket_t662685003 * value)
+	inline static int32_t get_offset_of_DisplayName_1() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___DisplayName_1)); }
+	inline String_t* get_DisplayName_1() const { return ___DisplayName_1; }
+	inline String_t** get_address_of_DisplayName_1() { return &___DisplayName_1; }
+	inline void set_DisplayName_1(String_t* value)
 	{
-		___Socket_1 = value;
-		Il2CppCodeGenWriteBarrier((&___Socket_1), value);
+		___DisplayName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DisplayName_1), value);
 	}
 
-	inline static int32_t get_offset_of_Excludes_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_2)); }
-	inline StringU5BU5D_t1281789340* get_Excludes_2() const { return ___Excludes_2; }
-	inline StringU5BU5D_t1281789340** get_address_of_Excludes_2() { return &___Excludes_2; }
-	inline void set_Excludes_2(StringU5BU5D_t1281789340* value)
+	inline static int32_t get_offset_of_Socket_2() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Socket_2)); }
+	inline LocationSocket_t662685003 * get_Socket_2() const { return ___Socket_2; }
+	inline LocationSocket_t662685003 ** get_address_of_Socket_2() { return &___Socket_2; }
+	inline void set_Socket_2(LocationSocket_t662685003 * value)
 	{
-		___Excludes_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Excludes_2), value);
+		___Socket_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Socket_2), value);
+	}
+
+	inline static int32_t get_offset_of_Excludes_3() { return static_cast<int32_t>(offsetof(Location_t1808107784, ___Excludes_3)); }
+	inline StringU5BU5D_t1281789340* get_Excludes_3() const { return ___Excludes_3; }
+	inline StringU5BU5D_t1281789340** get_address_of_Excludes_3() { return &___Excludes_3; }
+	inline void set_Excludes_3(StringU5BU5D_t1281789340* value)
+	{
+		___Excludes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Excludes_3), value);
 	}
 };
 
@@ -6788,15 +6112,17 @@ public:
 struct Location_t1808107784_marshaled_pinvoke
 {
 	char* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	char** ___Excludes_2;
+	char* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	char** ___Excludes_3;
 };
 // Native definition for COM marshalling of Location
 struct Location_t1808107784_marshaled_com
 {
 	Il2CppChar* ___Name_0;
-	LocationSocket_t662685003 * ___Socket_1;
-	Il2CppChar** ___Excludes_2;
+	Il2CppChar* ___DisplayName_1;
+	LocationSocket_t662685003 * ___Socket_2;
+	Il2CppChar** ___Excludes_3;
 };
 #endif // LOCATION_T1808107784_H
 #ifndef BOOLEAN_T97287965_H
@@ -8491,546 +7817,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISONCOMPARER_1_T1072553427_H
-#ifndef COMPARISONCOMPARER_1_T3924231610_H
-#define COMPARISONCOMPARER_1_T3924231610_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  ComparisonComparer_1_t3924231610  : public Comparer_1_t3212304361
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t1487480658 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t3924231610, ____comparison_1)); }
-	inline Comparison_1_t1487480658 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t1487480658 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t1487480658 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T3924231610_H
-#ifndef COMPARISONCOMPARER_1_T2453582033_H
-#define COMPARISONCOMPARER_1_T2453582033_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  ComparisonComparer_1_t2453582033  : public Comparer_1_t1741654784
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t16831081 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t2453582033, ____comparison_1)); }
-	inline Comparison_1_t16831081 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t16831081 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t16831081 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T2453582033_H
-#ifndef COMPARISONCOMPARER_1_T2385364884_H
-#define COMPARISONCOMPARER_1_T2385364884_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  ComparisonComparer_1_t2385364884  : public Comparer_1_t1673437635
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t4243581228 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t2385364884, ____comparison_1)); }
-	inline Comparison_1_t4243581228 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t4243581228 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t4243581228 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T2385364884_H
-#ifndef COMPARISONCOMPARER_1_T427528135_H
-#define COMPARISONCOMPARER_1_T427528135_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  ComparisonComparer_1_t427528135  : public Comparer_1_t4010568182
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t2285744479 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t427528135, ____comparison_1)); }
-	inline Comparison_1_t2285744479 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t2285744479 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t2285744479 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T427528135_H
-#ifndef COMPARISONCOMPARER_1_T847750527_H
-#define COMPARISONCOMPARER_1_T847750527_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>
-struct  ComparisonComparer_1_t847750527  : public Comparer_1_t135823278
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t2705966871 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t847750527, ____comparison_1)); }
-	inline Comparison_1_t2705966871 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t2705966871 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t2705966871 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T847750527_H
-#ifndef COMPARISONCOMPARER_1_T3757610668_H
-#define COMPARISONCOMPARER_1_T3757610668_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>
-struct  ComparisonComparer_1_t3757610668  : public Comparer_1_t3045683419
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t1320859716 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t3757610668, ____comparison_1)); }
-	inline Comparison_1_t1320859716 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t1320859716 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t1320859716 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T3757610668_H
-#ifndef COMPARISONCOMPARER_1_T539632051_H
-#define COMPARISONCOMPARER_1_T539632051_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>
-struct  ComparisonComparer_1_t539632051  : public Comparer_1_t4122672098
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t2397848395 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t539632051, ____comparison_1)); }
-	inline Comparison_1_t2397848395 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t2397848395 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t2397848395 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T539632051_H
-#ifndef COMPARISONCOMPARER_1_T2914622454_H
-#define COMPARISONCOMPARER_1_T2914622454_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>
-struct  ComparisonComparer_1_t2914622454  : public Comparer_1_t2202695205
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t477871502 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t2914622454, ____comparison_1)); }
-	inline Comparison_1_t477871502 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t477871502 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t477871502 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T2914622454_H
-#ifndef COMPARISONCOMPARER_1_T1326327275_H
-#define COMPARISONCOMPARER_1_T1326327275_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct  ComparisonComparer_1_t1326327275  : public Comparer_1_t614400026
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t3184543619 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t1326327275, ____comparison_1)); }
-	inline Comparison_1_t3184543619 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t3184543619 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t3184543619 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T1326327275_H
-#ifndef COMPARISONCOMPARER_1_T3785020228_H
-#define COMPARISONCOMPARER_1_T3785020228_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
-struct  ComparisonComparer_1_t3785020228  : public Comparer_1_t3073092979
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t1348269276 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t3785020228, ____comparison_1)); }
-	inline Comparison_1_t1348269276 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t1348269276 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t1348269276 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T3785020228_H
-#ifndef COMPARISONCOMPARER_1_T2981842652_H
-#define COMPARISONCOMPARER_1_T2981842652_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  ComparisonComparer_1_t2981842652  : public Comparer_1_t2269915403
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t545091700 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t2981842652, ____comparison_1)); }
-	inline Comparison_1_t545091700 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t545091700 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t545091700 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T2981842652_H
-#ifndef COMPARISONCOMPARER_1_T362133903_H
-#define COMPARISONCOMPARER_1_T362133903_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>
-struct  ComparisonComparer_1_t362133903  : public Comparer_1_t3945173950
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t2220350247 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t362133903, ____comparison_1)); }
-	inline Comparison_1_t2220350247 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t2220350247 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t2220350247 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T362133903_H
-#ifndef COMPARISONCOMPARER_1_T2142927001_H
-#define COMPARISONCOMPARER_1_T2142927001_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  ComparisonComparer_1_t2142927001  : public Comparer_1_t1430999752
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t4001143345 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t2142927001, ____comparison_1)); }
-	inline Comparison_1_t4001143345 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t4001143345 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t4001143345 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T2142927001_H
-#ifndef COMPARISONCOMPARER_1_T3213812086_H
-#define COMPARISONCOMPARER_1_T3213812086_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ComparisonComparer_1_t3213812086  : public Comparer_1_t2501884837
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t777061134 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t3213812086, ____comparison_1)); }
-	inline Comparison_1_t777061134 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t777061134 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t777061134 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T3213812086_H
-#ifndef COMPARISONCOMPARER_1_T4183499202_H
-#define COMPARISONCOMPARER_1_T4183499202_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  ComparisonComparer_1_t4183499202  : public Comparer_1_t3471571953
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t1746748250 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t4183499202, ____comparison_1)); }
-	inline Comparison_1_t1746748250 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t1746748250 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t1746748250 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T4183499202_H
-#ifndef COMPARISONCOMPARER_1_T1743162509_H
-#define COMPARISONCOMPARER_1_T1743162509_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ComparisonComparer_1_t1743162509  : public Comparer_1_t1031235260
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t3601378853 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t1743162509, ____comparison_1)); }
-	inline Comparison_1_t3601378853 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t3601378853 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t3601378853 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T1743162509_H
-#ifndef COMPARISONCOMPARER_1_T1159132651_H
-#define COMPARISONCOMPARER_1_T1159132651_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  ComparisonComparer_1_t1159132651  : public Comparer_1_t447205402
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t3017348995 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t1159132651, ____comparison_1)); }
-	inline Comparison_1_t3017348995 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t3017348995 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t3017348995 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T1159132651_H
-#ifndef COMPARISONCOMPARER_1_T1674945360_H
-#define COMPARISONCOMPARER_1_T1674945360_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ComparisonComparer_1_t1674945360  : public Comparer_1_t963018111
-{
-public:
-	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
-	Comparison_1_t3533161704 * ____comparison_1;
-
-public:
-	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t1674945360, ____comparison_1)); }
-	inline Comparison_1_t3533161704 * get__comparison_1() const { return ____comparison_1; }
-	inline Comparison_1_t3533161704 ** get_address_of__comparison_1() { return &____comparison_1; }
-	inline void set__comparison_1(Comparison_1_t3533161704 * value)
-	{
-		____comparison_1 = value;
-		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISONCOMPARER_1_T1674945360_H
 #ifndef COMPARISONCOMPARER_1_T3254866016_H
 #define COMPARISONCOMPARER_1_T3254866016_H
 #ifdef __clang__
@@ -11131,6 +9917,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISONCOMPARER_1_T3267684097_H
+#ifndef COMPARISONCOMPARER_1_T4133538999_H
+#define COMPARISONCOMPARER_1_T4133538999_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.ComparisonComparer`1<UnityEngine.Touch>
+struct  ComparisonComparer_1_t4133538999  : public Comparer_1_t3421611750
+{
+public:
+	// System.Comparison`1<T> System.Collections.Generic.ComparisonComparer`1::_comparison
+	Comparison_1_t1696788047 * ____comparison_1;
+
+public:
+	inline static int32_t get_offset_of__comparison_1() { return static_cast<int32_t>(offsetof(ComparisonComparer_1_t4133538999, ____comparison_1)); }
+	inline Comparison_1_t1696788047 * get__comparison_1() const { return ____comparison_1; }
+	inline Comparison_1_t1696788047 ** get_address_of__comparison_1() { return &____comparison_1; }
+	inline void set__comparison_1(Comparison_1_t1696788047 * value)
+	{
+		____comparison_1 = value;
+		Il2CppCodeGenWriteBarrier((&____comparison_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COMPARISONCOMPARER_1_T4133538999_H
 #ifndef COMPARISONCOMPARER_1_T2287183237_H
 #define COMPARISONCOMPARER_1_T2287183237_H
 #ifdef __clang__
@@ -11352,6 +10168,66 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYVALUEPAIR_2_T2530217319_H
+#ifndef OBJECTCOMPARER_1_T42030199_H
+#define OBJECTCOMPARER_1_T42030199_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.ObjectComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
+struct  ObjectComparer_1_t42030199  : public Comparer_1_t2542938767
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OBJECTCOMPARER_1_T42030199_H
+#ifndef OBJECTCOMPARER_1_T799240090_H
+#define OBJECTCOMPARER_1_T799240090_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.ObjectComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
+struct  ObjectComparer_1_t799240090  : public Comparer_1_t3300148658
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OBJECTCOMPARER_1_T799240090_H
+#ifndef OBJECTCOMPARER_1_T1219462482_H
+#define OBJECTCOMPARER_1_T1219462482_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.ObjectComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>
+struct  ObjectComparer_1_t1219462482  : public Comparer_1_t3720371050
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OBJECTCOMPARER_1_T1219462482_H
 #ifndef OBJECTCOMPARER_1_T4129322623_H
 #define OBJECTCOMPARER_1_T4129322623_H
 #ifdef __clang__
@@ -12692,6 +11568,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // OBJECTCOMPARER_1_T54848280_H
+#ifndef OBJECTCOMPARER_1_T920703182_H
+#define OBJECTCOMPARER_1_T920703182_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.ObjectComparer`1<UnityEngine.Touch>
+struct  ObjectComparer_1_t920703182  : public Comparer_1_t3421611750
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OBJECTCOMPARER_1_T920703182_H
 #ifndef OBJECTCOMPARER_1_T3369314716_H
 #define OBJECTCOMPARER_1_T3369314716_H
 #ifdef __clang__
@@ -17498,6 +16394,64 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RAYCASTHIT_T1056001966_H
+#ifndef TOUCHPHASE_T72348083_H
+#define TOUCHPHASE_T72348083_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.TouchPhase
+struct  TouchPhase_t72348083 
+{
+public:
+	// System.Int32 UnityEngine.TouchPhase::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TouchPhase_t72348083, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TOUCHPHASE_T72348083_H
+#ifndef TOUCHTYPE_T2034578258_H
+#define TOUCHTYPE_T2034578258_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.TouchType
+struct  TouchType_t2034578258 
+{
+public:
+	// System.Int32 UnityEngine.TouchType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TouchType_t2034578258, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TOUCHTYPE_T2034578258_H
 #ifndef UICHARINFO_T75501106_H
 #define UICHARINFO_T75501106_H
 #ifdef __clang__
@@ -19186,6 +18140,165 @@ struct UniTask_t2999217737_marshaled_com
 	RuntimeObject* ___awaiter_1;
 };
 #endif // UNITASK_T2999217737_H
+#ifndef TOUCH_T1921856868_H
+#define TOUCH_T1921856868_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Touch
+struct  Touch_t1921856868 
+{
+public:
+	// System.Int32 UnityEngine.Touch::m_FingerId
+	int32_t ___m_FingerId_0;
+	// UnityEngine.Vector2 UnityEngine.Touch::m_Position
+	Vector2_t2156229523  ___m_Position_1;
+	// UnityEngine.Vector2 UnityEngine.Touch::m_RawPosition
+	Vector2_t2156229523  ___m_RawPosition_2;
+	// UnityEngine.Vector2 UnityEngine.Touch::m_PositionDelta
+	Vector2_t2156229523  ___m_PositionDelta_3;
+	// System.Single UnityEngine.Touch::m_TimeDelta
+	float ___m_TimeDelta_4;
+	// System.Int32 UnityEngine.Touch::m_TapCount
+	int32_t ___m_TapCount_5;
+	// UnityEngine.TouchPhase UnityEngine.Touch::m_Phase
+	int32_t ___m_Phase_6;
+	// UnityEngine.TouchType UnityEngine.Touch::m_Type
+	int32_t ___m_Type_7;
+	// System.Single UnityEngine.Touch::m_Pressure
+	float ___m_Pressure_8;
+	// System.Single UnityEngine.Touch::m_maximumPossiblePressure
+	float ___m_maximumPossiblePressure_9;
+	// System.Single UnityEngine.Touch::m_Radius
+	float ___m_Radius_10;
+	// System.Single UnityEngine.Touch::m_RadiusVariance
+	float ___m_RadiusVariance_11;
+	// System.Single UnityEngine.Touch::m_AltitudeAngle
+	float ___m_AltitudeAngle_12;
+	// System.Single UnityEngine.Touch::m_AzimuthAngle
+	float ___m_AzimuthAngle_13;
+
+public:
+	inline static int32_t get_offset_of_m_FingerId_0() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_FingerId_0)); }
+	inline int32_t get_m_FingerId_0() const { return ___m_FingerId_0; }
+	inline int32_t* get_address_of_m_FingerId_0() { return &___m_FingerId_0; }
+	inline void set_m_FingerId_0(int32_t value)
+	{
+		___m_FingerId_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Position_1() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_Position_1)); }
+	inline Vector2_t2156229523  get_m_Position_1() const { return ___m_Position_1; }
+	inline Vector2_t2156229523 * get_address_of_m_Position_1() { return &___m_Position_1; }
+	inline void set_m_Position_1(Vector2_t2156229523  value)
+	{
+		___m_Position_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_RawPosition_2() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_RawPosition_2)); }
+	inline Vector2_t2156229523  get_m_RawPosition_2() const { return ___m_RawPosition_2; }
+	inline Vector2_t2156229523 * get_address_of_m_RawPosition_2() { return &___m_RawPosition_2; }
+	inline void set_m_RawPosition_2(Vector2_t2156229523  value)
+	{
+		___m_RawPosition_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_PositionDelta_3() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_PositionDelta_3)); }
+	inline Vector2_t2156229523  get_m_PositionDelta_3() const { return ___m_PositionDelta_3; }
+	inline Vector2_t2156229523 * get_address_of_m_PositionDelta_3() { return &___m_PositionDelta_3; }
+	inline void set_m_PositionDelta_3(Vector2_t2156229523  value)
+	{
+		___m_PositionDelta_3 = value;
+	}
+
+	inline static int32_t get_offset_of_m_TimeDelta_4() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_TimeDelta_4)); }
+	inline float get_m_TimeDelta_4() const { return ___m_TimeDelta_4; }
+	inline float* get_address_of_m_TimeDelta_4() { return &___m_TimeDelta_4; }
+	inline void set_m_TimeDelta_4(float value)
+	{
+		___m_TimeDelta_4 = value;
+	}
+
+	inline static int32_t get_offset_of_m_TapCount_5() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_TapCount_5)); }
+	inline int32_t get_m_TapCount_5() const { return ___m_TapCount_5; }
+	inline int32_t* get_address_of_m_TapCount_5() { return &___m_TapCount_5; }
+	inline void set_m_TapCount_5(int32_t value)
+	{
+		___m_TapCount_5 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Phase_6() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_Phase_6)); }
+	inline int32_t get_m_Phase_6() const { return ___m_Phase_6; }
+	inline int32_t* get_address_of_m_Phase_6() { return &___m_Phase_6; }
+	inline void set_m_Phase_6(int32_t value)
+	{
+		___m_Phase_6 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Type_7() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_Type_7)); }
+	inline int32_t get_m_Type_7() const { return ___m_Type_7; }
+	inline int32_t* get_address_of_m_Type_7() { return &___m_Type_7; }
+	inline void set_m_Type_7(int32_t value)
+	{
+		___m_Type_7 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Pressure_8() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_Pressure_8)); }
+	inline float get_m_Pressure_8() const { return ___m_Pressure_8; }
+	inline float* get_address_of_m_Pressure_8() { return &___m_Pressure_8; }
+	inline void set_m_Pressure_8(float value)
+	{
+		___m_Pressure_8 = value;
+	}
+
+	inline static int32_t get_offset_of_m_maximumPossiblePressure_9() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_maximumPossiblePressure_9)); }
+	inline float get_m_maximumPossiblePressure_9() const { return ___m_maximumPossiblePressure_9; }
+	inline float* get_address_of_m_maximumPossiblePressure_9() { return &___m_maximumPossiblePressure_9; }
+	inline void set_m_maximumPossiblePressure_9(float value)
+	{
+		___m_maximumPossiblePressure_9 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Radius_10() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_Radius_10)); }
+	inline float get_m_Radius_10() const { return ___m_Radius_10; }
+	inline float* get_address_of_m_Radius_10() { return &___m_Radius_10; }
+	inline void set_m_Radius_10(float value)
+	{
+		___m_Radius_10 = value;
+	}
+
+	inline static int32_t get_offset_of_m_RadiusVariance_11() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_RadiusVariance_11)); }
+	inline float get_m_RadiusVariance_11() const { return ___m_RadiusVariance_11; }
+	inline float* get_address_of_m_RadiusVariance_11() { return &___m_RadiusVariance_11; }
+	inline void set_m_RadiusVariance_11(float value)
+	{
+		___m_RadiusVariance_11 = value;
+	}
+
+	inline static int32_t get_offset_of_m_AltitudeAngle_12() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_AltitudeAngle_12)); }
+	inline float get_m_AltitudeAngle_12() const { return ___m_AltitudeAngle_12; }
+	inline float* get_address_of_m_AltitudeAngle_12() { return &___m_AltitudeAngle_12; }
+	inline void set_m_AltitudeAngle_12(float value)
+	{
+		___m_AltitudeAngle_12 = value;
+	}
+
+	inline static int32_t get_offset_of_m_AzimuthAngle_13() { return static_cast<int32_t>(offsetof(Touch_t1921856868, ___m_AzimuthAngle_13)); }
+	inline float get_m_AzimuthAngle_13() const { return ___m_AzimuthAngle_13; }
+	inline float* get_address_of_m_AzimuthAngle_13() { return &___m_AzimuthAngle_13; }
+	inline void set_m_AzimuthAngle_13(float value)
+	{
+		___m_AzimuthAngle_13 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TOUCH_T1921856868_H
 #ifndef COMPARISON_1_T1583038963_H
 #define COMPARISON_1_T1583038963_H
 #ifdef __clang__
@@ -21006,6 +20119,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISON_1_T830933145_H
+#ifndef COMPARISON_1_T1696788047_H
+#define COMPARISON_1_T1696788047_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Comparison`1<UnityEngine.Touch>
+struct  Comparison_1_t1696788047  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COMPARISON_1_T1696788047_H
 #ifndef COMPARISON_1_T4145399581_H
 #define COMPARISON_1_T4145399581_H
 #ifdef __clang__
@@ -21419,123 +20552,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VALUETUPLE_2_T2445419068_H
-#ifndef VALUETUPLE_2_T1002129955_H
-#define VALUETUPLE_2_T1002129955_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>
-struct  ValueTuple_2_t1002129955 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t291710431  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1002129955, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1002129955, ___Item2_1)); }
-	inline ValueTuple_2_t291710431  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t291710431 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t291710431  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T1002129955_H
-#ifndef VALUETUPLE_2_T3826447674_H
-#define VALUETUPLE_2_T3826447674_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>
-struct  ValueTuple_2_t3826447674 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t3116028150  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3826447674, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3826447674, ___Item2_1)); }
-	inline ValueTuple_2_t3116028150  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t3116028150 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t3116028150  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T3826447674_H
-#ifndef VALUETUPLE_2_T3758230525_H
-#define VALUETUPLE_2_T3758230525_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>
-struct  ValueTuple_2_t3758230525 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t3047811001  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3758230525, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3758230525, ___Item2_1)); }
-	inline ValueTuple_2_t3047811001  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t3047811001 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t3047811001  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T3758230525_H
 #ifndef VALUETUPLE_2_T1800393776_H
 #define VALUETUPLE_2_T1800393776_H
 #ifdef __clang__
@@ -22084,126 +21100,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISON_1_T4013876049_H
-#ifndef COMPARISON_1_T3184543619_H
-#define COMPARISON_1_T3184543619_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct  Comparison_1_t3184543619  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T3184543619_H
-#ifndef COMPARISON_1_T1348269276_H
-#define COMPARISON_1_T1348269276_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
-struct  Comparison_1_t1348269276  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T1348269276_H
-#ifndef COMPARISON_1_T2220350247_H
-#define COMPARISON_1_T2220350247_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>
-struct  Comparison_1_t2220350247  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T2220350247_H
-#ifndef COMPARISON_1_T777061134_H
-#define COMPARISON_1_T777061134_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparison_1_t777061134  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T777061134_H
-#ifndef COMPARISON_1_T3601378853_H
-#define COMPARISON_1_T3601378853_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparison_1_t3601378853  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T3601378853_H
-#ifndef COMPARISON_1_T3533161704_H
-#define COMPARISON_1_T3533161704_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  Comparison_1_t3533161704  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T3533161704_H
 #ifndef COMPARISON_1_T1575324955_H
 #define COMPARISON_1_T1575324955_H
 #ifdef __clang__
@@ -22874,162 +21770,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VALUETUPLE_2_T3155838592_H
-#ifndef VALUETUPLE_2_T1712549479_H
-#define VALUETUPLE_2_T1712549479_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ValueTuple_2_t1712549479 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t1002129955  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1712549479, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1712549479, ___Item2_1)); }
-	inline ValueTuple_2_t1002129955  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t1002129955 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t1002129955  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T1712549479_H
-#ifndef VALUETUPLE_2_T241899902_H
-#define VALUETUPLE_2_T241899902_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ValueTuple_2_t241899902 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t3826447674  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t241899902, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t241899902, ___Item2_1)); }
-	inline ValueTuple_2_t3826447674  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t3826447674 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t3826447674  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T241899902_H
-#ifndef VALUETUPLE_2_T173682753_H
-#define VALUETUPLE_2_T173682753_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ValueTuple_2_t173682753 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t3758230525  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t173682753, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t173682753, ___Item2_1)); }
-	inline ValueTuple_2_t3758230525  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t3758230525 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t3758230525  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T173682753_H
-#ifndef VALUETUPLE_2_T2510813300_H
-#define VALUETUPLE_2_T2510813300_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>
-struct  ValueTuple_2_t2510813300 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t1800393776  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2510813300, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2510813300, ___Item2_1)); }
-	inline ValueTuple_2_t1800393776  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t1800393776 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t1800393776  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T2510813300_H
 #ifndef VALUETUPLE_2_T2931035692_H
 #define VALUETUPLE_2_T2931035692_H
 #ifdef __clang__
@@ -23069,45 +21809,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VALUETUPLE_2_T2931035692_H
-#ifndef VALUETUPLE_2_T2622917216_H
-#define VALUETUPLE_2_T2622917216_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>
-struct  ValueTuple_2_t2622917216 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t1912497692  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2622917216, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t2622917216, ___Item2_1)); }
-	inline ValueTuple_2_t1912497692  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t1912497692 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t1912497692  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T2622917216_H
 #ifndef VALUETUPLE_2_T702940323_H
 #define VALUETUPLE_2_T702940323_H
 #ifdef __clang__
@@ -23147,162 +21848,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VALUETUPLE_2_T702940323_H
-#ifndef VALUETUPLE_2_T770160521_H
-#define VALUETUPLE_2_T770160521_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
-struct  ValueTuple_2_t770160521 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t59740997  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t770160521, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t770160521, ___Item2_1)); }
-	inline ValueTuple_2_t59740997  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t59740997 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t59740997  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T770160521_H
-#ifndef VALUETUPLE_2_T4226212166_H
-#define VALUETUPLE_2_T4226212166_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
-struct  ValueTuple_2_t4226212166 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t3515792642  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t4226212166, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t4226212166, ___Item2_1)); }
-	inline ValueTuple_2_t3515792642  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t3515792642 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t3515792642  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T4226212166_H
-#ifndef VALUETUPLE_2_T1971817071_H
-#define VALUETUPLE_2_T1971817071_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
-struct  ValueTuple_2_t1971817071 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t1261397547  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1971817071, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t1971817071, ___Item2_1)); }
-	inline ValueTuple_2_t1261397547  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t1261397547 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t1261397547  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T1971817071_H
-#ifndef VALUETUPLE_2_T3242417816_H
-#define VALUETUPLE_2_T3242417816_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>
-struct  ValueTuple_2_t3242417816 
-{
-public:
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t2531998292  ___Item2_1;
-
-public:
-	inline static int32_t get_offset_of_Item1_0() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3242417816, ___Item1_0)); }
-	inline bool get_Item1_0() const { return ___Item1_0; }
-	inline bool* get_address_of_Item1_0() { return &___Item1_0; }
-	inline void set_Item1_0(bool value)
-	{
-		___Item1_0 = value;
-	}
-
-	inline static int32_t get_offset_of_Item2_1() { return static_cast<int32_t>(offsetof(ValueTuple_2_t3242417816, ___Item2_1)); }
-	inline ValueTuple_2_t2531998292  get_Item2_1() const { return ___Item2_1; }
-	inline ValueTuple_2_t2531998292 * get_address_of_Item2_1() { return &___Item2_1; }
-	inline void set_Item2_1(ValueTuple_2_t2531998292  value)
-	{
-		___Item2_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VALUETUPLE_2_T3242417816_H
 #ifndef VALUETUPLE_2_T1043183885_H
 #define VALUETUPLE_2_T1043183885_H
 #ifdef __clang__
@@ -23599,226 +22144,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPARISON_1_T2930769771_H
-#ifndef COMPARISON_1_T1487480658_H
-#define COMPARISON_1_T1487480658_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparison_1_t1487480658  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T1487480658_H
-#ifndef COMPARISON_1_T16831081_H
-#define COMPARISON_1_T16831081_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparison_1_t16831081  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T16831081_H
-#ifndef COMPARISON_1_T4243581228_H
-#define COMPARISON_1_T4243581228_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparison_1_t4243581228  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T4243581228_H
-#ifndef COMPARISON_1_T2285744479_H
-#define COMPARISON_1_T2285744479_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>
-struct  Comparison_1_t2285744479  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T2285744479_H
-#ifndef COMPARISON_1_T2705966871_H
-#define COMPARISON_1_T2705966871_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>
-struct  Comparison_1_t2705966871  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T2705966871_H
-#ifndef COMPARISON_1_T2397848395_H
-#define COMPARISON_1_T2397848395_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>
-struct  Comparison_1_t2397848395  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T2397848395_H
-#ifndef COMPARISON_1_T477871502_H
-#define COMPARISON_1_T477871502_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>
-struct  Comparison_1_t477871502  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T477871502_H
-#ifndef COMPARISON_1_T545091700_H
-#define COMPARISON_1_T545091700_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparison_1_t545091700  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T545091700_H
-#ifndef COMPARISON_1_T4001143345_H
-#define COMPARISON_1_T4001143345_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparison_1_t4001143345  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T4001143345_H
-#ifndef COMPARISON_1_T1746748250_H
-#define COMPARISON_1_T1746748250_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparison_1_t1746748250  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T1746748250_H
-#ifndef COMPARISON_1_T3017348995_H
-#define COMPARISON_1_T3017348995_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>
-struct  Comparison_1_t3017348995  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T3017348995_H
 #ifndef COMPARISON_1_T818115064_H
 #define COMPARISON_1_T818115064_H
 #ifdef __clang__
@@ -24115,26 +22440,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VALUETUPLE_2_T1545928537_H
-#ifndef COMPARISON_1_T1320859716_H
-#define COMPARISON_1_T1320859716_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Comparison`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>
-struct  Comparison_1_t1320859716  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPARISON_1_T1320859716_H
 #ifndef VALUETUPLE_2_T2256348061_H
 #define VALUETUPLE_2_T2256348061_H
 #ifdef __clang__
@@ -24246,6 +22551,741 @@ extern "C" IL2CPP_METHOD_ATTR bool Type_op_Equality_m2683486427 (RuntimeObject *
 extern "C" IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentException_m3817859433 (RuntimeObject * __this /* static, unused */, int32_t ___resource0, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Object__ctor_m297566312 (RuntimeObject * __this, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::get_Default()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t2542938767 * Comparer_1_get_Default_m3379419590_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	Comparer_1_t2542938767 * V_0 = NULL;
+	{
+		Comparer_1_t2542938767 * L_0 = ((Comparer_1_t2542938767_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_defaultComparer_0();
+		il2cpp_codegen_memory_barrier();
+		V_0 = (Comparer_1_t2542938767 *)L_0;
+		Comparer_1_t2542938767 * L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Comparer_1_t2542938767 * L_2 = ((  Comparer_1_t2542938767 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		V_0 = (Comparer_1_t2542938767 *)L_2;
+		Comparer_1_t2542938767 * L_3 = V_0;
+		il2cpp_codegen_memory_barrier();
+		((Comparer_1_t2542938767_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_defaultComparer_0(L_3);
+	}
+
+IL_0019:
+	{
+		Comparer_1_t2542938767 * L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Create(System.Comparison`1<T>)
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t2542938767 * Comparer_1_Create_m3295193772_gshared (RuntimeObject * __this /* static, unused */, Comparison_1_t818115064 * ___comparison0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_Create_m3295193772_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Comparison_1_t818115064 * L_0 = ___comparison0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral193474836, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Comparer_1_Create_m3295193772_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		Comparison_1_t818115064 * L_2 = ___comparison0;
+		ComparisonComparer_1_t3254866016 * L_3 = (ComparisonComparer_1_t3254866016 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		((  void (*) (ComparisonComparer_1_t3254866016 *, Comparison_1_t818115064 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3)->methodPointer)(L_3, (Comparison_1_t818115064 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3));
+		return L_3;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::CreateComparer()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t2542938767 * Comparer_1_CreateComparer_m4246253399_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_CreateComparer_m4246253399_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeType_t3636489352 * V_0 = NULL;
+	RuntimeType_t3636489352 * V_1 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 4)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		V_0 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_1, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 5)) };
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_2, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_4 = V_0;
+		NullCheck((Type_t *)L_3);
+		bool L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_3, (Type_t *)L_4);
+		if (!L_5)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_6 = { reinterpret_cast<intptr_t> (GenericComparer_1_t3581574675_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_6, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_9 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_7, (RuntimeType_t3636489352 *)L_8, /*hidden argument*/NULL);
+		return ((Comparer_1_t2542938767 *)Castclass((RuntimeObject*)L_9, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_0038:
+	{
+		RuntimeType_t3636489352 * L_10 = V_0;
+		NullCheck((Type_t *)L_10);
+		bool L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsGenericType() */, (Type_t *)L_10);
+		if (!L_11)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_12 = V_0;
+		NullCheck((Type_t *)L_12);
+		Type_t * L_13 = VirtFuncInvoker0< Type_t * >::Invoke(104 /* System.Type System.Type::GetGenericTypeDefinition() */, (Type_t *)L_12);
+		RuntimeTypeHandle_t3027515415  L_14 = { reinterpret_cast<intptr_t> (Nullable_1_t3772285925_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_15 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_14, /*hidden argument*/NULL);
+		bool L_16 = Type_op_Equality_m2683486427(NULL /*static, unused*/, (Type_t *)L_13, (Type_t *)L_15, /*hidden argument*/NULL);
+		if (!L_16)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_17 = V_0;
+		NullCheck((Type_t *)L_17);
+		TypeU5BU5D_t3940880105* L_18 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(103 /* System.Type[] System.Type::GetGenericArguments() */, (Type_t *)L_17);
+		NullCheck(L_18);
+		int32_t L_19 = 0;
+		Type_t * L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		V_1 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_20, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_21 = { reinterpret_cast<intptr_t> (IComparable_1_t1882161304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_22 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_21, /*hidden argument*/NULL);
+		TypeU5BU5D_t3940880105* L_23 = (TypeU5BU5D_t3940880105*)SZArrayNew(TypeU5BU5D_t3940880105_il2cpp_TypeInfo_var, (uint32_t)1);
+		TypeU5BU5D_t3940880105* L_24 = (TypeU5BU5D_t3940880105*)L_23;
+		RuntimeType_t3636489352 * L_25 = V_1;
+		NullCheck(L_24);
+		ArrayElementTypeCheck (L_24, L_25);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_25);
+		NullCheck((Type_t *)L_22);
+		Type_t * L_26 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(99 /* System.Type System.Type::MakeGenericType(System.Type[]) */, (Type_t *)L_22, (TypeU5BU5D_t3940880105*)L_24);
+		RuntimeType_t3636489352 * L_27 = V_1;
+		NullCheck((Type_t *)L_26);
+		bool L_28 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_26, (Type_t *)L_27);
+		if (!L_28)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_29 = { reinterpret_cast<intptr_t> (NullableComparer_1_t161591321_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_30 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_29, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_31 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_32 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_30, (RuntimeType_t3636489352 *)L_31, /*hidden argument*/NULL);
+		return ((Comparer_1_t2542938767 *)Castclass((RuntimeObject*)L_32, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_009c:
+	{
+		ObjectComparer_1_t42030199 * L_33 = (ObjectComparer_1_t42030199 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 7));
+		((  void (*) (ObjectComparer_1_t42030199 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8)->methodPointer)(L_33, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		return L_33;
+	}
+}
+// System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::System.Collections.IComparer.Compare(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t Comparer_1_System_Collections_IComparer_Compare_m1890180058_gshared (Comparer_1_t2542938767 * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___x0;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		RuntimeObject * L_1 = ___y1;
+		if (!L_1)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (-1);
+	}
+
+IL_0008:
+	{
+		return 0;
+	}
+
+IL_000a:
+	{
+		RuntimeObject * L_2 = ___y1;
+		if (L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return 1;
+	}
+
+IL_000f:
+	{
+		RuntimeObject * L_3 = ___x0;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_4 = ___y1;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_4, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_5 = ___x0;
+		RuntimeObject * L_6 = ___y1;
+		NullCheck((Comparer_1_t2542938767 *)__this);
+		int32_t L_7 = VirtFuncInvoker2< int32_t, ValueTuple_2_t1043183885 , ValueTuple_2_t1043183885  >::Invoke(6 /* System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T) */, (Comparer_1_t2542938767 *)__this, (ValueTuple_2_t1043183885 )((*(ValueTuple_2_t1043183885 *)((ValueTuple_2_t1043183885 *)UnBox(L_5, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))), (ValueTuple_2_t1043183885 )((*(ValueTuple_2_t1043183885 *)((ValueTuple_2_t1043183885 *)UnBox(L_6, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))));
+		return L_7;
+	}
+
+IL_0032:
+	{
+		ThrowHelper_ThrowArgumentException_m3817859433(NULL /*static, unused*/, (int32_t)2, /*hidden argument*/NULL);
+		return 0;
+	}
+}
+// System.Void System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Comparer_1__ctor_m223204515_gshared (Comparer_1_t2542938767 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((RuntimeObject *)__this);
+		Object__ctor_m297566312((RuntimeObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::get_Default()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3300148658 * Comparer_1_get_Default_m221237031_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	Comparer_1_t3300148658 * V_0 = NULL;
+	{
+		Comparer_1_t3300148658 * L_0 = ((Comparer_1_t3300148658_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_defaultComparer_0();
+		il2cpp_codegen_memory_barrier();
+		V_0 = (Comparer_1_t3300148658 *)L_0;
+		Comparer_1_t3300148658 * L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Comparer_1_t3300148658 * L_2 = ((  Comparer_1_t3300148658 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		V_0 = (Comparer_1_t3300148658 *)L_2;
+		Comparer_1_t3300148658 * L_3 = V_0;
+		il2cpp_codegen_memory_barrier();
+		((Comparer_1_t3300148658_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_defaultComparer_0(L_3);
+	}
+
+IL_0019:
+	{
+		Comparer_1_t3300148658 * L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::Create(System.Comparison`1<T>)
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3300148658 * Comparer_1_Create_m3164230171_gshared (RuntimeObject * __this /* static, unused */, Comparison_1_t1575324955 * ___comparison0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_Create_m3164230171_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Comparison_1_t1575324955 * L_0 = ___comparison0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral193474836, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Comparer_1_Create_m3164230171_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		Comparison_1_t1575324955 * L_2 = ___comparison0;
+		ComparisonComparer_1_t4012075907 * L_3 = (ComparisonComparer_1_t4012075907 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		((  void (*) (ComparisonComparer_1_t4012075907 *, Comparison_1_t1575324955 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3)->methodPointer)(L_3, (Comparison_1_t1575324955 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3));
+		return L_3;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::CreateComparer()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3300148658 * Comparer_1_CreateComparer_m1419264519_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_CreateComparer_m1419264519_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeType_t3636489352 * V_0 = NULL;
+	RuntimeType_t3636489352 * V_1 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 4)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		V_0 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_1, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 5)) };
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_2, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_4 = V_0;
+		NullCheck((Type_t *)L_3);
+		bool L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_3, (Type_t *)L_4);
+		if (!L_5)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_6 = { reinterpret_cast<intptr_t> (GenericComparer_1_t3581574675_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_6, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_9 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_7, (RuntimeType_t3636489352 *)L_8, /*hidden argument*/NULL);
+		return ((Comparer_1_t3300148658 *)Castclass((RuntimeObject*)L_9, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_0038:
+	{
+		RuntimeType_t3636489352 * L_10 = V_0;
+		NullCheck((Type_t *)L_10);
+		bool L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsGenericType() */, (Type_t *)L_10);
+		if (!L_11)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_12 = V_0;
+		NullCheck((Type_t *)L_12);
+		Type_t * L_13 = VirtFuncInvoker0< Type_t * >::Invoke(104 /* System.Type System.Type::GetGenericTypeDefinition() */, (Type_t *)L_12);
+		RuntimeTypeHandle_t3027515415  L_14 = { reinterpret_cast<intptr_t> (Nullable_1_t3772285925_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_15 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_14, /*hidden argument*/NULL);
+		bool L_16 = Type_op_Equality_m2683486427(NULL /*static, unused*/, (Type_t *)L_13, (Type_t *)L_15, /*hidden argument*/NULL);
+		if (!L_16)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_17 = V_0;
+		NullCheck((Type_t *)L_17);
+		TypeU5BU5D_t3940880105* L_18 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(103 /* System.Type[] System.Type::GetGenericArguments() */, (Type_t *)L_17);
+		NullCheck(L_18);
+		int32_t L_19 = 0;
+		Type_t * L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		V_1 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_20, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_21 = { reinterpret_cast<intptr_t> (IComparable_1_t1882161304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_22 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_21, /*hidden argument*/NULL);
+		TypeU5BU5D_t3940880105* L_23 = (TypeU5BU5D_t3940880105*)SZArrayNew(TypeU5BU5D_t3940880105_il2cpp_TypeInfo_var, (uint32_t)1);
+		TypeU5BU5D_t3940880105* L_24 = (TypeU5BU5D_t3940880105*)L_23;
+		RuntimeType_t3636489352 * L_25 = V_1;
+		NullCheck(L_24);
+		ArrayElementTypeCheck (L_24, L_25);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_25);
+		NullCheck((Type_t *)L_22);
+		Type_t * L_26 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(99 /* System.Type System.Type::MakeGenericType(System.Type[]) */, (Type_t *)L_22, (TypeU5BU5D_t3940880105*)L_24);
+		RuntimeType_t3636489352 * L_27 = V_1;
+		NullCheck((Type_t *)L_26);
+		bool L_28 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_26, (Type_t *)L_27);
+		if (!L_28)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_29 = { reinterpret_cast<intptr_t> (NullableComparer_1_t161591321_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_30 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_29, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_31 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_32 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_30, (RuntimeType_t3636489352 *)L_31, /*hidden argument*/NULL);
+		return ((Comparer_1_t3300148658 *)Castclass((RuntimeObject*)L_32, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_009c:
+	{
+		ObjectComparer_1_t799240090 * L_33 = (ObjectComparer_1_t799240090 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 7));
+		((  void (*) (ObjectComparer_1_t799240090 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8)->methodPointer)(L_33, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		return L_33;
+	}
+}
+// System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::System.Collections.IComparer.Compare(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t Comparer_1_System_Collections_IComparer_Compare_m3395769112_gshared (Comparer_1_t3300148658 * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___x0;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		RuntimeObject * L_1 = ___y1;
+		if (!L_1)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (-1);
+	}
+
+IL_0008:
+	{
+		return 0;
+	}
+
+IL_000a:
+	{
+		RuntimeObject * L_2 = ___y1;
+		if (L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return 1;
+	}
+
+IL_000f:
+	{
+		RuntimeObject * L_3 = ___x0;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_4 = ___y1;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_4, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_5 = ___x0;
+		RuntimeObject * L_6 = ___y1;
+		NullCheck((Comparer_1_t3300148658 *)__this);
+		int32_t L_7 = VirtFuncInvoker2< int32_t, ValueTuple_2_t1800393776 , ValueTuple_2_t1800393776  >::Invoke(6 /* System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::Compare(T,T) */, (Comparer_1_t3300148658 *)__this, (ValueTuple_2_t1800393776 )((*(ValueTuple_2_t1800393776 *)((ValueTuple_2_t1800393776 *)UnBox(L_5, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))), (ValueTuple_2_t1800393776 )((*(ValueTuple_2_t1800393776 *)((ValueTuple_2_t1800393776 *)UnBox(L_6, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))));
+		return L_7;
+	}
+
+IL_0032:
+	{
+		ThrowHelper_ThrowArgumentException_m3817859433(NULL /*static, unused*/, (int32_t)2, /*hidden argument*/NULL);
+		return 0;
+	}
+}
+// System.Void System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Comparer_1__ctor_m2580023785_gshared (Comparer_1_t3300148658 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((RuntimeObject *)__this);
+		Object__ctor_m297566312((RuntimeObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::get_Default()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3720371050 * Comparer_1_get_Default_m3322898672_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	Comparer_1_t3720371050 * V_0 = NULL;
+	{
+		Comparer_1_t3720371050 * L_0 = ((Comparer_1_t3720371050_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_defaultComparer_0();
+		il2cpp_codegen_memory_barrier();
+		V_0 = (Comparer_1_t3720371050 *)L_0;
+		Comparer_1_t3720371050 * L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Comparer_1_t3720371050 * L_2 = ((  Comparer_1_t3720371050 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		V_0 = (Comparer_1_t3720371050 *)L_2;
+		Comparer_1_t3720371050 * L_3 = V_0;
+		il2cpp_codegen_memory_barrier();
+		((Comparer_1_t3720371050_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_defaultComparer_0(L_3);
+	}
+
+IL_0019:
+	{
+		Comparer_1_t3720371050 * L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::Create(System.Comparison`1<T>)
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3720371050 * Comparer_1_Create_m2299217382_gshared (RuntimeObject * __this /* static, unused */, Comparison_1_t1995547347 * ___comparison0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_Create_m2299217382_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Comparison_1_t1995547347 * L_0 = ___comparison0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral193474836, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Comparer_1_Create_m2299217382_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		Comparison_1_t1995547347 * L_2 = ___comparison0;
+		ComparisonComparer_1_t137331003 * L_3 = (ComparisonComparer_1_t137331003 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		((  void (*) (ComparisonComparer_1_t137331003 *, Comparison_1_t1995547347 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3)->methodPointer)(L_3, (Comparison_1_t1995547347 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3));
+		return L_3;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::CreateComparer()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3720371050 * Comparer_1_CreateComparer_m1933297763_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_CreateComparer_m1933297763_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeType_t3636489352 * V_0 = NULL;
+	RuntimeType_t3636489352 * V_1 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 4)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		V_0 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_1, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 5)) };
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_2, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_4 = V_0;
+		NullCheck((Type_t *)L_3);
+		bool L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_3, (Type_t *)L_4);
+		if (!L_5)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_6 = { reinterpret_cast<intptr_t> (GenericComparer_1_t3581574675_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_6, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_9 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_7, (RuntimeType_t3636489352 *)L_8, /*hidden argument*/NULL);
+		return ((Comparer_1_t3720371050 *)Castclass((RuntimeObject*)L_9, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_0038:
+	{
+		RuntimeType_t3636489352 * L_10 = V_0;
+		NullCheck((Type_t *)L_10);
+		bool L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsGenericType() */, (Type_t *)L_10);
+		if (!L_11)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_12 = V_0;
+		NullCheck((Type_t *)L_12);
+		Type_t * L_13 = VirtFuncInvoker0< Type_t * >::Invoke(104 /* System.Type System.Type::GetGenericTypeDefinition() */, (Type_t *)L_12);
+		RuntimeTypeHandle_t3027515415  L_14 = { reinterpret_cast<intptr_t> (Nullable_1_t3772285925_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_15 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_14, /*hidden argument*/NULL);
+		bool L_16 = Type_op_Equality_m2683486427(NULL /*static, unused*/, (Type_t *)L_13, (Type_t *)L_15, /*hidden argument*/NULL);
+		if (!L_16)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_17 = V_0;
+		NullCheck((Type_t *)L_17);
+		TypeU5BU5D_t3940880105* L_18 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(103 /* System.Type[] System.Type::GetGenericArguments() */, (Type_t *)L_17);
+		NullCheck(L_18);
+		int32_t L_19 = 0;
+		Type_t * L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		V_1 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_20, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_21 = { reinterpret_cast<intptr_t> (IComparable_1_t1882161304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_22 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_21, /*hidden argument*/NULL);
+		TypeU5BU5D_t3940880105* L_23 = (TypeU5BU5D_t3940880105*)SZArrayNew(TypeU5BU5D_t3940880105_il2cpp_TypeInfo_var, (uint32_t)1);
+		TypeU5BU5D_t3940880105* L_24 = (TypeU5BU5D_t3940880105*)L_23;
+		RuntimeType_t3636489352 * L_25 = V_1;
+		NullCheck(L_24);
+		ArrayElementTypeCheck (L_24, L_25);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_25);
+		NullCheck((Type_t *)L_22);
+		Type_t * L_26 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(99 /* System.Type System.Type::MakeGenericType(System.Type[]) */, (Type_t *)L_22, (TypeU5BU5D_t3940880105*)L_24);
+		RuntimeType_t3636489352 * L_27 = V_1;
+		NullCheck((Type_t *)L_26);
+		bool L_28 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_26, (Type_t *)L_27);
+		if (!L_28)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_29 = { reinterpret_cast<intptr_t> (NullableComparer_1_t161591321_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_30 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_29, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_31 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_32 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_30, (RuntimeType_t3636489352 *)L_31, /*hidden argument*/NULL);
+		return ((Comparer_1_t3720371050 *)Castclass((RuntimeObject*)L_32, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_009c:
+	{
+		ObjectComparer_1_t1219462482 * L_33 = (ObjectComparer_1_t1219462482 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 7));
+		((  void (*) (ObjectComparer_1_t1219462482 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8)->methodPointer)(L_33, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		return L_33;
+	}
+}
+// System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::System.Collections.IComparer.Compare(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t Comparer_1_System_Collections_IComparer_Compare_m854530291_gshared (Comparer_1_t3720371050 * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___x0;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		RuntimeObject * L_1 = ___y1;
+		if (!L_1)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (-1);
+	}
+
+IL_0008:
+	{
+		return 0;
+	}
+
+IL_000a:
+	{
+		RuntimeObject * L_2 = ___y1;
+		if (L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return 1;
+	}
+
+IL_000f:
+	{
+		RuntimeObject * L_3 = ___x0;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_4 = ___y1;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_4, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_5 = ___x0;
+		RuntimeObject * L_6 = ___y1;
+		NullCheck((Comparer_1_t3720371050 *)__this);
+		int32_t L_7 = VirtFuncInvoker2< int32_t, ValueTuple_2_t2220616168 , ValueTuple_2_t2220616168  >::Invoke(6 /* System.Int32 System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::Compare(T,T) */, (Comparer_1_t3720371050 *)__this, (ValueTuple_2_t2220616168 )((*(ValueTuple_2_t2220616168 *)((ValueTuple_2_t2220616168 *)UnBox(L_5, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))), (ValueTuple_2_t2220616168 )((*(ValueTuple_2_t2220616168 *)((ValueTuple_2_t2220616168 *)UnBox(L_6, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))));
+		return L_7;
+	}
+
+IL_0032:
+	{
+		ThrowHelper_ThrowArgumentException_m3817859433(NULL /*static, unused*/, (int32_t)2, /*hidden argument*/NULL);
+		return 0;
+	}
+}
+// System.Void System.Collections.Generic.Comparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Comparer_1__ctor_m3642767589_gshared (Comparer_1_t3720371050 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((RuntimeObject *)__this);
+		Object__ctor_m297566312((RuntimeObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -40666,6 +39706,251 @@ extern "C" IL2CPP_METHOD_ATTR void Comparer_1__ctor_m50893292_gshared (Comparer_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<UnityEngine.Touch>::get_Default()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3421611750 * Comparer_1_get_Default_m1454895691_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	Comparer_1_t3421611750 * V_0 = NULL;
+	{
+		Comparer_1_t3421611750 * L_0 = ((Comparer_1_t3421611750_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_defaultComparer_0();
+		il2cpp_codegen_memory_barrier();
+		V_0 = (Comparer_1_t3421611750 *)L_0;
+		Comparer_1_t3421611750 * L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Comparer_1_t3421611750 * L_2 = ((  Comparer_1_t3421611750 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		V_0 = (Comparer_1_t3421611750 *)L_2;
+		Comparer_1_t3421611750 * L_3 = V_0;
+		il2cpp_codegen_memory_barrier();
+		((Comparer_1_t3421611750_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_defaultComparer_0(L_3);
+	}
+
+IL_0019:
+	{
+		Comparer_1_t3421611750 * L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<UnityEngine.Touch>::Create(System.Comparison`1<T>)
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3421611750 * Comparer_1_Create_m1407255047_gshared (RuntimeObject * __this /* static, unused */, Comparison_1_t1696788047 * ___comparison0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_Create_m1407255047_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Comparison_1_t1696788047 * L_0 = ___comparison0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, (String_t*)_stringLiteral193474836, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Comparer_1_Create_m1407255047_RuntimeMethod_var);
+	}
+
+IL_000e:
+	{
+		Comparison_1_t1696788047 * L_2 = ___comparison0;
+		ComparisonComparer_1_t4133538999 * L_3 = (ComparisonComparer_1_t4133538999 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		((  void (*) (ComparisonComparer_1_t4133538999 *, Comparison_1_t1696788047 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3)->methodPointer)(L_3, (Comparison_1_t1696788047 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 3));
+		return L_3;
+	}
+}
+// System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<UnityEngine.Touch>::CreateComparer()
+extern "C" IL2CPP_METHOD_ATTR Comparer_1_t3421611750 * Comparer_1_CreateComparer_m2085999052_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparer_1_CreateComparer_m2085999052_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeType_t3636489352 * V_0 = NULL;
+	RuntimeType_t3636489352 * V_1 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 4)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		V_0 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_1, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(InitializedTypeInfo(method->klass)->rgctx_data, 5)) };
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_2, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_4 = V_0;
+		NullCheck((Type_t *)L_3);
+		bool L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_3, (Type_t *)L_4);
+		if (!L_5)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_6 = { reinterpret_cast<intptr_t> (GenericComparer_1_t3581574675_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_6, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_9 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_7, (RuntimeType_t3636489352 *)L_8, /*hidden argument*/NULL);
+		return ((Comparer_1_t3421611750 *)Castclass((RuntimeObject*)L_9, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_0038:
+	{
+		RuntimeType_t3636489352 * L_10 = V_0;
+		NullCheck((Type_t *)L_10);
+		bool L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsGenericType() */, (Type_t *)L_10);
+		if (!L_11)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_12 = V_0;
+		NullCheck((Type_t *)L_12);
+		Type_t * L_13 = VirtFuncInvoker0< Type_t * >::Invoke(104 /* System.Type System.Type::GetGenericTypeDefinition() */, (Type_t *)L_12);
+		RuntimeTypeHandle_t3027515415  L_14 = { reinterpret_cast<intptr_t> (Nullable_1_t3772285925_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_15 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_14, /*hidden argument*/NULL);
+		bool L_16 = Type_op_Equality_m2683486427(NULL /*static, unused*/, (Type_t *)L_13, (Type_t *)L_15, /*hidden argument*/NULL);
+		if (!L_16)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeType_t3636489352 * L_17 = V_0;
+		NullCheck((Type_t *)L_17);
+		TypeU5BU5D_t3940880105* L_18 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(103 /* System.Type[] System.Type::GetGenericArguments() */, (Type_t *)L_17);
+		NullCheck(L_18);
+		int32_t L_19 = 0;
+		Type_t * L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		V_1 = (RuntimeType_t3636489352 *)((RuntimeType_t3636489352 *)Castclass((RuntimeObject*)L_20, RuntimeType_t3636489352_il2cpp_TypeInfo_var));
+		RuntimeTypeHandle_t3027515415  L_21 = { reinterpret_cast<intptr_t> (IComparable_1_t1882161304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_22 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_21, /*hidden argument*/NULL);
+		TypeU5BU5D_t3940880105* L_23 = (TypeU5BU5D_t3940880105*)SZArrayNew(TypeU5BU5D_t3940880105_il2cpp_TypeInfo_var, (uint32_t)1);
+		TypeU5BU5D_t3940880105* L_24 = (TypeU5BU5D_t3940880105*)L_23;
+		RuntimeType_t3636489352 * L_25 = V_1;
+		NullCheck(L_24);
+		ArrayElementTypeCheck (L_24, L_25);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_25);
+		NullCheck((Type_t *)L_22);
+		Type_t * L_26 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(99 /* System.Type System.Type::MakeGenericType(System.Type[]) */, (Type_t *)L_22, (TypeU5BU5D_t3940880105*)L_24);
+		RuntimeType_t3636489352 * L_27 = V_1;
+		NullCheck((Type_t *)L_26);
+		bool L_28 = VirtFuncInvoker1< bool, Type_t * >::Invoke(114 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_26, (Type_t *)L_27);
+		if (!L_28)
+		{
+			goto IL_009c;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_29 = { reinterpret_cast<intptr_t> (NullableComparer_1_t161591321_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_30 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_29, /*hidden argument*/NULL);
+		RuntimeType_t3636489352 * L_31 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(RuntimeType_t3636489352_il2cpp_TypeInfo_var);
+		RuntimeObject * L_32 = RuntimeType_CreateInstanceForAnotherGenericParameter_m3807766361(NULL /*static, unused*/, (Type_t *)L_30, (RuntimeType_t3636489352 *)L_31, /*hidden argument*/NULL);
+		return ((Comparer_1_t3421611750 *)Castclass((RuntimeObject*)L_32, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
+	}
+
+IL_009c:
+	{
+		ObjectComparer_1_t920703182 * L_33 = (ObjectComparer_1_t920703182 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 7));
+		((  void (*) (ObjectComparer_1_t920703182 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8)->methodPointer)(L_33, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 8));
+		return L_33;
+	}
+}
+// System.Int32 System.Collections.Generic.Comparer`1<UnityEngine.Touch>::System.Collections.IComparer.Compare(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t Comparer_1_System_Collections_IComparer_Compare_m2147962184_gshared (Comparer_1_t3421611750 * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___x0;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		RuntimeObject * L_1 = ___y1;
+		if (!L_1)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (-1);
+	}
+
+IL_0008:
+	{
+		return 0;
+	}
+
+IL_000a:
+	{
+		RuntimeObject * L_2 = ___y1;
+		if (L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return 1;
+	}
+
+IL_000f:
+	{
+		RuntimeObject * L_3 = ___x0;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_4 = ___y1;
+		if (!((RuntimeObject *)IsInst((RuntimeObject*)L_4, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		RuntimeObject * L_5 = ___x0;
+		RuntimeObject * L_6 = ___y1;
+		NullCheck((Comparer_1_t3421611750 *)__this);
+		int32_t L_7 = VirtFuncInvoker2< int32_t, Touch_t1921856868 , Touch_t1921856868  >::Invoke(6 /* System.Int32 System.Collections.Generic.Comparer`1<UnityEngine.Touch>::Compare(T,T) */, (Comparer_1_t3421611750 *)__this, (Touch_t1921856868 )((*(Touch_t1921856868 *)((Touch_t1921856868 *)UnBox(L_5, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))), (Touch_t1921856868 )((*(Touch_t1921856868 *)((Touch_t1921856868 *)UnBox(L_6, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 9))))));
+		return L_7;
+	}
+
+IL_0032:
+	{
+		ThrowHelper_ThrowArgumentException_m3817859433(NULL /*static, unused*/, (int32_t)2, /*hidden argument*/NULL);
+		return 0;
+	}
+}
+// System.Void System.Collections.Generic.Comparer`1<UnityEngine.Touch>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Comparer_1__ctor_m3750031822_gshared (Comparer_1_t3421611750 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((RuntimeObject *)__this);
+		Object__ctor_m297566312((RuntimeObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<UnityEngine.UICharInfo>::get_Default()
 extern "C" IL2CPP_METHOD_ATTR Comparer_1_t1575255988 * Comparer_1_get_Default_m2176685125_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
 {
@@ -43737,688 +43022,6 @@ extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m765439522_gs
 		ValueTuple_2_t3155838592  L_2 = ___y1;
 		NullCheck((Comparison_1_t2930769771 *)L_0);
 		int32_t L_3 = ((  int32_t (*) (Comparison_1_t2930769771 *, ValueTuple_2_t3155838592 , ValueTuple_2_t3155838592 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t2930769771 *)L_0, (ValueTuple_2_t3155838592 )L_1, (ValueTuple_2_t3155838592 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3772926383_gshared (ComparisonComparer_1_t3924231610 * __this, Comparison_1_t1487480658 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3212304361 *)__this);
-		((  void (*) (Comparer_1_t3212304361 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3212304361 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1487480658 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m4289989235_gshared (ComparisonComparer_1_t3924231610 * __this, ValueTuple_2_t1712549479  ___x0, ValueTuple_2_t1712549479  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1487480658 * L_0 = (Comparison_1_t1487480658 *)__this->get__comparison_1();
-		ValueTuple_2_t1712549479  L_1 = ___x0;
-		ValueTuple_2_t1712549479  L_2 = ___y1;
-		NullCheck((Comparison_1_t1487480658 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1487480658 *, ValueTuple_2_t1712549479 , ValueTuple_2_t1712549479 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1487480658 *)L_0, (ValueTuple_2_t1712549479 )L_1, (ValueTuple_2_t1712549479 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3387382206_gshared (ComparisonComparer_1_t2453582033 * __this, Comparison_1_t16831081 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t1741654784 *)__this);
-		((  void (*) (Comparer_1_t1741654784 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t1741654784 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t16831081 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m1906808601_gshared (ComparisonComparer_1_t2453582033 * __this, ValueTuple_2_t241899902  ___x0, ValueTuple_2_t241899902  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t16831081 * L_0 = (Comparison_1_t16831081 *)__this->get__comparison_1();
-		ValueTuple_2_t241899902  L_1 = ___x0;
-		ValueTuple_2_t241899902  L_2 = ___y1;
-		NullCheck((Comparison_1_t16831081 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t16831081 *, ValueTuple_2_t241899902 , ValueTuple_2_t241899902 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t16831081 *)L_0, (ValueTuple_2_t241899902 )L_1, (ValueTuple_2_t241899902 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3095336697_gshared (ComparisonComparer_1_t2385364884 * __this, Comparison_1_t4243581228 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t1673437635 *)__this);
-		((  void (*) (Comparer_1_t1673437635 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t1673437635 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t4243581228 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m353176640_gshared (ComparisonComparer_1_t2385364884 * __this, ValueTuple_2_t173682753  ___x0, ValueTuple_2_t173682753  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t4243581228 * L_0 = (Comparison_1_t4243581228 *)__this->get__comparison_1();
-		ValueTuple_2_t173682753  L_1 = ___x0;
-		ValueTuple_2_t173682753  L_2 = ___y1;
-		NullCheck((Comparison_1_t4243581228 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t4243581228 *, ValueTuple_2_t173682753 , ValueTuple_2_t173682753 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t4243581228 *)L_0, (ValueTuple_2_t173682753 )L_1, (ValueTuple_2_t173682753 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3206850278_gshared (ComparisonComparer_1_t427528135 * __this, Comparison_1_t2285744479 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t4010568182 *)__this);
-		((  void (*) (Comparer_1_t4010568182 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t4010568182 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t2285744479 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m218831394_gshared (ComparisonComparer_1_t427528135 * __this, ValueTuple_2_t2510813300  ___x0, ValueTuple_2_t2510813300  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t2285744479 * L_0 = (Comparison_1_t2285744479 *)__this->get__comparison_1();
-		ValueTuple_2_t2510813300  L_1 = ___x0;
-		ValueTuple_2_t2510813300  L_2 = ___y1;
-		NullCheck((Comparison_1_t2285744479 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t2285744479 *, ValueTuple_2_t2510813300 , ValueTuple_2_t2510813300 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t2285744479 *)L_0, (ValueTuple_2_t2510813300 )L_1, (ValueTuple_2_t2510813300 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m2076642863_gshared (ComparisonComparer_1_t847750527 * __this, Comparison_1_t2705966871 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t135823278 *)__this);
-		((  void (*) (Comparer_1_t135823278 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t135823278 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t2705966871 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m1564088617_gshared (ComparisonComparer_1_t847750527 * __this, ValueTuple_2_t2931035692  ___x0, ValueTuple_2_t2931035692  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t2705966871 * L_0 = (Comparison_1_t2705966871 *)__this->get__comparison_1();
-		ValueTuple_2_t2931035692  L_1 = ___x0;
-		ValueTuple_2_t2931035692  L_2 = ___y1;
-		NullCheck((Comparison_1_t2705966871 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t2705966871 *, ValueTuple_2_t2931035692 , ValueTuple_2_t2931035692 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t2705966871 *)L_0, (ValueTuple_2_t2931035692 )L_1, (ValueTuple_2_t2931035692 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m2418099681_gshared (ComparisonComparer_1_t3757610668 * __this, Comparison_1_t1320859716 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3045683419 *)__this);
-		((  void (*) (Comparer_1_t3045683419 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3045683419 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1320859716 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m3942336973_gshared (ComparisonComparer_1_t3757610668 * __this, ValueTuple_2_t1545928537  ___x0, ValueTuple_2_t1545928537  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1320859716 * L_0 = (Comparison_1_t1320859716 *)__this->get__comparison_1();
-		ValueTuple_2_t1545928537  L_1 = ___x0;
-		ValueTuple_2_t1545928537  L_2 = ___y1;
-		NullCheck((Comparison_1_t1320859716 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1320859716 *, ValueTuple_2_t1545928537 , ValueTuple_2_t1545928537 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1320859716 *)L_0, (ValueTuple_2_t1545928537 )L_1, (ValueTuple_2_t1545928537 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m2374624067_gshared (ComparisonComparer_1_t539632051 * __this, Comparison_1_t2397848395 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t4122672098 *)__this);
-		((  void (*) (Comparer_1_t4122672098 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t4122672098 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t2397848395 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask`1<System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m3054664701_gshared (ComparisonComparer_1_t539632051 * __this, ValueTuple_2_t2622917216  ___x0, ValueTuple_2_t2622917216  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t2397848395 * L_0 = (Comparison_1_t2397848395 *)__this->get__comparison_1();
-		ValueTuple_2_t2622917216  L_1 = ___x0;
-		ValueTuple_2_t2622917216  L_2 = ___y1;
-		NullCheck((Comparison_1_t2397848395 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t2397848395 *, ValueTuple_2_t2622917216 , ValueTuple_2_t2622917216 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t2397848395 *)L_0, (ValueTuple_2_t2622917216 )L_1, (ValueTuple_2_t2622917216 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m402766580_gshared (ComparisonComparer_1_t2914622454 * __this, Comparison_1_t477871502 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t2202695205 *)__this);
-		((  void (*) (Comparer_1_t2202695205 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t2202695205 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t477871502 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UnityEngine.Vector2>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2427897823_gshared (ComparisonComparer_1_t2914622454 * __this, ValueTuple_2_t702940323  ___x0, ValueTuple_2_t702940323  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t477871502 * L_0 = (Comparison_1_t477871502 *)__this->get__comparison_1();
-		ValueTuple_2_t702940323  L_1 = ___x0;
-		ValueTuple_2_t702940323  L_2 = ___y1;
-		NullCheck((Comparison_1_t477871502 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t477871502 *, ValueTuple_2_t702940323 , ValueTuple_2_t702940323 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t477871502 *)L_0, (ValueTuple_2_t702940323 )L_1, (ValueTuple_2_t702940323 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3487860561_gshared (ComparisonComparer_1_t1326327275 * __this, Comparison_1_t3184543619 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t614400026 *)__this);
-		((  void (*) (Comparer_1_t614400026 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t614400026 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t3184543619 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m1187503148_gshared (ComparisonComparer_1_t1326327275 * __this, ValueTuple_2_t3409612440  ___x0, ValueTuple_2_t3409612440  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t3184543619 * L_0 = (Comparison_1_t3184543619 *)__this->get__comparison_1();
-		ValueTuple_2_t3409612440  L_1 = ___x0;
-		ValueTuple_2_t3409612440  L_2 = ___y1;
-		NullCheck((Comparison_1_t3184543619 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t3184543619 *, ValueTuple_2_t3409612440 , ValueTuple_2_t3409612440 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t3184543619 *)L_0, (ValueTuple_2_t3409612440 )L_1, (ValueTuple_2_t3409612440 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m2015784993_gshared (ComparisonComparer_1_t3785020228 * __this, Comparison_1_t1348269276 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3073092979 *)__this);
-		((  void (*) (Comparer_1_t3073092979 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3073092979 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1348269276 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m51309664_gshared (ComparisonComparer_1_t3785020228 * __this, ValueTuple_2_t1573338097  ___x0, ValueTuple_2_t1573338097  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1348269276 * L_0 = (Comparison_1_t1348269276 *)__this->get__comparison_1();
-		ValueTuple_2_t1573338097  L_1 = ___x0;
-		ValueTuple_2_t1573338097  L_2 = ___y1;
-		NullCheck((Comparison_1_t1348269276 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1348269276 *, ValueTuple_2_t1573338097 , ValueTuple_2_t1573338097 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1348269276 *)L_0, (ValueTuple_2_t1573338097 )L_1, (ValueTuple_2_t1573338097 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m1213661614_gshared (ComparisonComparer_1_t2981842652 * __this, Comparison_1_t545091700 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t2269915403 *)__this);
-		((  void (*) (Comparer_1_t2269915403 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t2269915403 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t545091700 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m1222108060_gshared (ComparisonComparer_1_t2981842652 * __this, ValueTuple_2_t770160521  ___x0, ValueTuple_2_t770160521  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t545091700 * L_0 = (Comparison_1_t545091700 *)__this->get__comparison_1();
-		ValueTuple_2_t770160521  L_1 = ___x0;
-		ValueTuple_2_t770160521  L_2 = ___y1;
-		NullCheck((Comparison_1_t545091700 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t545091700 *, ValueTuple_2_t770160521 , ValueTuple_2_t770160521 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t545091700 *)L_0, (ValueTuple_2_t770160521 )L_1, (ValueTuple_2_t770160521 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m914928612_gshared (ComparisonComparer_1_t362133903 * __this, Comparison_1_t2220350247 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3945173950 *)__this);
-		((  void (*) (Comparer_1_t3945173950 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3945173950 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t2220350247 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`3<System.Object,System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m851102395_gshared (ComparisonComparer_1_t362133903 * __this, ValueTuple_2_t2445419068  ___x0, ValueTuple_2_t2445419068  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t2220350247 * L_0 = (Comparison_1_t2220350247 *)__this->get__comparison_1();
-		ValueTuple_2_t2445419068  L_1 = ___x0;
-		ValueTuple_2_t2445419068  L_2 = ___y1;
-		NullCheck((Comparison_1_t2220350247 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t2220350247 *, ValueTuple_2_t2445419068 , ValueTuple_2_t2445419068 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t2220350247 *)L_0, (ValueTuple_2_t2445419068 )L_1, (ValueTuple_2_t2445419068 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m837932364_gshared (ComparisonComparer_1_t2142927001 * __this, Comparison_1_t4001143345 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t1430999752 *)__this);
-		((  void (*) (Comparer_1_t1430999752 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t1430999752 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t4001143345 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2031990141_gshared (ComparisonComparer_1_t2142927001 * __this, ValueTuple_2_t4226212166  ___x0, ValueTuple_2_t4226212166  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t4001143345 * L_0 = (Comparison_1_t4001143345 *)__this->get__comparison_1();
-		ValueTuple_2_t4226212166  L_1 = ___x0;
-		ValueTuple_2_t4226212166  L_2 = ___y1;
-		NullCheck((Comparison_1_t4001143345 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t4001143345 *, ValueTuple_2_t4226212166 , ValueTuple_2_t4226212166 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t4001143345 *)L_0, (ValueTuple_2_t4226212166 )L_1, (ValueTuple_2_t4226212166 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m86377956_gshared (ComparisonComparer_1_t3213812086 * __this, Comparison_1_t777061134 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t2501884837 *)__this);
-		((  void (*) (Comparer_1_t2501884837 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t2501884837 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t777061134 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`4<System.Object,System.Object,System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2213359222_gshared (ComparisonComparer_1_t3213812086 * __this, ValueTuple_2_t1002129955  ___x0, ValueTuple_2_t1002129955  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t777061134 * L_0 = (Comparison_1_t777061134 *)__this->get__comparison_1();
-		ValueTuple_2_t1002129955  L_1 = ___x0;
-		ValueTuple_2_t1002129955  L_2 = ___y1;
-		NullCheck((Comparison_1_t777061134 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t777061134 *, ValueTuple_2_t1002129955 , ValueTuple_2_t1002129955 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t777061134 *)L_0, (ValueTuple_2_t1002129955 )L_1, (ValueTuple_2_t1002129955 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m1700113219_gshared (ComparisonComparer_1_t4183499202 * __this, Comparison_1_t1746748250 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3471571953 *)__this);
-		((  void (*) (Comparer_1_t3471571953 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3471571953 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1746748250 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m3729218160_gshared (ComparisonComparer_1_t4183499202 * __this, ValueTuple_2_t1971817071  ___x0, ValueTuple_2_t1971817071  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1746748250 * L_0 = (Comparison_1_t1746748250 *)__this->get__comparison_1();
-		ValueTuple_2_t1971817071  L_1 = ___x0;
-		ValueTuple_2_t1971817071  L_2 = ___y1;
-		NullCheck((Comparison_1_t1746748250 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1746748250 *, ValueTuple_2_t1971817071 , ValueTuple_2_t1971817071 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1746748250 *)L_0, (ValueTuple_2_t1971817071 )L_1, (ValueTuple_2_t1971817071 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m53078481_gshared (ComparisonComparer_1_t1743162509 * __this, Comparison_1_t3601378853 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t1031235260 *)__this);
-		((  void (*) (Comparer_1_t1031235260 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t1031235260 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t3601378853 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`5<System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2600627333_gshared (ComparisonComparer_1_t1743162509 * __this, ValueTuple_2_t3826447674  ___x0, ValueTuple_2_t3826447674  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t3601378853 * L_0 = (Comparison_1_t3601378853 *)__this->get__comparison_1();
-		ValueTuple_2_t3826447674  L_1 = ___x0;
-		ValueTuple_2_t3826447674  L_2 = ___y1;
-		NullCheck((Comparison_1_t3601378853 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t3601378853 *, ValueTuple_2_t3826447674 , ValueTuple_2_t3826447674 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t3601378853 *)L_0, (ValueTuple_2_t3826447674 )L_1, (ValueTuple_2_t3826447674 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m390880896_gshared (ComparisonComparer_1_t1159132651 * __this, Comparison_1_t3017348995 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t447205402 *)__this);
-		((  void (*) (Comparer_1_t447205402 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t447205402 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t3017348995 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2156408449_gshared (ComparisonComparer_1_t1159132651 * __this, ValueTuple_2_t3242417816  ___x0, ValueTuple_2_t3242417816  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t3017348995 * L_0 = (Comparison_1_t3017348995 *)__this->get__comparison_1();
-		ValueTuple_2_t3242417816  L_1 = ___x0;
-		ValueTuple_2_t3242417816  L_2 = ___y1;
-		NullCheck((Comparison_1_t3017348995 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t3017348995 *, ValueTuple_2_t3242417816 , ValueTuple_2_t3242417816 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t3017348995 *)L_0, (ValueTuple_2_t3242417816 )L_1, (ValueTuple_2_t3242417816 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m201540037_gshared (ComparisonComparer_1_t1674945360 * __this, Comparison_1_t3533161704 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t963018111 *)__this);
-		((  void (*) (Comparer_1_t963018111 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t963018111 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t3533161704 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`6<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m723378686_gshared (ComparisonComparer_1_t1674945360 * __this, ValueTuple_2_t3758230525  ___x0, ValueTuple_2_t3758230525  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t3533161704 * L_0 = (Comparison_1_t3533161704 *)__this->get__comparison_1();
-		ValueTuple_2_t3758230525  L_1 = ___x0;
-		ValueTuple_2_t3758230525  L_2 = ___y1;
-		NullCheck((Comparison_1_t3533161704 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t3533161704 *, ValueTuple_2_t3758230525 , ValueTuple_2_t3758230525 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t3533161704 *)L_0, (ValueTuple_2_t3758230525 )L_1, (ValueTuple_2_t3758230525 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3629587150_gshared (ComparisonComparer_1_t3254866016 * __this, Comparison_1_t818115064 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t2542938767 *)__this);
-		((  void (*) (Comparer_1_t2542938767 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t2542938767 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t818115064 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Int32,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>,System.ValueTuple`2<System.Boolean,System.Object>>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m4171873409_gshared (ComparisonComparer_1_t3254866016 * __this, ValueTuple_2_t1043183885  ___x0, ValueTuple_2_t1043183885  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t818115064 * L_0 = (Comparison_1_t818115064 *)__this->get__comparison_1();
-		ValueTuple_2_t1043183885  L_1 = ___x0;
-		ValueTuple_2_t1043183885  L_2 = ___y1;
-		NullCheck((Comparison_1_t818115064 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t818115064 *, ValueTuple_2_t1043183885 , ValueTuple_2_t1043183885 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t818115064 *)L_0, (ValueTuple_2_t1043183885 )L_1, (ValueTuple_2_t1043183885 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m745823884_gshared (ComparisonComparer_1_t4012075907 * __this, Comparison_1_t1575324955 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3300148658 *)__this);
-		((  void (*) (Comparer_1_t3300148658 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3300148658 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1575324955 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`7<System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object>>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m1647376690_gshared (ComparisonComparer_1_t4012075907 * __this, ValueTuple_2_t1800393776  ___x0, ValueTuple_2_t1800393776  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1575324955 * L_0 = (Comparison_1_t1575324955 *)__this->get__comparison_1();
-		ValueTuple_2_t1800393776  L_1 = ___x0;
-		ValueTuple_2_t1800393776  L_2 = ___y1;
-		NullCheck((Comparison_1_t1575324955 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1575324955 *, ValueTuple_2_t1800393776 , ValueTuple_2_t1800393776 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1575324955 *)L_0, (ValueTuple_2_t1800393776 )L_1, (ValueTuple_2_t1800393776 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m3892172414_gshared (ComparisonComparer_1_t137331003 * __this, Comparison_1_t1995547347 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t3720371050 *)__this);
-		((  void (*) (Comparer_1_t3720371050 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t3720371050 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t1995547347 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.AsyncUnit>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m486829568_gshared (ComparisonComparer_1_t137331003 * __this, ValueTuple_2_t2220616168  ___x0, ValueTuple_2_t2220616168  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t1995547347 * L_0 = (Comparison_1_t1995547347 *)__this->get__comparison_1();
-		ValueTuple_2_t2220616168  L_1 = ___x0;
-		ValueTuple_2_t2220616168  L_2 = ___y1;
-		NullCheck((Comparison_1_t1995547347 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t1995547347 *, ValueTuple_2_t2220616168 , ValueTuple_2_t2220616168 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t1995547347 *)L_0, (ValueTuple_2_t2220616168 )L_1, (ValueTuple_2_t2220616168 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>::.ctor(System.Comparison`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ComparisonComparer_1__ctor_m1129092292_gshared (ComparisonComparer_1_t3047191144 * __this, Comparison_1_t610440192 * ___comparison0, const RuntimeMethod* method)
-{
-	{
-		NullCheck((Comparer_1_t2335263895 *)__this);
-		((  void (*) (Comparer_1_t2335263895 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Comparer_1_t2335263895 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
-		Comparison_1_t610440192 * L_0 = ___comparison0;
-		__this->set__comparison_1(L_0);
-		return;
-	}
-}
-// System.Int32 System.Collections.Generic.ComparisonComparer`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,UniRx.Async.UniTask>>>>::Compare(T,T)
-extern "C" IL2CPP_METHOD_ATTR int32_t ComparisonComparer_1_Compare_m2573941091_gshared (ComparisonComparer_1_t3047191144 * __this, ValueTuple_2_t835509013  ___x0, ValueTuple_2_t835509013  ___y1, const RuntimeMethod* method)
-{
-	{
-		Comparison_1_t610440192 * L_0 = (Comparison_1_t610440192 *)__this->get__comparison_1();
-		ValueTuple_2_t835509013  L_1 = ___x0;
-		ValueTuple_2_t835509013  L_2 = ___y1;
-		NullCheck((Comparison_1_t610440192 *)L_0);
-		int32_t L_3 = ((  int32_t (*) (Comparison_1_t610440192 *, ValueTuple_2_t835509013 , ValueTuple_2_t835509013 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Comparison_1_t610440192 *)L_0, (ValueTuple_2_t835509013 )L_1, (ValueTuple_2_t835509013 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
 		return L_3;
 	}
 }

@@ -366,6 +366,7 @@
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Scripts/LocationManager.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Scripts/LocationSocket.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Scripts/LocationStash.cs"
+-i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Scripts/Resetter.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Scripts/ScreensaverManager.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/CUIColorPicker.cs"
 -i:"/Users/dano/Roost-XEE-Locate/Roost-XEE-Locate-2/Assets/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/CustomizeGraphy.cs"

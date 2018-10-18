@@ -17698,6 +17698,23 @@ extern Il2CppGenericClass IEnumerable_1_t342909325_GenericClass;
 extern Il2CppGenericClass IReadOnlyList_1_t1927479342_GenericClass;
 extern Il2CppGenericClass IReadOnlyCollection_1_t1366172373_GenericClass;
 extern Il2CppGenericClass Func_2_t3604086943_GenericClass;
+extern Il2CppGenericClass IPartition_1_t747207343_GenericClass;
+extern Il2CppGenericClass IIListProvider_1_t1207367439_GenericClass;
+extern Il2CppGenericClass List_1_t3393931610_GenericClass;
+extern Il2CppGenericClass ReadOnlyCollection_1_t3134433155_GenericClass;
+extern Il2CppGenericClass EqualityComparer_1_t91629204_GenericClass;
+extern Il2CppGenericClass IEqualityComparer_1_t4029188886_GenericClass;
+extern Il2CppGenericClass IEquatable_1_t2813002595_GenericClass;
+extern Il2CppGenericClass ObjectEqualityComparer_1_t1883037760_GenericClass;
+extern Il2CppGenericClass Predicate_1_t2747150992_GenericClass;
+extern Il2CppGenericClass Enumerator_t988208191_GenericClass;
+extern Il2CppGenericClass IComparer_1_t3176122347_GenericClass;
+extern Il2CppGenericClass ArraySortHelper_1_t4268692013_GenericClass;
+extern Il2CppGenericClass Comparer_1_t3421611750_GenericClass;
+extern Il2CppGenericClass Comparison_1_t1696788047_GenericClass;
+extern Il2CppGenericClass ComparisonComparer_1_t4133538999_GenericClass;
+extern Il2CppGenericClass IComparable_1_t1290521281_GenericClass;
+extern Il2CppGenericClass ObjectComparer_1_t920703182_GenericClass;
 extern Il2CppGenericClass U3CU3Ec__2_1_t2799939602_GenericClass;
 extern Il2CppGenericClass Func_2_t2560557097_GenericClass;
 extern Il2CppGenericClass OrderedEnumerable_2_t908068000_GenericClass;
@@ -20122,7 +20139,7 @@ extern Il2CppGenericClass IReadOnlyCollection_1_t2329595429_GenericClass;
 
 
 
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[20096] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[20113] = 
 {
 	&IEnumerator_1_t3512676632_GenericClass,
 	&EmptyInternalEnumerator_1_t427108679_GenericClass,
@@ -37801,6 +37818,23 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[20096] =
 	&IReadOnlyList_1_t1927479342_GenericClass,
 	&IReadOnlyCollection_1_t1366172373_GenericClass,
 	&Func_2_t3604086943_GenericClass,
+	&IPartition_1_t747207343_GenericClass,
+	&IIListProvider_1_t1207367439_GenericClass,
+	&List_1_t3393931610_GenericClass,
+	&ReadOnlyCollection_1_t3134433155_GenericClass,
+	&EqualityComparer_1_t91629204_GenericClass,
+	&IEqualityComparer_1_t4029188886_GenericClass,
+	&IEquatable_1_t2813002595_GenericClass,
+	&ObjectEqualityComparer_1_t1883037760_GenericClass,
+	&Predicate_1_t2747150992_GenericClass,
+	&Enumerator_t988208191_GenericClass,
+	&IComparer_1_t3176122347_GenericClass,
+	&ArraySortHelper_1_t4268692013_GenericClass,
+	&Comparer_1_t3421611750_GenericClass,
+	&Comparison_1_t1696788047_GenericClass,
+	&ComparisonComparer_1_t4133538999_GenericClass,
+	&IComparable_1_t1290521281_GenericClass,
+	&ObjectComparer_1_t920703182_GenericClass,
 	&U3CU3Ec__2_1_t2799939602_GenericClass,
 	&Func_2_t2560557097_GenericClass,
 	&OrderedEnumerable_2_t908068000_GenericClass,

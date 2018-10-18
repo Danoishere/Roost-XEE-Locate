@@ -62,6 +62,27 @@ struct VirtActionInvoker2
 		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 
 // System.Action`1<UnityEngine.U2D.SpriteAtlas>
 struct Action_1_t819399007;
@@ -133,6 +154,8 @@ struct List_1_t3628304265;
 struct List_1_t899420910;
 // System.Collections.IDictionary
 struct IDictionary_t1363984059;
+// System.Collections.IEnumerator
+struct IEnumerator_t1853284238;
 // System.DelegateData
 struct DelegateData_t1677132599;
 // System.Delegate[]
@@ -175,6 +198,8 @@ struct FpsManager_t2101019708;
 struct FpsMonitor_t1737206308;
 // Tayx.Graphy.GraphyManager
 struct GraphyManager_t318534394;
+// Tayx.Graphy.Ram.RamGraph
+struct RamGraph_t1904894468;
 // Tayx.Graphy.Ram.RamManager
 struct RamManager_t1289738234;
 // Tayx.Graphy.Ram.RamMonitor
@@ -187,6 +212,8 @@ struct ShaderGraph_t2067881310;
 struct AnimationCurve_t3046754366;
 // UnityEngine.AudioListener
 struct AudioListener_t2734094699;
+// UnityEngine.Behaviour
+struct Behaviour_t1437897464;
 // UnityEngine.Camera
 struct Camera_t4157153871;
 // UnityEngine.Camera/CameraCallback
@@ -399,6 +426,8 @@ struct VignetteModel_t2845517177;
 struct PropertyAttribute_t3677895545;
 // UnityEngine.RectTransform
 struct RectTransform_t3704657025;
+// UnityEngine.RectTransform/ReapplyDrivenProperties
+struct ReapplyDrivenProperties_t1258266594;
 // UnityEngine.RenderBuffer[]
 struct RenderBufferU5BU5D_t1615831949;
 // UnityEngine.RenderTexture
@@ -490,11 +519,15 @@ extern RuntimeClass* GrainModel_t1152882488_il2cpp_TypeInfo_var;
 extern RuntimeClass* GraphicsUtils_t2852986763_il2cpp_TypeInfo_var;
 extern RuntimeClass* Graphics_t783367614_il2cpp_TypeInfo_var;
 extern RuntimeClass* HashSet_1_t673836907_il2cpp_TypeInfo_var;
+extern RuntimeClass* IDisposable_t3640265483_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerator_t1853284238_il2cpp_TypeInfo_var;
 extern RuntimeClass* Int32U5BU5D_t385246372_il2cpp_TypeInfo_var;
 extern RuntimeClass* Int32_t2950945753_il2cpp_TypeInfo_var;
 extern RuntimeClass* IntString_t1103851291_il2cpp_TypeInfo_var;
 extern RuntimeClass* KeyframeU5BU5D_t1068524471_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t2585711361_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t3628304265_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t4142344393_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t4203178569_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t899420910_il2cpp_TypeInfo_var;
 extern RuntimeClass* MaterialFactory_t2445948724_il2cpp_TypeInfo_var;
@@ -520,6 +553,7 @@ extern RuntimeClass* StringU5BU5D_t1281789340_il2cpp_TypeInfo_var;
 extern RuntimeClass* TaaComponent_t3791749658_il2cpp_TypeInfo_var;
 extern RuntimeClass* Texture2DU5BU5D_t149664596_il2cpp_TypeInfo_var;
 extern RuntimeClass* Texture2D_t3840446185_il2cpp_TypeInfo_var;
+extern RuntimeClass* Transform_t3600365921_il2cpp_TypeInfo_var;
 extern RuntimeClass* UInt32U5BU5D_t2770800703_il2cpp_TypeInfo_var;
 extern RuntimeClass* Uniforms_t1046717683_il2cpp_TypeInfo_var;
 extern RuntimeClass* Uniforms_t1442519687_il2cpp_TypeInfo_var;
@@ -763,7 +797,10 @@ extern String_t* _stringLiteral981148875;
 extern String_t* _stringLiteral982273427;
 extern const RuntimeMethod* Component_GetComponentInChildren_TisGraphyManager_t318534394_m441637420_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisCamera_t4157153871_m1557787507_RuntimeMethod_var;
+extern const RuntimeMethod* Component_GetComponent_TisRamGraph_t1904894468_m3627158695_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisRamMonitor_t925924114_m3898497400_RuntimeMethod_var;
+extern const RuntimeMethod* Component_GetComponent_TisRamText_t1192005537_m2287900144_RuntimeMethod_var;
+extern const RuntimeMethod* Component_GetComponent_TisRectTransform_t3704657025_m3396022872_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_Add_m1451613760_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_Add_m2415494541_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_Clear_m3961351021_RuntimeMethod_var;
@@ -810,10 +847,13 @@ extern const RuntimeMethod* KeyValuePair_2_get_Value_m3146329666_RuntimeMethod_v
 extern const RuntimeMethod* List_1_Add_m1524640104_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m1572460420_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m2298161512_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m2765963565_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m1773456631_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_GetEnumerator_m1750140655_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_GetEnumerator_m4077917308_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_GetEnumerator_m659292003_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m1424466557_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m1737664941_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m3064707655_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m3453988228_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m4170144800_RuntimeMethod_var;
@@ -1002,6 +1042,10 @@ extern const uint32_t PostProcessingBehaviour_OnPreRender_m1753639883_MetadataUs
 extern const uint32_t PostProcessingBehaviour_OnRenderImage_m561762982_MetadataUsageId;
 extern const uint32_t PostProcessingBehaviour__ctor_m3910102566_MetadataUsageId;
 extern const uint32_t PostProcessingProfile__ctor_m2477575403_MetadataUsageId;
+extern const uint32_t RamManager_Init_m3652042912_MetadataUsageId;
+extern const uint32_t RamManager_SetPosition_m2932347193_MetadataUsageId;
+extern const uint32_t RamManager_UpdateParameters_m1459327173_MetadataUsageId;
+extern const uint32_t RamManager__ctor_m2239219589_MetadataUsageId;
 extern const uint32_t RamText_Init_m1159087476_MetadataUsageId;
 extern const uint32_t RamText_Update_m1431854978_MetadataUsageId;
 extern const uint32_t RamText__ctor_m3565545847_MetadataUsageId;
@@ -9205,6 +9249,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DEPTHTEXTUREMODE_T4161834719_H
+#ifndef DRIVENTRANSFORMPROPERTIES_T3813433528_H
+#define DRIVENTRANSFORMPROPERTIES_T3813433528_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.DrivenTransformProperties
+struct  DrivenTransformProperties_t3813433528 
+{
+public:
+	// System.Int32 UnityEngine.DrivenTransformProperties::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DrivenTransformProperties_t3813433528, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DRIVENTRANSFORMPROPERTIES_T3813433528_H
 #ifndef EVENT_T2956885303_H
 #define EVENT_T2956885303_H
 #ifdef __clang__
@@ -14071,6 +14144,199 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SCREENSPACEREFLECTIONMODEL_T3026344732_H
+#ifndef RECTTRANSFORM_T3704657025_H
+#define RECTTRANSFORM_T3704657025_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.RectTransform
+struct  RectTransform_t3704657025  : public Transform_t3600365921
+{
+public:
+	// UnityEngine.Object UnityEngine.RectTransform::<drivenByObject>k__BackingField
+	Object_t631007953 * ___U3CdrivenByObjectU3Ek__BackingField_6;
+	// UnityEngine.DrivenTransformProperties UnityEngine.RectTransform::<drivenProperties>k__BackingField
+	int32_t ___U3CdrivenPropertiesU3Ek__BackingField_7;
+
+public:
+	inline static int32_t get_offset_of_U3CdrivenByObjectU3Ek__BackingField_6() { return static_cast<int32_t>(offsetof(RectTransform_t3704657025, ___U3CdrivenByObjectU3Ek__BackingField_6)); }
+	inline Object_t631007953 * get_U3CdrivenByObjectU3Ek__BackingField_6() const { return ___U3CdrivenByObjectU3Ek__BackingField_6; }
+	inline Object_t631007953 ** get_address_of_U3CdrivenByObjectU3Ek__BackingField_6() { return &___U3CdrivenByObjectU3Ek__BackingField_6; }
+	inline void set_U3CdrivenByObjectU3Ek__BackingField_6(Object_t631007953 * value)
+	{
+		___U3CdrivenByObjectU3Ek__BackingField_6 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CdrivenByObjectU3Ek__BackingField_6), value);
+	}
+
+	inline static int32_t get_offset_of_U3CdrivenPropertiesU3Ek__BackingField_7() { return static_cast<int32_t>(offsetof(RectTransform_t3704657025, ___U3CdrivenPropertiesU3Ek__BackingField_7)); }
+	inline int32_t get_U3CdrivenPropertiesU3Ek__BackingField_7() const { return ___U3CdrivenPropertiesU3Ek__BackingField_7; }
+	inline int32_t* get_address_of_U3CdrivenPropertiesU3Ek__BackingField_7() { return &___U3CdrivenPropertiesU3Ek__BackingField_7; }
+	inline void set_U3CdrivenPropertiesU3Ek__BackingField_7(int32_t value)
+	{
+		___U3CdrivenPropertiesU3Ek__BackingField_7 = value;
+	}
+};
+
+struct RectTransform_t3704657025_StaticFields
+{
+public:
+	// UnityEngine.RectTransform/ReapplyDrivenProperties UnityEngine.RectTransform::reapplyDrivenProperties
+	ReapplyDrivenProperties_t1258266594 * ___reapplyDrivenProperties_5;
+
+public:
+	inline static int32_t get_offset_of_reapplyDrivenProperties_5() { return static_cast<int32_t>(offsetof(RectTransform_t3704657025_StaticFields, ___reapplyDrivenProperties_5)); }
+	inline ReapplyDrivenProperties_t1258266594 * get_reapplyDrivenProperties_5() const { return ___reapplyDrivenProperties_5; }
+	inline ReapplyDrivenProperties_t1258266594 ** get_address_of_reapplyDrivenProperties_5() { return &___reapplyDrivenProperties_5; }
+	inline void set_reapplyDrivenProperties_5(ReapplyDrivenProperties_t1258266594 * value)
+	{
+		___reapplyDrivenProperties_5 = value;
+		Il2CppCodeGenWriteBarrier((&___reapplyDrivenProperties_5), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RECTTRANSFORM_T3704657025_H
+#ifndef GRAPH_T1919016814_H
+#define GRAPH_T1919016814_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Tayx.Graphy.Graph.Graph
+struct  Graph_t1919016814  : public MonoBehaviour_t3962482529
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // GRAPH_T1919016814_H
+#ifndef RAMMANAGER_T1289738234_H
+#define RAMMANAGER_T1289738234_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Tayx.Graphy.Ram.RamManager
+struct  RamManager_t1289738234  : public MonoBehaviour_t3962482529
+{
+public:
+	// Tayx.Graphy.GraphyManager Tayx.Graphy.Ram.RamManager::m_graphyManager
+	GraphyManager_t318534394 * ___m_graphyManager_4;
+	// Tayx.Graphy.Ram.RamGraph Tayx.Graphy.Ram.RamManager::m_ramGraph
+	RamGraph_t1904894468 * ___m_ramGraph_5;
+	// Tayx.Graphy.Ram.RamText Tayx.Graphy.Ram.RamManager::m_ramText
+	RamText_t1192005537 * ___m_ramText_6;
+	// UnityEngine.RectTransform Tayx.Graphy.Ram.RamManager::m_rectTransform
+	RectTransform_t3704657025 * ___m_rectTransform_7;
+	// UnityEngine.GameObject Tayx.Graphy.Ram.RamManager::m_ramGraphGameObject
+	GameObject_t1113636619 * ___m_ramGraphGameObject_8;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> Tayx.Graphy.Ram.RamManager::m_childrenGameObjects
+	List_1_t2585711361 * ___m_childrenGameObjects_9;
+	// System.Collections.Generic.List`1<UnityEngine.UI.Image> Tayx.Graphy.Ram.RamManager::m_backgroundImages
+	List_1_t4142344393 * ___m_backgroundImages_10;
+	// Tayx.Graphy.GraphyManager/ModuleState Tayx.Graphy.Ram.RamManager::m_previousModuleState
+	int32_t ___m_previousModuleState_11;
+	// Tayx.Graphy.GraphyManager/ModuleState Tayx.Graphy.Ram.RamManager::m_currentModuleState
+	int32_t ___m_currentModuleState_12;
+
+public:
+	inline static int32_t get_offset_of_m_graphyManager_4() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_graphyManager_4)); }
+	inline GraphyManager_t318534394 * get_m_graphyManager_4() const { return ___m_graphyManager_4; }
+	inline GraphyManager_t318534394 ** get_address_of_m_graphyManager_4() { return &___m_graphyManager_4; }
+	inline void set_m_graphyManager_4(GraphyManager_t318534394 * value)
+	{
+		___m_graphyManager_4 = value;
+		Il2CppCodeGenWriteBarrier((&___m_graphyManager_4), value);
+	}
+
+	inline static int32_t get_offset_of_m_ramGraph_5() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_ramGraph_5)); }
+	inline RamGraph_t1904894468 * get_m_ramGraph_5() const { return ___m_ramGraph_5; }
+	inline RamGraph_t1904894468 ** get_address_of_m_ramGraph_5() { return &___m_ramGraph_5; }
+	inline void set_m_ramGraph_5(RamGraph_t1904894468 * value)
+	{
+		___m_ramGraph_5 = value;
+		Il2CppCodeGenWriteBarrier((&___m_ramGraph_5), value);
+	}
+
+	inline static int32_t get_offset_of_m_ramText_6() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_ramText_6)); }
+	inline RamText_t1192005537 * get_m_ramText_6() const { return ___m_ramText_6; }
+	inline RamText_t1192005537 ** get_address_of_m_ramText_6() { return &___m_ramText_6; }
+	inline void set_m_ramText_6(RamText_t1192005537 * value)
+	{
+		___m_ramText_6 = value;
+		Il2CppCodeGenWriteBarrier((&___m_ramText_6), value);
+	}
+
+	inline static int32_t get_offset_of_m_rectTransform_7() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_rectTransform_7)); }
+	inline RectTransform_t3704657025 * get_m_rectTransform_7() const { return ___m_rectTransform_7; }
+	inline RectTransform_t3704657025 ** get_address_of_m_rectTransform_7() { return &___m_rectTransform_7; }
+	inline void set_m_rectTransform_7(RectTransform_t3704657025 * value)
+	{
+		___m_rectTransform_7 = value;
+		Il2CppCodeGenWriteBarrier((&___m_rectTransform_7), value);
+	}
+
+	inline static int32_t get_offset_of_m_ramGraphGameObject_8() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_ramGraphGameObject_8)); }
+	inline GameObject_t1113636619 * get_m_ramGraphGameObject_8() const { return ___m_ramGraphGameObject_8; }
+	inline GameObject_t1113636619 ** get_address_of_m_ramGraphGameObject_8() { return &___m_ramGraphGameObject_8; }
+	inline void set_m_ramGraphGameObject_8(GameObject_t1113636619 * value)
+	{
+		___m_ramGraphGameObject_8 = value;
+		Il2CppCodeGenWriteBarrier((&___m_ramGraphGameObject_8), value);
+	}
+
+	inline static int32_t get_offset_of_m_childrenGameObjects_9() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_childrenGameObjects_9)); }
+	inline List_1_t2585711361 * get_m_childrenGameObjects_9() const { return ___m_childrenGameObjects_9; }
+	inline List_1_t2585711361 ** get_address_of_m_childrenGameObjects_9() { return &___m_childrenGameObjects_9; }
+	inline void set_m_childrenGameObjects_9(List_1_t2585711361 * value)
+	{
+		___m_childrenGameObjects_9 = value;
+		Il2CppCodeGenWriteBarrier((&___m_childrenGameObjects_9), value);
+	}
+
+	inline static int32_t get_offset_of_m_backgroundImages_10() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_backgroundImages_10)); }
+	inline List_1_t4142344393 * get_m_backgroundImages_10() const { return ___m_backgroundImages_10; }
+	inline List_1_t4142344393 ** get_address_of_m_backgroundImages_10() { return &___m_backgroundImages_10; }
+	inline void set_m_backgroundImages_10(List_1_t4142344393 * value)
+	{
+		___m_backgroundImages_10 = value;
+		Il2CppCodeGenWriteBarrier((&___m_backgroundImages_10), value);
+	}
+
+	inline static int32_t get_offset_of_m_previousModuleState_11() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_previousModuleState_11)); }
+	inline int32_t get_m_previousModuleState_11() const { return ___m_previousModuleState_11; }
+	inline int32_t* get_address_of_m_previousModuleState_11() { return &___m_previousModuleState_11; }
+	inline void set_m_previousModuleState_11(int32_t value)
+	{
+		___m_previousModuleState_11 = value;
+	}
+
+	inline static int32_t get_offset_of_m_currentModuleState_12() { return static_cast<int32_t>(offsetof(RamManager_t1289738234, ___m_currentModuleState_12)); }
+	inline int32_t get_m_currentModuleState_12() const { return ___m_currentModuleState_12; }
+	inline int32_t* get_address_of_m_currentModuleState_12() { return &___m_currentModuleState_12; }
+	inline void set_m_currentModuleState_12(int32_t value)
+	{
+		___m_currentModuleState_12 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RAMMANAGER_T1289738234_H
 #ifndef RAMMONITOR_T925924114_H
 #define RAMMONITOR_T925924114_H
 #ifdef __clang__
@@ -15137,6 +15403,188 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // GRAPHYMANAGER_T318534394_H
+#ifndef RAMGRAPH_T1904894468_H
+#define RAMGRAPH_T1904894468_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Tayx.Graphy.Ram.RamGraph
+struct  RamGraph_t1904894468  : public Graph_t1919016814
+{
+public:
+	// Tayx.Graphy.GraphyManager Tayx.Graphy.Ram.RamGraph::m_graphyManager
+	GraphyManager_t318534394 * ___m_graphyManager_4;
+	// Tayx.Graphy.Ram.RamMonitor Tayx.Graphy.Ram.RamGraph::m_ramMonitor
+	RamMonitor_t925924114 * ___m_ramMonitor_5;
+	// UnityEngine.UI.Image Tayx.Graphy.Ram.RamGraph::m_imageAllocated
+	Image_t2670269651 * ___m_imageAllocated_6;
+	// UnityEngine.UI.Image Tayx.Graphy.Ram.RamGraph::m_imageReserved
+	Image_t2670269651 * ___m_imageReserved_7;
+	// UnityEngine.UI.Image Tayx.Graphy.Ram.RamGraph::m_imageMono
+	Image_t2670269651 * ___m_imageMono_8;
+	// System.Int32 Tayx.Graphy.Ram.RamGraph::m_resolution
+	int32_t ___m_resolution_9;
+	// Tayx.Graphy.ShaderGraph Tayx.Graphy.Ram.RamGraph::m_shaderGraphAllocated
+	ShaderGraph_t2067881310 * ___m_shaderGraphAllocated_10;
+	// Tayx.Graphy.ShaderGraph Tayx.Graphy.Ram.RamGraph::m_shaderGraphReserved
+	ShaderGraph_t2067881310 * ___m_shaderGraphReserved_11;
+	// Tayx.Graphy.ShaderGraph Tayx.Graphy.Ram.RamGraph::m_shaderGraphMono
+	ShaderGraph_t2067881310 * ___m_shaderGraphMono_12;
+	// UnityEngine.Shader Tayx.Graphy.Ram.RamGraph::ShaderFull
+	Shader_t4151988712 * ___ShaderFull_13;
+	// UnityEngine.Shader Tayx.Graphy.Ram.RamGraph::ShaderLight
+	Shader_t4151988712 * ___ShaderLight_14;
+	// System.Single[] Tayx.Graphy.Ram.RamGraph::m_allocatedArray
+	SingleU5BU5D_t1444911251* ___m_allocatedArray_15;
+	// System.Single[] Tayx.Graphy.Ram.RamGraph::m_reservedArray
+	SingleU5BU5D_t1444911251* ___m_reservedArray_16;
+	// System.Single[] Tayx.Graphy.Ram.RamGraph::m_monoArray
+	SingleU5BU5D_t1444911251* ___m_monoArray_17;
+	// System.Single Tayx.Graphy.Ram.RamGraph::m_highestMemory
+	float ___m_highestMemory_18;
+
+public:
+	inline static int32_t get_offset_of_m_graphyManager_4() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_graphyManager_4)); }
+	inline GraphyManager_t318534394 * get_m_graphyManager_4() const { return ___m_graphyManager_4; }
+	inline GraphyManager_t318534394 ** get_address_of_m_graphyManager_4() { return &___m_graphyManager_4; }
+	inline void set_m_graphyManager_4(GraphyManager_t318534394 * value)
+	{
+		___m_graphyManager_4 = value;
+		Il2CppCodeGenWriteBarrier((&___m_graphyManager_4), value);
+	}
+
+	inline static int32_t get_offset_of_m_ramMonitor_5() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_ramMonitor_5)); }
+	inline RamMonitor_t925924114 * get_m_ramMonitor_5() const { return ___m_ramMonitor_5; }
+	inline RamMonitor_t925924114 ** get_address_of_m_ramMonitor_5() { return &___m_ramMonitor_5; }
+	inline void set_m_ramMonitor_5(RamMonitor_t925924114 * value)
+	{
+		___m_ramMonitor_5 = value;
+		Il2CppCodeGenWriteBarrier((&___m_ramMonitor_5), value);
+	}
+
+	inline static int32_t get_offset_of_m_imageAllocated_6() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_imageAllocated_6)); }
+	inline Image_t2670269651 * get_m_imageAllocated_6() const { return ___m_imageAllocated_6; }
+	inline Image_t2670269651 ** get_address_of_m_imageAllocated_6() { return &___m_imageAllocated_6; }
+	inline void set_m_imageAllocated_6(Image_t2670269651 * value)
+	{
+		___m_imageAllocated_6 = value;
+		Il2CppCodeGenWriteBarrier((&___m_imageAllocated_6), value);
+	}
+
+	inline static int32_t get_offset_of_m_imageReserved_7() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_imageReserved_7)); }
+	inline Image_t2670269651 * get_m_imageReserved_7() const { return ___m_imageReserved_7; }
+	inline Image_t2670269651 ** get_address_of_m_imageReserved_7() { return &___m_imageReserved_7; }
+	inline void set_m_imageReserved_7(Image_t2670269651 * value)
+	{
+		___m_imageReserved_7 = value;
+		Il2CppCodeGenWriteBarrier((&___m_imageReserved_7), value);
+	}
+
+	inline static int32_t get_offset_of_m_imageMono_8() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_imageMono_8)); }
+	inline Image_t2670269651 * get_m_imageMono_8() const { return ___m_imageMono_8; }
+	inline Image_t2670269651 ** get_address_of_m_imageMono_8() { return &___m_imageMono_8; }
+	inline void set_m_imageMono_8(Image_t2670269651 * value)
+	{
+		___m_imageMono_8 = value;
+		Il2CppCodeGenWriteBarrier((&___m_imageMono_8), value);
+	}
+
+	inline static int32_t get_offset_of_m_resolution_9() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_resolution_9)); }
+	inline int32_t get_m_resolution_9() const { return ___m_resolution_9; }
+	inline int32_t* get_address_of_m_resolution_9() { return &___m_resolution_9; }
+	inline void set_m_resolution_9(int32_t value)
+	{
+		___m_resolution_9 = value;
+	}
+
+	inline static int32_t get_offset_of_m_shaderGraphAllocated_10() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_shaderGraphAllocated_10)); }
+	inline ShaderGraph_t2067881310 * get_m_shaderGraphAllocated_10() const { return ___m_shaderGraphAllocated_10; }
+	inline ShaderGraph_t2067881310 ** get_address_of_m_shaderGraphAllocated_10() { return &___m_shaderGraphAllocated_10; }
+	inline void set_m_shaderGraphAllocated_10(ShaderGraph_t2067881310 * value)
+	{
+		___m_shaderGraphAllocated_10 = value;
+		Il2CppCodeGenWriteBarrier((&___m_shaderGraphAllocated_10), value);
+	}
+
+	inline static int32_t get_offset_of_m_shaderGraphReserved_11() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_shaderGraphReserved_11)); }
+	inline ShaderGraph_t2067881310 * get_m_shaderGraphReserved_11() const { return ___m_shaderGraphReserved_11; }
+	inline ShaderGraph_t2067881310 ** get_address_of_m_shaderGraphReserved_11() { return &___m_shaderGraphReserved_11; }
+	inline void set_m_shaderGraphReserved_11(ShaderGraph_t2067881310 * value)
+	{
+		___m_shaderGraphReserved_11 = value;
+		Il2CppCodeGenWriteBarrier((&___m_shaderGraphReserved_11), value);
+	}
+
+	inline static int32_t get_offset_of_m_shaderGraphMono_12() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_shaderGraphMono_12)); }
+	inline ShaderGraph_t2067881310 * get_m_shaderGraphMono_12() const { return ___m_shaderGraphMono_12; }
+	inline ShaderGraph_t2067881310 ** get_address_of_m_shaderGraphMono_12() { return &___m_shaderGraphMono_12; }
+	inline void set_m_shaderGraphMono_12(ShaderGraph_t2067881310 * value)
+	{
+		___m_shaderGraphMono_12 = value;
+		Il2CppCodeGenWriteBarrier((&___m_shaderGraphMono_12), value);
+	}
+
+	inline static int32_t get_offset_of_ShaderFull_13() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___ShaderFull_13)); }
+	inline Shader_t4151988712 * get_ShaderFull_13() const { return ___ShaderFull_13; }
+	inline Shader_t4151988712 ** get_address_of_ShaderFull_13() { return &___ShaderFull_13; }
+	inline void set_ShaderFull_13(Shader_t4151988712 * value)
+	{
+		___ShaderFull_13 = value;
+		Il2CppCodeGenWriteBarrier((&___ShaderFull_13), value);
+	}
+
+	inline static int32_t get_offset_of_ShaderLight_14() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___ShaderLight_14)); }
+	inline Shader_t4151988712 * get_ShaderLight_14() const { return ___ShaderLight_14; }
+	inline Shader_t4151988712 ** get_address_of_ShaderLight_14() { return &___ShaderLight_14; }
+	inline void set_ShaderLight_14(Shader_t4151988712 * value)
+	{
+		___ShaderLight_14 = value;
+		Il2CppCodeGenWriteBarrier((&___ShaderLight_14), value);
+	}
+
+	inline static int32_t get_offset_of_m_allocatedArray_15() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_allocatedArray_15)); }
+	inline SingleU5BU5D_t1444911251* get_m_allocatedArray_15() const { return ___m_allocatedArray_15; }
+	inline SingleU5BU5D_t1444911251** get_address_of_m_allocatedArray_15() { return &___m_allocatedArray_15; }
+	inline void set_m_allocatedArray_15(SingleU5BU5D_t1444911251* value)
+	{
+		___m_allocatedArray_15 = value;
+		Il2CppCodeGenWriteBarrier((&___m_allocatedArray_15), value);
+	}
+
+	inline static int32_t get_offset_of_m_reservedArray_16() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_reservedArray_16)); }
+	inline SingleU5BU5D_t1444911251* get_m_reservedArray_16() const { return ___m_reservedArray_16; }
+	inline SingleU5BU5D_t1444911251** get_address_of_m_reservedArray_16() { return &___m_reservedArray_16; }
+	inline void set_m_reservedArray_16(SingleU5BU5D_t1444911251* value)
+	{
+		___m_reservedArray_16 = value;
+		Il2CppCodeGenWriteBarrier((&___m_reservedArray_16), value);
+	}
+
+	inline static int32_t get_offset_of_m_monoArray_17() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_monoArray_17)); }
+	inline SingleU5BU5D_t1444911251* get_m_monoArray_17() const { return ___m_monoArray_17; }
+	inline SingleU5BU5D_t1444911251** get_address_of_m_monoArray_17() { return &___m_monoArray_17; }
+	inline void set_m_monoArray_17(SingleU5BU5D_t1444911251* value)
+	{
+		___m_monoArray_17 = value;
+		Il2CppCodeGenWriteBarrier((&___m_monoArray_17), value);
+	}
+
+	inline static int32_t get_offset_of_m_highestMemory_18() { return static_cast<int32_t>(offsetof(RamGraph_t1904894468, ___m_highestMemory_18)); }
+	inline float get_m_highestMemory_18() const { return ___m_highestMemory_18; }
+	inline float* get_address_of_m_highestMemory_18() { return &___m_highestMemory_18; }
+	inline void set_m_highestMemory_18(float value)
+	{
+		___m_highestMemory_18 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RAMGRAPH_T1904894468_H
 #ifndef GRAPHIC_T1660335611_H
 #define GRAPHIC_T1660335611_H
 #ifdef __clang__
@@ -16374,10 +16822,6 @@ extern "C" void ReflectionSettings_t282755190_marshal_com(const ReflectionSettin
 extern "C" void ReflectionSettings_t282755190_marshal_com_back(const ReflectionSettings_t282755190_marshaled_com& marshaled, ReflectionSettings_t282755190& unmarshaled);
 extern "C" void ReflectionSettings_t282755190_marshal_com_cleanup(ReflectionSettings_t282755190_marshaled_com& marshaled);
 
-// !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
-extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponentInChildren_TisRuntimeObject_m1033527003_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
-// !!0 UnityEngine.Component::GetComponent<System.Object>()
-extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m2906321015_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
 extern "C" IL2CPP_METHOD_ATTR Enumerator_t2146457487  List_1_GetEnumerator_m816315209_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
@@ -16386,6 +16830,14 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m337713592_
 extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2142368520_gshared (Enumerator_t2146457487 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
 extern "C" IL2CPP_METHOD_ATTR void Enumerator_Dispose_m3007748546_gshared (Enumerator_t2146457487 * __this, const RuntimeMethod* method);
+// !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponentInChildren_TisRuntimeObject_m1033527003_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m2906321015_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
+extern "C" IL2CPP_METHOD_ATTR void List_1_Add_m3338814081_gshared (List_1_t257213610 * __this, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void List_1__ctor_m2321703786_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_m1328026504_gshared (List_1_t257213610 * __this, int32_t p0, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
@@ -16424,8 +16876,6 @@ extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1107569389_gshared (Enum
 extern "C" IL2CPP_METHOD_ATTR void Dictionary_2_Clear_m1938428402_gshared (Dictionary_2_t132545152 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.KeyValuePair`2<UnityEngine.Rendering.CameraEvent,System.Object>>::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m3471890303_gshared (Dictionary_2_t1349653261 * __this, const RuntimeMethod* method);
-// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void List_1__ctor_m2321703786_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 // T UnityEngine.PostProcessing.PostProcessingBehaviour::AddComponent<System.Object>(T)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * PostProcessingBehaviour_AddComponent_TisRuntimeObject_m4220113493_gshared (PostProcessingBehaviour_t3229946336 * __this, RuntimeObject * ___component0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::.ctor()
@@ -16462,8 +16912,6 @@ extern "C" IL2CPP_METHOD_ATTR KeyValuePair_2_t3842366416  Enumerator_get_Current
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * KeyValuePair_2_get_Key_m3347890282_gshared (KeyValuePair_2_t3842366416 * __this, const RuntimeMethod* method);
 // !1 System.Collections.Generic.KeyValuePair`2<System.Object,System.Boolean>::get_Value()
 extern "C" IL2CPP_METHOD_ATTR bool KeyValuePair_2_get_Value_m3881342223_gshared (KeyValuePair_2_t3842366416 * __this, const RuntimeMethod* method);
-// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
-extern "C" IL2CPP_METHOD_ATTR void List_1_Add_m3338814081_gshared (List_1_t257213610 * __this, RuntimeObject * p0, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Boolean>::MoveNext()
 extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m481679286_gshared (Enumerator_t3398877024 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Boolean>::Dispose()
@@ -16489,14 +16937,127 @@ extern "C" IL2CPP_METHOD_ATTR void HashSet_1_Clear_m507835370_gshared (HashSet_1
 // !1 System.Func`2<UnityEngine.Vector2,UnityEngine.Matrix4x4>::Invoke(!0)
 extern "C" IL2CPP_METHOD_ATTR Matrix4x4_t1817901843  Func_2_Invoke_m886748628_gshared (Func_2_t4093140010 * __this, Vector2_t2156229523  p0, const RuntimeMethod* method);
 
+// System.Void Tayx.Graphy.Ram.RamManager::Init()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_Init_m3652042912 (RamManager_t1289738234 * __this, const RuntimeMethod* method);
+// System.Void Tayx.Graphy.Ram.RamManager::UpdateParameters()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_UpdateParameters_m1459327173 (RamManager_t1289738234 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.RectTransform::get_anchoredPosition()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  RectTransform_get_anchoredPosition_m1813443094 (RectTransform_t3704657025 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.Vector2::get_up()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_get_up_m2647420593 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void UnityEngine.RectTransform::set_anchorMax(UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void RectTransform_set_anchorMax_m2998668828 (RectTransform_t3704657025 * __this, Vector2_t2156229523  p0, const RuntimeMethod* method);
+// System.Void UnityEngine.RectTransform::set_anchorMin(UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void RectTransform_set_anchorMin_m4230103102 (RectTransform_t3704657025 * __this, Vector2_t2156229523  p0, const RuntimeMethod* method);
+// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Vector2__ctor_m3970636864 (Vector2_t2156229523 * __this, float p0, float p1, const RuntimeMethod* method);
+// System.Void UnityEngine.RectTransform::set_anchoredPosition(UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR void RectTransform_set_anchoredPosition_m4126691837 (RectTransform_t3704657025 * __this, Vector2_t2156229523  p0, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.Vector2::get_one()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_get_one_m738793577 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_get_zero_m540426400 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.Vector2::get_right()
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_get_right_m1027081661 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Component_get_gameObject_m442555142 (Component_t1923634451 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void GameObject_SetActive_m796801857 (GameObject_t1113636619 * __this, bool p0, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<UnityEngine.GameObject> Tayx.Graphy.Utils.ExtensionMethods::SetAllActive(System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR List_1_t2585711361 * ExtensionMethods_SetAllActive_m3784049237 (RuntimeObject * __this /* static, unused */, List_1_t2585711361 * ___gameObjects0, bool ___active1, const RuntimeMethod* method);
+// System.Void Tayx.Graphy.Ram.RamManager::SetGraphActive(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void RamManager_SetGraphActive_m896324988 (RamManager_t1289738234 * __this, bool ___active0, const RuntimeMethod* method);
+// System.Boolean Tayx.Graphy.GraphyManager::get_Background()
+extern "C" IL2CPP_METHOD_ATTR bool GraphyManager_get_Background_m950206857 (GraphyManager_t318534394 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<UnityEngine.UI.Image> Tayx.Graphy.Utils.ExtensionMethods::SetOneActive(System.Collections.Generic.List`1<UnityEngine.UI.Image>,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR List_1_t4142344393 * ExtensionMethods_SetOneActive_m3128950321 (RuntimeObject * __this /* static, unused */, List_1_t4142344393 * ___images0, int32_t ___active1, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<UnityEngine.UI.Image> Tayx.Graphy.Utils.ExtensionMethods::SetAllActive(System.Collections.Generic.List`1<UnityEngine.UI.Image>,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR List_1_t4142344393 * ExtensionMethods_SetAllActive_m794342109 (RuntimeObject * __this /* static, unused */, List_1_t4142344393 * ___images0, bool ___active1, const RuntimeMethod* method);
+// System.Void Tayx.Graphy.Ram.RamManager::SetState(Tayx.Graphy.GraphyManager/ModuleState)
+extern "C" IL2CPP_METHOD_ATTR void RamManager_SetState_m2112292062 (RamManager_t1289738234 * __this, int32_t ___state0, const RuntimeMethod* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.UI.Image>::GetEnumerator()
+inline Enumerator_t1736620974  List_1_GetEnumerator_m4077917308 (List_1_t4142344393 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t1736620974  (*) (List_1_t4142344393 *, const RuntimeMethod*))List_1_GetEnumerator_m816315209_gshared)(__this, method);
+}
+// !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::get_Current()
+inline Image_t2670269651 * Enumerator_get_Current_m4163618071 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
+{
+	return ((  Image_t2670269651 * (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_get_Current_m337713592_gshared)(__this, method);
+}
+// UnityEngine.Color Tayx.Graphy.GraphyManager::get_BackgroundColor()
+extern "C" IL2CPP_METHOD_ATTR Color_t2555686324  GraphyManager_get_BackgroundColor_m2875259645 (GraphyManager_t318534394 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::MoveNext()
+inline bool Enumerator_MoveNext_m1814011161 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::Dispose()
+inline void Enumerator_Dispose_m3340713959 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
+}
+// System.Void Tayx.Graphy.Ram.RamGraph::UpdateParameters()
+extern "C" IL2CPP_METHOD_ATTR void RamGraph_UpdateParameters_m3745483961 (RamGraph_t1904894468 * __this, const RuntimeMethod* method);
+// System.Void Tayx.Graphy.Ram.RamText::UpdateParameters()
+extern "C" IL2CPP_METHOD_ATTR void RamText_UpdateParameters_m3929405975 (RamText_t1192005537 * __this, const RuntimeMethod* method);
+// Tayx.Graphy.GraphyManager/ModuleState Tayx.Graphy.GraphyManager::get_RamModuleState()
+extern "C" IL2CPP_METHOD_ATTR int32_t GraphyManager_get_RamModuleState_m3606912848 (GraphyManager_t318534394 * __this, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Transform::get_root()
+extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Transform_get_root_m2450402596 (Transform_t3600365921 * __this, const RuntimeMethod* method);
+// !!0 UnityEngine.Component::GetComponentInChildren<Tayx.Graphy.GraphyManager>()
+inline GraphyManager_t318534394 * Component_GetComponentInChildren_TisGraphyManager_t318534394_m441637420 (Component_t1923634451 * __this, const RuntimeMethod* method)
+{
+	return ((  GraphyManager_t318534394 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_m1033527003_gshared)(__this, method);
+}
+// !!0 UnityEngine.Component::GetComponent<Tayx.Graphy.Ram.RamGraph>()
+inline RamGraph_t1904894468 * Component_GetComponent_TisRamGraph_t1904894468_m3627158695 (Component_t1923634451 * __this, const RuntimeMethod* method)
+{
+	return ((  RamGraph_t1904894468 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method);
+}
+// !!0 UnityEngine.Component::GetComponent<Tayx.Graphy.Ram.RamText>()
+inline RamText_t1192005537 * Component_GetComponent_TisRamText_t1192005537_m2287900144 (Component_t1923634451 * __this, const RuntimeMethod* method)
+{
+	return ((  RamText_t1192005537 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method);
+}
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.RectTransform>()
+inline RectTransform_t3704657025 * Component_GetComponent_TisRectTransform_t3704657025_m3396022872 (Component_t1923634451 * __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t3704657025 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method);
+}
+// System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Transform_GetEnumerator_m2717073726 (Transform_t3600365921 * __this, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Transform::get_parent()
+extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Transform_get_parent_m835071599 (Transform_t3600365921 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Equality_m1810815630 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0)
+inline void List_1_Add_m2765963565 (List_1_t2585711361 * __this, GameObject_t1113636619 * p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2585711361 *, GameObject_t1113636619 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+}
+// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Behaviour_set_enabled_m20417929 (Behaviour_t1437897464 * __this, bool p0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::.ctor()
+inline void List_1__ctor_m1424466557 (List_1_t2585711361 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2585711361 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<UnityEngine.UI.Image>::.ctor()
+inline void List_1__ctor_m1737664941 (List_1_t4142344393 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4142344393 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
+}
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m1579109191 (MonoBehaviour_t3962482529 * __this, const RuntimeMethod* method);
 // System.Int64 UnityEngine.Profiling.Profiler::GetTotalAllocatedMemoryLong()
 extern "C" IL2CPP_METHOD_ATTR int64_t Profiler_GetTotalAllocatedMemoryLong_m1325325760 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Int64 UnityEngine.Profiling.Profiler::GetTotalReservedMemoryLong()
 extern "C" IL2CPP_METHOD_ATTR int64_t Profiler_GetTotalReservedMemoryLong_m800596178 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Int64 UnityEngine.Profiling.Profiler::GetMonoUsedSizeLong()
 extern "C" IL2CPP_METHOD_ATTR int64_t Profiler_GetMonoUsedSizeLong_m1842169722 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m1579109191 (MonoBehaviour_t3962482529 * __this, const RuntimeMethod* method);
 // System.Void Tayx.Graphy.Ram.RamText::Init()
 extern "C" IL2CPP_METHOD_ATTR void RamText_Init_m1159087476 (RamText_t1192005537 * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.Time::get_unscaledDeltaTime()
@@ -16525,22 +17086,11 @@ extern "C" IL2CPP_METHOD_ATTR float FloatString_get_minValue_m1815141584 (Runtim
 extern "C" IL2CPP_METHOD_ATTR float FloatString_get_maxValue_m2003790520 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Void Tayx.Graphy.Utils.FloatString::Init(System.Single,System.Single,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void FloatString_Init_m858844128 (RuntimeObject * __this /* static, unused */, float ___minNegativeValue0, float ___maxPositiveValue1, int32_t ___deciminals2, const RuntimeMethod* method);
-// UnityEngine.Transform UnityEngine.Component::get_transform()
-extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method);
-// UnityEngine.Transform UnityEngine.Transform::get_root()
-extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Transform_get_root_m2450402596 (Transform_t3600365921 * __this, const RuntimeMethod* method);
-// !!0 UnityEngine.Component::GetComponentInChildren<Tayx.Graphy.GraphyManager>()
-inline GraphyManager_t318534394 * Component_GetComponentInChildren_TisGraphyManager_t318534394_m441637420 (Component_t1923634451 * __this, const RuntimeMethod* method)
-{
-	return ((  GraphyManager_t318534394 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_m1033527003_gshared)(__this, method);
-}
 // !!0 UnityEngine.Component::GetComponent<Tayx.Graphy.Ram.RamMonitor>()
 inline RamMonitor_t925924114 * Component_GetComponent_TisRamMonitor_t925924114_m3898497400 (Component_t1923634451 * __this, const RuntimeMethod* method)
 {
 	return ((  RamMonitor_t925924114 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method);
 }
-// System.Void Tayx.Graphy.Ram.RamText::UpdateParameters()
-extern "C" IL2CPP_METHOD_ATTR void RamText_UpdateParameters_m3929405975 (RamText_t1192005537 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::SetFloatArray(System.String,System.Single[])
 extern "C" IL2CPP_METHOD_ATTR void Material_SetFloatArray_m2820208639 (Material_t340375123 * __this, String_t* p0, SingleU5BU5D_t1444911251* p1, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
@@ -16563,8 +17113,6 @@ inline GameObject_t1113636619 * Enumerator_get_Current_m4179928398 (Enumerator_t
 {
 	return ((  GameObject_t1113636619 * (*) (Enumerator_t179987942 *, const RuntimeMethod*))Enumerator_get_Current_m337713592_gshared)(__this, method);
 }
-// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void GameObject_SetActive_m796801857 (GameObject_t1113636619 * __this, bool p0, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.GameObject>::MoveNext()
 inline bool Enumerator_MoveNext_m4286844348 (Enumerator_t179987942 * __this, const RuntimeMethod* method)
 {
@@ -16580,32 +17128,10 @@ inline Image_t2670269651 * List_1_get_Item_m1242626717 (List_1_t4142344393 * __t
 {
 	return ((  Image_t2670269651 * (*) (List_1_t4142344393 *, int32_t, const RuntimeMethod*))List_1_get_Item_m1328026504_gshared)(__this, p0, method);
 }
-// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
-extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Component_get_gameObject_m442555142 (Component_t1923634451 * __this, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.UI.Image>::get_Count()
 inline int32_t List_1_get_Count_m2185995001 (List_1_t4142344393 * __this, const RuntimeMethod* method)
 {
 	return ((  int32_t (*) (List_1_t4142344393 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
-}
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.UI.Image>::GetEnumerator()
-inline Enumerator_t1736620974  List_1_GetEnumerator_m4077917308 (List_1_t4142344393 * __this, const RuntimeMethod* method)
-{
-	return ((  Enumerator_t1736620974  (*) (List_1_t4142344393 *, const RuntimeMethod*))List_1_GetEnumerator_m816315209_gshared)(__this, method);
-}
-// !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::get_Current()
-inline Image_t2670269651 * Enumerator_get_Current_m4163618071 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
-{
-	return ((  Image_t2670269651 * (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_get_Current_m337713592_gshared)(__this, method);
-}
-// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::MoveNext()
-inline bool Enumerator_MoveNext_m1814011161 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
-{
-	return ((  bool (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
-}
-// System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Image>::Dispose()
-inline void Enumerator_Dispose_m3340713959 (Enumerator_t1736620974 * __this, const RuntimeMethod* method)
-{
-	((  void (*) (Enumerator_t1736620974 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
 }
 // System.Single Tayx.Graphy.Utils.FloatString::FromIndex(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR float FloatString_FromIndex_m3795989308 (RuntimeObject * __this /* static, unused */, int32_t ___i0, const RuntimeMethod* method);
@@ -16740,8 +17266,6 @@ extern "C" IL2CPP_METHOD_ATTR void Graphics_Blit_m4126770912 (RuntimeObject * __
 extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // System.Void UnityEngine.PostProcessing.RenderTextureFactory::Release(UnityEngine.RenderTexture)
 extern "C" IL2CPP_METHOD_ATTR void RenderTextureFactory_Release_m717800481 (RenderTextureFactory_t1946967824 * __this, RenderTexture_t2108887433 * ___rt0, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR void Vector2__ctor_m3970636864 (Vector2_t2156229523 * __this, float p0, float p1, const RuntimeMethod* method);
 // UnityEngine.Vector4 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector2)
 extern "C" IL2CPP_METHOD_ATTR Vector4_t3319028937  Vector4_op_Implicit_m237151757 (RuntimeObject * __this /* static, unused */, Vector2_t2156229523  p0, const RuntimeMethod* method);
 // System.Void UnityEngine.PostProcessing.PostProcessingComponentRenderTexture`1<UnityEngine.PostProcessing.BloomModel>::.ctor()
@@ -16860,8 +17384,6 @@ inline ChromaticAberrationModel_t3963399853 * PostProcessingComponent_1_get_mode
 }
 // UnityEngine.PostProcessing.ChromaticAberrationModel/Settings UnityEngine.PostProcessing.ChromaticAberrationModel::get_settings()
 extern "C" IL2CPP_METHOD_ATTR Settings_t2111398455  ChromaticAberrationModel_get_settings_m961945758 (ChromaticAberrationModel_t3963399853 * __this, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
-extern "C" IL2CPP_METHOD_ATTR bool Object_op_Equality_m1810815630 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void Texture2D__ctor_m2862217990 (Texture2D_t3840446185 * __this, int32_t p0, int32_t p1, int32_t p2, bool p3, const RuntimeMethod* method);
 // System.Void UnityEngine.Object::set_name(System.String)
@@ -17335,8 +17857,6 @@ extern "C" IL2CPP_METHOD_ATTR RenderTexture_t2108887433 * RenderTexture_GetTempo
 extern "C" IL2CPP_METHOD_ATTR void ReconstructionFilter_CheckTextureFormatSupport_m2683855103 (ReconstructionFilter_t705677647 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.SystemInfo::get_supportsMotionVectors()
 extern "C" IL2CPP_METHOD_ATTR bool SystemInfo_get_supportsMotionVectors_m46965105 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
-// UnityEngine.Vector2 UnityEngine.Vector2::get_one()
-extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_get_one_m738793577 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Multiply(UnityEngine.Vector2,System.Single)
 extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_op_Multiply_m2347887432 (RuntimeObject * __this /* static, unused */, Vector2_t2156229523  p0, float p1, const RuntimeMethod* method);
 // UnityEngine.PostProcessing.MotionBlurModel/Settings UnityEngine.PostProcessing.MotionBlurModel/Settings::get_defaultSettings()
@@ -17911,6 +18431,584 @@ inline void PostProcessingComponentRenderTexture_1__ctor_m2651217025 (PostProces
 }
 // UnityEngine.PostProcessing.VignetteModel/Settings UnityEngine.PostProcessing.VignetteModel/Settings::get_defaultSettings()
 extern "C" IL2CPP_METHOD_ATTR Settings_t1354494600  Settings_get_defaultSettings_m3086602550 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Tayx.Graphy.Ram.RamManager::Awake()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_Awake_m2480336768 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	{
+		RamManager_Init_m3652042912(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::Start()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_Start_m3694981573 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	{
+		RamManager_UpdateParameters_m1459327173(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::SetPosition(Tayx.Graphy.GraphyManager/ModulePosition)
+extern "C" IL2CPP_METHOD_ATTR void RamManager_SetPosition_m2932347193 (RamManager_t1289738234 * __this, int32_t ___newModulePosition0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (RamManager_SetPosition_m2932347193_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	int32_t V_2 = 0;
+	{
+		RectTransform_t3704657025 * L_0 = __this->get_m_rectTransform_7();
+		NullCheck(L_0);
+		Vector2_t2156229523  L_1 = RectTransform_get_anchoredPosition_m1813443094(L_0, /*hidden argument*/NULL);
+		float L_2 = L_1.get_x_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
+		float L_3 = fabsf(L_2);
+		V_0 = L_3;
+		RectTransform_t3704657025 * L_4 = __this->get_m_rectTransform_7();
+		NullCheck(L_4);
+		Vector2_t2156229523  L_5 = RectTransform_get_anchoredPosition_m1813443094(L_4, /*hidden argument*/NULL);
+		float L_6 = L_5.get_y_1();
+		float L_7 = fabsf(L_6);
+		V_1 = L_7;
+		int32_t L_8 = ___newModulePosition0;
+		V_2 = L_8;
+		int32_t L_9 = V_2;
+		switch (L_9)
+		{
+			case 0:
+			{
+				goto IL_0085;
+			}
+			case 1:
+			{
+				goto IL_004a;
+			}
+			case 2:
+			{
+				goto IL_00f5;
+			}
+			case 3:
+			{
+				goto IL_00be;
+			}
+		}
+	}
+	{
+		goto IL_012d;
+	}
+
+IL_004a:
+	{
+		RectTransform_t3704657025 * L_10 = __this->get_m_rectTransform_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
+		Vector2_t2156229523  L_11 = Vector2_get_up_m2647420593(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		RectTransform_set_anchorMax_m2998668828(L_10, L_11, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_12 = __this->get_m_rectTransform_7();
+		Vector2_t2156229523  L_13 = Vector2_get_up_m2647420593(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		RectTransform_set_anchorMin_m4230103102(L_12, L_13, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_14 = __this->get_m_rectTransform_7();
+		float L_15 = V_0;
+		float L_16 = V_1;
+		Vector2_t2156229523  L_17;
+		memset(&L_17, 0, sizeof(L_17));
+		Vector2__ctor_m3970636864((&L_17), L_15, ((-L_16)), /*hidden argument*/NULL);
+		NullCheck(L_14);
+		RectTransform_set_anchoredPosition_m4126691837(L_14, L_17, /*hidden argument*/NULL);
+		goto IL_012d;
+	}
+
+IL_0085:
+	{
+		RectTransform_t3704657025 * L_18 = __this->get_m_rectTransform_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
+		Vector2_t2156229523  L_19 = Vector2_get_one_m738793577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		RectTransform_set_anchorMax_m2998668828(L_18, L_19, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_20 = __this->get_m_rectTransform_7();
+		Vector2_t2156229523  L_21 = Vector2_get_one_m738793577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_20);
+		RectTransform_set_anchorMin_m4230103102(L_20, L_21, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_22 = __this->get_m_rectTransform_7();
+		float L_23 = V_0;
+		float L_24 = V_1;
+		Vector2_t2156229523  L_25;
+		memset(&L_25, 0, sizeof(L_25));
+		Vector2__ctor_m3970636864((&L_25), ((-L_23)), ((-L_24)), /*hidden argument*/NULL);
+		NullCheck(L_22);
+		RectTransform_set_anchoredPosition_m4126691837(L_22, L_25, /*hidden argument*/NULL);
+		goto IL_012d;
+	}
+
+IL_00be:
+	{
+		RectTransform_t3704657025 * L_26 = __this->get_m_rectTransform_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
+		Vector2_t2156229523  L_27 = Vector2_get_zero_m540426400(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		RectTransform_set_anchorMax_m2998668828(L_26, L_27, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_28 = __this->get_m_rectTransform_7();
+		Vector2_t2156229523  L_29 = Vector2_get_zero_m540426400(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_28);
+		RectTransform_set_anchorMin_m4230103102(L_28, L_29, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_30 = __this->get_m_rectTransform_7();
+		float L_31 = V_0;
+		float L_32 = V_1;
+		Vector2_t2156229523  L_33;
+		memset(&L_33, 0, sizeof(L_33));
+		Vector2__ctor_m3970636864((&L_33), L_31, L_32, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		RectTransform_set_anchoredPosition_m4126691837(L_30, L_33, /*hidden argument*/NULL);
+		goto IL_012d;
+	}
+
+IL_00f5:
+	{
+		RectTransform_t3704657025 * L_34 = __this->get_m_rectTransform_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
+		Vector2_t2156229523  L_35 = Vector2_get_right_m1027081661(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		RectTransform_set_anchorMax_m2998668828(L_34, L_35, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_36 = __this->get_m_rectTransform_7();
+		Vector2_t2156229523  L_37 = Vector2_get_right_m1027081661(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_36);
+		RectTransform_set_anchorMin_m4230103102(L_36, L_37, /*hidden argument*/NULL);
+		RectTransform_t3704657025 * L_38 = __this->get_m_rectTransform_7();
+		float L_39 = V_0;
+		float L_40 = V_1;
+		Vector2_t2156229523  L_41;
+		memset(&L_41, 0, sizeof(L_41));
+		Vector2__ctor_m3970636864((&L_41), ((-L_39)), L_40, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		RectTransform_set_anchoredPosition_m4126691837(L_38, L_41, /*hidden argument*/NULL);
+		goto IL_012d;
+	}
+
+IL_012d:
+	{
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::SetState(Tayx.Graphy.GraphyManager/ModuleState)
+extern "C" IL2CPP_METHOD_ATTR void RamManager_SetState_m2112292062 (RamManager_t1289738234 * __this, int32_t ___state0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		int32_t L_0 = __this->get_m_currentModuleState_12();
+		__this->set_m_previousModuleState_11(L_0);
+		int32_t L_1 = ___state0;
+		__this->set_m_currentModuleState_12(L_1);
+		int32_t L_2 = ___state0;
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		switch (L_3)
+		{
+			case 0:
+			{
+				goto IL_0035;
+			}
+			case 1:
+			{
+				goto IL_008b;
+			}
+			case 2:
+			{
+				goto IL_008b;
+			}
+			case 3:
+			{
+				goto IL_00de;
+			}
+			case 4:
+			{
+				goto IL_010f;
+			}
+		}
+	}
+	{
+		goto IL_011e;
+	}
+
+IL_0035:
+	{
+		GameObject_t1113636619 * L_4 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m796801857(L_4, (bool)1, /*hidden argument*/NULL);
+		List_1_t2585711361 * L_5 = __this->get_m_childrenGameObjects_9();
+		ExtensionMethods_SetAllActive_m3784049237(NULL /*static, unused*/, L_5, (bool)1, /*hidden argument*/NULL);
+		RamManager_SetGraphActive_m896324988(__this, (bool)1, /*hidden argument*/NULL);
+		GraphyManager_t318534394 * L_6 = __this->get_m_graphyManager_4();
+		NullCheck(L_6);
+		bool L_7 = GraphyManager_get_Background_m950206857(L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		bool L_8 = V_1;
+		if (!L_8)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		List_1_t4142344393 * L_9 = __this->get_m_backgroundImages_10();
+		ExtensionMethods_SetOneActive_m3128950321(NULL /*static, unused*/, L_9, 0, /*hidden argument*/NULL);
+		goto IL_0086;
+	}
+
+IL_0077:
+	{
+		List_1_t4142344393 * L_10 = __this->get_m_backgroundImages_10();
+		ExtensionMethods_SetAllActive_m794342109(NULL /*static, unused*/, L_10, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0086:
+	{
+		goto IL_011e;
+	}
+
+IL_008b:
+	{
+		GameObject_t1113636619 * L_11 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		GameObject_SetActive_m796801857(L_11, (bool)1, /*hidden argument*/NULL);
+		List_1_t2585711361 * L_12 = __this->get_m_childrenGameObjects_9();
+		ExtensionMethods_SetAllActive_m3784049237(NULL /*static, unused*/, L_12, (bool)1, /*hidden argument*/NULL);
+		RamManager_SetGraphActive_m896324988(__this, (bool)0, /*hidden argument*/NULL);
+		GraphyManager_t318534394 * L_13 = __this->get_m_graphyManager_4();
+		NullCheck(L_13);
+		bool L_14 = GraphyManager_get_Background_m950206857(L_13, /*hidden argument*/NULL);
+		V_2 = L_14;
+		bool L_15 = V_2;
+		if (!L_15)
+		{
+			goto IL_00cd;
+		}
+	}
+	{
+		List_1_t4142344393 * L_16 = __this->get_m_backgroundImages_10();
+		ExtensionMethods_SetOneActive_m3128950321(NULL /*static, unused*/, L_16, 1, /*hidden argument*/NULL);
+		goto IL_00dc;
+	}
+
+IL_00cd:
+	{
+		List_1_t4142344393 * L_17 = __this->get_m_backgroundImages_10();
+		ExtensionMethods_SetAllActive_m794342109(NULL /*static, unused*/, L_17, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00dc:
+	{
+		goto IL_011e;
+	}
+
+IL_00de:
+	{
+		GameObject_t1113636619 * L_18 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		GameObject_SetActive_m796801857(L_18, (bool)1, /*hidden argument*/NULL);
+		RamManager_SetGraphActive_m896324988(__this, (bool)0, /*hidden argument*/NULL);
+		List_1_t2585711361 * L_19 = __this->get_m_childrenGameObjects_9();
+		ExtensionMethods_SetAllActive_m3784049237(NULL /*static, unused*/, L_19, (bool)0, /*hidden argument*/NULL);
+		List_1_t4142344393 * L_20 = __this->get_m_backgroundImages_10();
+		ExtensionMethods_SetAllActive_m794342109(NULL /*static, unused*/, L_20, (bool)0, /*hidden argument*/NULL);
+		goto IL_011e;
+	}
+
+IL_010f:
+	{
+		GameObject_t1113636619 * L_21 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		GameObject_SetActive_m796801857(L_21, (bool)0, /*hidden argument*/NULL);
+		goto IL_011e;
+	}
+
+IL_011e:
+	{
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::RestorePreviousState()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_RestorePreviousState_m1757411921 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_previousModuleState_11();
+		RamManager_SetState_m2112292062(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::UpdateParameters()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_UpdateParameters_m1459327173 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (RamManager_UpdateParameters_m1459327173_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t1736620974  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Image_t2670269651 * V_1 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		List_1_t4142344393 * L_0 = __this->get_m_backgroundImages_10();
+		NullCheck(L_0);
+		Enumerator_t1736620974  L_1 = List_1_GetEnumerator_m4077917308(L_0, /*hidden argument*/List_1_GetEnumerator_m4077917308_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+
+IL_000e:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_002c;
+		}
+
+IL_0010:
+		{
+			Image_t2670269651 * L_2 = Enumerator_get_Current_m4163618071((Enumerator_t1736620974 *)(&V_0), /*hidden argument*/Enumerator_get_Current_m4163618071_RuntimeMethod_var);
+			V_1 = L_2;
+			Image_t2670269651 * L_3 = V_1;
+			GraphyManager_t318534394 * L_4 = __this->get_m_graphyManager_4();
+			NullCheck(L_4);
+			Color_t2555686324  L_5 = GraphyManager_get_BackgroundColor_m2875259645(L_4, /*hidden argument*/NULL);
+			NullCheck(L_3);
+			VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_5);
+		}
+
+IL_002c:
+		{
+			bool L_6 = Enumerator_MoveNext_m1814011161((Enumerator_t1736620974 *)(&V_0), /*hidden argument*/Enumerator_MoveNext_m1814011161_RuntimeMethod_var);
+			if (L_6)
+			{
+				goto IL_0010;
+			}
+		}
+
+IL_0035:
+		{
+			IL2CPP_LEAVE(0x46, FINALLY_0037);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0037;
+	}
+
+FINALLY_0037:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m3340713959((Enumerator_t1736620974 *)(&V_0), /*hidden argument*/Enumerator_Dispose_m3340713959_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(55)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(55)
+	{
+		IL2CPP_JUMP_TBL(0x46, IL_0046)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0046:
+	{
+		RamGraph_t1904894468 * L_7 = __this->get_m_ramGraph_5();
+		NullCheck(L_7);
+		RamGraph_UpdateParameters_m3745483961(L_7, /*hidden argument*/NULL);
+		RamText_t1192005537 * L_8 = __this->get_m_ramText_6();
+		NullCheck(L_8);
+		RamText_UpdateParameters_m3929405975(L_8, /*hidden argument*/NULL);
+		GraphyManager_t318534394 * L_9 = __this->get_m_graphyManager_4();
+		NullCheck(L_9);
+		int32_t L_10 = GraphyManager_get_RamModuleState_m3606912848(L_9, /*hidden argument*/NULL);
+		RamManager_SetState_m2112292062(__this, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::Init()
+extern "C" IL2CPP_METHOD_ATTR void RamManager_Init_m3652042912 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (RamManager_Init_m3652042912_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	Transform_t3600365921 * V_1 = NULL;
+	bool V_2 = false;
+	RuntimeObject* V_3 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		Transform_t3600365921 * L_0 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Transform_t3600365921 * L_1 = Transform_get_root_m2450402596(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		GraphyManager_t318534394 * L_2 = Component_GetComponentInChildren_TisGraphyManager_t318534394_m441637420(L_1, /*hidden argument*/Component_GetComponentInChildren_TisGraphyManager_t318534394_m441637420_RuntimeMethod_var);
+		__this->set_m_graphyManager_4(L_2);
+		RamGraph_t1904894468 * L_3 = Component_GetComponent_TisRamGraph_t1904894468_m3627158695(__this, /*hidden argument*/Component_GetComponent_TisRamGraph_t1904894468_m3627158695_RuntimeMethod_var);
+		__this->set_m_ramGraph_5(L_3);
+		RamText_t1192005537 * L_4 = Component_GetComponent_TisRamText_t1192005537_m2287900144(__this, /*hidden argument*/Component_GetComponent_TisRamText_t1192005537_m2287900144_RuntimeMethod_var);
+		__this->set_m_ramText_6(L_4);
+		RectTransform_t3704657025 * L_5 = Component_GetComponent_TisRectTransform_t3704657025_m3396022872(__this, /*hidden argument*/Component_GetComponent_TisRectTransform_t3704657025_m3396022872_RuntimeMethod_var);
+		__this->set_m_rectTransform_7(L_5);
+		Transform_t3600365921 * L_6 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		RuntimeObject* L_7 = Transform_GetEnumerator_m2717073726(L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+	}
+
+IL_0048:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0081;
+		}
+
+IL_004a:
+		{
+			RuntimeObject* L_8 = V_0;
+			NullCheck(L_8);
+			RuntimeObject * L_9 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_8);
+			V_1 = ((Transform_t3600365921 *)CastclassClass((RuntimeObject*)L_9, Transform_t3600365921_il2cpp_TypeInfo_var));
+			Transform_t3600365921 * L_10 = V_1;
+			NullCheck(L_10);
+			Transform_t3600365921 * L_11 = Transform_get_parent_m835071599(L_10, /*hidden argument*/NULL);
+			Transform_t3600365921 * L_12 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+			bool L_13 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+			V_2 = L_13;
+			bool L_14 = V_2;
+			if (!L_14)
+			{
+				goto IL_0080;
+			}
+		}
+
+IL_006c:
+		{
+			List_1_t2585711361 * L_15 = __this->get_m_childrenGameObjects_9();
+			Transform_t3600365921 * L_16 = V_1;
+			NullCheck(L_16);
+			GameObject_t1113636619 * L_17 = Component_get_gameObject_m442555142(L_16, /*hidden argument*/NULL);
+			NullCheck(L_15);
+			List_1_Add_m2765963565(L_15, L_17, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
+		}
+
+IL_0080:
+		{
+		}
+
+IL_0081:
+		{
+			RuntimeObject* L_18 = V_0;
+			NullCheck(L_18);
+			bool L_19 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_18);
+			if (L_19)
+			{
+				goto IL_004a;
+			}
+		}
+
+IL_0089:
+		{
+			IL2CPP_LEAVE(0x9D, FINALLY_008b);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_008b;
+	}
+
+FINALLY_008b:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_20 = V_0;
+			V_3 = ((RuntimeObject*)IsInst((RuntimeObject*)L_20, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			RuntimeObject* L_21 = V_3;
+			if (!L_21)
+			{
+				goto IL_009c;
+			}
+		}
+
+IL_0095:
+		{
+			RuntimeObject* L_22 = V_3;
+			NullCheck(L_22);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_22);
+		}
+
+IL_009c:
+		{
+			IL2CPP_END_FINALLY(139)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(139)
+	{
+		IL2CPP_JUMP_TBL(0x9D, IL_009d)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_009d:
+	{
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::SetGraphActive(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void RamManager_SetGraphActive_m896324988 (RamManager_t1289738234 * __this, bool ___active0, const RuntimeMethod* method)
+{
+	{
+		RamGraph_t1904894468 * L_0 = __this->get_m_ramGraph_5();
+		bool L_1 = ___active0;
+		NullCheck(L_0);
+		Behaviour_set_enabled_m20417929(L_0, L_1, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_2 = __this->get_m_ramGraphGameObject_8();
+		bool L_3 = ___active0;
+		NullCheck(L_2);
+		GameObject_SetActive_m796801857(L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Tayx.Graphy.Ram.RamManager::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void RamManager__ctor_m2239219589 (RamManager_t1289738234 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (RamManager__ctor_m2239219589_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t2585711361 * L_0 = (List_1_t2585711361 *)il2cpp_codegen_object_new(List_1_t2585711361_il2cpp_TypeInfo_var);
+		List_1__ctor_m1424466557(L_0, /*hidden argument*/List_1__ctor_m1424466557_RuntimeMethod_var);
+		__this->set_m_childrenGameObjects_9(L_0);
+		List_1_t4142344393 * L_1 = (List_1_t4142344393 *)il2cpp_codegen_object_new(List_1_t4142344393_il2cpp_TypeInfo_var);
+		List_1__ctor_m1737664941(L_1, /*hidden argument*/List_1__ctor_m1737664941_RuntimeMethod_var);
+		__this->set_m_backgroundImages_10(L_1);
+		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
